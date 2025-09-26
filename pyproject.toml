@@ -1,0 +1,26 @@
+[project]
+name = "nps"
+version = "0.1.0"
+description = "napari plugin sustainability efforts and organization"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Tim Monko" },
+    { email = "timmonko@gmail.com" },
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10",
+    "pandas>=2.3.3",
+    "requests>=2.32",
+    "seaborn>=0.13",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+plot = [
+    "plotly>=6.9.0",
+]
+notebook = [
+    "marimo>=0.24.0",
+]
