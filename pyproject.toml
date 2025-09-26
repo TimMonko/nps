@@ -1,0 +1,12 @@
+[project]
+name = "plugin-sustainability"
+version = "0.1.0"
+description = "napari plugin sustainability efforts and organization"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Tim Monko" },
+    { email = "timmonko@gmail.com" },
+]
+requires-python = ">=3.13"
+dependencies = []
