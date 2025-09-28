@@ -1,0 +1,608 @@
+plugin_name,has_testing_deps,testing_frameworks,num_testing_frameworks,has_pytest,has_coverage,has_tox,has_ci_deps
+acquifer-napari,False,[],0,False,False,False,False
+affinder,True,"['coverage', 'pytest-cov', 'pytest-qt', 'pytest']",4,True,True,False,False
+allencell-segmenter-ml,True,"['pytest', 'coverage', 'pytest-xvfb', 'pytest-cov', 'pytest-qt']",5,True,True,False,False
+alveoleye,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+anchor-droplet-chip,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+annotrack,True,['pytest'],1,True,False,False,False
+applet3,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+arcos-gui,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+arcospx-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+autolamella,False,[],0,False,False,False,False
+avidaq,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+axondeepseg,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+bactfit,False,[],0,False,False,False,False
+bbii-decon,False,[],0,False,False,False,False
+beetlesafari,False,[],0,False,False,False,False
+bfio,False,[],0,False,False,False,False
+bia-bob,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+biaplotter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+blik,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+brainglobe-napari-io,True,"['pytest', 'coverage', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+brainglobe-registration,True,"['pytest', 'coverage', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+brainglobe-segmentation,True,"['pytest', 'pytest-cov', 'coverage', 'pytest-qt']",4,True,True,False,False
+brainglobe-stitch,True,"['pytest', 'coverage', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+brainglobe-utils,True,"['coverage', 'pytest', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+brainreg-napari,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+brainreg-segment,True,"['pytest', 'pytest-cov', 'coverage', 'pytest-qt']",4,True,True,False,False
+brainreg,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+brainrender-napari,True,"['pytest', 'coverage', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+brainways,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+brendan-beads,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+brillouin-imaging,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+btrack,False,[],0,False,False,False,False
+cell-aap,False,[],0,False,False,False,False
+cellcanvas,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+cellfinder-napari,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+cellfinder,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+cellpose-counter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+cellpose-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+cochlea-synapseg,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+cryocanvas,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+cut-detector,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+cylindra,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+darth-d,False,[],0,False,False,False,False
+destripe-lsfm,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+devbio-napari,False,[],0,False,False,False,False
+disease-classifier,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+domb-napari,False,[],0,False,False,False,False
+eats-worm,False,[],0,False,False,False,False
+ebi-oct,True,['pytest'],1,True,False,False,False
+elastix-napari,False,[],0,False,False,False,False
+empanada-napari,False,[],0,False,False,False,False
+epicure,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+epitools,True,['tox'],1,False,False,True,False
+faser,False,[],0,False,False,False,False
+featureforest,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+fibsem,True,['pytest'],1,True,False,False,False
+fish-scan,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+fishfeats,False,[],0,False,False,False,False
+fitellipsoid,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+flood-napari,False,[],0,False,False,False,False
+frontveg,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+fspi-analysis,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+generate-dense-patches,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+grabber-ift,False,[],0,False,False,False,False
+guanine-crystal-analysis,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+harpy-analysis,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+hesperos,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+hipocount-napari,False,[],0,False,False,False,False
+iacs-ipac-reader,False,[],0,False,False,False,False
+ilastik-napari,False,[],0,False,False,False,False
+image-composer,False,[],0,False,False,False,False
+image-part-selecter,False,[],0,False,False,False,False
+imaxt-multiscale-plugin,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+in-silico-fate-mapping,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+iterseg,False,[],0,False,False,False,False
+koopa-viz,False,[],0,False,False,False,False
+label-creator,False,[],0,False,False,False,False
+large-image-viewer,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+lasso-3d,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+layer-data-replace,False,[],0,False,False,False,False
+lineagetree,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+lls-core,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+lsfm-destripe-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+lsfm-fusion-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+manini,True,"['pytest', 'pytest-xvfb', 'pytest-cov', 'tox', 'pytest-qt']",5,True,True,True,False
+microscope-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+midi-app-controller,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+mikro-napari,False,[],0,False,False,False,False
+misic-napari,False,[],0,False,False,False,False
+mitoclass,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+mmv-h4cells,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+mmv-h4tracks,False,[],0,False,False,False,False
+mmv-playground,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+mmv-regionseg,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+mobiofox,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+morphometrics-engine,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+morphometrics,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+morphospaces,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+motile-plugin,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+motile-tracker,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+mousechd-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+movement,True,"['pytest', 'coverage', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+msi-explorer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+multireg,False,[],0,False,False,False,False
+nap-plot-tools,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napam,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-3d-counter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-3d-ortho-viewer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-3d-registration,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-3dtimereg,False,[],0,False,False,False,False
+napari-accelerated-pixel-and-object-classification,False,[],0,False,False,False,False
+napari-activelearning,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-affinities,False,[],0,False,False,False,False
+napari-afmreader,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-aicsimageio,True,"['coverage', 'pytest', 'pytest-xvfb', 'pytest-cov', 'pytest-qt']",5,True,True,False,False
+napari-aideveloper,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-allencell-annotator,True,"['pytest', 'codecov', 'pytest-cov', 'tox', 'pytest-qt']",5,True,True,True,False
+napari-allencell-segmenter,True,"['pytest', 'coverage', 'codecov', 'pytest-cov', 'pytest-qt', 'tox']",6,True,True,True,False
+napari-amdtrk,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-animated-gif-io,False,[],0,False,False,False,False
+napari-animation,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-annotate,False,[],0,False,False,False,False
+napari-annotation-project,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-annotatorj,False,[],0,False,False,False,False
+napari-aphid,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-apple,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-apr-viewer,False,[],0,False,False,False,False
+napari-arboretum,False,[],0,False,False,False,False
+napari-argos-archive-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-assistant-plugin-generator,False,[],0,False,False,False,False
+napari-assistant,False,[],0,False,False,False,False
+napari-automatic-range,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-bacseg,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-basicpy,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-bbox-spfluo,False,[],0,False,False,False,False
+napari-bbox,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-bee-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-bfio,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-bigfish,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-bigwarp,False,[],0,False,False,False,False
+napari-bil-data-viewer,False,[],0,False,False,False,False
+napari-bio-sample-data,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-bioformats,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-bioimageio,False,[],0,False,False,False,False
+napari-bioio-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-biomag-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-biopb,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-bleach-correct,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-blender-bridge,False,[],0,False,False,False,False
+napari-blender,False,[],0,False,False,False,False
+napari-blob-detection,True,['pytest'],1,True,False,False,False
+napari-blosc2,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-blossom,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-bluesky,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-boardgame-maker,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-boids,False,[],0,False,False,False,False
+napari-bootstrapper,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-boxmanager,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-brainbow-diagnose,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-brainways,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-brightness-contrast,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+napari-brushsettings,False,[],0,False,False,False,False
+napari-btrack-reader,False,[],0,False,False,False,False
+napari-bud-cell-segmenter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-buds,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-calibration,False,[],0,False,False,False,False
+napari-camera,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-caphid,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cardio-bio-eval,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cci-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ccp4map,False,[],0,False,False,False,False
+napari-cell-centroid-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cellseg3d,True,"['pytest', 'pytest-cov', 'tox', 'coverage']",4,True,True,True,False
+napari-chatgpt,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-checkerboard,False,[],0,False,False,False,False
+napari-cilia-beating-frequency,False,[],0,False,False,False,False
+napari-clemreg,False,[],0,False,False,False,False
+napari-clipboard,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-clusters-plotter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-compressed-labels-io,False,[],0,False,False,False,False
+napari-conference,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-conidie,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-console,True,[],0,False,False,False,False
+napari-convpaint,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cookiecut,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-copick,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-correct-drift,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cosmos-ts,False,[],0,False,False,False,False
+napari-crop,False,[],0,False,False,False,False
+napari-cryoet-data-portal,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cryofibsem-imgproc,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-cryofibsem-monitor,False,[],0,False,False,False,False
+napari-ctc-io,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-cupy-image-processing,False,[],0,False,False,False,False
+napari-cursor-tracker,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-curtain,False,[],0,False,False,False,False
+napari-curviewer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-czann-segment,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-czi-reader,True,"['codecov', 'pytest', 'pytest-cov', 'pytest-qt']",4,True,True,False,False
+napari-czifile,False,[],0,False,False,False,False
+napari-czifile2,False,[],0,False,False,False,False
+napari-czitools,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-dab-cellcount,False,[],0,False,False,False,False
+napari-data-inspection,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-data-preview,True,['pytest'],1,True,False,False,False
+napari-deepfinder,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-deeplabcut,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-deepmeta,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-deepspot,True,"['pytest', 'pytest-xvfb', 'pytest-cov', 'pytest-qt']",4,True,True,False,False
+napari-demo,False,[],0,False,False,False,False
+napari-denoiseg,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-dexp,False,[],0,False,False,False,False
+napari-dinosim,True,"['pytest', 'pytest-xvfb', 'pytest-cov', 'tox', 'pytest-qt']",5,True,True,True,False
+napari-dmc-brainmap,False,[],0,False,False,False,False
+napari-dpr,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+napari-dv,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-dvid,False,[],0,False,False,False,False
+napari-dzi-zarr,False,[],0,False,False,False,False
+napari-easy-augment-batch-dl,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ehooke,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-elementary-numpy-operations,False,[],0,False,False,False,False
+napari-em-reader,False,[],0,False,False,False,False
+napari-emd,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-epyseg,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-error-reporter,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-event-monitor,False,[],0,False,False,False,False
+napari-exodeepfinder,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-explorer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-fast4dreg,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-feature-classifier,False,[],0,False,False,False,False
+napari-feature-visualization,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-features-selector,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-features,False,[],0,False,False,False,False
+napari-figure,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-filament-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-filaments,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-file-watcher,False,[],0,False,False,False,False
+napari-file2folder,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-filter-labels-by-prop,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-findaureus,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-flim-phasor-plotter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-flowreg,True,"['pytest', 'pytest-xvfb', 'pytest-cov', 'pytest-qt']",4,True,True,False,False
+napari-fluoresfm,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-folder-browser,False,[],0,False,False,False,False
+napari-geff,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-gemspa,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-generic-simulator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-geojson,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-geoscience-viewer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-graph,True,"['coverage', 'pytest-cov', 'pytest']",3,True,True,False,False
+napari-grid-cropping,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-griottes,False,[],0,False,False,False,False
+napari-gruvbox,False,[],0,False,False,False,False
+napari-h5,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-hdf5-labels-io,False,[],0,False,False,False,False
+napari-hdf5-netcdf-viewer,False,[],0,False,False,False,False
+napari-hello,False,[],0,False,False,False,False
+napari-help,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-hierarchical,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-himena,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-hippo,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-hough-circle-detector,False,[],0,False,False,False,False
+napari-hsi-analysis,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ids,False,[],0,False,False,False,False
+napari-image-stacker,False,[],0,False,False,False,False
+napari-imagecodecs,False,[],0,False,False,False,False
+napari-imagegrains,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-imagej,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-imaris-loader,False,[],0,False,False,False,False
+napari-imc,False,[],0,False,False,False,False
+napari-imodmodel,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-imsmicrolink,False,[],0,False,False,False,False
+napari-indices,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-input-visualizer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-intensity-plotter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ip-workflow,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ism,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-isolate-cell,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-itk-io,False,[],0,False,False,False,False
+napari-j,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+napari-k2-wavebreaker,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-kics,False,[],0,False,False,False,False
+napari-kld,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-kldeconv,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-label-interpolator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-label-manager,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-labelimg4classification,False,[],0,False,False,False,False
+napari-labeling,False,[],0,False,False,False,False
+napari-labelling-assistant,False,[],0,False,False,False,False
+napari-labelprop,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-labels-overlap,False,[],0,False,False,False,False
+napari-labels,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-laber-manager,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-laptrack,False,[],0,False,False,False,False
+napari-large-image-importer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-lattice,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-layer-details-display,False,[],0,False,False,False,False
+napari-layer-divider,True,"['pytest', 'pytest-xvfb', 'pytest-cov', 'tox', 'pytest-qt']",5,True,True,True,False
+napari-layer-table,False,[],0,False,False,False,False
+napari-lazy-openslide,False,[],0,False,False,False,False
+napari-lf,False,[],0,False,False,False,False
+napari-lfdfiles,False,[],0,False,False,False,False
+napari-listener,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-live-flim,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-live-recording,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-locan,True,"['pytest', 'coverage', 'pytest-qt']",3,True,True,False,False
+napari-locpix,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-macrokit,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-mahotas-image-processing,False,[],0,False,False,False,False
+napari-maicrobe,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-manual-registration,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-manual-split-and-merge-labels,False,[],0,False,False,False,False
+napari-manual-transforms,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-mask-density,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-mass,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-mat-file-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-mat-images,False,[],0,False,False,False,False
+napari-math,False,[],0,False,False,False,False
+napari-matplotlib,True,"['pytest', 'pytest-xvfb', 'pytest-cov', 'pytest-qt', 'tox']",5,True,True,True,False
+napari-mclabel,False,[],0,False,False,False,False
+napari-medical-image-formats,False,[],0,False,False,False,False
+napari-melt-pool-tracker,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-memmap-tiff,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-merge-stardist-masks,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-meshio,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-mesofield,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-metroid,False,[],0,False,False,False,False
+napari-micromanager,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-microscope,False,[],0,False,False,False,False
+napari-microtubule-analyzer,False,[],0,False,False,False,False
+napari-mm3,False,[],0,False,False,False,False
+napari-molecule-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-molseeq,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-moltrack,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-morphodynamics,False,[],0,False,False,False,False
+napari-mouse-controls,False,[],0,False,False,False,False
+napari-mrcfile-handler,False,[],0,False,False,False,False
+napari-mrcfile-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-mri,True,"['pytest', 'pytest-cov', 'codecov']",3,True,True,False,False
+napari-multitask,False,[],0,False,False,False,False
+napari-mzarr,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-n2v,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-nanopyx,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-nasa-samples,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-nd-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-nd-cropper,False,[],0,False,False,False,False
+napari-nd2-folder-viewer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ndev,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ndtiffs,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-netpbmfile,False,[],0,False,False,False,False
+napari-nibabel,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-nifti-viewer,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-nifti,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-nikon-nd2,False,[],0,False,False,False,False
+napari-nlm,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-nninteractive,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-noise2vst,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-nucleaizer,False,[],0,False,False,False,False
+napari-nuclephaser,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-nyxus,False,[],0,False,False,False,False
+napari-obj,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-oclrfc,False,[],0,False,False,False,False
+napari-oiffile,False,[],0,False,False,False,False
+napari-omaas,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ome-zarr-navigator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ome-zarr,False,[],0,False,False,False,False
+napari-omero-downloader-cci,False,[],0,False,False,False,False
+napari-omero,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-open-ctc,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-openfibsem,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-opt-handler,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-organoid-counter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-orientationpy,False,[],0,False,False,False,False
+napari-owncloud,False,[],0,False,False,False,False
+napari-parallel,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-patchcreator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-pdf-reader,False,[],0,False,False,False,False
+napari-pdr-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-phasors,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-philow,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-picasso,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-pitcount-cfim,True,"['codecov', 'pytest', 'pytest-cov', 'pytest-qt']",4,True,True,False,False
+napari-pixel-correction,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-pixseq,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-plot-profile,False,[],0,False,False,False,False
+napari-plot,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+napari-plugin-manager,True,"['coverage', 'pytest-qt', 'pytest']",3,True,True,False,False
+napari-plugin-search,False,[],0,False,False,False,False
+napari-points2regions,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-pointslayer-projection,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-potential-field-navigation,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-power-spectrum,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-power-widgets,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-pram,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-prism,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-process-points-and-surfaces,False,[],0,False,False,False,False
+napari-proofread-brainbow,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-properties-plotter,False,[],0,False,False,False,False
+napari-properties-viewer,False,[],0,False,False,False,False
+napari-psf-analysis,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-psf-extractor,False,[],0,False,False,False,False
+napari-psf-simulator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-psfgenerator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-pssr,False,[],0,False,False,False,False
+napari-pyav,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-pyclesperanto-assistant,False,[],0,False,False,False,False
+napari-pymeshlab,False,[],0,False,False,False,False
+napari-pystackreg,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-qrcode,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-quoll,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-rembg,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-result-stack,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-rioxarray,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-roi-manager,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-roi-registration,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-roi,False,[],0,False,False,False,False
+napari-roxas-ai,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sairyscan,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sam,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sam2long,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sam4is,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-samv2,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-save-transformed,False,[],0,False,False,False,False
+napari-sc3d-viewer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-script-editor,False,[],0,False,False,False,False
+napari-sdeconv,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sdtfile,False,[],0,False,False,False,False
+napari-sediment,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-seedseg,False,[],0,False,False,False,False
+napari-segment-anything-2,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-segment-anything,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-segment-blobs-and-things-with-membranes,False,[],0,False,False,False,False
+napari-segment-everything,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-segment,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+napari-segmentation-overlap-filter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-segselect,True,[],0,False,False,False,False
+napari-serialcellpose,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-shape-odyssey,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sif-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-sift-registration,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-signal-selector,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sim-processor,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-sim-simulator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-simple-orthoviewer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-simpleannotate,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-simpleitk-image-processing,False,[],0,False,False,False,False
+napari-sketchpose,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-skimage-regionprops,False,[],0,False,False,False,False
+napari-skimage,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-smlmlab,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-solarized,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-spacetx-explorer,False,[],0,False,False,False,False
+napari-spatial-correlation-plotter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-spatial-omics,False,[],0,False,False,False,False
+napari-spatialdata,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-spfluo,False,[],0,False,False,False,False
+napari-splinebox,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-splinedist,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-splineit,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-spofi,True,['tox'],1,False,False,True,False
+napari-spotiflow,False,[],0,False,False,False,False
+napari-spreadsheet,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+napari-stable-diffusion,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-steinpose,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-stitcher,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-stl-exporter,False,[],0,False,False,False,False
+napari-stracking,False,[],0,False,False,False,False
+napari-stress,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-subboxer,False,[],0,False,False,False,False
+napari-superres,False,[],0,False,False,False,False
+napari-svetlana,False,[],0,False,False,False,False
+napari-svg,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-swc-editor,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-swc-reader,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-tabu,False,[],0,False,False,False,False
+napari-tapenade-processing,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tardis-em,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-text-layer,False,[],0,False,False,False,False
+napari-threedee,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+napari-tiff,True,"['pytest', 'tox']",2,True,False,True,False
+napari-tifffile,False,[],0,False,False,False,False
+napari-tiledb-bioimg,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-tiler,False,[],0,False,False,False,False
+napari-time-series-plotter,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-time-slicer,False,[],0,False,False,False,False
+napari-timelapse-processor,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-timeseries-opener-plugin,False,[],0,False,False,False,False
+napari-tissue-cuboid-analysis,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tissuumaps,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-tmidas,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tomocube-data-viewer,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-tomodl,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tomoslice,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+napari-tomotwin,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+napari-toolkit,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-toothfairy-annotator,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-toska,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tracing,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-trackastra,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-trackpy,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tracks-reader,False,[],0,False,False,False,False
+napari-trait2d,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tree-rings,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-turing,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-tyssue,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ufish,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-ui-tracer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-umap,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-unicell,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-unispac,False,[],0,False,False,False,False
+napari-update-checker,True,"['pytest', 'pytest-cov', 'pytest-qt']",3,True,True,False,False
+napari-utrack-loader,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-validate-random-label-predictions,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-vascilia,False,[],0,False,False,False,False
+napari-vector-graphics,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-vectorizer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-vedo-bridge,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-vemseg,False,[],0,False,False,False,False
+napari-vesicles-segmentation,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-video-cvdask,False,[],0,False,False,False,False
+napari-video,False,[],0,False,False,False,False
+napari-vodex,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-webcam,False,[],0,False,False,False,False
+napari-workflow-inspector,False,[],0,False,False,False,False
+napari-workflow-optimizer,False,[],0,False,False,False,False
+napari-workshop-browser,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-workshop-plugin,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-wsi,False,[],0,False,False,False,False
+napari-wsireg,False,[],0,False,False,False,False
+napari-xgboost,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-yapic-prediction,False,[],0,False,False,False,False
+napari-yolo5-mitosis-detector,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-yolov5,False,[],0,False,False,False,False
+napari-zelda,False,[],0,False,False,False,False
+napari-zplane-depth-colorizer,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napari-zulip,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napatrackmater,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+napping,False,[],0,False,False,False,False
+natari,False,[],0,False,False,False,False
+nd2-dask,False,[],0,False,False,False,False
+ndev-sampledata,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+ndev-settings,False,[],0,False,False,False,False
+ndev-themes,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+nellie,False,[],0,False,False,False,False
+neurofly,False,[],0,False,False,False,False
+neurogenesis-napari,False,[],0,False,False,False,False
+nfinder,False,[],0,False,False,False,False
+notochoordinates,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+nucleaizer-backend,False,[],0,False,False,False,False
+offset-subtraction,False,[],0,False,False,False,False
+okapi-em,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+ome-zarr,True,['pytest'],1,True,False,False,False
+organelle-segmenter-plugin,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+ortho-view-napari,False,[],0,False,False,False,False
+palmari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+partial-aligner,False,[],0,False,False,False,False
+partseg-smfish,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+partseg,True,"['coverage', 'pytest-qt', 'pytest']",3,True,True,False,False
+platelet-unet-watershed,False,[],0,False,False,False,False
+platemapper,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+platetrack,False,[],0,False,False,False,False
+platymatch,True,['pytest'],1,True,False,False,False
+popidd-io,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+poser-napari,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+psf-analysis-cfim,True,['tox'],1,False,False,True,False
+psfmodels,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+pssr,False,[],0,False,False,False,False
+pyclesperanto-prototype,False,[],0,False,False,False,False
+pycudadecon,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+pystack3d-napari,False,[],0,False,False,False,False
+qhyccd-capture,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+quantpunc,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+recorder-napari,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+redlionfish,False,[],0,False,False,False,False
+samcell-napari,True,"['pytest', 'pytest-cov']",2,True,True,False,False
+segment-embryo,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+segmentree,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+set-calibration,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+seu-3d,False,[],0,False,False,False,False
+skan,True,"['coverage', 'pytest-cov', 'pytest-qt', 'pytest']",4,True,True,False,False
+skeleton-finder,False,[],0,False,False,False,False
+smo,True,"['pytest', 'tox']",2,True,False,True,False
+snouty-viewer,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+some-library,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+spots-in-yeasts,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+stardist-napari,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+surforama,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+test-detect-spots,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+the-segmentation-game,False,[],0,False,False,False,False
+tootapari,True,"['pytest', 'pytest-cov', 'tox']",3,True,True,True,False
+traceanalyser,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+tracking-challenge-demo,True,"['pytest', 'pytest-cov', 'pytest-qt', 'tox']",4,True,True,True,False
+tracktour,True,['pytest'],1,True,False,False,False
+unet-lungs-segmentation,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+vessel-express-napari,False,[],0,False,False,False,False
+vessqc,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+vollseg-napari-mtrack,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+vollseg-napari-trackmate,True,"['pytest', 'pytest-cov', 'tox', 'pytest-qt']",4,True,True,True,False
+vollseg-napari,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+waver,False,[],0,False,False,False,False
+workshop-demo,False,[],0,False,False,False,False
+world2data,False,[],0,False,False,False,False
+yt-napari,True,"['pytest', 'pytest-qt']",2,True,False,False,False
+zarpaint,True,"['coverage', 'pytest-cov', 'pytest-qt', 'pytest']",4,True,True,False,False
+zarr-tools,False,[],0,False,False,False,False
