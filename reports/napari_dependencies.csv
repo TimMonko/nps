@@ -1,0 +1,608 @@
+plugin_name,has_napari_dependency,napari_dependencies,napari_specification,napari_pin_type,num_napari_deps,compatibility_category
+acquifer-napari,True,['napari'],napari,unpinned,1,malformed
+affinder,True,"['napari>=0.4.17', 'napari[pyqt5]!=0.4.18; extra == ""testing""']",napari[pyqt5]!=0.4.18,unpinned,2,unpinned
+allencell-segmenter-ml,True,"['napari>=0.4.18; extra == ""napari""', 'pyqt5; extra == ""napari""', 'napari>=0.4.18; extra == ""test-lint""']",napari>=0.4.18,minimum,3,malformed
+alveoleye,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+anchor-droplet-chip,True,['napari'],napari,unpinned,1,malformed
+annotrack,True,['napari'],napari,unpinned,1,malformed
+applet3,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+arcos-gui,True,"['napari>=0.4.14', 'napari-timestamper']",napari-timestamper,unpinned,2,malformed
+arcospx-napari,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+autolamella,False,[],,none,0,no_constraint
+avidaq,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+axondeepseg,True,['napari[all]'],napari[all],unpinned,1,malformed
+bactfit,False,[],,none,0,no_constraint
+bbii-decon,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+beetlesafari,True,"['napari', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+bfio,False,[],,none,0,no_constraint
+bia-bob,False,[],,none,0,no_constraint
+biaplotter,True,"['napari-matplotlib', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+blik,True,"['napari-label-interpolator>=0.1.1; extra == ""all""', 'napari-properties-plotter; extra == ""all""', 'napari-properties-viewer; extra == ""all""', 'napari[all]>=0.6.0; extra == ""all""', 'napari[all]>=0.6.0; extra == ""dev""', 'napari[all]>=0.6.0; extra == ""test""']",napari[all]>=0.6.0,minimum,6,malformed
+brainglobe-napari-io,True,['napari>=0.6.1'],napari>=0.6.1,minimum,1,malformed
+brainglobe-registration,True,"['napari!=0.6.0,>=0.4.18']","napari!=0.6.0,>=0.4.18",minimum,1,malformed
+brainglobe-segmentation,True,"['brainglobe-napari-io>=0.3.0', 'napari!=0.6.0,>=0.5', 'napari-time-slicer; extra == ""dev""']",napari-time-slicer,unpinned,3,malformed
+brainglobe-stitch,True,"['napari>=0.4.18', 'napari-ome-zarr']",napari-ome-zarr,unpinned,2,malformed
+brainglobe-utils,True,"['brainglobe-utils[qt]; extra == ""napari""', 'napari[all]; extra == ""napari""', 'brainglobe-utils[napari]; extra == ""dev""']",napari[all],unpinned,3,malformed
+brainreg-napari,True,"['napari', 'napari-plugin-engine >=0.1.4', 'brainglobe-napari-io <1', ""napari[pyqt5] ; extra == 'dev'""]",napari[pyqt5],unpinned,4,malformed
+brainreg-segment,True,"['brainglobe-napari-io >=0.3.0', 'napari-plugin-engine >=0.1.4', 'napari >=0.4.5', ""napari-time-slicer ; extra == 'dev'""]",napari-time-slicer,unpinned,4,malformed
+brainreg,True,"['brainglobe-napari-io>=0.3.2; extra == ""napari""', 'brainglobe-segmentation>=1.0.0; extra == ""napari""', 'magicgui; extra == ""napari""', 'napari-plugin-engine>=0.1.4; extra == ""napari""', 'napari[pyqt5]!=0.6.0,>=0.5; extra == ""napari""', 'pooch>1; extra == ""napari""', 'qtpy; extra == ""napari""', 'napari[pyqt5]!=0.6.0,>=0.5; extra == ""dev""']","napari[pyqt5]!=0.6.0,>=0.5",minimum,8,malformed
+brainrender-napari,True,['napari>=0.6.1'],napari>=0.6.1,minimum,1,malformed
+brainways,True,['napari[all]>=0.5.0'],napari[all]>=0.5.0,minimum,1,malformed
+brendan-beads,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+brillouin-imaging,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+btrack,True,"[""magicgui >=0.5.0 ; extra == 'napari'"", ""napari-plugin-engine >=0.1.4 ; extra == 'napari'"", ""napari >=0.4.16 ; extra == 'napari'"", ""qtpy ; extra == 'napari'""]",napari >=0.4.16,minimum,4,malformed
+cell-aap,True,['napari[all]>=0.4.19'],napari[all]>=0.4.19,minimum,1,malformed
+cellcanvas,True,"[""napari ; extra == 'dev'"", ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+cellfinder-napari,True,"['brainglobe-napari-io', 'napari', 'napari-ndtiffs', 'napari-plugin-engine >=0.1.4']",napari-plugin-engine >=0.1.4,minimum,4,malformed
+cellfinder,True,"['brainglobe-napari-io>=0.3.4', 'brainglobe-napari-io; extra == ""napari""', 'magicgui; extra == ""napari""', 'napari-ndtiffs; extra == ""napari""', 'napari-plugin-engine>=0.1.4; extra == ""napari""', 'napari[pyqt5]; extra == ""napari""', 'pooch>=1; extra == ""napari""', 'qtpy; extra == ""napari""']",napari[pyqt5],unpinned,8,malformed
+cellpose-counter,True,"['napari[all]>=0.5.4', 'napari-czifile2>=0.2.7', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+cellpose-napari,True,"['napari', 'napari-plugin-engine>=0.1.4', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+cochlea-synapseg,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+cryocanvas,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+cut-detector,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+cylindra,True,['napari>=0.5.1'],napari>=0.5.1,minimum,1,malformed
+darth-d,False,[],,none,0,no_constraint
+destripe-lsfm,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+devbio-napari,True,"['napari-plugin-engine>=0.1.4', 'napari-assistant>=0.4.9', 'napari-pyclesperanto-assistant>=0.23.0', 'napari-skimage-regionprops', 'napari-animation', 'napari-plot-profile', 'napari-accelerated-pixel-and-object-classification', 'napari-brightness-contrast', 'napari-plugin-search', 'napari-segment-blobs-and-things-with-membranes', 'napari-simpleitk-image-processing', 'napari-stl-exporter', 'napari-folder-browser', 'napari-crop', 'napari-clusters-plotter>=0.7.1', 'napari-tabu', 'napari-workflow-optimizer', 'napari-workflow-inspector', 'napari-curtain', 'napari-layer-details-display', 'napari', 'napari-mouse-controls', 'napari-blob-detection', 'napari-czifile2', 'napari-roi', 'napari-pystackreg']",napari-pystackreg,unpinned,26,malformed
+disease-classifier,True,"['napari (>=0.4.15)', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+domb-napari,True,['napari'],napari,unpinned,1,malformed
+eats-worm,True,['napari[all]'],napari[all],unpinned,1,malformed
+ebi-oct,True,['napari>=0.6.1'],napari>=0.6.1,minimum,1,malformed
+elastix-napari,True,"['napari[all] (>=0.4.6)', 'napari-plugin-engine (>=0.1.4)', 'itk-napari-conversion (>=0.3.1)', 'napari-itk-io (>=0.1.0)']",napari-itk-io (>=0.1.0),minimum,4,malformed
+empanada-napari,True,"['napari==0.4.18', 'napari-plugin-engine>=0.1.4']",napari-plugin-engine>=0.1.4,minimum,2,malformed
+epicure,True,"['napari<=0.4.19', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+epitools,True,"['napari', 'btrack[napari]>=0.6.1; extra == ""wf""', 'napari-segment-blobs-and-things-with-membranes; extra == ""wf""']",napari-segment-blobs-and-things-with-membranes,unpinned,3,malformed
+faser,False,[],,none,0,no_constraint
+featureforest,True,['napari[all]'],napari[all],unpinned,1,malformed
+fibsem,True,"['napari<=0.5.3,>=0.4.17; extra == ""ui""']","napari<=0.5.3,>=0.4.17",range,1,range_pinned
+fish-scan,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+fishfeats,True,['napari<0.6.5'],napari<0.6.5,maximum,1,malformed
+fitellipsoid,True,"['napari>=0.5.6', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+flood-napari,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+frontveg,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+fspi-analysis,True,['napari'],napari,unpinned,1,malformed
+generate-dense-patches,True,"['napari >=0.4.18', 'napari-plugin-engine >=0.2.0', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+grabber-ift,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+guanine-crystal-analysis,True,"['napari-simpleitk-image-processing', 'napari-skimage-regionprops', 'napari-workflows', ""napari ; extra == 'testing'""]",napari,unpinned,4,malformed
+harpy-analysis,True,"['napari-spatialdata>=0.2.6; extra == ""dev""', 'napari[all]>=0.4.18; extra == ""dev""', 'napari-spatialdata>=0.2.6; extra == ""extra""', 'napari[all]>=0.4.18; extra == ""extra""', 'napari-spatialdata>=0.2.6; extra == ""napari""', 'napari[all]>=0.4.18; extra == ""napari""']",napari[all]>=0.4.18,minimum,6,malformed
+hesperos,True,"['napari (<0.4.15)', 'napari-plugin-engine', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+hipocount-napari,True,['napari'],napari,unpinned,1,malformed
+iacs-ipac-reader,True,"['napari (>=0.4.12)', 'napari-plugin-engine (>=0.2.0)']",napari-plugin-engine (>=0.2.0),minimum,2,malformed
+ilastik-napari,True,['napari>=0.4.13'],napari>=0.4.13,minimum,1,malformed
+image-composer,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+image-part-selecter,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+imaxt-multiscale-plugin,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+in-silico-fate-mapping,True,['napari'],napari,unpinned,1,malformed
+iterseg,True,['napari'],napari,unpinned,1,malformed
+koopa-viz,False,[],,none,0,no_constraint
+label-creator,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+large-image-viewer,False,[],,none,0,no_constraint
+lasso-3d,True,"['napari-mrcfile-reader', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+layer-data-replace,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+lineagetree,False,[],,none,0,no_constraint
+lls-core,True,"['napari-workflows>=0.2.8', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+lsfm-destripe-napari,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+lsfm-fusion-napari,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+manini,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+microscope-napari,True,"['napari', 'napari-plugin-engine>=0.1.4', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+midi-app-controller,True,"['napari>=0.4.19', 'napari[all]; extra == ""testing""']",napari[all],unpinned,2,malformed
+mikro-napari,False,[],,none,0,no_constraint
+misic-napari,False,[],,none,0,no_constraint
+mitoclass,True,"['napari[all]', 'napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,3,malformed
+mmv-h4cells,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+mmv-h4tracks,True,"['napari-plugin-engine>=0.1.4', 'napari']",napari,unpinned,2,malformed
+mmv-playground,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+mmv-regionseg,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+mobiofox,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+morphometrics-engine,True,"['napari', 'napari-skimage-regionprops', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+morphometrics,True,"['napari-skimage-regionprops', 'napari']",napari,unpinned,2,malformed
+morphospaces,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+motile-plugin,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+motile-tracker,False,[],,none,0,no_constraint
+mousechd-napari,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+movement,True,"['napari-video', 'napari[all]>=0.6.0; extra == ""napari""', 'movement[napari]; extra == ""dev""']",napari[all]>=0.6.0,minimum,3,malformed
+msi-explorer,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+multireg,True,['napari<=0.4.18'],napari<=0.4.18,maximum,1,malformed
+nap-plot-tools,True,"['napari; extra == ""testing""', 'napari-matplotlib; extra == ""testing""']",napari-matplotlib,unpinned,2,malformed
+napam,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-3d-counter,True,['napari==0.6.4'],napari==0.6.4,exact,1,exact_pinned
+napari-3d-ortho-viewer,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-3d-registration,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-3dtimereg,True,['napari'],napari,unpinned,1,malformed
+napari-accelerated-pixel-and-object-classification,True,"['napari-plugin-engine >=0.1.4', 'napari-tools-menu >=0.1.17', 'napari-time-slicer', 'napari >=0.4.11', 'napari-assistant >=0.4.7']",napari-assistant >=0.4.7,minimum,5,malformed
+napari-activelearning,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-affinities,False,[],,none,0,no_constraint
+napari-afmreader,True,['napari[all]'],napari[all],unpinned,1,malformed
+napari-aicsimageio,True,['napari (>=0.4.11)'],napari (>=0.4.11),minimum,1,malformed
+napari-aideveloper,True,"['napari-plugin-engine (>=0.2.0)', 'napari (>=0.4.14)', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-allencell-annotator,True,"['napari>=0.4.9', 'napari-plugin-engine>=0.1.4', 'napari>=0.4.9; extra == ""all""', 'napari-plugin-engine>=0.1.4; extra == ""all""']",napari-plugin-engine>=0.1.4,minimum,4,malformed
+napari-allencell-segmenter,True,"['napari (>=0.4.9)', 'napari-plugin-engine (>=0.1.4)', ""napari (>=0.4.9) ; extra == 'all'"", ""napari-plugin-engine (>=0.1.4) ; extra == 'all'""]",napari-plugin-engine (>=0.1.4),minimum,4,malformed
+napari-amdtrk,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-animated-gif-io,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu', 'napari']",napari,unpinned,3,malformed
+napari-animation,True,"['napari>=0.5', 'napari-sphinx-theme>=0.3.0; extra == ""doc""', 'napari-sphinx-theme>=0.3.0; extra == ""dev""']",napari-sphinx-theme>=0.3.0,minimum,3,malformed
+napari-annotate,True,"['napari[all]', 'napari-tools-menu', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,3,malformed
+napari-annotation-project,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-annotator,True,"['napari>=0.5.5', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-annotatorj,True,"['napari', 'napari-plugin-engine >=0.1.4']",napari-plugin-engine >=0.1.4,minimum,2,malformed
+napari-aphid,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-apple,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-apr-viewer,True,"['napari', 'napari-plugin-engine >=0.1.4']",napari-plugin-engine >=0.1.4,minimum,2,malformed
+napari-arboretum,True,"['napari-matplotlib (>=0.2.1)', 'napari (>=0.4.0)']",napari (>=0.4.0),minimum,2,malformed
+napari-argos-archive-reader,True,['napari'],napari,unpinned,1,malformed
+napari-assistant-plugin-generator,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu', 'napari-assistant (>=0.4.1)']",napari-assistant (>=0.4.1),minimum,3,malformed
+napari-assistant,True,"['napari-plugin-engine>=0.1.4', 'napari>=0.4.14', 'napari-time-slicer>=0.4.8', 'napari-workflows>=0.2.10']",napari-workflows>=0.2.10,minimum,4,malformed
+napari-automatic-range,True,"['napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,2,malformed
+napari-bacseg,True,"['napari[all]==0.5.0', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-basicpy,True,"['napari; extra == ""testing""', 'napari; extra == ""tox-testing""']",napari,unpinned,2,malformed
+napari-bbox-spfluo,True,['napari>=0.4.15'],napari>=0.4.15,minimum,1,malformed
+napari-bbox,True,"['napari>=0.4.15', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-bee-annotator,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-bfio,False,[],,none,0,no_constraint
+napari-bigfish,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-bigwarp,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-bil-data-viewer,True,"['napari[all]', 'napari-plugin-engine >=0.1.4', 'napari-ome-zarr ==0.5.2']",napari-ome-zarr ==0.5.2,exact,3,exact_pinned
+napari-bio-sample-data,False,[],,none,0,no_constraint
+napari-bioformats,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-bioimageio,True,['napari'],napari,unpinned,1,malformed
+napari-bioio-reader,True,"['napari[all]<0.7,>=0.6.2']","napari[all]<0.7,>=0.6.2",range,1,range_pinned
+napari-biomag-annotator,True,"['napari', 'napari-plugin-engine >=0.1.4', 'napari-annotatorj', 'napari-nD-annotator', ""napari ; extra == 'testing'""]",napari,unpinned,5,malformed
+napari-biopb,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-bleach-correct,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-blender-bridge,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu', 'napari-process-points-and-surfaces (>=0.4.2)']",napari-process-points-and-surfaces (>=0.4.2),minimum,3,malformed
+napari-blender,True,['napari-video'],napari-video,unpinned,1,malformed
+napari-blob-detection,True,['napari (>=0.4.13)'],napari (>=0.4.13),minimum,1,malformed
+napari-blosc2,False,[],,none,0,no_constraint
+napari-blossom,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-bluesky,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-boardgame-maker,True,"['napari-stl-exporter', 'napari-tools-menu', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-boids,False,[],,none,0,no_constraint
+napari-bootstrapper,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-boxmanager,True,"['napari>=0.4.17', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-brainbow-diagnose,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-brainways,True,['napari[all]>=0.5.0'],napari[all]>=0.5.0,minimum,1,malformed
+napari-brightness-contrast,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+napari-brushsettings,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-btrack-reader,False,[],,none,0,no_constraint
+napari-bud-cell-segmenter,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-buds,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-calibration,False,[],,none,0,no_constraint
+napari-camera,True,"['napari_toolkit', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-caphid,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-cardio-bio-eval,True,"['napari[pyqt5]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-cci-annotator,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-ccp4map,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-cell-centroid-annotator,True,"['napari', 'napari-plugin-engine', 'napari-layer-table', ""napari ; extra == 'testing'""]",napari,unpinned,4,malformed
+napari-cellseg3d,True,['napari[all]>=0.4.14'],napari[all]>=0.4.14,minimum,1,malformed
+napari-chatgpt,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-checkerboard,True,"['napari-plugin-engine (>=0.1.4)', 'napari (>=0.4.6)', 'itk-napari-conversion (>=0.3.1)', 'napari-itk-io (>=0.1.0)']",napari-itk-io (>=0.1.0),minimum,4,malformed
+napari-cilia-beating-frequency,True,['napari[all]'],napari[all],unpinned,1,malformed
+napari-clemreg,True,['napari'],napari,unpinned,1,malformed
+napari-clipboard,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-clusters-plotter,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-compressed-labels-io,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-conference,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-conidie,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-console,True,"['napari-console[pyside2]; extra == ""pyside""', 'napari-console[pyqt5]; extra == ""pyqt""', 'napari-console[pyqt]; extra == ""qt""', 'napari[pyqt]; extra == ""testing""']",napari[pyqt],unpinned,4,malformed
+napari-convpaint,True,"['napari', 'napari-annotation-project', 'napari-guitils', 'ilastik-napari; extra == ""ilastik""']",napari-guitils,unpinned,4,malformed
+napari-cookiecut,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-copick,True,"['napari', 'napari-ome-zarr', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-correct-drift,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-cosmos-ts,False,[],,none,0,no_constraint
+napari-crop,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu (>=0.1.17)', 'napari-workflows']",napari-workflows,unpinned,3,malformed
+napari-cryoet-data-portal,True,"['napari>=0.4.19', 'napari_ome_zarr', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-cryofibsem-imgproc,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-cryofibsem-monitor,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-ctc-io,True,['napari'],napari,unpinned,1,malformed
+napari-cupy-image-processing,True,"['napari-plugin-engine >=0.1.4', 'napari-tools-menu', 'napari-time-slicer >=0.4.8', 'napari-skimage-regionprops', 'napari-assistant']",napari-assistant,unpinned,5,malformed
+napari-cursor-tracker,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-curtain,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-curviewer,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-czann-segment,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-czi-reader,True,"['napari[all]; extra == ""dev""']",napari[all],unpinned,1,malformed
+napari-czifile,False,[],,none,0,no_constraint
+napari-czifile2,False,[],,none,0,no_constraint
+napari-czitools,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-dab-cellcount,True,"['napari', 'napari-plugin-engine>=0.1.4']",napari-plugin-engine>=0.1.4,minimum,2,malformed
+napari-data-inspection,True,"['napari_toolkit', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-data-preview,True,"['napari[all]', 'napari-tools-menu', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,3,malformed
+napari-deepfinder,True,['napari'],napari,unpinned,1,malformed
+napari-deeplabcut,True,['napari==0.4.18'],napari==0.4.18,exact,1,exact_pinned
+napari-deepmeta,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-deepspot,True,"['napari-plugin-engine (>=0.1.4)', 'napari']",napari,unpinned,2,malformed
+napari-demo,False,[],,none,0,no_constraint
+napari-denoiseg,True,"['napari-time-slicer (>=0.4.9)', 'napari (<=0.4.15)']",napari (<=0.4.15),maximum,2,malformed
+napari-dexp,True,"['napari', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+napari-dinosim,True,"['napari[all]', 'napari>=0.5.6; extra == ""testing""']",napari>=0.5.6,minimum,2,malformed
+napari-dmc-brainmap,False,[],,none,0,no_constraint
+napari-dpr,True,['napari>=0.4.18'],napari>=0.4.18,minimum,1,malformed
+napari-dv,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-dvid,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-dzi-zarr,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-easy-augment-batch-dl,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-ehooke,True,"['napari[all]', 'napari-skimage-regionprops', 'stardist-napari==2022.12.6', 'napari; extra == ""testing""']",napari,unpinned,4,malformed
+napari-elementary-numpy-operations,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-em-reader,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-emd,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-epyseg,True,"['napari<=0.6.1', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-error-reporter,False,[],,none,0,no_constraint
+napari-event-monitor,False,[],,none,0,no_constraint
+napari-exodeepfinder,True,"['napari[all]>=0.4.19; extra == ""all""', 'napari[all]>=0.4.19; extra == ""testing""']",napari[all]>=0.4.19,minimum,2,malformed
+napari-explorer,True,"['napari', 'napari-aicsimageio', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-fast4dreg,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-feature-classifier,True,['napari'],napari,unpinned,1,malformed
+napari-feature-visualization,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-features-selector,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-features,True,"['napari (>=0.4.10)', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+napari-figure,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-filament-annotator,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-filaments,True,"['napari; extra == ""napari""', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-file-watcher,True,['napari'],napari,unpinned,1,malformed
+napari-file2folder,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-filter-labels-by-prop,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-findaureus,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-flim-phasor-plotter,True,"['napari>=0.4.19', 'napari-clusters-plotter<0.9.0,>=0.8.1', 'napari-segment-blobs-and-things-with-membranes', 'napari-skimage-regionprops', 'napari; extra == ""testing""']",napari,unpinned,5,malformed
+napari-flowreg,True,"['napari[all]>=0.4.18; extra == ""testing""', 'napari[all]>=0.4.18; extra == ""dev""']",napari[all]>=0.4.18,minimum,2,malformed
+napari-fluoresfm,True,"['napari', 'napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,3,malformed
+napari-folder-browser,True,"['napari-plugin-engine>=0.1.4', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-geff,True,"['napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,2,malformed
+napari-gemspa,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-generic-simulator,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-geojson,True,"[""napari[all] ; extra == 'testing'""]",napari[all],unpinned,1,malformed
+napari-geoscience-viewer,True,"['napari-geojson', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-graph,False,[],,none,0,no_constraint
+napari-grid-cropping,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-griottes,False,[],,none,0,no_constraint
+napari-gruvbox,False,[],,none,0,no_constraint
+napari-h5,False,[],,none,0,no_constraint
+napari-hdf5-labels-io,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-hdf5-netcdf-viewer,False,[],,none,0,no_constraint
+napari-hello,False,[],,none,0,no_constraint
+napari-help,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-hierarchical,True,"['napari (<0.4.18,>=0.4.17)', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-himena,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-hippo,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-hough-circle-detector,True,['napari[all]'],napari[all],unpinned,1,malformed
+napari-hsi-analysis,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-ids,False,[],,none,0,no_constraint
+napari-image-stacker,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-imagecodecs,False,[],,none,0,no_constraint
+napari-imagegrains,True,"['napari_matplotlib', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-imagej,True,['napari>=0.4.17'],napari>=0.4.17,minimum,1,malformed
+napari-imaris-loader,True,"['napari[all]', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+napari-imc,False,[],,none,0,no_constraint
+napari-imodmodel,False,[],,none,0,no_constraint
+napari-imsmicrolink,True,['napari[all]'],napari[all],unpinned,1,malformed
+napari-indices,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-input-visualizer,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-intensity-plotter,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-ip-workflow,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-ism,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-isolate-cell,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-itk-io,True,"['napari-plugin-engine>=0.2.0', 'itk-napari-conversion']",napari-plugin-engine>=0.2.0,minimum,2,malformed
+napari-j,False,[],,none,0,no_constraint
+napari-k2-wavebreaker,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-kics,True,"['napari-plugin-engine (>=0.1.4)', 'napari[all]']",napari[all],unpinned,2,malformed
+napari-kld,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-kldeconv,True,"['napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,2,malformed
+napari-label-interpolator,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-label-manager,True,"['napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,2,malformed
+napari-labelimg4classification,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+napari-labeling,False,[],,none,0,no_constraint
+napari-labelling-assistant,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-labelprop,True,"['napari-nifti', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-labels-overlap,False,[],,none,0,no_constraint
+napari-labels,True,"['napari_toolkit', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-laber-manager,True,"['napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,2,malformed
+napari-laptrack,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu', 'napari-time-slicer', 'napari-skimage-regionprops (>=0.9.0)']",napari-skimage-regionprops (>=0.9.0),minimum,4,malformed
+napari-large-image-importer,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-lattice,True,"['napari-aicsimageio>=0.7.2', 'napari-workflow-inspector', 'napari-workflows>=0.2.8', 'napari[all]>=0.4.11']",napari[all]>=0.4.11,minimum,4,malformed
+napari-layer-details-display,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-layer-divider,True,"['napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,2,malformed
+napari-layer-table,False,[],,none,0,no_constraint
+napari-lazy-openslide,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-lf,True,['napari[all]'],napari[all],unpinned,1,malformed
+napari-lfdfiles,False,[],,none,0,no_constraint
+napari-listener,True,['napari'],napari,unpinned,1,malformed
+napari-live-flim,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-live-recording,True,"['napari[all]', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-locan,True,"['napari', 'napari-matplotlib', 'napari>=0.4.17; extra == ""docs""']",napari>=0.4.17,minimum,3,malformed
+napari-locpix,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-macrokit,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-mahotas-image-processing,True,"['napari-plugin-engine (>=0.1.4)', 'napari-time-slicer', 'napari-tools-menu (>=0.4.2)']",napari-tools-menu (>=0.4.2),minimum,3,malformed
+napari-maicrobe,True,"['napari[all]', 'napari-skimage-regionprops', 'stardist-napari==2022.12.6', 'napari; extra == ""testing""']",napari,unpinned,4,malformed
+napari-manual-registration,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-manual-split-and-merge-labels,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-manual-transforms,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-mask-density,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-mass,True,"['napari-ome-zarr', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-mat-file-reader,False,[],,none,0,no_constraint
+napari-mat-images,False,[],,none,0,no_constraint
+napari-math,False,[],,none,0,no_constraint
+napari-matplotlib,True,"['napari>=0.5', 'napari[all]; extra == ""docs""', 'napari[pyqt6_experimental]>=0.4.18; extra == ""testing""']",napari[pyqt6_experimental]>=0.4.18,minimum,3,malformed
+napari-mclabel,True,"['napari[all]', 'napari-plugin-engine (>=0.1.4)', 'napari-imaris-loader']",napari-imaris-loader,unpinned,3,malformed
+napari-medical-image-formats,True,"['napari-plugin-engine (>=0.1.4)', 'itk-napari-conversion']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+napari-melt-pool-tracker,True,"['napari-cursor-tracker', 'napari', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-memmap-tiff,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-merge-stardist-masks,True,"['stardist-napari >=2022.7.5', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-meshio,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-mesofield,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-metroid,True,['napari-skimage-regionprops (>=0.3.1)'],napari-skimage-regionprops (>=0.3.1),minimum,1,malformed
+napari-micromanager,True,['napari>=0.4.13'],napari>=0.4.13,minimum,1,malformed
+napari-microscope,False,[],,none,0,no_constraint
+napari-microtubule-analyzer,False,[],,none,0,no_constraint
+napari-mm3,True,['napari-plugin-engine>=0.1.4'],napari-plugin-engine>=0.1.4,minimum,1,malformed
+napari-molecule-reader,False,[],,none,0,no_constraint
+napari-molseeq,True,"['napari[all]==0.5.0', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-moltrack,True,"['napari[all]==0.5.0', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-morphodynamics,True,"['napari-convpaint', 'napari-guitils', 'napari-matplotlib']",napari-matplotlib,unpinned,3,malformed
+napari-mouse-controls,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+napari-mrcfile-handler,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-mrcfile-reader,False,[],,none,0,no_constraint
+napari-mri,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-multitask,False,[],,none,0,no_constraint
+napari-mzarr,False,[],,none,0,no_constraint
+napari-n2v,True,"['napari-time-slicer >=0.4.9', 'napari']",napari,unpinned,2,malformed
+napari-nanopyx,True,['napari'],napari,unpinned,1,malformed
+napari-napari,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-nasa-samples,False,[],,none,0,no_constraint
+napari-nd-annotator,True,"['napari>=0.4.11', 'napari; extra == ""testing""', 'napari-bbox; extra == ""bbox""', 'napari-bbox; extra == ""all""']",napari-bbox,unpinned,4,malformed
+napari-nd-cropper,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-nd2-folder-viewer,True,"['napari-animation', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-ndev,True,"['napari[optional]>=0.4.19', 'napari-workflows', 'napari-pyclesperanto-assistant', 'napari-segment-blobs-and-things-with-membranes', 'napari[all]; extra == ""testing""', 'napari-ndev[extras]; extra == ""testing""', 'napari-ndev[testing]; extra == ""dev""', 'napari-ndev[docs]; extra == ""dev""', 'napari-ndev[pyqt6]; extra == ""qtpy-backend""', 'napari[pyqt6]; extra == ""pyqt6""', 'napari[pyqt5]; extra == ""pyqt5""', 'napari[pyside]; extra == ""pyside""', 'napari-simpleitk-image-processing; extra == ""extras""', 'napari-ndev[qtpy-backend]; extra == ""all""', 'napari-ndev[extras]; extra == ""all""', 'napari-ndev[gpl_extras]; extra == ""all""']",napari-ndev[gpl_extras],unpinned,16,malformed
+napari-ndtiffs,True,['napari-plugin-engine>=0.1.4'],napari-plugin-engine>=0.1.4,minimum,1,malformed
+napari-netpbmfile,False,[],,none,0,no_constraint
+napari-nibabel,False,[],,none,0,no_constraint
+napari-nifti-viewer,True,['napari>=0.4.18'],napari>=0.4.18,minimum,1,malformed
+napari-nifti,False,[],,none,0,no_constraint
+napari-nikon-nd2,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-nlm,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-nninteractive,True,"['napari-nifti', 'napari_toolkit', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-noise2vst,True,"['napari', 'napari[all]; extra == ""all""', 'napari[qt]; extra == ""testing""']",napari[qt],unpinned,3,malformed
+napari-nucleaizer,True,['napari'],napari,unpinned,1,malformed
+napari-nuclephaser,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-nyxus,True,"['napari', 'napari-workflows', 'napari-skimage-regionprops>=0.10.1']",napari-skimage-regionprops>=0.10.1,minimum,3,malformed
+napari-obj,False,[],,none,0,no_constraint
+napari-oclrfc,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-oiffile,False,[],,none,0,no_constraint
+napari-omaas,True,"['napari_matplotlib', 'napari-tiff', 'napari-mat-file-reader', 'napari; extra == ""testing""']",napari,unpinned,4,malformed
+napari-ome-zarr-navigator,True,"['napari-ome-zarr', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-ome-zarr,True,['napari>=0.4.13'],napari>=0.4.13,minimum,1,malformed
+napari-omero-downloader-cci,True,"['napari[all]; extra == ""all""']",napari[all],unpinned,1,malformed
+napari-omero,True,"['napari>=0.5.0', 'napari[all]; extra == ""all""', 'napari[all]; extra == ""dev""']",napari[all],unpinned,3,malformed
+napari-open-ctc,True,['napari'],napari,unpinned,1,malformed
+napari-openfibsem,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-opt-handler,True,"['magicgui; extra == ""napari""', 'napari[pyqt5]; extra == ""napari""', 'pooch>=1; extra == ""napari""', 'qtpy; extra == ""napari""']",napari[pyqt5],unpinned,4,malformed
+napari-organoid-counter,True,"['napari[all]<0.5.0,>=0.4.17', 'napari-aicsimageio>=0.7.2', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-orientationpy,True,['napari[all]>=0.4.16'],napari[all]>=0.4.16,minimum,1,malformed
+napari-owncloud,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-parallel,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-patchcreator,True,"['napari', 'napari-plugin-engine (>=0.1.4)', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-pdf-reader,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-pdr-reader,True,['napari'],napari,unpinned,1,malformed
+napari-phasors,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-philow,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-picasso,True,"[""napari[all] ; extra == 'testing'""]",napari[all],unpinned,1,malformed
+napari-pitcount-cfim,True,"['napari-czi-reader', 'napari[all]; extra == ""napari""', 'napari[all]; extra == ""dev""']",napari[all],unpinned,3,malformed
+napari-pixel-correction,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-pixseq,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-plot-profile,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu', 'napari-skimage-regionprops (>=0.2.4)']",napari-skimage-regionprops (>=0.2.4),minimum,4,malformed
+napari-plot,True,"['napari-plugin-engine (>=0.1.4)', 'napari (<0.4.15,>=0.4.13)']","napari (<0.4.15,>=0.4.13)",range,2,range_pinned
+napari-plugin-manager,True,"['napari-sphinx-theme>=0.3.0; extra == ""docs""']",napari-sphinx-theme>=0.3.0,minimum,1,malformed
+napari-plugin-search,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu']",napari-tools-menu,unpinned,2,malformed
+napari-points2regions,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-pointslayer-projection,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-potential-field-navigation,True,"['napari', 'napari-itk-io', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-power-spectrum,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-power-widgets,True,['napari'],napari,unpinned,1,malformed
+napari-pram,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-prism,True,"['napari[all]', 'napari_matplotlib>=3.0.0', 'napari_spatialdata>=0.5.7', 'napari; extra == ""testing""']",napari,unpinned,4,malformed
+napari-process-points-and-surfaces,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu (>=0.1.14)', 'napari-time-slicer (>=0.4.5)', 'napari-workflows (>=0.2.3)', 'napari-skimage-regionprops (>=0.5.5)']",napari-skimage-regionprops (>=0.5.5),minimum,6,malformed
+napari-proofread-brainbow,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-properties-plotter,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-properties-viewer,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-psf-analysis,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-psf-extractor,False,[],,none,0,no_constraint
+napari-psf-simulator,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-psfgenerator,True,"['napari', 'napari; extra == ""napari""', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-pssr,True,['napari'],napari,unpinned,1,malformed
+napari-pyav,False,[],,none,0,no_constraint
+napari-pyclesperanto-assistant,True,"['napari-plugin-engine>=0.1.4', 'napari>=0.4.15', 'napari-tools-menu>=0.1.8', 'napari-time-slicer>=0.4.0', 'napari-skimage-regionprops>=0.2.0', 'napari-workflows>=0.1.1', 'napari-assistant>=0.2.0']",napari-assistant>=0.2.0,minimum,7,malformed
+napari-pymeshlab,True,['napari'],napari,unpinned,1,malformed
+napari-pystackreg,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-qrcode,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-quoll,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-rembg,True,"['napari[all] >=0.4.16', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-result-stack,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-rioxarray,True,['napari'],napari,unpinned,1,malformed
+napari-roi-manager,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-roi-registration,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-roi,False,[],,none,0,no_constraint
+napari-roxas-ai,True,"['napari[all]==0.5.6', 'napari==0.5.6; extra == ""testing""']",napari==0.5.6,exact,2,exact_pinned
+napari-sairyscan,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-sam,True,"['napari', 'napari-nifti', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-sam2long,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-sam4is,True,['napari[all]>=0.4.17'],napari[all]>=0.4.17,minimum,1,malformed
+napari-samv2,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-save-transformed,True,['napari'],napari,unpinned,1,malformed
+napari-sc3d-viewer,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-script-editor,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+napari-sdeconv,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-sdtfile,False,[],,none,0,no_constraint
+napari-sediment,True,"['napari-guitils', 'napari-convpaint>=0.6.0', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-seedseg,False,[],,none,0,no_constraint
+napari-segment-anything-2,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-segment-anything,True,['napari'],napari,unpinned,1,malformed
+napari-segment-blobs-and-things-with-membranes,True,"['napari-plugin-engine>=0.1.4', 'napari-tools-menu>=0.1.17', 'napari-time-slicer>=0.4.8', 'napari-assistant']",napari-assistant,unpinned,4,malformed
+napari-segment-everything,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-segment,True,['napari'],napari,unpinned,1,malformed
+napari-segmentation-overlap-filter,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-segselect,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-serialcellpose,True,"['napari-skimage-regionprops', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-shape-odyssey,True,"['napari', 'napari-stress', 'napari-process-points-and-surfaces']",napari-process-points-and-surfaces,unpinned,3,malformed
+napari-sif-reader,False,[],,none,0,no_constraint
+napari-sift-registration,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-signal-selector,True,"['napari>=0.4.19; extra == ""testing""']",napari>=0.4.19,minimum,1,malformed
+napari-sim-processor,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-sim-simulator,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-simple-orthoviewer,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-simpleannotate,True,"['napari_video', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-simpleitk-image-processing,True,"['napari-plugin-engine>=0.1.4', 'napari-tools-menu>=0.1.17', 'napari-time-slicer', 'napari-skimage-regionprops>=0.5.1', 'napari-assistant>=0.3.10']",napari-assistant>=0.3.10,minimum,5,malformed
+napari-sketchpose,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-skimage-regionprops,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu (>=0.1.19)', 'napari-workflows']",napari-workflows,unpinned,4,malformed
+napari-skimage,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-smlmlab,True,"['napari[all]==0.5.0', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-solarized,False,[],,none,0,no_constraint
+napari-spacetx-explorer,True,"['napari', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+napari-spatial-correlation-plotter,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-spatial-omics,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-spatialdata,True,"['napari>=0.6.2', 'napari-matplotlib', 'napari[pyqt5]; extra == ""all""']",napari[pyqt5],unpinned,3,malformed
+napari-spfluo,False,[],,none,0,no_constraint
+napari-splinebox,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-splinedist,True,"['napari-splineit (>=0.3.0)', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-splineit,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-spofi,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-spotiflow,True,['napari>=0.5'],napari>=0.5,minimum,1,malformed
+napari-spreadsheet,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-stable-diffusion,True,"['napari', 'napari-plugin-engine (>=0.1.4)', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-steinpose,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-stitcher,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-stl-exporter,True,['napari'],napari,unpinned,1,malformed
+napari-stracking,True,"['napari', 'napari-plugin-engine>=0.1.4']",napari-plugin-engine>=0.1.4,minimum,2,malformed
+napari-stress,True,"['napari', 'napari-tools-menu>=0.1.15', 'napari-vedo-bridge>=0.2.2']",napari-vedo-bridge>=0.2.2,minimum,3,malformed
+napari-subboxer,True,"['napari-plugin-engine (>=0.1.4)', 'napari[pyqt5] (==0.4.12)']",napari[pyqt5] (==0.4.12),exact,2,exact_pinned
+napari-superres,False,[],,none,0,no_constraint
+napari-svetlana,True,['napari-plugin-engine>=0.1.4'],napari-plugin-engine>=0.1.4,minimum,1,malformed
+napari-svg,True,"['napari>=0.4; extra == ""testing""']",napari>=0.4,minimum,1,malformed
+napari-swc-editor,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-swc-reader,False,[],,none,0,no_constraint
+napari-tabu,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+napari-tapenade-processing,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-tardis-em,True,"['napari>=0.5.0', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-text-layer,False,[],,none,0,no_constraint
+napari-threedee,True,['napari>=0.5.0'],napari>=0.5.0,minimum,1,malformed
+napari-tiff,False,[],,none,0,no_constraint
+napari-tifffile,False,[],,none,0,no_constraint
+napari-tiledb-bioimg,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-tiler,True,"['napari-plugin-engine (>=0.2.0,<0.3.0)', 'napari-tools-menu (>=0.1.7,<0.2.0)']","napari-tools-menu (>=0.1.7,<0.2.0)",range,2,range_pinned
+napari-time-series-plotter,True,"['napari-matplotlib (<1.0)', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-time-slicer,True,"['napari-plugin-engine >=0.1.4', 'napari-tools-menu', 'napari-workflows']",napari-workflows,unpinned,3,malformed
+napari-timelapse-processor,True,['napari'],napari,unpinned,1,malformed
+napari-timeseries-opener-plugin,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-tissue-cuboid-analysis,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-tissuumaps,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-tmidas,True,"['napari-ome-zarr', 'acquifer-napari', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-tomocube-data-viewer,False,[],,none,0,no_constraint
+napari-tomodl,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-tomoslice,True,"['napari-threedee', 'napari[pyqt5]']",napari[pyqt5],unpinned,2,malformed
+napari-tomotwin,True,['napari-clusters-plotter>=0.7.2'],napari-clusters-plotter>=0.7.2,minimum,1,malformed
+napari-toolkit,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-toothfairy-annotator,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-toska,True,"['napari-skimage-regionprops', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-tracing,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-trackastra,True,"['napari-ctc-io', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-trackpy,True,"['napari', 'napari-aicsimageio', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-tracks-reader,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+napari-trait2d,True,['napari[pyqt5]'],napari[pyqt5],unpinned,1,malformed
+napari-tree-rings,True,"['napari-imagej', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-turing,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-tyssue,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-ufish,True,['napari'],napari,unpinned,1,malformed
+napari-ui-tracer,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-umap,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-unicell,True,"['napari', 'napari-plugin-engine', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+napari-unispac,True,['napari'],napari,unpinned,1,malformed
+napari-update-checker,True,"['napari-sphinx-theme>=0.3.0; extra == ""docs""']",napari-sphinx-theme>=0.3.0,minimum,1,malformed
+napari-utrack-loader,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-validate-random-label-predictions,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-vascilia,True,['napari[all]'],napari[all],unpinned,1,malformed
+napari-vector-graphics,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-vectorizer,True,"['napari[all]', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napari-vedo-bridge,True,"['napari-timelapse-processor', 'napari', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+napari-vemseg,False,[],,none,0,no_constraint
+napari-vesicles-segmentation,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-video-cvdask,False,[],,none,0,no_constraint
+napari-video,False,[],,none,0,no_constraint
+napari-vodex,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-webcam,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+napari-workflow-inspector,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu', 'napari-workflows']",napari-workflows,unpinned,3,malformed
+napari-workflow-optimizer,True,"['napari-plugin-engine (>=0.1.4)', 'napari-time-slicer', 'napari-workflows', 'napari-assistant (>=0.1.9)']",napari-assistant (>=0.1.9),minimum,4,malformed
+napari-workshop-browser,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-workshop-plugin,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napari-wsi,False,[],,none,0,no_constraint
+napari-wsireg,True,"['napari', 'napari-geojson']",napari-geojson,unpinned,2,malformed
+napari-xgboost,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-yapic-prediction,True,"['napari-plugin-engine (>=0.1.4)', 'napari[all]']",napari[all],unpinned,2,malformed
+napari-yolo5-mitosis-detector,True,"['napari-aicsimageio ==0.7.2', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+napari-yolov5,False,[],,none,0,no_constraint
+napari-zelda,False,[],,none,0,no_constraint
+napari-zplane-depth-colorizer,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+napari-zulip,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+napatrackmater,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+napping,True,['napari[all] (>=0.4.16)'],napari[all] (>=0.4.16),minimum,1,malformed
+natari,True,"['napari-plugin-engine (>=0.1.4)', 'napari', 'napari-tools-menu']",napari-tools-menu,unpinned,3,malformed
+nd2-dask,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+ndev-sampledata,True,"['napari[all]; extra == ""all""', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+ndev-settings,True,"['napari[all]; extra == ""all""']",napari[all],unpinned,1,malformed
+ndev-themes,True,"['napari[all]; extra == ""all""']",napari[all],unpinned,1,malformed
+nellie,True,['napari[all]'],napari[all],unpinned,1,malformed
+neurofly,True,['napari'],napari,unpinned,1,malformed
+neurogenesis-napari,True,"['napari-czifile2', 'napari[pyqt5]']",napari[pyqt5],unpinned,2,malformed
+nfinder,False,[],,none,0,no_constraint
+notochoordinates,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+nucleaizer-backend,False,[],,none,0,no_constraint
+offset-subtraction,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+okapi-em,True,['napari[all]'],napari[all],unpinned,1,malformed
+ome-zarr,False,[],,none,0,no_constraint
+organelle-segmenter-plugin,True,"['napari', 'napari-plugin-engine>=0.1.4', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+ortho-view-napari,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+palmari,True,"['napari', 'napari-aicsimageio']",napari-aicsimageio,unpinned,2,malformed
+partial-aligner,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+partseg-smfish,True,['napari'],napari,unpinned,1,malformed
+partseg,True,"['napari>=0.4.19', 'napari[pyqt5]; extra == ""pyqt5""', 'napari[pyqt6]>=0.5.0; extra == ""pyqt6""', 'napari[pyside]; extra == ""pyside2""', 'napari[pyside6_experimental]>=0.5.0; extra == ""pyside6""']",napari[pyside6_experimental]>=0.5.0,minimum,5,malformed
+platelet-unet-watershed,False,[],,none,0,no_constraint
+platemapper,False,[],,none,0,no_constraint
+platetrack,True,['napari'],napari,unpinned,1,malformed
+platymatch,True,"['napari-plugin-engine (>=0.1.4)', 'napari[all]']",napari[all],unpinned,2,malformed
+popidd-io,True,"['napari', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+poser-napari,True,"['napari[all]==0.4.14', 'napari-video', 'napari-plot==0.1.5', 'napari; extra == ""testing""']",napari,unpinned,4,malformed
+psf-analysis-cfim,True,"['napari[all]<0.6', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+psfmodels,False,[],,none,0,no_constraint
+pssr,True,"['napari<0.5.0,>=0.4.13; extra == ""napari""']","napari<0.5.0,>=0.4.13",range,1,range_pinned
+pyclesperanto-prototype,False,[],,none,0,no_constraint
+pycudadecon,False,[],,none,0,no_constraint
+pystack3d-napari,True,['napari'],napari,unpinned,1,malformed
+qhyccd-capture,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+quantpunc,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+recorder-napari,True,"['napari-ome-zarr >=0.3.2', 'napari[pyqt6_experimental]']",napari[pyqt6_experimental],unpinned,2,malformed
+redlionfish,False,[],,none,0,no_constraint
+samcell-napari,True,['napari>=0.4.14'],napari>=0.4.14,minimum,1,malformed
+segment-embryo,True,"['napari-czifile2', 'napari-bigfish', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+segmentree,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+set-calibration,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+seu-3d,False,[],,none,0,no_constraint
+skan,True,"['napari[pyqt5]>=0.4.19rc1; extra == ""testing""', 'napari[all]>=0.4.19rc1; extra == ""docs""']",napari[all]>=0.4.19rc1,minimum,2,malformed
+skeleton-finder,True,['napari'],napari,unpinned,1,malformed
+smo,False,[],,none,0,no_constraint
+snouty-viewer,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+some-library,False,[],,none,0,no_constraint
+spots-in-yeasts,True,"['napari', ""napari ; extra == 'testing'""]",napari,unpinned,2,malformed
+stardist-napari,True,"['napari>=0.4.13', 'napari[pyqt]>=0.4.13; extra == ""test""']",napari[pyqt]>=0.4.13,minimum,2,malformed
+surforama,True,"['napari; extra == ""dev""', 'napari[all]; extra == ""napari""', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+test-detect-spots,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+the-segmentation-game,True,"['napari-plugin-engine (>=0.1.4)', 'napari-tools-menu', 'napari-skimage-regionprops']",napari-skimage-regionprops,unpinned,3,malformed
+tootapari,False,[],,none,0,no_constraint
+traceanalyser,True,"['napari; extra == ""testing""']",napari,unpinned,1,malformed
+tracking-challenge-demo,True,"['napari', 'napari-plugin-engine >=0.1.4', ""napari ; extra == 'testing'""]",napari,unpinned,3,malformed
+tracktour,True,"['arboretum; extra == ""napari""', 'napari; extra == ""napari""', 'napari-graph; extra == ""napari""']",napari-graph,unpinned,3,malformed
+unet-lungs-segmentation,True,"['napari[all]>=0.4.16', 'napari-label-focus', 'napari; extra == ""testing""']",napari,unpinned,3,malformed
+vessel-express-napari,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+vessqc,True,['napari>=0.4.18'],napari>=0.4.18,minimum,1,malformed
+vollseg-napari-mtrack,True,"[""napari ; extra == 'testing'""]",napari,unpinned,1,malformed
+vollseg-napari-trackmate,True,"['napari-plugin-engine>=0.1.4', 'napari; extra == ""testing""']",napari,unpinned,2,malformed
+vollseg-napari,True,"['napari>=0.4.13', 'napari[pyqt]>=0.4.13; extra == ""test""']",napari[pyqt]>=0.4.13,minimum,2,malformed
+waver,True,"['napari (>=0.4.10)', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+workshop-demo,True,"['napari', 'napari-plugin-engine (>=0.1.4)']",napari-plugin-engine (>=0.1.4),minimum,2,malformed
+world2data,True,['napari-plugin-engine (>=0.1.4)'],napari-plugin-engine (>=0.1.4),minimum,1,malformed
+yt-napari,True,['napari>=0.4.19'],napari>=0.4.19,minimum,1,malformed
+zarpaint,True,"['napari>=0.4.19', 'napari[pyqt5]; extra == ""testing""']",napari[pyqt5],unpinned,2,malformed
+zarr-tools,False,[],,none,0,no_constraint

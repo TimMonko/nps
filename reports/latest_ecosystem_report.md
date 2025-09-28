@@ -1,6 +1,6 @@
 
 # Napari Plugin Ecosystem Analysis Report
-Generated: 2025-09-26 14:46:38
+Generated: 2025-09-28 14:33:54
 
 ## Overall Statistics
 - Total plugins tracked: 606

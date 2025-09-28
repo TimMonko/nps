@@ -11,8 +11,6 @@ import pandas as pd
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')  # Use non-interactive backend to avoid Tcl/Tk issues
-import matplotlib
-matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 import seaborn as sns
@@ -25,7 +23,7 @@ warnings.filterwarnings('ignore')
 
 # Set up nice plotting defaults
 plt.style.use('seaborn-v0_8')
-sns.set_palette("husl")
+sns.set_palette("colorblind")
 
 class PluginAnalyzer:
     """

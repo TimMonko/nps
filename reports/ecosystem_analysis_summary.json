@@ -1,0 +1,77 @@
+{
+  "analysis_metadata": {
+    "generation_date": "2025-09-28T15:13:37.425744",
+    "total_plugins_analyzed": 607,
+    "data_sources": [
+      "npe2api_pypi",
+      "npe2api_github",
+      "npe2api_classifiers"
+    ]
+  },
+  "python_version_support": {
+    "plugins_with_version_info": 587,
+    "average_versions_per_plugin": 3.8467874794069195,
+    "most_common_versions": {
+      "3": 547,
+      "3.9": 466,
+      "3.10": 433,
+      "3.8": 355,
+      "3.11": 204
+    },
+    "python3_adoption_rate": 0.9670510708401977
+  },
+  "napari_dependencies": {
+    "plugins_with_napari_deps": 517,
+    "dependency_pin_distribution": {
+      "unpinned": 379,
+      "minimum": 125,
+      "none": 90,
+      "range": 5,
+      "exact": 5,
+      "maximum": 3
+    },
+    "compatibility_categories": {
+      "malformed": 506,
+      "no_constraint": 90,
+      "range_pinned": 5,
+      "exact_pinned": 5,
+      "unpinned": 1
+    }
+  },
+  "testing_infrastructure": {
+    "plugins_with_tests": 409,
+    "pytest_adoption_rate": 0.6655683690280065,
+    "coverage_adoption_rate": 0.6293245469522241,
+    "tox_adoption_rate": 0.5667215815485996,
+    "framework_popularity": {
+      "pytest": 404,
+      "pytest-cov": 379,
+      "tox": 344,
+      "pytest-qt": 340,
+      "coverage": 19,
+      "pytest-xvfb": 8,
+      "codecov": 5
+    }
+  },
+  "ecosystem_health": {
+    "average_health_score": 0.830862163646348,
+    "perfect_health_plugins": 369,
+    "needs_attention_plugins": 63,
+    "health_score_distribution": {
+      "count": 607.0,
+      "mean": 0.830862163646348,
+      "std": 0.2367565329347431,
+      "min": 0.0,
+      "25%": 0.6666666666666666,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    }
+  },
+  "compatibility_analysis": {
+    "plugins_analyzed": 13,
+    "average_compatibility_score": 0.0,
+    "fully_compatible_plugins": 0,
+    "problematic_plugins": 13
+  }
+}
