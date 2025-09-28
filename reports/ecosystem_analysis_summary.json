@@ -1,0 +1,90 @@
+{
+  "analysis_metadata": {
+    "generation_date": "2025-09-28T17:00:13.798053",
+    "total_plugins_analyzed": 607,
+    "data_sources": [
+      "npe2api_pypi",
+      "npe2api_github",
+      "npe2api_classifiers"
+    ]
+  },
+  "python_version_support": {
+    "plugins_with_version_info": 587,
+    "average_versions_per_plugin": 3.8467874794069195,
+    "most_common_versions": {
+      "3": 547,
+      "3.9": 466,
+      "3.10": 433,
+      "3.8": 355,
+      "3.11": 204
+    },
+    "python3_adoption_rate": 0.9670510708401977
+  },
+  "napari_dependencies": {
+    "plugins_with_napari_deps": 448,
+    "dependency_pin_distribution": {
+      "unpinned": 326,
+      "none": 159,
+      "range": 64,
+      "complex": 50,
+      "exact": 5,
+      "maximum": 3
+    },
+    "compatibility_categories": {
+      "unpinned": 326,
+      "no_constraint": 159,
+      "malformed": 82,
+      "minimum_compatible": 28,
+      "minimum_incompatible": 4,
+      "exact_incompatible": 4,
+      "range_compatible": 1,
+      "maximum_compatible": 1,
+      "maximum_incompatible": 1,
+      "range_incompatible": 1
+    }
+  },
+  "testing_infrastructure": {
+    "plugins_with_tests": 409,
+    "pytest_adoption_rate": 0.6655683690280065,
+    "coverage_adoption_rate": 0.6293245469522241,
+    "tox_adoption_rate": 0.5667215815485996,
+    "framework_popularity": {
+      "pytest": 404,
+      "pytest-cov": 379,
+      "tox": 344,
+      "pytest-qt": 340,
+      "coverage": 19,
+      "pytest-xvfb": 8,
+      "codecov": 5
+    }
+  },
+  "ecosystem_health": {
+    "average_health_score": 0.7929708951125756,
+    "perfect_health_plugins": 362,
+    "needs_attention_plugins": 125,
+    "health_score_distribution": {
+      "count": 607.0,
+      "mean": 0.7929708951125756,
+      "std": 0.27778330545841845,
+      "min": 0.0,
+      "25%": 0.6666666666666666,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    }
+  },
+  "compatibility_analysis": {
+    "plugins_analyzed": 72,
+    "average_compatibility_score": 0.5952380952380953,
+    "fully_compatible_plugins": 26,
+    "problematic_plugins": 28
+  },
+  "github_activity": {
+    "repositories_analyzed": 405,
+    "archived_repositories": 6,
+    "average_stars": 12.88888888888889,
+    "average_forks": 3.2123456790123455,
+    "average_open_issues": 4.254320987654321,
+    "repositories_with_vulnerabilities": 0
+  }
+}
