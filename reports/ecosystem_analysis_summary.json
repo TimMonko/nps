@@ -1,6 +1,6 @@
 {
   "analysis_metadata": {
-    "generation_date": "2025-09-28T15:13:37.425744",
+    "generation_date": "2025-09-28T17:00:13.798053",
     "total_plugins_analyzed": 607,
     "data_sources": [
       "npe2api_pypi",
@@ -21,21 +21,26 @@
     "python3_adoption_rate": 0.9670510708401977
   },
   "napari_dependencies": {
-    "plugins_with_napari_deps": 517,
+    "plugins_with_napari_deps": 448,
     "dependency_pin_distribution": {
-      "unpinned": 379,
-      "minimum": 125,
-      "none": 90,
-      "range": 5,
+      "unpinned": 326,
+      "none": 159,
+      "range": 64,
+      "complex": 50,
       "exact": 5,
       "maximum": 3
     },
     "compatibility_categories": {
-      "malformed": 506,
-      "no_constraint": 90,
-      "range_pinned": 5,
-      "exact_pinned": 5,
-      "unpinned": 1
+      "unpinned": 326,
+      "no_constraint": 159,
+      "malformed": 82,
+      "minimum_compatible": 28,
+      "minimum_incompatible": 4,
+      "exact_incompatible": 4,
+      "range_compatible": 1,
+      "maximum_compatible": 1,
+      "maximum_incompatible": 1,
+      "range_incompatible": 1
     }
   },
   "testing_infrastructure": {
@@ -54,13 +59,13 @@
     }
   },
   "ecosystem_health": {
-    "average_health_score": 0.830862163646348,
-    "perfect_health_plugins": 369,
-    "needs_attention_plugins": 63,
+    "average_health_score": 0.7929708951125756,
+    "perfect_health_plugins": 362,
+    "needs_attention_plugins": 125,
     "health_score_distribution": {
       "count": 607.0,
-      "mean": 0.830862163646348,
-      "std": 0.2367565329347431,
+      "mean": 0.7929708951125756,
+      "std": 0.27778330545841845,
       "min": 0.0,
       "25%": 0.6666666666666666,
       "50%": 1.0,
@@ -69,9 +74,17 @@
     }
   },
   "compatibility_analysis": {
-    "plugins_analyzed": 13,
-    "average_compatibility_score": 0.0,
-    "fully_compatible_plugins": 0,
-    "problematic_plugins": 13
+    "plugins_analyzed": 72,
+    "average_compatibility_score": 0.5952380952380953,
+    "fully_compatible_plugins": 26,
+    "problematic_plugins": 28
+  },
+  "github_activity": {
+    "repositories_analyzed": 405,
+    "archived_repositories": 6,
+    "average_stars": 12.88888888888889,
+    "average_forks": 3.2123456790123455,
+    "average_open_issues": 4.254320987654321,
+    "repositories_with_vulnerabilities": 0
   }
 }

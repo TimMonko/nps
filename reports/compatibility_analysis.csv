@@ -1,14 +1,73 @@
 plugin_name,specification,compatibility_score,num_compatible_versions
-fibsem,"napari<=0.5.3,>=0.4.17",0.0,0
-fishfeats,napari<0.6.5,0.0,0
-multireg,napari<=0.4.18,0.0,0
+allencell-segmenter-ml,napari>=0.4.18,0.5714285714285714,4
+arcos-gui,napari>=0.4.14,1.0,7
+blik,napari[all]>=0.6.0,0.0,0
+brainglobe-napari-io,napari>=0.6.1,0.0,0
+brainglobe-registration,"napari!=0.6.0,>=0.4.18",0.5714285714285714,4
+brainglobe-segmentation,"napari!=0.6.0,>=0.5",0.2857142857142857,2
+brainglobe-stitch,napari>=0.4.18,0.5714285714285714,4
+brainreg-segment,napari >=0.4.5,1.0,7
+brainreg,"napari[pyqt5]!=0.6.0,>=0.5",0.2857142857142857,2
+brainrender-napari,napari>=0.6.1,0.0,0
+brainways,napari[all]>=0.5.0,0.2857142857142857,2
+btrack,napari >=0.4.16,0.8571428571428571,6
+cell-aap,napari[all]>=0.4.19,0.42857142857142855,3
+cylindra,napari>=0.5.1,0.14285714285714285,1
+ebi-oct,napari>=0.6.1,0.0,0
+elastix-napari,napari[all] (>=0.4.6),1.0,7
+empanada-napari,napari==0.4.18,0.14285714285714285,1
+fibsem,"napari<=0.5.3,>=0.4.17",0.7142857142857143,5
+fishfeats,napari<0.6.5,1.0,7
+harpy-analysis,napari[all]>=0.4.18,0.5714285714285714,4
+iacs-ipac-reader,napari (>=0.4.12),1.0,7
+ilastik-napari,napari>=0.4.13,1.0,7
+movement,napari[all]>=0.6.0,0.0,0
+multireg,napari<=0.4.18,0.5714285714285714,4
 napari-3d-counter,napari==0.6.4,0.0,0
-napari-bil-data-viewer,napari-ome-zarr ==0.5.2,0.0,0
+napari-accelerated-pixel-and-object-classification,napari >=0.4.11,1.0,7
+napari-aicsimageio,napari (>=0.4.11),1.0,7
+napari-allencell-annotator,napari>=0.4.9,1.0,7
+napari-allencell-segmenter,napari (>=0.4.9),1.0,7
+napari-animation,napari>=0.5,0.2857142857142857,2
+napari-arboretum,napari (>=0.4.0),1.0,7
+napari-assistant,napari>=0.4.14,1.0,7
+napari-bbox-spfluo,napari>=0.4.15,1.0,7
 napari-bioio-reader,"napari[all]<0.7,>=0.6.2",0.0,0
-napari-deeplabcut,napari==0.4.18,0.0,0
-napari-denoiseg,napari (<=0.4.15),0.0,0
+napari-blob-detection,napari (>=0.4.13),1.0,7
+napari-brainways,napari[all]>=0.5.0,0.2857142857142857,2
+napari-cellseg3d,napari[all]>=0.4.14,1.0,7
+napari-checkerboard,napari (>=0.4.6),1.0,7
+napari-deeplabcut,napari==0.4.18,0.14285714285714285,1
+napari-denoiseg,napari (<=0.4.15),0.14285714285714285,1
+napari-dinosim,napari>=0.5.6,0.0,0
+napari-dpr,napari>=0.4.18,0.5714285714285714,4
+napari-exodeepfinder,napari[all]>=0.4.19,0.42857142857142855,3
+napari-features,napari (>=0.4.10),1.0,7
+napari-flowreg,napari[all]>=0.4.18,0.5714285714285714,4
+napari-imagej,napari>=0.4.17,0.7142857142857143,5
+napari-lattice,napari[all]>=0.4.11,1.0,7
+napari-locan,napari>=0.4.17,0.7142857142857143,5
+napari-matplotlib,napari[pyqt6_experimental]>=0.4.18,0.5714285714285714,4
+napari-micromanager,napari>=0.4.13,1.0,7
+napari-nifti-viewer,napari>=0.4.18,0.5714285714285714,4
+napari-ome-zarr,napari>=0.4.13,1.0,7
+napari-orientationpy,napari[all]>=0.4.16,0.8571428571428571,6
 napari-plot,"napari (<0.4.15,>=0.4.13)",0.0,0
+napari-pyclesperanto-assistant,napari>=0.4.15,1.0,7
 napari-roxas-ai,napari==0.5.6,0.0,0
+napari-sam4is,napari[all]>=0.4.17,0.7142857142857143,5
+napari-signal-selector,napari>=0.4.19,0.42857142857142855,3
+napari-spotiflow,napari>=0.5,0.2857142857142857,2
 napari-subboxer,napari[pyqt5] (==0.4.12),0.0,0
-napari-tiler,"napari-tools-menu (>=0.1.7,<0.2.0)",0.0,0
-pssr,"napari<0.5.0,>=0.4.13",0.0,0
+napari-svg,napari>=0.4,1.0,7
+napari-threedee,napari>=0.5.0,0.2857142857142857,2
+napping,napari[all] (>=0.4.16),0.8571428571428571,6
+partseg,napari[pyside6_experimental]>=0.5.0,0.2857142857142857,2
+pssr,"napari<0.5.0,>=0.4.13",0.7142857142857143,5
+samcell-napari,napari>=0.4.14,1.0,7
+skan,napari[all]>=0.4.19rc1,0.42857142857142855,3
+stardist-napari,napari[pyqt]>=0.4.13,1.0,7
+vessqc,napari>=0.4.18,0.5714285714285714,4
+vollseg-napari,napari[pyqt]>=0.4.13,1.0,7
+waver,napari (>=0.4.10),1.0,7
+yt-napari,napari>=0.4.19,0.42857142857142855,3

@@ -1,9 +1,9 @@
 # Napari Plugin Ecosystem Analysis Report
-Generated on: 2025-09-28 15:13:37
+Generated on: 2025-09-28 17:00:13
 
 ## Executive Summary
 This analysis covers **607 napari plugins** from the npe2api dataset.
-Overall ecosystem health score: **83.1%**
+Overall ecosystem health score: **79.3%**
 
 ## Key Findings
 
@@ -13,7 +13,7 @@ Overall ecosystem health score: **83.1%**
 - Average of 3.8 Python versions supported per plugin
 
 ### Napari Dependencies
-- 517 plugins (85.2%) explicitly depend on napari
+- 448 plugins (73.8%) explicitly depend on napari
 - Most common pin type: unpinned
 
 ### Testing Infrastructure
@@ -22,8 +22,8 @@ Overall ecosystem health score: **83.1%**
 - 382 plugins (62.9%) use coverage tools
 
 ### Ecosystem Health
-- 369 plugins (60.8%) have perfect health scores
-- 63 plugins (10.4%) need attention
+- 362 plugins (59.6%) have perfect health scores
+- 125 plugins (20.6%) need attention
 
 ## Recommendations
 1. **Python Version Support**: Encourage plugins to specify Python version requirements
