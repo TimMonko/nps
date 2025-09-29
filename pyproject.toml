@@ -1,5 +1,5 @@
 [project]
-name = "plugin-sustainability"
+name = "nps"
 version = "0.1.0"
 description = "napari plugin sustainability efforts and organization"
 readme = "README.md"
@@ -15,7 +15,7 @@ dependencies = [
     "numpy>=1.21.0",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "ipykernel",
     "requests",
