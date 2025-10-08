@@ -34,6 +34,9 @@ df['github_url'] = df.apply(get_github_url, axis=1)
 
 # save to github_repos.csv
 output_path = output_dir / "github_repos.csv"
+# get just the name and github_url columns
+df = df[['name', 'github_url']]
+
 df.to_csv(output_path, index=False)
 
 # find the number of plugins without a github_url
