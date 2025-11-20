@@ -1,13 +1,16 @@
 # Blog Post Implementation Plan
 
 ## Overview
+
 Creating two blog posts about the napari plugin sustainability initiative:
+
 1. **URSSI blog** - for broader scientific software community
 2. **napari blog** - for napari community
 
 ## Key Requirements
 
 ### Tone and Style
+
 - Natural, conversational voice (not LLM-corporate)
 - Professional but accessible
 - Direct and clear language
@@ -21,6 +24,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 **Audience:** Broader scientific software / computing community (may not know napari)
 
 **Structure:**
+
 - Title: "URSSI Fall Fellowship: [Topic]"
 - Author name and date at top
 - Clear section headers:
@@ -34,6 +38,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
   - "Contact and Follow Along"
 
 **Content Requirements:**
+
 - Must introduce napari, scientific imaging context, and plugin ecosystem for external audience
 - Acknowledge URSSI and Sloan Foundation support prominently
 - Emphasize transferability to other scientific software communities
@@ -45,6 +50,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 **Length:** ~5 minute read
 
 **Placeholders needed:**
+
 - Introduction to napari and plugin ecosystem (2-3 paragraphs)
 - Tim's personal story section
 - Tim's contact email
@@ -54,6 +60,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 **Audience:** Existing napari community (users, developers, plugin authors)
 
 **Structure:**
+
 - Title: Simple and direct
 - Section headers:
   - Introduction (brief, sets up sustainability topic)
@@ -76,12 +83,14 @@ Creating two blog posts about the napari plugin sustainability initiative:
 **Length:** ~5 minute read
 
 **Placeholders needed:**
+
 - Tim's personal story (napari-community focused)
 - Specific call to action details (meeting links, how to volunteer, etc.)
 
 ## Community Meeting Themes to Include
 
 ### From Atlantic Session (2025/11/12)
+
 - Need for standardized way to write plugins / "how to write code correctly"
 - repo-review bot suggestions
 - Live review possibilities (with privacy options)
@@ -94,6 +103,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 - Multi-package repos vs mono-repos
 
 ### From Pacific Session (2025/10/09)
+
 - Plugin review desire (both giving and receiving)
 - Documentation for getting started from ground up
 - Automated quality check tooling
@@ -106,6 +116,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 ## Key Messages
 
 ### Both Blogs Should Convey:
+
 1. **The initial challenge:** Early boom with CZI grants, followed by maintenance stagnation and communication breakdown
 2. **The mutual disconnect:** Plugin developers felt dependent but disconnected; core team lost awareness of ecosystem needs
 3. **The surprise:** Community wants to *help build* solutions, not just receive them
@@ -114,6 +125,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 6. **The goal:** Sustainable ecosystem where advances in one domain benefit others
 
 ### What to Avoid:
+
 - LLM corporate speak ("leverage," "empower," "ecosystem synergy")
 - Overly formal academic language
 - Buzzwords and jargon
@@ -121,6 +133,7 @@ Creating two blog posts about the napari plugin sustainability initiative:
 - Top-down framing (should be collaborative)
 
 ### What to Include:
+
 - Concrete examples from meetings
 - Specific pain points (dependency hell, DL tools, readers/writers)
 - Real quotes or paraphrased perspectives
@@ -128,11 +141,13 @@ Creating two blog posts about the napari plugin sustainability initiative:
 - Emphasis on community volunteers and contributions
 
 ## Reference Materials
+
 - `blog_post_fellowship.md` - fellowship proposal (context, motivation, plans)
 - `blog_post_hack.md` - community meeting notes (Atlantic & Pacific sessions)
 - `blog_post_plan.md` - original planning document
 
 ## Implementation Notes
+
 - Write in first person (Tim's voice)
 - Use contractions where natural
 - Short paragraphs for readability

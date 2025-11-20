@@ -74,4 +74,4 @@ Engagement between plugin authors and the core napari team is central to buildin
 
 1. Continuation of **plugin sustainability working groups** and efforts therein to encourage **collaboration and mutually beneficial development** of napari and the plugin ecosystem.  
 2. The napari plugin **affiliation program**, serving as a model for foundational tools to have sustainable interactions with downstream cross-domain tools.  
-3. **Shared resources** highlighting collaborative communication strategies and cross-domain sustainability practices developed during the fellowship. 
+3. **Shared resources** highlighting collaborative communication strategies and cross-domain sustainability practices developed during the fellowship.

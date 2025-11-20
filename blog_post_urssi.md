@@ -53,7 +53,8 @@ A further consideration with all of this is that *these plugins are often critic
 This creates a trust issue in the ecosystem, where users may be hesitant to adopt new version of napari, novel plugins or update existing setups, fearing that they may become unsupported or break their workflows.
 Afterall, scientific research often depends on reproducibility and stability, and when the tools they rely on are in flux, it can hinder progress.
 Unfortunately, this pattern eventually led to a drifting apart beween forming between the napari core team and the plugin ecosystem, with communication becoming quieter and trust decreasing.
-<< Reword this or move somewhere else>> The disconnect went both ways. Plugin developers and users felt dependent on napari but disconnected from where it was headed. Core contributors, focused on stabilizing napari itself, had lost touch with what the broader ecosystem needed.
+The disconnect went both ways; plugin developers and users felt dependent on napari but disconnected from where it was headed.
+Core contributors, focused on stabilizing napari itself, had lost touch with what the broader ecosystem needed.
 
 ## Insights from the community
 
@@ -63,7 +64,7 @@ The most surprising part of the [working group outcomes](https://hackmd.io/@napa
 
 Plugin developers have volunteered to review each other's work. Instructors have offered to write documentation about Git and GitHub basics. Active developers have suggested programs where unmaintained plugins could find new maintainers. The coversation was never "what should napari do for us?" but rather "how can we work together to make this better?"
 
-In one of the working group meetings it was said well: plugin developers often see the core napari team as shephereds of the whole ecosystem, but at the same time, plugin developers rely on the core team in ways the core team doesn't always know about and can't always support. 
+In one of the working group meetings it was said well: plugin developers often see the core napari team as shephereds of the whole ecosystem, but at the same time, plugin developers rely on the core team in ways the core team doesn't always know about and can't always support.
 Ultimately, people want ways to be involved more broadly with the *whole ecosystem* without necessarily having to contribute to the core tools, we just need to send out the invitations and build the right infrastracture to make this possible.
 
 ## What we're building, together
@@ -92,7 +93,7 @@ The goal is to improve initial plugin quality, with better tooling and best prac
 
 These approaches will work together to improve developer experience, plugin quality, and user satisfaction.
 
-### 3. Create recognition and affiliation programs
+### 3. Better communication, discoverability, and recognition
 
 The community has expressed a desire to improve discoverability of their plugins and recognition of their efforts.
 This system will benefit the entire ecosystem by demonstrating maturity and collaboration.
@@ -105,8 +106,9 @@ We're figuring out how to:
 - Make collaborative maintenance easier and less intimidating
 - Enable plugin donation programs where maintainers can hand off plugins to new stewards
 - Support maintainer partnerships, potentially through a napari-plugins GitHub organization
+- Improve communication about napari API changes and new features that may impact plugins
 
-## How We're Engaging the Community
+## How we're engaging the community
 
 Open collaboration is central to this project:
 
@@ -115,7 +117,7 @@ Open collaboration is central to this project:
 3. **Transparent process**: We share regular updates with the community about what we're doing and why
 4. **Cross-community learning**: We're planning to share what we learn at conferences like SciPy and through blog posts and documentation
 
-## Why It Matters Beyond napari
+## Why it matters beyond napari
 
 These challenges—sustaining domain-specific extensions, coordinating between foundational and downstream projects, supporting novice contributors while maintaining quality—aren't unique to napari. They show up across scientific software, from Python's scientific ecosystem to astronomy tools to geosciences platforms.
 
@@ -136,7 +138,7 @@ Our work will produce:
 
 Everything we create—updated templates, review tools, documentation—will be open source and documented so other communities can use and adapt it.
 
-## Thank You
+## Thank you
 
 This project is supported by the URSSI Early Career Fellowship, with funding from the Sloan Foundation.
 The fellowship gives me both research support and the opportunity to engage deeply with the scientific software community.
@@ -147,7 +149,7 @@ Thank you to URSSI and the Sloan Foundation for making this work possible, and t
 Honestly, the most important outcome isn't any particular tool or program—it's the collaborative relationship between napari and its plugin ecosystem feeling healthier than it has in a while.
 When foundational tools and their extensions work together, everyone benefits: developers don't duplicate effort, users get more reliable tools, and research moves forward on steadier ground.
 
-## Contact and Follow Along
+## Contact and follow along
 
 If you're working on scientific software with an extension ecosystem, or if you're curious about sustainability practices for open source communities, we would love to hear from you.
 
