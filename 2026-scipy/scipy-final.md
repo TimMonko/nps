@@ -1,0 +1,26 @@
+**Title:** (Re)-connecting foundational libraries with their communities: Successes, failures, and surprises in building the napari plugin sustainability initiative
+
+**Abstract:**
+
+Foundational Python libraries provide critical functionality that diverse communities of downstream developers and users depend on. Often, gaps in awareness between a core project and its broader community silently erode trust, collaboration, and sustainability. This talk shares lessons from a community-driven initiative to (re)-connect [napari](https://napari.org/)—a foundational library for multi-dimensional image viewing built on the scientific Python stack—with its ecosystem of over 580 community-developed plugins. Through a working group of core contributors, plugin developers, and end users, the napari plugin sustainability initiative discovered that creating new avenues for communication and collaboration leads to shared ownership of ecosystem progress.
+
+
+ This talk will discuss what engagement approaches worked, what didn't, what surprised us, and what any Python project with downstream developers can take away about sustainably growing a community and its software ecosystem.
+
+**Description:**
+
+Many scientific Python projects follow a familiar arc: early excitement, rapid adoption, a burst of community-built extensions—and then a slow drift apart. This talk is for anyone maintaining a Python project with a broader community, developing downstream tools, or interested in practical approaches to open-source sustainability. Attendees will learn concrete strategies for community engagement, automated quality tooling, and shared infrastructure that can be adapted to any Python project ecosystem.
+
+In late 2025, with support from a [URSSI Early Career Fellowship](https://urssi.us/), [napari](https://napari.org/) launched the plugin sustainability initiative to rekindle the relationship between the core project and its downstream plugin community. A [working group](https://napari.org/stable/community/meeting_schedule.html) brought together core contributors, plugin developers, and users—novice to experienced—across roles, time zones, and disciplines. This talk will share what worked: engaging the global community, openness to community creativity, and creating space for domain scientists to share real workflows. It will also share real challenges: reaching folks who had already disengaged and including voices that don't have bandwidth for regular meetings.
+
+The most impactful finding has been how much the community *wants* to shape solutions once given the opportunity. The conversation was never "what should the core team do for us?" but "how can we work on this together?" This shift—from a service relationship to shared ownership—has been the single most valuable outcome. The biggest barriers remain social: not knowing whether contributions were welcome, not knowing who else was working on similar problems, and not having a channel that felt heard.
+
+The working group has converged on [three interconnected efforts](https://napari.org/island-dispatch/blog/plugin-sustainability-initiative.html) shaped by community priorities:
+
+**1. Automated and human review systems.** We're building automated tooling—inspired by [SciPy's repo-review](https://repo-review.readthedocs.io/en/latest/)—that checks plugin repositories for packaging quality, test coverage, and dependency health. Compatibility checks via [npe2api](https://github.com/napari/npe2api) detect when plugins break against new napari releases *before* users hit the problem. Alongside automation, human peer review modeled on [PyOpenSci](https://www.pyopensci.org/about-peer-review/) will pair experienced community members with plugin developers for domain-aware feedback.
+
+**2. Modernized packaging infrastructure.** We're updating the [napari-plugin-template](https://github.com/napari/napari-plugin-template) and [plugin documentation](https://napari.org/stable/plugins/index.html) based on firsthand accounts from working group members who upgraded their own plugins, with a focus on creating beginner-friendly and advanced tracks. This includes guidance on reproducible environments with [pixi](https://pixi.sh/) and [uv](https://docs.astral.sh/uv/), clearer separation of computation from UI code, and curated plugin bundles to address dependency conflicts.
+
+**3. Discoverability and stewardship.** We're surfacing maintenance status, compatibility, and quality signals on the [napari hub](https://napari-hub.org/). A plugin donation program would let maintainers hand off plugins to community stewards rather than abandoning them, and a shared GitHub organization will enable collective maintenance.
+
+These efforts are works in progress, but we have found bi-directional impact: downstream developers gain improved tooling and documentation, while investing back into the core napari project. Everything is open source and documented for other communities to adapt. Ultimately, investing in listening and shared ownership *while* building technical infrastructure is what engages a broad community and builds trust that spending time in the ecosystem is worthwhile.
