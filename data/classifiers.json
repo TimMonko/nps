@@ -21,6 +21,12 @@
         "0.1.0"
       ]
     },
+    "aiod-napari": {
+      "name": "aiod-napari",
+      "pypi_versions": [
+        "0.1"
+      ]
+    },
     "allencell-segmenter-ml": {
       "name": "allencell-segmenter-ml",
       "pypi_versions": [
@@ -48,6 +54,7 @@
     "alveoleye": {
       "name": "AlveolEye",
       "pypi_versions": [
+        "0.1.8",
         "0.1.7",
         "0.1.6",
         "0.1.5",
@@ -59,6 +66,7 @@
     "anchor-droplet-chip": {
       "name": "anchor-droplet-chip",
       "pypi_versions": [
+        "0.5.0",
         "0.4.6",
         "0.4.4",
         "0.4.3",
@@ -141,6 +149,22 @@
         "0.2.4a1"
       ]
     },
+    "auto-options-python": {
+      "name": "auto-options-python",
+      "pypi_versions": [
+        "1.1.4",
+        "1.1.3",
+        "1.1.2",
+        "1.1.1",
+        "1.1.0",
+        "1.0.9",
+        "1.0.8",
+        "0.1.7",
+        "0.1.6",
+        "0.1.5",
+        "0.1.4"
+      ]
+    },
     "avidaq": {
       "name": "avidaq",
       "pypi_versions": [
@@ -154,6 +178,14 @@
     "axondeepseg": {
       "name": "AxonDeepSeg",
       "pypi_versions": [
+        "5.5.0",
+        "5.5.0rc2",
+        "5.5.0rc1",
+        "5.5.0rc0",
+        "5.4.0",
+        "5.4.0rc1",
+        "5.3.0",
+        "5.3.0rc1",
         "5.2.0",
         "5.2.0rc0",
         "5.2.0a1",
@@ -185,9 +217,17 @@
         "0.3.0"
       ]
     },
+    "bellavista": {
+      "name": "bellavista",
+      "pypi_versions": [
+        "0.1.0",
+        "0.1.0a1"
+      ]
+    },
     "biaplotter": {
       "name": "biaplotter",
       "pypi_versions": [
+        "0.4.3",
         "0.4.2",
         "0.4.1",
         "0.4.0",
@@ -203,6 +243,35 @@
         "0.0.3",
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "bio-oct": {
+      "name": "bio_oct",
+      "pypi_versions": [
+        "0.4",
+        "0.4rc2"
+      ]
+    },
+    "biopb-mcp": {
+      "name": "biopb-mcp",
+      "pypi_versions": [
+        "0.7.2",
+        "0.7.1",
+        "0.7.1a0",
+        "0.7.0",
+        "0.6.4",
+        "0.6.3",
+        "0.6.2",
+        "0.6.1",
+        "0.6.0",
+        "0.5.8",
+        "0.5.7",
+        "0.5.6",
+        "0.5.5",
+        "0.5.4",
+        "0.5.3",
+        "0.5.2",
+        "0.5.1"
       ]
     },
     "blik": {
@@ -244,6 +313,7 @@
     "brainglobe-napari-io": {
       "name": "brainglobe-napari-io",
       "pypi_versions": [
+        "0.5.0",
         "0.4.0",
         "0.3.6",
         "0.3.5",
@@ -271,6 +341,7 @@
     "brainglobe-registration": {
       "name": "brainglobe-registration",
       "pypi_versions": [
+        "0.0.6",
         "0.0.5",
         "0.0.4",
         "0.0.3",
@@ -308,6 +379,12 @@
     "brainglobe-utils": {
       "name": "brainglobe-utils",
       "pypi_versions": [
+        "0.11.2",
+        "0.11.1",
+        "0.11.0",
+        "0.10.0",
+        "0.9.0",
+        "0.8.0",
         "0.7.0",
         "0.6.3",
         "0.6.2",
@@ -318,6 +395,8 @@
     "brainreg": {
       "name": "brainreg",
       "pypi_versions": [
+        "1.0.15",
+        "1.0.14",
         "1.0.13",
         "1.0.12",
         "1.0.11",
@@ -336,6 +415,8 @@
     "brainrender-napari": {
       "name": "brainrender-napari",
       "pypi_versions": [
+        "0.2.0",
+        "0.1.4",
         "0.1.3",
         "0.1.2",
         "0.1.1",
@@ -372,12 +453,17 @@
     "brillouin-imaging": {
       "name": "brillouin-imaging",
       "pypi_versions": [
+        "0.4.0",
+        "0.3.0",
+        "0.2.1",
         "0.1.0"
       ]
     },
     "btrack": {
       "name": "btrack",
       "pypi_versions": [
+        "0.7.0",
+        "0.7.0rc1",
         "0.6.5",
         "0.6.4",
         "0.6.4rc3",
@@ -401,9 +487,23 @@
         "0.0.2"
       ]
     },
+    "careamics-napari": {
+      "name": "careamics-napari",
+      "pypi_versions": [
+        "0.3.0",
+        "0.2.0",
+        "0.1.0"
+      ]
+    },
     "cell-aap": {
       "name": "cell-AAP",
       "pypi_versions": [
+        "1.0.7",
+        "1.0.6",
+        "1.0.5",
+        "1.0.4",
+        "1.0.3",
+        "1.0.2",
         "0.0.9",
         "0.0.8.1",
         "0.0.8",
@@ -425,6 +525,10 @@
     "cellfinder": {
       "name": "cellfinder",
       "pypi_versions": [
+        "1.10.1",
+        "1.10.0",
+        "1.9.0",
+        "1.8.0",
         "1.7.0",
         "1.6.0",
         "1.5.1",
@@ -473,7 +577,37 @@
     "cochlea-synapseg": {
       "name": "cochlea-synapseg",
       "pypi_versions": [
+        "0.1.2",
         "0.0.1"
+      ]
+    },
+    "confusius": {
+      "name": "confusius",
+      "pypi_versions": [
+        "0.6.1",
+        "0.6.0",
+        "0.5.2",
+        "0.5.1",
+        "0.5.0",
+        "0.4.0",
+        "0.3.0",
+        "0.2.0",
+        "0.0.1a26",
+        "0.0.1a25",
+        "0.0.1a24",
+        "0.0.1a23",
+        "0.0.1a22",
+        "0.0.1a21",
+        "0.0.1a20",
+        "0.0.1a19",
+        "0.0.1a18",
+        "0.0.1a17",
+        "0.0.1a16",
+        "0.0.1a15",
+        "0.0.1a14",
+        "0.0.1a13",
+        "0.0.1a12",
+        "0.0.1a11"
       ]
     },
     "cryocanvas": {
@@ -491,6 +625,11 @@
     "cut-detector": {
       "name": "cut-detector",
       "pypi_versions": [
+        "1.8.2",
+        "1.8.1",
+        "1.8.0",
+        "1.7.0",
+        "1.6.6",
         "1.6.5",
         "1.6.4",
         "1.6.3",
@@ -527,6 +666,14 @@
     "cylindra": {
       "name": "cylindra",
       "pypi_versions": [
+        "1.1.2",
+        "1.1.1",
+        "1.1.0",
+        "1.0.4",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
         "1.0.0b7",
         "1.0.0b6",
         "1.0.0b5",
@@ -543,6 +690,20 @@
         "0.3.0",
         "0.2.0",
         "0.1.0"
+      ]
+    },
+    "deepphenotree": {
+      "name": "deepphenotree",
+      "pypi_versions": [
+        "1.0.8",
+        "1.0.6",
+        "1.0.4",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
+        "0.0.3",
+        "0.0.2"
       ]
     },
     "devbio-napari": {
@@ -579,15 +740,41 @@
         "0.1.0"
       ]
     },
+    "dextrusion": {
+      "name": "dextrusion",
+      "pypi_versions": [
+        "0.0.20",
+        "0.0.19",
+        "0.0.18",
+        "0.0.17",
+        "0.0.16",
+        "0.0.15",
+        "0.0.14",
+        "0.0.13",
+        "0.0.13b0",
+        "0.0.12",
+        "0.0.11",
+        "0.0.10",
+        "0.0.9"
+      ]
+    },
     "disease-classifier": {
       "name": "disease-classifier",
       "pypi_versions": [
         "0.0.1"
       ]
     },
+    "divisualisation": {
+      "name": "divisualisation",
+      "pypi_versions": [
+        "0.1.0"
+      ]
+    },
     "domb-napari": {
       "name": "domb-napari",
       "pypi_versions": [
+        "0.5.2",
+        "0.5.0",
         "0.4.1",
         "0.4.0",
         "0.3.0",
@@ -608,6 +795,7 @@
     "elastix-napari": {
       "name": "elastix-napari",
       "pypi_versions": [
+        "0.3.0",
         "0.2.2",
         "0.2.1",
         "0.2.0",
@@ -622,9 +810,44 @@
         "0.1.0"
       ]
     },
+    "ellipse-nuclei-segmentation": {
+      "name": "ellipse-nuclei-segmentation",
+      "pypi_versions": [
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1"
+      ]
+    },
+    "emcfsys": {
+      "name": "emcfsys",
+      "pypi_versions": [
+        "0.4.2",
+        "0.4.1",
+        "0.3.11",
+        "0.3.10",
+        "0.3.9",
+        "0.3.7",
+        "0.3.6",
+        "0.3.5",
+        "0.3.2",
+        "0.3.1",
+        "0.2.4",
+        "0.2.3",
+        "0.2.2",
+        "0.2.1",
+        "0.1.1",
+        "0.0.11",
+        "0.0.10"
+      ]
+    },
     "empanada-napari": {
       "name": "empanada-napari",
       "pypi_versions": [
+        "1.2.4",
+        "1.2.3",
+        "1.2.2",
+        "1.2.1",
         "1.2",
         "1.1.1",
         "1.1.0",
@@ -642,14 +865,34 @@
     "epicure": {
       "name": "epicure",
       "pypi_versions": [
+        "1.6.4",
+        "1.6.3",
+        "1.6.2",
+        "1.6.1",
+        "1.6.0",
+        "1.5.5",
+        "1.5.3",
+        "1.5.2",
+        "1.5.1",
+        "1.5.0",
+        "1.4.8",
+        "1.4.7",
+        "1.4.6",
+        "1.4.5",
+        "1.4.4",
+        "1.4.2",
+        "1.4",
+        "1.3",
+        "1.2",
+        "1.1",
+        "0.2.22",
+        "0.2.21",
         "0.2.18",
         "0.2.17",
         "0.2.15",
         "0.2.14",
-        "0.2.13",
         "0.2.12",
         "0.2.10",
-        "0.2.9",
         "0.2.5",
         "0.2.2",
         "0.1.3"
@@ -658,6 +901,8 @@
     "epitools": {
       "name": "epitools",
       "pypi_versions": [
+        "0.1.2",
+        "0.1.1",
         "0.0.13",
         "0.0.12",
         "0.0.11",
@@ -715,6 +960,10 @@
     "fibsem": {
       "name": "fibsem",
       "pypi_versions": [
+        "0.5.1",
+        "0.5.1.dev0",
+        "0.5.0",
+        "0.5.0a0",
         "0.4.1a4",
         "0.4.1a3",
         "0.4.1a2",
@@ -736,14 +985,48 @@
         "0.3.0a0"
       ]
     },
+    "filament-toolbox": {
+      "name": "filament-toolbox",
+      "pypi_versions": [
+        "1.0.4",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1"
+      ]
+    },
     "fishfeats": {
       "name": "fishfeats",
       "pypi_versions": [
+        "1.4.10",
+        "1.4.9",
+        "1.4.7",
+        "1.4.6",
+        "1.4.5",
+        "1.4.4",
+        "1.4.3",
+        "1.4.2",
+        "1.4.1",
+        "1.4.0",
+        "1.3.10",
+        "1.3.9",
+        "1.3.8",
+        "1.3.7",
+        "1.3.6",
+        "1.3.5",
+        "1.3.4",
+        "1.3.3",
+        "1.3.2",
+        "1.2.12",
+        "1.2.11",
+        "1.2.10",
+        "1.2.8",
+        "1.2.6",
+        "1.2.4",
+        "1.2.3",
         "1.2.2",
         "1.2.1",
         "1.2.0",
         "1.1.31",
-        "1.1.30",
         "1.1.29",
         "1.1.27",
         "1.1.24",
@@ -774,6 +1057,14 @@
         "0.0.1"
       ]
     },
+    "focus-3d": {
+      "name": "focus-3d",
+      "pypi_versions": [
+        "0.1.19",
+        "0.1.18",
+        "0.1.17"
+      ]
+    },
     "frontveg": {
       "name": "frontveg",
       "pypi_versions": [
@@ -787,9 +1078,23 @@
         "0.1.dev1"
       ]
     },
+    "frontvegv2": {
+      "name": "frontvegV2",
+      "pypi_versions": [
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
     "fspi-analysis": {
       "name": "fspi-analysis",
       "pypi_versions": [
+        "0.2.2",
+        "0.2.1",
+        "0.2.0",
         "0.1.2",
         "0.1.1",
         "0.0.1"
@@ -800,6 +1105,13 @@
       "pypi_versions": [
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "gfap-segmenter": {
+      "name": "gfap-segmenter",
+      "pypi_versions": [
+        "1.0.1rc1",
+        "1.0.0"
       ]
     },
     "grabber-ift": {
@@ -816,13 +1128,10 @@
         "0.0.1"
       ]
     },
-    "harpy-analysis": {
-      "name": "harpy-analysis",
+    "haemolynx": {
+      "name": "HaemoLynx",
       "pypi_versions": [
-        "0.2.0",
-        "0.1.0",
-        "0.0.2",
-        "0.0.1"
+        "0.1.0"
       ]
     },
     "hesperos": {
@@ -929,6 +1238,7 @@
     "in-silico-fate-mapping": {
       "name": "in-silico-fate-mapping",
       "pypi_versions": [
+        "0.1.3.1",
         "0.1.3",
         "0.1.2",
         "0.1.1",
@@ -951,6 +1261,8 @@
     "koopa-viz": {
       "name": "koopa-viz",
       "pypi_versions": [
+        "0.0.7",
+        "0.0.6",
         "0.0.5",
         "0.0.4",
         "0.0.3",
@@ -988,6 +1300,14 @@
     "lls-core": {
       "name": "lls-core",
       "pypi_versions": [
+        "2.2.2",
+        "2.2.1",
+        "2.1.1",
+        "2.1.0",
+        "2.0.0",
+        "1.2.1",
+        "1.1.0",
+        "1.0.6",
         "1.0.5",
         "1.0.3",
         "1.0.2",
@@ -1023,6 +1343,31 @@
         "0.0.6",
         "0.0.5",
         "0.0.4"
+      ]
+    },
+    "microglia-analyzer": {
+      "name": "microglia-analyzer",
+      "pypi_versions": [
+        "2.1.1",
+        "2.1.0"
+      ]
+    },
+    "micro-sam": {
+      "name": "micro-sam",
+      "pypi_versions": [
+        "1.8.12",
+        "1.8.11",
+        "1.8.10",
+        "1.8.9",
+        "1.8.8",
+        "1.8.7",
+        "1.8.6",
+        "1.8.5",
+        "1.8.4",
+        "1.8.3",
+        "1.8.2",
+        "1.8.1",
+        "1.8.0"
       ]
     },
     "microscope-napari": {
@@ -1108,6 +1453,7 @@
     "mmv-h4tracks": {
       "name": "mmv-h4tracks",
       "pypi_versions": [
+        "1.3.0",
         "1.2.0",
         "1.1.1",
         "1.1.0"
@@ -1123,6 +1469,7 @@
     "mmv-regionseg": {
       "name": "mmv-regionseg",
       "pypi_versions": [
+        "0.4.0",
         "0.3.0",
         "0.2.1"
       ]
@@ -1131,6 +1478,13 @@
       "name": "mobiofox",
       "pypi_versions": [
         "0.1.0"
+      ]
+    },
+    "morphodeep": {
+      "name": "morphodeep",
+      "pypi_versions": [
+        "0.0.2.dev1",
+        "0.0.1"
       ]
     },
     "morphometrics": {
@@ -1163,6 +1517,39 @@
         "0.2"
       ]
     },
+    "motile-tracker": {
+      "name": "motile-tracker",
+      "pypi_versions": [
+        "5.0.1",
+        "5.0.0",
+        "4.7.0",
+        "4.6.1",
+        "4.6.0",
+        "4.5.0",
+        "4.4.0",
+        "4.3.0",
+        "4.3.0a1",
+        "4.2.0",
+        "4.1.1",
+        "4.1.0",
+        "4.0.0",
+        "3.1.5.dev0",
+        "3.1.4rc1",
+        "3.1.4.dev1",
+        "3.1.4.dev0",
+        "3.1.3",
+        "3.1.3.dev0",
+        "3.1.2",
+        "3.1.2.dev0",
+        "3.1.1",
+        "3.1.1.dev0",
+        "3.1.0",
+        "3.1.0.dev0",
+        "3.0.1",
+        "3.0.0",
+        "0.0.1.dev0"
+      ]
+    },
     "mousechd-napari": {
       "name": "mousechd-napari",
       "pypi_versions": [
@@ -1184,6 +1571,14 @@
     "movement": {
       "name": "movement",
       "pypi_versions": [
+        "0.17.0",
+        "0.16.0",
+        "0.15.0",
+        "0.14.0",
+        "0.13.0",
+        "0.12.0",
+        "0.11.1",
+        "0.11.0",
         "0.10.0",
         "0.9.0",
         "0.8.2",
@@ -1214,6 +1609,7 @@
     "multireg": {
       "name": "multireg",
       "pypi_versions": [
+        "0.0.19",
         "0.0.18",
         "0.0.17",
         "0.0.15",
@@ -1223,6 +1619,23 @@
         "0.0.8",
         "0.0.6",
         "0.0.0"
+      ]
+    },
+    "myopari": {
+      "name": "myopari",
+      "pypi_versions": [
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2"
+      ]
+    },
+    "nagini3d-napari": {
+      "name": "nagini3d-napari",
+      "pypi_versions": [
+        "0.2.1",
+        "0.1.0"
       ]
     },
     "napam": {
@@ -1237,9 +1650,67 @@
         "0.0.1"
       ]
     },
+    "napari": {
+      "name": "napari",
+      "pypi_versions": [
+        "0.9.0",
+        "0.9.0rc3",
+        "0.9.0rc2",
+        "0.9.0rc1",
+        "0.9.0b1",
+        "0.9.0a2",
+        "0.9.0a1",
+        "0.8.0",
+        "0.8.0rc1",
+        "0.8.0rc0",
+        "0.8.0a4",
+        "0.8.0a3",
+        "0.8.0a2",
+        "0.8.0a1",
+        "0.7.1",
+        "0.7.1rc5",
+        "0.7.1rc4",
+        "0.7.1rc3",
+        "0.7.1rc2",
+        "0.7.1rc1",
+        "0.7.1a6",
+        "0.7.1a5",
+        "0.7.1a4",
+        "0.7.1a3",
+        "0.7.1a2",
+        "0.7.1a1",
+        "0.7.0",
+        "0.7.0rc4",
+        "0.7.0rc3",
+        "0.7.0rc2",
+        "0.7.0rc1",
+        "0.7.0rc0",
+        "0.7.0a3",
+        "0.7.0a2",
+        "0.7.0a1",
+        "0.7.0a0",
+        "0.6.6",
+        "0.6.6rc3",
+        "0.6.6rc2",
+        "0.6.6rc1",
+        "0.6.6rc0",
+        "0.6.5",
+        "0.6.5rc3",
+        "0.6.5rc2",
+        "0.6.5rc1",
+        "0.6.5rc0"
+      ]
+    },
     "napari-3d-counter": {
       "name": "napari-3d-counter",
       "pypi_versions": [
+        "0.5.13",
+        "0.5.11",
+        "0.5.10",
+        "0.5.9",
+        "0.5.8",
+        "0.5.7",
+        "0.5.5",
         "0.5.4",
         "0.5.3",
         "0.5.2",
@@ -1268,6 +1739,13 @@
         "0.1.1"
       ]
     },
+    "napari-3d-label-eraser": {
+      "name": "napari-3d-label-eraser",
+      "pypi_versions": [
+        "0.1.3",
+        "0.1.2"
+      ]
+    },
     "napari-3d-ortho-viewer": {
       "name": "napari-3d-ortho-viewer",
       "pypi_versions": [
@@ -1285,6 +1763,8 @@
     "napari-3dtimereg": {
       "name": "napari-3dtimereg",
       "pypi_versions": [
+        "0.0.13",
+        "0.0.12",
         "0.0.11",
         "0.0.10",
         "0.0.9",
@@ -1368,6 +1848,7 @@
     "napari-afmreader": {
       "name": "napari-afmreader",
       "pypi_versions": [
+        "0.0.2",
         "0.0.1"
       ]
     },
@@ -1400,6 +1881,12 @@
         "0.0.1"
       ]
     },
+    "napari-ai-lab": {
+      "name": "napari-ai-lab",
+      "pypi_versions": [
+        "0.1.0a1"
+      ]
+    },
     "napari-allencell-annotator": {
       "name": "napari-allencell-annotator",
       "pypi_versions": [
@@ -1423,7 +1910,9 @@
     "napari-allencell-segmenter": {
       "name": "napari-allencell-segmenter",
       "pypi_versions": [
+        "2.1.13",
         "2.1.12",
+        "2.1.12.dev0",
         "2.1.11",
         "2.1.10",
         "2.1.9",
@@ -1469,6 +1958,8 @@
     "napari-animation": {
       "name": "napari-animation",
       "pypi_versions": [
+        "0.0.10",
+        "0.0.10rc0",
         "0.0.9",
         "0.0.8",
         "0.0.8rc2",
@@ -1565,6 +2056,7 @@
     "napari-arboretum": {
       "name": "napari-arboretum",
       "pypi_versions": [
+        "0.2.0",
         "0.1.2",
         "0.1.1",
         "0.1.0",
@@ -1641,6 +2133,27 @@
         "0.1.0"
       ]
     },
+    "napari-atlas-cci": {
+      "name": "napari-atlas-cci",
+      "pypi_versions": [
+        "1.1.4",
+        "1.1.3",
+        "1.1.2",
+        "1.1.1",
+        "1.1.0",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0"
+      ]
+    },
+    "napari-atlas-stitch": {
+      "name": "napari-atlas-stitch",
+      "pypi_versions": [
+        "1.2.0",
+        "1.0.0"
+      ]
+    },
     "napari-automatic-range": {
       "name": "napari-automatic-range",
       "pypi_versions": [
@@ -1679,15 +2192,24 @@
         "1.0.2"
       ]
     },
+    "napari-bacteria-density": {
+      "name": "napari-bacteria-density",
+      "pypi_versions": [
+        "1.0.0"
+      ]
+    },
     "napari-basicpy": {
       "name": "napari-basicpy",
       "pypi_versions": [
+        "1.0.0",
         "0.0.3"
       ]
     },
     "napari-bbox": {
       "name": "napari-bbox",
       "pypi_versions": [
+        "0.1.1",
+        "0.1.0",
         "0.0.9",
         "0.0.8",
         "0.0.7",
@@ -1695,6 +2217,12 @@
         "0.0.4",
         "0.0.3",
         "0.0.2"
+      ]
+    },
+    "napari-bbox-fix": {
+      "name": "napari-bbox-fix",
+      "pypi_versions": [
+        "0.0.9"
       ]
     },
     "napari-bbox-spfluo": {
@@ -1774,6 +2302,8 @@
     "napari-bioformats": {
       "name": "napari-bioformats",
       "pypi_versions": [
+        "0.3.0.post0",
+        "0.3.0",
         "0.2.1",
         "0.1.3",
         "0.1.2",
@@ -1792,6 +2322,7 @@
     "napari-bioio-reader": {
       "name": "napari-bioio-reader",
       "pypi_versions": [
+        "0.3.0",
         "0.2.0"
       ]
     },
@@ -1804,6 +2335,11 @@
     "napari-biopb": {
       "name": "napari-biopb",
       "pypi_versions": [
+        "0.4.1",
+        "0.4.0",
+        "0.3.0",
+        "0.2.2",
+        "0.2.1",
         "0.1.4",
         "0.1.3",
         "0.1.0"
@@ -1892,6 +2428,7 @@
     "napari-bootstrapper": {
       "name": "napari-bootstrapper",
       "pypi_versions": [
+        "0.3.0",
         "0.2.0",
         "0.1.1"
       ]
@@ -1899,6 +2436,8 @@
     "napari-boxmanager": {
       "name": "napari-boxmanager",
       "pypi_versions": [
+        "0.4.15b2",
+        "0.4.15b1",
         "0.4.14",
         "0.4.13",
         "0.4.12",
@@ -1988,6 +2527,42 @@
         "0.1.0"
       ]
     },
+    "napari-bruce": {
+      "name": "napari-bruce",
+      "pypi_versions": [
+        "0.5.3",
+        "0.5.2",
+        "0.5.1",
+        "0.5.0",
+        "0.4.0",
+        "0.3.4",
+        "0.3.3",
+        "0.3.2",
+        "0.3.0",
+        "0.2.9",
+        "0.2.8",
+        "0.2.7",
+        "0.2.6",
+        "0.2.5",
+        "0.2.4",
+        "0.2.3",
+        "0.2.2",
+        "0.2.1",
+        "0.2.0",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
+        "0.0.9",
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
     "napari-brushsettings": {
       "name": "napari-brushsettings",
       "pypi_versions": [
@@ -2066,12 +2641,26 @@
     "napari-cci-annotator": {
       "name": "napari-cci-annotator",
       "pypi_versions": [
+        "0.7.1",
         "0.6.0",
         "0.5.0",
-        "0.4.0",
-        "0.3.0",
-        "0.2.6",
-        "0.2.4"
+        "0.4.0"
+      ]
+    },
+    "napari-cci-annotator2": {
+      "name": "napari-cci-annotator2",
+      "pypi_versions": [
+        "0.7.13",
+        "0.7.12",
+        "0.7.11",
+        "0.7.10",
+        "0.7.9",
+        "0.7.8",
+        "0.7.7",
+        "0.7.6",
+        "0.7.5",
+        "0.7.4",
+        "0.7.3"
       ]
     },
     "napari-ccp4map": {
@@ -2090,6 +2679,7 @@
     "napari-cellseg3d": {
       "name": "napari-cellseg3d",
       "pypi_versions": [
+        "0.2.4",
         "0.2.2",
         "0.2.1",
         "0.2.0",
@@ -2105,12 +2695,112 @@
         "0.0.1rc1"
       ]
     },
+    "napari-chat-assistant": {
+      "name": "napari-chat-assistant",
+      "pypi_versions": [
+        "2.3.3",
+        "2.3.2",
+        "2.3.1",
+        "2.3.0",
+        "2.2.0",
+        "2.1.2",
+        "2.1.0",
+        "2.0.3",
+        "2.0.2",
+        "2.0.0",
+        "1.9.1",
+        "1.9.0",
+        "1.8.4",
+        "1.8.3",
+        "1.8.2",
+        "1.8.0",
+        "1.6.0",
+        "1.4.5",
+        "1.4.3",
+        "1.4.1",
+        "1.4.0",
+        "1.3.1",
+        "1.3.0",
+        "1.2.6",
+        "1.2.5",
+        "1.2.4",
+        "1.2.3",
+        "1.2.2",
+        "1.2.1"
+      ]
+    },
+    "napari-chatgpt": {
+      "name": "napari-chatgpt",
+      "pypi_versions": [
+        "2026.2.9",
+        "2025.6.25.2",
+        "2024.10.18.1",
+        "2024.8.31",
+        "2024.8.30",
+        "2024.5.15",
+        "2024.3.26.3",
+        "2024.3.26.2",
+        "2024.3.26.1",
+        "2024.3.26",
+        "2024.3.13.3",
+        "2024.3.13.2",
+        "2024.3.13.1",
+        "2024.3.13",
+        "2024.2.24",
+        "2024.2.19",
+        "2024.2.4",
+        "2024.2.3",
+        "2024.2.1",
+        "2023.12.30.1",
+        "2023.12.30",
+        "2023.12.29",
+        "2023.12.28",
+        "2023.12.27.1",
+        "2023.12.27",
+        "2023.8.8",
+        "2023.7.21",
+        "2023.7.7",
+        "2023.6.28",
+        "2023.6.21.post1",
+        "2023.6.21",
+        "2023.6.3",
+        "2023.6.2",
+        "2023.5.16",
+        "2023.5.2"
+      ]
+    },
     "napari-checkerboard": {
       "name": "napari-checkerboard",
       "pypi_versions": [
         "0.0.3",
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "napari-chunked-regionprops": {
+      "name": "napari-chunked-regionprops",
+      "pypi_versions": [
+        "0.14.0",
+        "0.13.0",
+        "0.12.0",
+        "0.11.1",
+        "0.11.0",
+        "0.10.0",
+        "0.9.0",
+        "0.8.0",
+        "0.7.0",
+        "0.6.0",
+        "0.5.0"
+      ]
+    },
+    "napari-cilia-assistant": {
+      "name": "napari-cilia-assistant",
+      "pypi_versions": [
+        "1.1.0",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0"
       ]
     },
     "napari-clemreg": {
@@ -2135,9 +2825,16 @@
         "0.0.1"
       ]
     },
+    "napari-clipping-planes-controls": {
+      "name": "napari-clipping-planes-controls",
+      "pypi_versions": [
+        "0.0.1"
+      ]
+    },
     "napari-clusters-plotter": {
       "name": "napari-clusters-plotter",
       "pypi_versions": [
+        "0.11.0rc0",
         "0.10.0",
         "0.9.0",
         "0.9.0a3",
@@ -2162,6 +2859,19 @@
         "0.1.2",
         "0.1.1",
         "0.1.0"
+      ]
+    },
+    "napari-colocalization": {
+      "name": "napari-colocalization",
+      "pypi_versions": [
+        "0.3.0",
+        "0.2.0",
+        "0.1.8",
+        "0.1.7",
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3"
       ]
     },
     "napari-compressed-labels-io": {
@@ -2189,6 +2899,7 @@
     "napari-console": {
       "name": "napari-console",
       "pypi_versions": [
+        "0.1.4",
         "0.1.3",
         "0.1.2",
         "0.1.1",
@@ -2207,6 +2918,14 @@
     "napari-convpaint": {
       "name": "napari-convpaint",
       "pypi_versions": [
+        "1.1.0",
+        "1.0.1",
+        "1.0.0",
+        "0.9.2",
+        "0.9.1",
+        "0.9.0",
+        "0.8.2",
+        "0.8.1",
         "0.8.0",
         "0.8.0rc1",
         "0.8.0rc0",
@@ -2233,6 +2952,16 @@
     "napari-copick": {
       "name": "napari-copick",
       "pypi_versions": [
+        "1.9.0",
+        "1.8.0",
+        "1.7.0",
+        "1.6.0",
+        "1.5.0",
+        "1.4.0",
+        "1.3.0",
+        "1.2.0",
+        "1.1.1",
+        "1.1.0",
         "1.0.1",
         "1.0.0",
         "0.0.1"
@@ -2241,6 +2970,7 @@
     "napari-correct-drift": {
       "name": "napari-correct-drift",
       "pypi_versions": [
+        "0.4.1",
         "0.4.0",
         "0.3.0",
         "0.0.2",
@@ -2259,9 +2989,18 @@
         "0.1.2"
       ]
     },
+    "napari-cotrack": {
+      "name": "napari-cotrack",
+      "pypi_versions": [
+        "0.1.7"
+      ]
+    },
     "napari-crop": {
       "name": "napari-crop",
       "pypi_versions": [
+        "0.1.12",
+        "0.1.11",
+        "0.1.10",
         "0.1.9",
         "0.1.8",
         "0.1.7",
@@ -2301,6 +3040,12 @@
       "pypi_versions": [
         "0.0.3",
         "0.0.1"
+      ]
+    },
+    "napari-cta": {
+      "name": "napari-cta",
+      "pypi_versions": [
+        "0.1.0"
       ]
     },
     "napari-ctc-io": {
@@ -2356,6 +3101,12 @@
     "napari-czann-segment": {
       "name": "napari-czann-segment",
       "pypi_versions": [
+        "0.1.1",
+        "0.1.0",
+        "0.0.23",
+        "0.0.22",
+        "0.0.21",
+        "0.0.20",
         "0.0.19",
         "0.0.18",
         "0.0.17",
@@ -2366,6 +3117,12 @@
         "0.0.12",
         "0.0.11",
         "0.0.10"
+      ]
+    },
+    "napari-czi": {
+      "name": "napari-czi",
+      "pypi_versions": [
+        "0.1.0"
       ]
     },
     "napari-czifile2": {
@@ -2394,23 +3151,26 @@
     "napari-czitools": {
       "name": "napari-czitools",
       "pypi_versions": [
+        "0.12.1",
+        "0.12.0",
+        "0.0.11",
+        "0.0.10",
+        "0.0.9",
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
         "0.0.4",
         "0.0.3",
         "0.0.2",
         "0.0.1"
       ]
     },
-    "napari-dab-cellcount": {
-      "name": "napari-dab-cellcount",
-      "pypi_versions": [
-        "0.1.4",
-        "0.1.3",
-        "0.1.2"
-      ]
-    },
     "napari-data-inspection": {
       "name": "napari-data-inspection",
       "pypi_versions": [
+        "1.0.3",
+        "1.0.2",
         "1.0.1",
         "1.0.0",
         "0.0.4",
@@ -2437,6 +3197,12 @@
     "napari-deeplabcut": {
       "name": "napari-deeplabcut",
       "pypi_versions": [
+        "0.3.1.2",
+        "0.3.1.1",
+        "0.3.1.0",
+        "0.3.0.1",
+        "0.3.0.0",
+        "0.2.1.8",
         "0.2.1.7",
         "0.2.1.6",
         "0.2.1.5",
@@ -2492,6 +3258,18 @@
         "0.0.1"
       ]
     },
+    "napari-demo-assistant": {
+      "name": "napari-demo-assistant",
+      "pypi_versions": [
+        "1.5.0",
+        "1.3.1",
+        "1.3.0",
+        "1.2.1",
+        "1.2.0",
+        "1.1.0",
+        "0.1.0"
+      ]
+    },
     "napari-denoiseg": {
       "name": "napari-denoiseg",
       "pypi_versions": [
@@ -2512,6 +3290,8 @@
     "napari-dinosim": {
       "name": "napari-dinosim",
       "pypi_versions": [
+        "0.1.5",
+        "0.1.4",
         "0.1.3",
         "0.1.2",
         "0.1.1",
@@ -2524,9 +3304,27 @@
         "0.0.0"
       ]
     },
+    "napari-dm4topng": {
+      "name": "napari-dm4topng",
+      "pypi_versions": [
+        "0.2.1",
+        "0.2.0",
+        "0.1.2",
+        "0.1.1",
+        "0.1.dev3"
+      ]
+    },
     "napari-dmc-brainmap": {
       "name": "napari-dmc-brainmap",
       "pypi_versions": [
+        "0.2.0b2",
+        "0.2.0b1",
+        "0.1.8",
+        "0.1.7b16",
+        "0.1.7b15",
+        "0.1.7b14",
+        "0.1.7b13",
+        "0.1.7b12",
         "0.1.7b11",
         "0.1.7b10",
         "0.1.7b9",
@@ -2577,6 +3375,20 @@
         "0.0.4"
       ]
     },
+    "napari-easytrack": {
+      "name": "napari-easytrack",
+      "pypi_versions": [
+        "0.1.7",
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
+        "0.0.0"
+      ]
+    },
     "napari-ehooke": {
       "name": "napari-ehooke",
       "pypi_versions": [
@@ -2603,6 +3415,13 @@
         "0.0.1"
       ]
     },
+    "napari-em-assistant": {
+      "name": "napari-em-assistant",
+      "pypi_versions": [
+        "0.2.3",
+        "0.2.2"
+      ]
+    },
     "napari-emd": {
       "name": "napari-EMD",
       "pypi_versions": [
@@ -2619,6 +3438,11 @@
     "napari-epyseg": {
       "name": "napari-epyseg",
       "pypi_versions": [
+        "0.0.14",
+        "0.0.13",
+        "0.0.12",
+        "0.0.11",
+        "0.0.10",
         "0.0.8",
         "0.0.7",
         "0.0.6",
@@ -2631,6 +3455,15 @@
       "pypi_versions": [
         "0.3.1",
         "0.3.0"
+      ]
+    },
+    "napari-etminflux-data-viewer": {
+      "name": "napari-etminflux-data-viewer",
+      "pypi_versions": [
+        "1.0.2",
+        "1.0.1",
+        "1.0.0.1",
+        "1.0.0"
       ]
     },
     "napari-event-monitor": {
@@ -2658,12 +3491,21 @@
     "napari-fast4dreg": {
       "name": "napari-fast4dreg",
       "pypi_versions": [
+        "0.2.7",
+        "0.2.6",
+        "0.2.5",
+        "0.2.4",
+        "0.2.1",
         "0.0.1"
       ]
     },
     "napari-feature-classifier": {
       "name": "napari-feature-classifier",
       "pypi_versions": [
+        "0.4.3",
+        "0.4.2",
+        "0.4.1",
+        "0.4.0",
         "0.3.2",
         "0.3.1",
         "0.3.0",
@@ -2697,8 +3539,24 @@
     "napari-feature-visualization": {
       "name": "napari-feature-visualization",
       "pypi_versions": [
+        "0.1.0",
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "napari-fenestra": {
+      "name": "napari-fenestra",
+      "pypi_versions": [
+        "0.2.11",
+        "0.2.10",
+        "0.2.9",
+        "0.2.8",
+        "0.2.7",
+        "0.2.6",
+        "0.2.5",
+        "0.2.4",
+        "0.2.2",
+        "0.2.1"
       ]
     },
     "napari-figure": {
@@ -2719,6 +3577,7 @@
     "napari-filaments": {
       "name": "napari-filaments",
       "pypi_versions": [
+        "0.5.1",
         "0.4.0",
         "0.3.0",
         "0.2.1",
@@ -2729,6 +3588,9 @@
     "napari-file2folder": {
       "name": "napari-file2folder",
       "pypi_versions": [
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
         "0.0.4",
         "0.0.3",
         "0.0.2",
@@ -2759,6 +3621,7 @@
     "napari-findaureus": {
       "name": "napari-findaureus",
       "pypi_versions": [
+        "1.0.0",
         "0.0.4",
         "0.0.3",
         "0.0.2",
@@ -2768,6 +3631,7 @@
     "napari-flim-phasor-plotter": {
       "name": "napari-flim-phasor-plotter",
       "pypi_versions": [
+        "0.2.3",
         "0.2.2",
         "0.2.1",
         "0.2.0",
@@ -2779,16 +3643,34 @@
         "0.0.4"
       ]
     },
+    "napari-flopa": {
+      "name": "napari-flopa",
+      "pypi_versions": [
+        "0.1.1",
+        "0.1.0",
+        "0.1.0rc0"
+      ]
+    },
     "napari-flowreg": {
       "name": "napari-flowreg",
       "pypi_versions": [
+        "0.1.0a4",
+        "0.1.0a3",
         "0.1.0a2",
+        "0.1.0a1"
+      ]
+    },
+    "napari-flowreg-formats": {
+      "name": "napari-flowreg-formats",
+      "pypi_versions": [
         "0.1.0a1"
       ]
     },
     "napari-fluoresfm": {
       "name": "napari-fluoresfm",
       "pypi_versions": [
+        "0.3.4",
+        "0.3.3",
         "0.2.3",
         "0.2.2",
         "0.2.1",
@@ -2805,9 +3687,30 @@
         "0.1.0"
       ]
     },
+    "napari-ft": {
+      "name": "napari-ft",
+      "pypi_versions": [
+        "0.1.2",
+        "0.1.1.dev1",
+        "0.1.0",
+        "0.0.3"
+      ]
+    },
+    "napari-fungiform": {
+      "name": "napari-fungiform",
+      "pypi_versions": [
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
     "napari-geff": {
       "name": "napari-geff",
       "pypi_versions": [
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
         "0.0.1"
       ]
     },
@@ -2860,6 +3763,9 @@
     "napari-geojson": {
       "name": "napari-geojson",
       "pypi_versions": [
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
         "0.1.3",
         "0.1.2",
         "0.1.1",
@@ -2887,10 +3793,24 @@
         "0.1.0"
       ]
     },
+    "napari-gribberish": {
+      "name": "napari-gribberish",
+      "pypi_versions": [
+        "0.1.0"
+      ]
+    },
     "napari-grid-cropping": {
       "name": "napari-grid-cropping",
       "pypi_versions": [
+        "0.0.2",
         "0.0.1"
+      ]
+    },
+    "napari-grid-curator": {
+      "name": "napari-grid-curator",
+      "pypi_versions": [
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-griottes": {
@@ -2906,6 +3826,7 @@
     "napari-gruvbox": {
       "name": "napari-gruvbox",
       "pypi_versions": [
+        "0.1.2",
         "0.1.1",
         "0.1.0"
       ]
@@ -2921,6 +3842,32 @@
         "0.0.3"
       ]
     },
+    "napari-hardware-monitor": {
+      "name": "napari-hardware-monitor",
+      "pypi_versions": [
+        "1.1.0",
+        "1.0.0",
+        "0.1.0"
+      ]
+    },
+    "napari-harpy": {
+      "name": "napari-harpy",
+      "pypi_versions": [
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
+        "0.0.13",
+        "0.0.12",
+        "0.0.11",
+        "0.0.9",
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
+        "0.0.4"
+      ]
+    },
     "napari-hdf5-labels-io": {
       "name": "napari-hdf5-labels-io",
       "pypi_versions": [
@@ -2933,6 +3880,12 @@
         "0.2.dev17",
         "0.2.dev13",
         "0.2.dev1"
+      ]
+    },
+    "napari-hdf5-reader": {
+      "name": "napari-hdf5-reader",
+      "pypi_versions": [
+        "0.1.1"
       ]
     },
     "napari-hello": {
@@ -2989,6 +3942,18 @@
         "0.1.3"
       ]
     },
+    "napari-hydra": {
+      "name": "napari-hydra",
+      "pypi_versions": [
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2"
+      ]
+    },
     "napari-ids": {
       "name": "napari-IDS",
       "pypi_versions": [
@@ -3005,6 +3970,7 @@
     "napari-imagegrains": {
       "name": "napari-imagegrains",
       "pypi_versions": [
+        "1.0.0",
         "0.1.0"
       ]
     },
@@ -3052,6 +4018,7 @@
     "napari-imc": {
       "name": "napari-imc",
       "pypi_versions": [
+        "0.6.6",
         "0.6.5",
         "0.6.4",
         "0.6.3",
@@ -3081,6 +4048,7 @@
     "napari-imodmodel": {
       "name": "napari-imodmodel",
       "pypi_versions": [
+        "1.0.4",
         "1.0.2"
       ]
     },
@@ -3113,6 +4081,7 @@
     "napari-input-visualizer": {
       "name": "napari-input-visualizer",
       "pypi_versions": [
+        "0.0.2",
         "0.0.1"
       ]
     },
@@ -3132,6 +4101,15 @@
         "0.0.2"
       ]
     },
+    "napari-isbem": {
+      "name": "napari-isbem",
+      "pypi_versions": [
+        "0.2.2",
+        "0.2.1",
+        "0.2.0",
+        "0.1.0"
+      ]
+    },
     "napari-ism": {
       "name": "napari-ISM",
       "pypi_versions": [
@@ -3149,6 +4127,13 @@
       "name": "napari-isolate-cell",
       "pypi_versions": [
         "0.1.2",
+        "0.1.1"
+      ]
+    },
+    "napari-iss-tdflim-reader": {
+      "name": "napari-iss-tdflim-reader",
+      "pypi_versions": [
+        "0.2.0",
         "0.1.1"
       ]
     },
@@ -3293,6 +4278,7 @@
     "napari-large-image-importer": {
       "name": "napari-large-image-importer",
       "pypi_versions": [
+        "0.0.3",
         "0.0.2",
         "0.0.1"
       ]
@@ -3300,6 +4286,14 @@
     "napari-lattice": {
       "name": "napari-lattice",
       "pypi_versions": [
+        "2.2.2",
+        "2.2.1",
+        "2.1.1",
+        "2.1.0",
+        "2.0.0",
+        "1.2.1",
+        "1.1.0",
+        "1.0.6",
         "1.0.5",
         "1.0.3",
         "1.0.2",
@@ -3336,6 +4330,12 @@
         "0.0.3",
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "napari-layer-statistics": {
+      "name": "napari-layer-statistics",
+      "pypi_versions": [
+        "1.0.0"
       ]
     },
     "napari-layer-table": {
@@ -3421,6 +4421,7 @@
     "napari-locpix": {
       "name": "napari-locpix",
       "pypi_versions": [
+        "0.0.7",
         "0.0.6",
         "0.0.5",
         "0.0.4",
@@ -3434,18 +4435,46 @@
         "0.0.1"
       ]
     },
+    "napari-macrophage": {
+      "name": "napari-macrophage",
+      "pypi_versions": [
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
     "napari-maicrobe": {
       "name": "napari-mAIcrobe",
       "pypi_versions": [
+        "1.0.0",
+        "0.1.1",
+        "0.1.0",
+        "0.0.9",
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
         "0.0.4",
         "0.0.3",
         "0.0.2",
         "0.0.1"
       ]
     },
+    "napari-manual-labels-editor": {
+      "name": "napari-manual-labels-editor",
+      "pypi_versions": [
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
     "napari-manual-registration": {
       "name": "napari-manual-registration",
       "pypi_versions": [
+        "1.0.1",
+        "1.0.0",
         "0.0.4",
         "0.0.3",
         "0.0.2",
@@ -3458,6 +4487,12 @@
         "0.0.3",
         "0.0.2",
         "0.0.0"
+      ]
+    },
+    "napari-mask-curator": {
+      "name": "napari-mask-curator",
+      "pypi_versions": [
+        "0.1.1"
       ]
     },
     "napari-mask-density": {
@@ -3495,6 +4530,8 @@
     "napari-matplotlib": {
       "name": "napari-matplotlib",
       "pypi_versions": [
+        "3.0.2",
+        "3.0.1",
         "3.0.0",
         "2.0.3",
         "2.0.2",
@@ -3521,6 +4558,9 @@
     "napari-mcp": {
       "name": "napari-mcp",
       "pypi_versions": [
+        "0.1.0",
+        "0.1.0rc0",
+        "0.0.4",
         "0.0.3",
         "0.0.2",
         "0.0.1a0"
@@ -3564,13 +4604,20 @@
     "napari-meshio": {
       "name": "napari-meshio",
       "pypi_versions": [
+        "0.0.2",
         "0.0.1"
       ]
     },
-    "napari-mesofield": {
-      "name": "napari-mesofield",
+    "napari-metadata": {
+      "name": "napari-metadata",
       "pypi_versions": [
-        "0.1.0"
+        "0.4.0",
+        "0.3.0",
+        "0.2.0",
+        "0.2.0a0",
+        "0.1.1",
+        "0.1.0",
+        "0.1.0a0"
       ]
     },
     "napari-metroid": {
@@ -3586,6 +4633,10 @@
     "napari-micromanager": {
       "name": "napari-micromanager",
       "pypi_versions": [
+        "0.3.1.post1",
+        "0.3.1",
+        "0.3.0",
+        "0.2.0",
         "0.1.3",
         "0.1.0",
         "0.0.3",
@@ -3596,10 +4647,43 @@
         "0.0.1rc3"
       ]
     },
+    "napari-micromorph": {
+      "name": "napari-micromorph",
+      "pypi_versions": [
+        "0.2.2",
+        "0.2.0"
+      ]
+    },
+    "napari-microparticle": {
+      "name": "napari-microparticle",
+      "pypi_versions": [
+        "0.1.0"
+      ]
+    },
+    "napari-microplate": {
+      "name": "napari-microplate",
+      "pypi_versions": [
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
     "napari-microscope": {
       "name": "napari-microscope",
       "pypi_versions": [
         "0.0.3"
+      ]
+    },
+    "napari-microscopy-metrics": {
+      "name": "napari-microscopy-metrics",
+      "pypi_versions": [
+        "1.0.0",
+        "0.0.2",
+        "0.0.1"
       ]
     },
     "napari-microtubule-analyzer": {
@@ -3613,6 +4697,14 @@
         "0.0.1a2",
         "0.0.1a1",
         "0.0.1a0"
+      ]
+    },
+    "napari-mlarray": {
+      "name": "napari-mlarray",
+      "pypi_versions": [
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
       ]
     },
     "napari-mm3": {
@@ -3629,6 +4721,13 @@
         "0.0.4",
         "0.0.3",
         "0.0.2"
+      ]
+    },
+    "napari-molecular-cartography-viewer": {
+      "name": "napari-molecular-cartography-viewer",
+      "pypi_versions": [
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-molecule-reader": {
@@ -3724,6 +4823,12 @@
         "0.0.1"
       ]
     },
+    "napari-morans-i": {
+      "name": "napari-morans-i",
+      "pypi_versions": [
+        "1.0"
+      ]
+    },
     "napari-morphodynamics": {
       "name": "napari-morphodynamics",
       "pypi_versions": [
@@ -3738,6 +4843,12 @@
         "0.1.3",
         "0.1.2",
         "0.1.1",
+        "0.1.0"
+      ]
+    },
+    "napari-mouse-tumour-annotation": {
+      "name": "napari-mouse-tumour-annotation",
+      "pypi_versions": [
         "0.1.0"
       ]
     },
@@ -3765,11 +4876,41 @@
         "0.1.0"
       ]
     },
+    "napari-multi-channel-surface": {
+      "name": "napari-multi-channel-surface",
+      "pypi_versions": [
+        "0.0.3",
+        "0.0.2"
+      ]
+    },
     "napari-multitask": {
       "name": "napari-multitask",
       "pypi_versions": [
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "napari-musa": {
+      "name": "napari-musa",
+      "pypi_versions": [
+        "1.0.0",
+        "0.1.0"
+      ]
+    },
+    "napari-myelin-quantifier": {
+      "name": "napari-myelin-quantifier",
+      "pypi_versions": [
+        "1.3.1",
+        "1.2.1",
+        "1.2.0",
+        "1.1.1",
+        "1.0.1",
+        "1.0.0",
+        "0.3.1",
+        "0.3.0",
+        "0.2.1",
+        "0.2.0",
+        "0.1.0"
       ]
     },
     "napari-mzarr": {
@@ -3791,9 +4932,21 @@
         "0.0.1"
       ]
     },
+    "napari-n5": {
+      "name": "napari-n5",
+      "pypi_versions": [
+        "0.1.1"
+      ]
+    },
     "napari-nanopyx": {
       "name": "napari-nanopyx",
       "pypi_versions": [
+        "0.2.10",
+        "0.2.9",
+        "0.2.8",
+        "0.2.7",
+        "0.2.6",
+        "0.2.5",
         "0.2.4",
         "0.2.3",
         "0.2.2",
@@ -3846,9 +4999,23 @@
         "0.0.2"
       ]
     },
+    "napari-nd2-spectral-ome-zarr": {
+      "name": "napari-nd2-spectral-ome-zarr",
+      "pypi_versions": [
+        "1.5.1",
+        "1.4.0",
+        "1.3.1",
+        "1.3.0",
+        "1.2.0",
+        "1.1.1",
+        "1.1.0"
+      ]
+    },
     "napari-nd-annotator": {
       "name": "napari-nD-annotator",
       "pypi_versions": [
+        "0.3.4",
+        "0.3.3",
         "0.3.2",
         "0.3.1",
         "0.3.1a2",
@@ -3875,6 +5042,9 @@
     "napari-ndev": {
       "name": "napari-ndev",
       "pypi_versions": [
+        "1.0.0a1",
+        "1.0.0a0",
+        "0.12.0rc0",
         "0.11.8",
         "0.11.7",
         "0.11.6",
@@ -3950,6 +5120,8 @@
     "napari-nifti": {
       "name": "napari-nifti",
       "pypi_versions": [
+        "0.0.20",
+        "0.0.19",
         "0.0.17",
         "0.0.16",
         "0.0.15",
@@ -3988,6 +5160,22 @@
     "napari-nninteractive": {
       "name": "napari-nninteractive",
       "pypi_versions": [
+        "2.5.3",
+        "2.5.2",
+        "2.5.1",
+        "2.5.0",
+        "2.4.4",
+        "2.4.3",
+        "2.4.2",
+        "2.4.1",
+        "2.3.2",
+        "2.3.1",
+        "2.2.0",
+        "2.1.1",
+        "2.1.0",
+        "2.0.2",
+        "1.0.7",
+        "1.0.6",
         "1.0.5",
         "1.0.4",
         "1.0.3",
@@ -4001,6 +5189,14 @@
       "pypi_versions": [
         "0.1.1",
         "0.0.post89"
+      ]
+    },
+    "napari-npifile": {
+      "name": "napari-npifile",
+      "pypi_versions": [
+        "0.2.0",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-nucleaizer": {
@@ -4017,9 +5213,20 @@
         "0.1.8"
       ]
     },
+    "napari-nucleation-analyzer": {
+      "name": "napari-nucleation-analyzer",
+      "pypi_versions": [
+        "1.0.1"
+      ]
+    },
     "napari-nuclephaser": {
       "name": "napari-nuclephaser",
       "pypi_versions": [
+        "0.4.0",
+        "0.3.0",
+        "0.2.5",
+        "0.2.4",
+        "0.2.3",
         "0.2.2",
         "0.2.1",
         "0.2.0",
@@ -4067,9 +5274,20 @@
         "0.1.0"
       ]
     },
+    "napari-ome-arrow": {
+      "name": "napari-ome-arrow",
+      "pypi_versions": [
+        "0.0.6",
+        "0.0.5",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2"
+      ]
+    },
     "napari-omero": {
       "name": "napari-omero",
       "pypi_versions": [
+        "0.6.0",
         "0.5.1",
         "0.5.0",
         "0.4.1",
@@ -4084,6 +5302,9 @@
     "napari-omero-downloader-cci": {
       "name": "napari-omero-downloader-cci",
       "pypi_versions": [
+        "0.4.6",
+        "0.3.2",
+        "0.3.0",
         "0.2.3",
         "0.1.5"
       ]
@@ -4091,6 +5312,12 @@
     "napari-ome-zarr": {
       "name": "napari-ome-zarr",
       "pypi_versions": [
+        "0.10.0",
+        "0.9.0",
+        "0.8.2",
+        "0.8.1",
+        "0.8.0",
+        "0.7.3",
         "0.6.1",
         "0.5.2",
         "0.5.1",
@@ -4109,6 +5336,12 @@
     "napari-ome-zarr-navigator": {
       "name": "napari-ome-zarr-navigator",
       "pypi_versions": [
+        "0.4.0",
+        "0.3.0",
+        "0.2.6",
+        "0.2.4",
+        "0.2.3",
+        "0.2.2",
         "0.2.1",
         "0.2.0",
         "0.1.3",
@@ -4149,6 +5382,16 @@
     "napari-organoid-counter": {
       "name": "napari-organoid-counter",
       "pypi_versions": [
+        "0.2.14",
+        "0.2.13",
+        "0.2.12",
+        "0.2.11",
+        "0.2.10",
+        "0.2.9",
+        "0.2.9rc2",
+        "0.2.9rc1",
+        "0.2.8",
+        "0.2.7",
         "0.2.5",
         "0.2.4",
         "0.2.3",
@@ -4160,11 +5403,54 @@
         "0.1.0b0"
       ]
     },
+    "napari-orientation": {
+      "name": "napari-orientation",
+      "pypi_versions": [
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
+    "napari-ortho": {
+      "name": "napari-ortho",
+      "pypi_versions": [
+        "0.0.1"
+      ]
+    },
+    "napari-orthogonal-views": {
+      "name": "napari-orthogonal-views",
+      "pypi_versions": [
+        "0.4.1",
+        "0.4.0",
+        "0.3.0",
+        "0.2.3",
+        "0.2.2",
+        "0.2.1",
+        "0.2.0",
+        "0.2.0rc1",
+        "0.1.0",
+        "0.0.9",
+        "0.0.7",
+        "0.0.6"
+      ]
+    },
     "napari-owncloud": {
       "name": "napari-owncloud",
       "pypi_versions": [
         "0.1.2",
         "0.1.0"
+      ]
+    },
+    "napari-padbound": {
+      "name": "napari-padbound",
+      "pypi_versions": [
+        "0.3.0",
+        "0.2.1",
+        "0.2.0"
       ]
     },
     "napari-parallel": {
@@ -4189,15 +5475,49 @@
         "0.0.1a3"
       ]
     },
+    "napari-pdr": {
+      "name": "napari-pdr",
+      "pypi_versions": [
+        "0.1.1"
+      ]
+    },
     "napari-pdr-reader": {
       "name": "napari-pdr-reader",
       "pypi_versions": [
         "0.0.1"
       ]
     },
+    "napari-persistent-homology": {
+      "name": "napari-persistent-homology",
+      "pypi_versions": [
+        "0.1.5",
+        "0.1.4",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
     "napari-phasors": {
       "name": "napari-phasors",
       "pypi_versions": [
+        "0.7.1",
+        "0.7.0",
+        "0.6.5",
+        "0.6.4",
+        "0.6.3",
+        "0.6.2",
+        "0.6.1",
+        "0.6.0",
+        "0.5.2",
+        "0.5.1",
+        "0.5.0",
+        "0.4.1",
+        "0.4.0",
+        "0.4.0a2",
+        "0.4.0a1",
+        "0.3.0",
+        "0.2.0",
+        "0.1",
         "0.0.5",
         "0.0.4",
         "0.0.3",
@@ -4220,6 +5540,22 @@
       "pypi_versions": [
         "0.3.0",
         "0.0.0"
+      ]
+    },
+    "napari-piscis": {
+      "name": "napari-piscis",
+      "pypi_versions": [
+        "0.1.22",
+        "0.1.21",
+        "0.1.20",
+        "0.1.19",
+        "0.1.18.post1.dev0",
+        "0.1.15.post1.dev0",
+        "0.1.14.dev0",
+        "0.1.13.dev0",
+        "0.1.9.dev0",
+        "0.1.7.dev0",
+        "0.1.6.dev0"
       ]
     },
     "napari-pitcount-cfim": {
@@ -4247,6 +5583,8 @@
     "napari-plot": {
       "name": "napari-plot",
       "pypi_versions": [
+        "0.3.1",
+        "0.2.0",
         "0.1.5",
         "0.1.4.5",
         "0.1.4",
@@ -4272,6 +5610,15 @@
     "napari-plugin-manager": {
       "name": "napari-plugin-manager",
       "pypi_versions": [
+        "0.1.11",
+        "0.1.11rc0",
+        "0.1.10",
+        "0.1.10rc0",
+        "0.1.9",
+        "0.1.9rc0",
+        "0.1.8",
+        "0.1.8rc0",
+        "0.1.7",
         "0.1.6",
         "0.1.5",
         "0.1.5rc1",
@@ -4290,6 +5637,12 @@
         "0.1.2",
         "0.1.1",
         "0.1.0"
+      ]
+    },
+    "napari-plugin-test-ferrinm": {
+      "name": "napari-plugin-test-ferrinm",
+      "pypi_versions": [
+        "0.6.0"
       ]
     },
     "napari-points2regions": {
@@ -4404,6 +5757,7 @@
     "napari-psf-analysis": {
       "name": "napari-psf-analysis",
       "pypi_versions": [
+        "1.2.0",
         "1.1.4",
         "1.1.3",
         "1.1.2",
@@ -4432,6 +5786,8 @@
     "napari-psfgenerator": {
       "name": "napari-psfgenerator",
       "pypi_versions": [
+        "0.4.1",
+        "0.4.0",
         "0.3.2",
         "0.3.1",
         "0.3.0",
@@ -4465,6 +5821,8 @@
     "napari-pyav": {
       "name": "napari-pyav",
       "pypi_versions": [
+        "0.1.1",
+        "0.1.0",
         "0.0.10",
         "0.0.8",
         "0.0.7",
@@ -4567,16 +5925,50 @@
         "0.0.1"
       ]
     },
+    "napari-pyvertexmodel": {
+      "name": "napari-pyvertexmodel",
+      "pypi_versions": [
+        "0.0.1a0"
+      ]
+    },
     "napari-qrcode": {
       "name": "napari-qrcode",
       "pypi_versions": [
         "0.0.1"
       ]
     },
+    "napari-quantem": {
+      "name": "napari-quantem",
+      "pypi_versions": [
+        "0.1.0"
+      ]
+    },
     "napari-quoll": {
       "name": "napari-quoll",
       "pypi_versions": [
         "0.0.1"
+      ]
+    },
+    "napari-racc": {
+      "name": "napari-racc",
+      "pypi_versions": [
+        "0.3.1",
+        "0.3.0",
+        "0.2.1",
+        "0.2.0",
+        "0.1.0"
+      ]
+    },
+    "napari-reco-plugin": {
+      "name": "napari-reco-plugin",
+      "pypi_versions": [
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-rembg": {
@@ -4594,6 +5986,16 @@
       "name": "napari-result-stack",
       "pypi_versions": [
         "0.0.1"
+      ]
+    },
+    "napari-resview": {
+      "name": "napari-resview",
+      "pypi_versions": [
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-rioxarray": {
@@ -4643,6 +6045,15 @@
         "0.0.4",
         "0.0.3",
         "0.0.2"
+      ]
+    },
+    "napari-rosettasciio": {
+      "name": "napari-rosettasciio",
+      "pypi_versions": [
+        "0.1.1",
+        "0.1.0",
+        "0.1.dev10",
+        "0.0.3"
       ]
     },
     "napari-roxas-ai": {
@@ -4726,9 +6137,57 @@
         "0.1.2"
       ]
     },
+    "napari-sam3-assistant": {
+      "name": "napari-sam3-assistant",
+      "pypi_versions": [
+        "4.4.0",
+        "4.3.9",
+        "4.3.6",
+        "4.3.4",
+        "4.3.3",
+        "4.3.2",
+        "4.3.1",
+        "4.3.0",
+        "4.2.13",
+        "4.2.12",
+        "4.2.11",
+        "4.2.10",
+        "4.2.9",
+        "4.2.7",
+        "4.2.6",
+        "4.2.5",
+        "4.2.4",
+        "4.2.3",
+        "4.2.1",
+        "4.1.0",
+        "4.0.3",
+        "4.0.1",
+        "4.0.0",
+        "3.3.0",
+        "3.2.0",
+        "3.1.0",
+        "3.0.3",
+        "3.0.2",
+        "3.0.1",
+        "3.0.0",
+        "2.0.0",
+        "1.1.1",
+        "1.0.2",
+        "1.0.1",
+        "0.0.1"
+      ]
+    },
     "napari-sam4is": {
       "name": "napari-SAM4IS",
       "pypi_versions": [
+        "1.2.0",
+        "1.1.0",
+        "1.0.0",
+        "0.2.1",
+        "0.2.0",
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
         "0.1.1",
         "0.1.0",
         "0.0.9",
@@ -4756,9 +6215,16 @@
         "0.0.2"
       ]
     },
+    "napari-saveas-dtype": {
+      "name": "napari-saveas-dtype",
+      "pypi_versions": [
+        "0.0.1"
+      ]
+    },
     "napari-save-transformed": {
       "name": "napari-save-transformed",
       "pypi_versions": [
+        "0.0.3",
         "0.0.2",
         "0.0.1"
       ]
@@ -4766,6 +6232,7 @@
     "napari-sc3d-viewer": {
       "name": "napari-sc3D-viewer",
       "pypi_versions": [
+        "2.0.0",
         "1.1.1",
         "1.1.0",
         "1.0.0",
@@ -4803,6 +6270,10 @@
     "napari-sediment": {
       "name": "napari-sediment",
       "pypi_versions": [
+        "0.5.3",
+        "0.5.2",
+        "0.5.1",
+        "0.5.0",
         "0.4.0",
         "0.3.1",
         "0.3.0",
@@ -4819,6 +6290,15 @@
       "pypi_versions": [
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "napari-segmencolo": {
+      "name": "napari-segmencolo",
+      "pypi_versions": [
+        "0.1.4",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-segment": {
@@ -4862,6 +6342,15 @@
       "name": "napari-segmentation-overlap-filter",
       "pypi_versions": [
         "0.0.1"
+      ]
+    },
+    "napari-segmentation-toolbox": {
+      "name": "napari-segmentation-toolbox",
+      "pypi_versions": [
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
+        "0.0.4"
       ]
     },
     "napari-segment-blobs-and-things-with-membranes": {
@@ -4911,6 +6400,7 @@
     "napari-segment-everything": {
       "name": "napari-segment-everything",
       "pypi_versions": [
+        "0.1.7",
         "0.1.6",
         "0.1.5",
         "0.1.3",
@@ -4930,11 +6420,22 @@
     "napari-serialcellpose": {
       "name": "napari-serialcellpose",
       "pypi_versions": [
+        "0.5.1",
+        "0.5.0",
+        "0.4.0",
         "0.3.0",
         "0.2.2",
         "0.2.1",
         "0.2.0",
         "0.1.2"
+      ]
+    },
+    "napari-serverkit": {
+      "name": "napari-serverkit",
+      "pypi_versions": [
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "napari-shape-odyssey": {
@@ -4959,9 +6460,18 @@
         "0.0.1"
       ]
     },
+    "napari-signal-classifier": {
+      "name": "napari-signal-classifier",
+      "pypi_versions": [
+        "0.0.1"
+      ]
+    },
     "napari-signal-selector": {
       "name": "napari-signal-selector",
       "pypi_versions": [
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
         "0.0.6",
         "0.0.5",
         "0.0.4",
@@ -4972,6 +6482,10 @@
     "napari-simpleannotate": {
       "name": "napari-simpleannotate",
       "pypi_versions": [
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
         "0.1.2",
         "0.1.1",
         "0.1.0",
@@ -5023,6 +6537,21 @@
         "0.0.1"
       ]
     },
+    "napari-simple-tracker": {
+      "name": "napari-simple-tracker",
+      "pypi_versions": [
+        "1.1.8",
+        "1.1.7",
+        "1.1.6",
+        "1.1.5",
+        "1.1.4",
+        "1.1.3",
+        "1.1.2",
+        "1.1.1",
+        "1.1.0",
+        "0.1.0"
+      ]
+    },
     "napari-sim-processor": {
       "name": "napari-sim-processor",
       "pypi_versions": [
@@ -5059,6 +6588,7 @@
     "napari-skimage": {
       "name": "napari-skimage",
       "pypi_versions": [
+        "0.7.0",
         "0.6.0",
         "0.5.1",
         "0.5.0",
@@ -5164,9 +6694,28 @@
         "0.0.3"
       ]
     },
+    "napari-spam": {
+      "name": "napari-spam",
+      "pypi_versions": [
+        "0.0.12",
+        "0.0.11",
+        "0.0.10",
+        "0.0.9",
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.5",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
     "napari-spatial-correlation-plotter": {
       "name": "napari-spatial-correlation-plotter",
       "pypi_versions": [
+        "1.0.1",
+        "1.0.0",
         "0.0.3",
         "0.0.2",
         "0.0.1"
@@ -5175,6 +6724,10 @@
     "napari-spatialdata": {
       "name": "napari-spatialdata",
       "pypi_versions": [
+        "0.7.2",
+        "0.7.1",
+        "0.7.0",
+        "0.6.0",
         "0.5.7",
         "0.5.6",
         "0.5.5",
@@ -5244,6 +6797,7 @@
     "napari-splinebox": {
       "name": "napari-splinebox",
       "pypi_versions": [
+        "0.0.5a0",
         "0.0.4a0",
         "0.0.3a0",
         "0.0.2a0",
@@ -5273,6 +6827,7 @@
     "napari-spofi": {
       "name": "napari-spofi",
       "pypi_versions": [
+        "0.0.4",
         "0.0.1",
         "0.0.1a2"
       ]
@@ -5280,6 +6835,8 @@
     "napari-spotiflow": {
       "name": "napari-spotiflow",
       "pypi_versions": [
+        "0.4.5",
+        "0.4.4",
         "0.4.3",
         "0.4.0",
         "0.3.4",
@@ -5317,6 +6874,8 @@
     "napari-stitcher": {
       "name": "napari-stitcher",
       "pypi_versions": [
+        "0.1.4",
+        "0.1.3",
         "0.1.2",
         "0.1.1",
         "0.1.0"
@@ -5340,6 +6899,12 @@
         "0.0.1"
       ]
     },
+    "napari-storm": {
+      "name": "napari-storm",
+      "pypi_versions": [
+        "2.0.0"
+      ]
+    },
     "napari-stracking": {
       "name": "napari-stracking",
       "pypi_versions": [
@@ -5351,6 +6916,19 @@
         "0.1.3",
         "0.1.2",
         "0.0.1"
+      ]
+    },
+    "napari-stream": {
+      "name": "napari-stream",
+      "pypi_versions": [
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
+        "0.0.9",
+        "0.0.8",
+        "0.0.5",
+        "0.0.4",
+        "0.0.3"
       ]
     },
     "napari-stress": {
@@ -5497,6 +7075,15 @@
         "0.1.3"
       ]
     },
+    "napari-synaptogram": {
+      "name": "napari-synaptogram",
+      "pypi_versions": [
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
     "napari-tabu": {
       "name": "napari-tabu",
       "pypi_versions": [
@@ -5511,6 +7098,9 @@
     "napari-tapenade-processing": {
       "name": "napari-tapenade-processing",
       "pypi_versions": [
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
         "0.0.14",
         "0.0.13",
         "0.0.12",
@@ -5530,6 +7120,11 @@
     "napari-tardis-em": {
       "name": "napari-tardis-em",
       "pypi_versions": [
+        "0.3.25",
+        "0.3.24",
+        "0.3.23",
+        "0.3.22",
+        "0.3.20",
         "0.3.19",
         "0.3.18",
         "0.3.15",
@@ -5588,6 +7183,9 @@
     "napari-tiff": {
       "name": "napari-tiff",
       "pypi_versions": [
+        "0.1.6",
+        "0.1.6rc0",
+        "0.1.5",
         "0.1.4",
         "0.1.3",
         "0.1.3rc1",
@@ -5606,6 +7204,7 @@
     "napari-tiler": {
       "name": "napari-tiler",
       "pypi_versions": [
+        "0.1.0",
         "0.0.9",
         "0.0.8",
         "0.0.6",
@@ -5695,6 +7294,31 @@
     "napari-tmidas": {
       "name": "napari-tmidas",
       "pypi_versions": [
+        "0.5.12",
+        "0.5.11",
+        "0.5.10",
+        "0.5.9",
+        "0.5.8",
+        "0.5.7",
+        "0.5.6",
+        "0.5.5",
+        "0.5.4",
+        "0.5.3",
+        "0.5.2",
+        "0.5.0",
+        "0.4.4",
+        "0.4.2",
+        "0.4.1",
+        "0.4.0",
+        "0.3.5",
+        "0.3.4",
+        "0.3.3",
+        "0.3.2",
+        "0.3.1",
+        "0.3.0",
+        "0.2.6",
+        "0.2.5",
+        "0.2.4",
         "0.2.2",
         "0.2.1",
         "0.2.0",
@@ -5720,37 +7344,6 @@
         "2023.11",
         "2023.8",
         "2023.3"
-      ]
-    },
-    "napari-tomodl": {
-      "name": "napari-tomodl",
-      "pypi_versions": [
-        "0.1.17",
-        "0.1.16",
-        "0.1.15",
-        "0.1.14",
-        "0.1.13",
-        "0.1.12",
-        "0.1.11",
-        "0.1.10",
-        "0.1.9",
-        "0.1.8",
-        "0.1.7",
-        "0.1.6",
-        "0.1.5",
-        "0.1.4",
-        "0.1.3",
-        "0.1.2",
-        "0.1.1",
-        "0.1.0",
-        "0.0.9",
-        "0.0.7",
-        "0.0.6",
-        "0.0.5",
-        "0.0.4",
-        "0.0.3",
-        "0.0.2",
-        "0.0.1"
       ]
     },
     "napari-tomotwin": {
@@ -5782,6 +7375,8 @@
     "napari-toolkit": {
       "name": "napari-toolkit",
       "pypi_versions": [
+        "0.0.10",
+        "0.0.9",
         "0.0.7",
         "0.0.6",
         "0.0.5",
@@ -5812,6 +7407,14 @@
         "0.0.1"
       ]
     },
+    "napari-topostats": {
+      "name": "napari-TopoStats",
+      "pypi_versions": [
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
     "napari-toska": {
       "name": "napari-toska",
       "pypi_versions": [
@@ -5832,6 +7435,8 @@
     "napari-trackastra": {
       "name": "napari-trackastra",
       "pypi_versions": [
+        "0.2.2",
+        "0.2.1",
         "0.2.0",
         "0.1.6",
         "0.1.4",
@@ -5857,6 +7462,13 @@
         "0.1.1"
       ]
     },
+    "napari-training-assistant": {
+      "name": "napari-training-assistant",
+      "pypi_versions": [
+        "0.3.0",
+        "0.2.0"
+      ]
+    },
     "napari-trait2d": {
       "name": "napari-trait2d",
       "pypi_versions": [
@@ -5878,6 +7490,7 @@
     "napari-turing": {
       "name": "napari-turing",
       "pypi_versions": [
+        "1.0.0",
         "0.3.2",
         "0.3.1",
         "0.2.0",
@@ -5887,6 +7500,7 @@
     "napari-tyssue": {
       "name": "napari-tyssue",
       "pypi_versions": [
+        "0.1.3",
         "0.1.2",
         "0.1.1",
         "0.0.1"
@@ -5912,6 +7526,27 @@
         "0.0.1"
       ]
     },
+    "napari-unet": {
+      "name": "napari-unet",
+      "pypi_versions": [
+        "1.0.0"
+      ]
+    },
+    "napari-unet-assistant": {
+      "name": "napari-unet-assistant",
+      "pypi_versions": [
+        "0.6.5",
+        "0.6.4",
+        "0.6.3",
+        "0.6.2",
+        "0.6.1",
+        "0.6.0",
+        "0.4.0",
+        "0.3.0",
+        "0.2.0",
+        "0.1.0"
+      ]
+    },
     "napari-unicell": {
       "name": "napari-unicell",
       "pypi_versions": [
@@ -5923,6 +7558,7 @@
     "napari-unispac": {
       "name": "napari-UniSPAC",
       "pypi_versions": [
+        "1.1.0",
         "1.0.6",
         "1.0.5",
         "1.0.4"
@@ -6036,6 +7672,35 @@
         "0.1.dev3"
       ]
     },
+    "napari-vipp": {
+      "name": "napari-vipp",
+      "pypi_versions": [
+        "0.14.0a1",
+        "0.13.0a9",
+        "0.13.0a8",
+        "0.13.0a7",
+        "0.13.0a6",
+        "0.13.0a5",
+        "0.13.0a4",
+        "0.13.0a1",
+        "0.12.0a3",
+        "0.12.0a2",
+        "0.12.0a1",
+        "0.11.0a3",
+        "0.11.0a2",
+        "0.11.0a1",
+        "0.10.0a1",
+        "0.9.0a1",
+        "0.8.3a1",
+        "0.8.2a2",
+        "0.8.2a1",
+        "0.8.1a1",
+        "0.8.0a1",
+        "0.7.2a1",
+        "0.7.1a1",
+        "0.7.0a1"
+      ]
+    },
     "napari-vodex": {
       "name": "napari-vodex",
       "pypi_versions": [
@@ -6045,6 +7710,19 @@
         "0.0.5",
         "0.0.4",
         "0.0.1"
+      ]
+    },
+    "napari-volume-spin": {
+      "name": "napari-volume-spin",
+      "pypi_versions": [
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
+    "napari-voxtell": {
+      "name": "napari-voxtell",
+      "pypi_versions": [
+        "0.1.0"
       ]
     },
     "napari-workflow-inspector": {
@@ -6088,9 +7766,21 @@
         "0.0.3"
       ]
     },
+    "napari-worm-neuron-annotator": {
+      "name": "napari-worm-neuron-annotator",
+      "pypi_versions": [
+        "0.4.0",
+        "0.3.9",
+        "0.3.6",
+        "0.3.5",
+        "0.3.0",
+        "0.2.0"
+      ]
+    },
     "napari-wsi": {
       "name": "napari-wsi",
       "pypi_versions": [
+        "1.3.0",
         "1.2.1",
         "1.2.0",
         "1.1.0",
@@ -6141,6 +7831,17 @@
         "0.0.1"
       ]
     },
+    "napari-yolopt": {
+      "name": "napari-yolopt",
+      "pypi_versions": [
+        "0.4.0",
+        "0.3.4",
+        "0.3.3",
+        "0.3.2.dev0",
+        "0.3.1.dev0",
+        "0.0.2.dev5"
+      ]
+    },
     "napari-yolov5": {
       "name": "napari-yolov5",
       "pypi_versions": [
@@ -6149,6 +7850,12 @@
         "0.2.12",
         "0.2.11",
         "0.2.9"
+      ]
+    },
+    "napari-zarrnii": {
+      "name": "napari-zarrnii",
+      "pypi_versions": [
+        "0.1.0"
       ]
     },
     "napari-zelda": {
@@ -6184,9 +7891,18 @@
         "0.0.1"
       ]
     },
+    "napasserelle": {
+      "name": "napasserelle",
+      "pypi_versions": [
+        "1.2.0",
+        "0.0.0"
+      ]
+    },
     "napatrackmater": {
       "name": "napatrackmater",
       "pypi_versions": [
+        "5.8.9",
+        "5.8.8",
         "5.8.7",
         "5.8.6",
         "5.8.4",
@@ -6375,6 +8091,27 @@
         "0.2.0"
       ]
     },
+    "ndevio": {
+      "name": "ndevio",
+      "pypi_versions": [
+        "0.9.2",
+        "0.9.1",
+        "0.9.0",
+        "0.8.0",
+        "0.7.0",
+        "0.6.0",
+        "0.5.1",
+        "0.5.0",
+        "0.4.0",
+        "0.3.3",
+        "0.3.2",
+        "0.3.1",
+        "0.3.0",
+        "0.2.0",
+        "0.2.0rc4",
+        "0.2.0rc3"
+      ]
+    },
     "ndev-sampledata": {
       "name": "ndev-sampledata",
       "pypi_versions": [
@@ -6386,18 +8123,34 @@
     "ndev-settings": {
       "name": "ndev-settings",
       "pypi_versions": [
+        "0.4.2",
+        "0.4.1",
+        "0.4.0",
+        "0.3.0",
         "0.2.0"
       ]
     },
     "ndev-themes": {
       "name": "ndev-themes",
       "pypi_versions": [
+        "0.1.1",
         "0.1.0"
+      ]
+    },
+    "ndev-workflows": {
+      "name": "ndev-workflows",
+      "pypi_versions": [
+        "0.0.1"
       ]
     },
     "nellie": {
       "name": "nellie",
       "pypi_versions": [
+        "1.0.4",
+        "1.0.3",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
         "0.4.1",
         "0.4.0",
         "0.3.2",
@@ -6429,9 +8182,34 @@
     "neurogenesis-napari": {
       "name": "neurogenesis-napari",
       "pypi_versions": [
+        "0.1.0a2",
+        "0.1.0a1.post4",
         "0.1.0a1.post3",
         "0.1.0a1.post2",
         "0.1.0a1"
+      ]
+    },
+    "neuro-sam": {
+      "name": "neuro-sam",
+      "pypi_versions": [
+        "0.1.18",
+        "0.1.17",
+        "0.1.16",
+        "0.1.15",
+        "0.1.14",
+        "0.1.13",
+        "0.1.12",
+        "0.1.11",
+        "0.1.10",
+        "0.1.9",
+        "0.1.8",
+        "0.1.7",
+        "0.1.6",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "nfinder": {
@@ -6472,6 +8250,25 @@
         "0.0.2"
       ]
     },
+    "ome-zarrpari": {
+      "name": "ome-zarrpari",
+      "pypi_versions": [
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
+        "0.0.5",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
+    "openuc2-processor": {
+      "name": "openuc2-processor",
+      "pypi_versions": [
+        "0.1.0"
+      ]
+    },
     "orchardseg": {
       "name": "orchardseg",
       "pypi_versions": [
@@ -6482,6 +8279,9 @@
     "organelle-segmenter-plugin": {
       "name": "organelle-segmenter-plugin",
       "pypi_versions": [
+        "0.0.11",
+        "0.0.10",
+        "0.0.9",
         "0.0.6",
         "0.0.5",
         "0.0.5b0",
@@ -6536,6 +8336,12 @@
     "partseg": {
       "name": "PartSeg",
       "pypi_versions": [
+        "0.17.0",
+        "0.17.0rc2",
+        "0.17.0rc1",
+        "0.16.5",
+        "0.16.4",
+        "0.16.4rc0",
         "0.16.3",
         "0.16.2",
         "0.16.1",
@@ -6600,6 +8406,40 @@
         "0.1.0"
       ]
     },
+    "patchlabel": {
+      "name": "patchlabel",
+      "pypi_versions": [
+        "0.0.5",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
+    "pentachrome-plugin": {
+      "name": "pentachrome-plugin",
+      "pypi_versions": [
+        "0.11.0",
+        "0.10.0",
+        "0.9.2",
+        "0.9.1",
+        "0.9.0",
+        "0.8.1",
+        "0.7.3",
+        "0.7.2",
+        "0.7.1",
+        "0.7.0",
+        "0.6.0",
+        "0.5.0",
+        "0.4.6",
+        "0.4.5",
+        "0.4.4",
+        "0.4.3",
+        "0.4.2",
+        "0.4.1",
+        "0.4.0"
+      ]
+    },
     "platelet-unet-watershed": {
       "name": "platelet-unet-watershed",
       "pypi_versions": [
@@ -6637,6 +8477,8 @@
     "popidd-io": {
       "name": "popidd-io",
       "pypi_versions": [
+        "0.0.5",
+        "0.0.4",
         "0.0.3",
         "0.0.2",
         "0.0.1"
@@ -6645,6 +8487,8 @@
     "poser-napari": {
       "name": "PoseR-napari",
       "pypi_versions": [
+        "0.0.1b7",
+        "0.0.1b6",
         "0.0.1b4",
         "0.0.1b3",
         "0.0.1b2"
@@ -6653,6 +8497,9 @@
     "psf-analysis-cfim": {
       "name": "psf-analysis-CFIM",
       "pypi_versions": [
+        "1.7.10",
+        "1.7.9",
+        "1.7.8",
         "1.7.6",
         "1.7.5",
         "1.7.0",
@@ -6702,9 +8549,35 @@
         "0.3.0"
       ]
     },
+    "pyphenix": {
+      "name": "pyphenix",
+      "pypi_versions": [
+        "0.5.0",
+        "0.4.0",
+        "0.3.4",
+        "0.3.3",
+        "0.3.2",
+        "0.3.1",
+        "0.3.0",
+        "0.2.2",
+        "0.2.1",
+        "0.2.0",
+        "0.1.9",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0",
+        "0.0.3"
+      ]
+    },
     "pystack3d-napari": {
       "name": "pystack3d-napari",
       "pypi_versions": [
+        "2026.2",
+        "2026.1.1",
+        "2026.1",
         "2025.1"
       ]
     },
@@ -6721,6 +8594,26 @@
         "0.0.3",
         "0.0.2",
         "0.0.1"
+      ]
+    },
+    "quanti-fret": {
+      "name": "quanti-fret",
+      "pypi_versions": [
+        "1.0.1",
+        "1.0.0",
+        "0.19.0",
+        "0.18.0",
+        "0.17.1",
+        "0.17.0",
+        "0.16.0",
+        "0.15.0",
+        "0.14.1",
+        "0.14.0",
+        "0.13.0",
+        "0.12.0",
+        "0.11.0",
+        "0.10.1",
+        "0.10.0"
       ]
     },
     "quantpunc": {
@@ -6786,6 +8679,24 @@
         "0.1.0"
       ]
     },
+    "secondharmonic": {
+      "name": "secondharmonic",
+      "pypi_versions": [
+        "0.1.0"
+      ]
+    },
+    "segment-any-confocal-images": {
+      "name": "segment-any-confocal-images",
+      "pypi_versions": [
+        "0.0.8",
+        "0.0.7",
+        "0.0.6",
+        "0.0.4",
+        "0.0.3",
+        "0.0.2",
+        "0.0.1"
+      ]
+    },
     "segment-embryo": {
       "name": "segment-embryo",
       "pypi_versions": [
@@ -6793,9 +8704,40 @@
         "0.3"
       ]
     },
+    "senoquant": {
+      "name": "senoquant",
+      "pypi_versions": [
+        "1.0.0b13.post1",
+        "1.0.0b13",
+        "1.0.0b12",
+        "1.0.0b11.post5",
+        "1.0.0b11.post4",
+        "1.0.0b11.post3",
+        "1.0.0b11.post2",
+        "1.0.0b11.post1",
+        "1.0.0b11",
+        "1.0.0b10",
+        "1.0.0b9",
+        "1.0.0b8.post2",
+        "1.0.0b8.post1",
+        "1.0.0b8",
+        "1.0.0b7",
+        "1.0.0b6.post5",
+        "1.0.0b6.post4",
+        "1.0.0b6.post3",
+        "1.0.0b6.post2",
+        "1.0.0b6.post1",
+        "1.0.0b5",
+        "1.0.0b4",
+        "1.0.0b3",
+        "1.0.0b2",
+        "1.0.0b1"
+      ]
+    },
     "set-calibration": {
       "name": "set-calibration",
       "pypi_versions": [
+        "0.1.2",
         "0.0.4",
         "0.0.1"
       ]
@@ -6803,6 +8745,12 @@
     "seu-3d": {
       "name": "seu-3d",
       "pypi_versions": [
+        "2.0.0",
+        "1.1.17",
+        "1.1.16",
+        "1.1.15",
+        "1.1.14",
+        "1.1.13",
         "1.1.12",
         "1.1.11",
         "1.1.10",
@@ -6834,9 +8782,16 @@
         "1.0.3"
       ]
     },
+    "simple-napari-cci-annotator": {
+      "name": "simple-napari-cci-annotator",
+      "pypi_versions": [
+        "0.0.2"
+      ]
+    },
     "skan": {
       "name": "skan",
       "pypi_versions": [
+        "0.13.1",
         "0.13.0",
         "0.12.3",
         "0.12.2",
@@ -6937,6 +8892,17 @@
         "0.1.0"
       ]
     },
+    "tomopari": {
+      "name": "tomopari",
+      "pypi_versions": [
+        "0.2.16",
+        "0.2.15",
+        "0.2.14",
+        "0.2.13",
+        "0.2.12",
+        "0.1.5"
+      ]
+    },
     "tootapari": {
       "name": "tootapari",
       "pypi_versions": [
@@ -6967,6 +8933,15 @@
         "0.0.1"
       ]
     },
+    "ultrack": {
+      "name": "ultrack",
+      "pypi_versions": [
+        "0.8.0",
+        "0.7.2",
+        "0.7.1",
+        "0.7.0"
+      ]
+    },
     "unet-lungs-segmentation": {
       "name": "unet-lungs-segmentation",
       "pypi_versions": [
@@ -6984,8 +8959,10 @@
       ]
     },
     "vessqc": {
-      "name": "VessQC",
+      "name": "vessqc",
       "pypi_versions": [
+        "1.0.0",
+        "0.9.11",
         "0.8.0",
         "0.7.0",
         "0.6.1",
@@ -7157,6 +9134,18 @@
         "0.0.0"
       ]
     },
+    "wellmapper": {
+      "name": "WellMapper",
+      "pypi_versions": [
+        "0.2.0",
+        "0.1.5",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
+      ]
+    },
     "workshop-demo": {
       "name": "workshop-demo",
       "pypi_versions": [
@@ -7168,6 +9157,25 @@
       "name": "World2Data",
       "pypi_versions": [
         "0.0.3"
+      ]
+    },
+    "w-seg-napari": {
+      "name": "w-seg-napari",
+      "pypi_versions": [
+        "0.2.8",
+        "0.2.7",
+        "0.2.6",
+        "0.2.5",
+        "0.2.4",
+        "0.2.3",
+        "0.2.2",
+        "0.2.1",
+        "0.2.0",
+        "0.1.4",
+        "0.1.3",
+        "0.1.2",
+        "0.1.1",
+        "0.1.0"
       ]
     },
     "yt-napari": {
@@ -7185,19 +9193,12 @@
     "zarpaint": {
       "name": "zarpaint",
       "pypi_versions": [
+        "0.4.1",
         "0.4.0",
         "0.3.1",
         "0.3.0",
         "0.2.0",
         "0.1.0"
-      ]
-    },
-    "zarr-tools": {
-      "name": "zarr-tools",
-      "pypi_versions": [
-        "0.4.5",
-        "0.4.4",
-        "0.4.2"
       ]
     }
   },
@@ -7307,28 +9308,18 @@
     "flood-napari": [
       "0.0.1"
     ],
+    "harpy-analysis": [
+      "0.3.0",
+      "0.2.0",
+      "0.1.0",
+      "0.0.2",
+      "0.0.1"
+    ],
     "lineagetree": [
       "1.2.0"
     ],
     "morphospaces": [
       "0.0.3"
-    ],
-    "motile-tracker": [
-      "3.1.5.dev0",
-      "3.1.4rc1",
-      "3.1.4.dev1",
-      "3.1.4.dev0",
-      "3.1.3",
-      "3.1.3.dev0",
-      "3.1.2",
-      "3.1.2.dev0",
-      "3.1.1",
-      "3.1.1.dev0",
-      "3.1.0",
-      "3.1.0.dev0",
-      "3.0.1",
-      "3.0.0",
-      "0.0.1.dev0"
     ],
     "napari-brainways": [
       "0.1.11.1",
@@ -7356,44 +9347,12 @@
     "napari-btrack-reader": [
       "0.1.0"
     ],
-    "napari-chatgpt": [
-      "2025.6.25.2",
-      "2024.10.18.1",
-      "2024.8.31",
-      "2024.8.30",
-      "2024.5.15",
-      "2024.3.26.3",
-      "2024.3.26.2",
-      "2024.3.26.1",
-      "2024.3.26",
-      "2024.3.13.3",
-      "2024.3.13.2",
-      "2024.3.13.1",
-      "2024.3.13",
-      "2024.2.24",
-      "2024.2.19",
-      "2024.2.4",
-      "2024.2.3",
-      "2024.2.1",
-      "2023.12.30.1",
-      "2023.12.30",
-      "2023.12.29",
-      "2023.12.28",
-      "2023.12.27.1",
-      "2023.12.27",
-      "2023.8.8",
-      "2023.7.21",
-      "2023.7.7",
-      "2023.6.28",
-      "2023.6.21.post1",
-      "2023.6.21",
-      "2023.6.3",
-      "2023.6.2",
-      "2023.5.16",
-      "2023.5.2"
-    ],
     "napari-cilia-beating-frequency": [
       "0.1"
+    ],
+    "napari-colocalisation": [
+      "0.1.1",
+      "0.1.0"
     ],
     "napari-czifile": [
       "0.0.2"
@@ -7466,6 +9425,13 @@
       "0.1.11",
       "0.1.10"
     ],
+    "nbatch": [
+      "0.0.4",
+      "0.0.3",
+      "0.0.2",
+      "0.0.1",
+      "0.0.1rc0"
+    ],
     "nd2-dask": [
       "0.0.7.dev1",
       "0.0.6",
@@ -7482,9 +9448,15 @@
     ],
     "tracktour": [
       "0.0.3rc1"
+    ],
+    "zarr-tools": [
+      "0.4.5",
+      "0.4.4",
+      "0.4.2"
     ]
   },
   "deleted": {
+    "itasc": [],
     "napari-sim-simulator": []
   }
 }

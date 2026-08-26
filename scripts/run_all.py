@@ -5,6 +5,9 @@ Usage:
     python scripts/run_all.py --skip-fetch # skip data fetching, just compute + plot
     python scripts/run_all.py --plots-only # only regenerate plots
     python scripts/run_all.py --velocity   # also run velocity (slow, many API calls)
+    python scripts/run_all.py --template-usage  # also re-detect napari-plugin-template
+                                              # usage (slow, ~600 GitHub calls) and
+                                              # rebuild reports/plugin-template-usage.md
 """
 
 from __future__ import annotations
@@ -34,6 +37,7 @@ def main() -> int:
     skip_fetch = "--skip-fetch" in sys.argv
     plots_only = "--plots-only" in sys.argv
     include_velocity = "--velocity" in sys.argv
+    include_template = "--template-usage" in sys.argv
 
     if plots_only:
         _run("plot_contributors.py", "Plotting contributor metrics")
@@ -62,6 +66,18 @@ def main() -> int:
 
         _run("fetch_python_versions.py", "Phase 1.4: Fetch Python version data")
 
+    # ── Template-usage detection (slow — only if requested) ─────────────
+    if include_template and not skip_fetch:
+        if not _run(
+            "detect_plugin_template_usage.py",
+            "Phase 1.5: Detect napari-plugin-template usage",
+        ):
+            print(
+                "\nWARNING: detect_plugin_template_usage.py failed — ",
+                "template chart will be skipped or stale.\n",
+                file=sys.stderr,
+            )
+
     # ── Phase 2: Compute metrics ────────────────────────────────────────
     _run("compute_contributor_metrics.py", "Phase 2.1: Compute contributor metrics")
     _run("compute_plugin_metrics.py", "Phase 2.2: Compute plugin metrics")
@@ -75,6 +91,13 @@ def main() -> int:
     _run("plot_contributors.py", "Phase 3.1: Plot contributor metrics")
     _run("plot_plugins.py", "Phase 3.2: Plot plugin metrics")
     _run("plot_python_versions.py", "Phase 3.3: Plot Python version support")
+
+    # ── Report (only if template detection was run) ─────────────────────
+    if include_template:
+        _run(
+            "build_plugin_template_usage_report.py",
+            "Phase 4: Build plugin-template-usage report",
+        )
 
     print("\n✅ Pipeline complete!", file=sys.stderr)
     print(f"   Plots in: {REPO_ROOT / 'plots'}", file=sys.stderr)
