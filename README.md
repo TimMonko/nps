@@ -6,9 +6,8 @@ to keep napari's 500+ plugin ecosystem healthy and connected to core napari.
 
 This repo holds three kinds of content:
 
-1. **Fellowship narrative** — the URSSI proposal, blog posts (URSSI + napari),
-   the final report, and conference materials (`fellowship/`, `final-report/`,
-   `conferences/`).
+1. **Fellowship narrative** — the URSSI proposal, blog posts, final report,
+   and conference materials (`fellowship/`).
 2. **Community coordination** — plugin-sustainability working group meeting
    notes and outreach (`community/`).
 3. **Ecosystem metrics** — a reproducible analysis pipeline that quantifies
@@ -18,10 +17,11 @@ This repo holds three kinds of content:
 ## Repository layout
 
 ```
-fellowship/              # URSSI proposal, blog posts (published + drafts), planning
-final-report/            # URSSI final report, CV, per-release contributor table
-conferences/             # SciPy 2026 + EuroSciPy 2026 talk materials
-community/               # Working-group meeting notes + community one-pager
+fellowship/              # Fellowship narrative: proposal, blogs, conferences, final report
+    blog/                #   Blog posts (published + drafts) + planning
+    conferences/         #   SciPy 2026 + EuroSciPy 2026 talk materials
+    final-report/        #   URSSI final report, CV, per-release contributor table
+community/               # Working-group announcement, meeting notes, one-pager
 scripts/                 # Active metrics pipeline (fetch → compute → plot)
 notebooks/               # marimo notebooks for exploring metrics
 data/                    # Cached input data (npe2api, GitHub commits) + data/metrics/
@@ -48,7 +48,7 @@ uv run python scripts/run_all.py --skip-fetch
 ### Release-contributors analysis
 
 ```sh
-uv run python scripts/build_release_contributors.py      # → final-report/new-contributors-by-release.{md,csv}
+uv run python scripts/build_release_contributors.py      # → fellowship/final-report/new-contributors-by-release.{md,csv}
 uv run python scripts/plot_release_contributors.py       # → plots/release_new_contributors.{png,svg}
 uv run --extra plot python scripts/plot_release_contributors.py --interactive  # → plots/release_new_contributors_interactive.html
 ```
