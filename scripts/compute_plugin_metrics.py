@@ -52,6 +52,61 @@ def compute_new_plugins_per_month(df: pd.DataFrame) -> pd.DataFrame:
     return monthly.sort_values("month")
 
 
+TPL_ERAS = ("copier", "cookiecutter", "template")
+
+
+def compute_new_plugins_template_monthly(df: pd.DataFrame) -> pd.DataFrame:
+    """Split new plugins per month by napari-plugin-template usage.
+
+    Joins plugin_releases.csv with plugin_template_usage.csv (produced by
+    scripts/detect_plugin_template_usage.py).  Categories per plugin:
+      - template:     template_era in {copier, cookiecutter, template}
+      - not_template: template_era == 'no' (no evidence found)
+      - unknown:      template_era in {no_github, unavailable, error}
+                      (repo not inspectable — can't confirm either way)
+    """
+    usage_path = DATA_DIR / "plugin_template_usage.csv"
+    if not usage_path.exists():
+        print(
+            "  Skipping: plugin_template_usage.csv not found "
+            "(run detect_plugin_template_usage.py first)",
+            file=sys.stderr,
+        )
+        return pd.DataFrame()
+
+    usage = pd.read_csv(usage_path)[["name", "template_era"]]
+    merged = df.merge(usage, on="name", how="left")
+    merged = merged[merged["first_release"].notna()].copy()
+    merged["month"] = merged["first_release"].dt.to_period("M")
+
+    def cat(era: str) -> str:
+        if era in TPL_ERAS:
+            return "new_template"
+        if era == "no":
+            return "new_not_template"
+        return "new_unknown"
+
+    merged["cat"] = merged["template_era"].fillna("unknown").map(cat)
+    monthly = (
+        merged.groupby(["month", "cat"])
+        .size()
+        .reset_index(name="n")
+        .pivot(index="month", columns="cat", values="n")
+        .fillna(0)
+        .reset_index()
+    )
+    for col in ("new_template", "new_not_template", "new_unknown"):
+        if col not in monthly.columns:
+            monthly[col] = 0
+    monthly["month"] = monthly["month"].dt.to_timestamp()
+    monthly["new_plugins"] = (
+        monthly["new_template"]
+        + monthly["new_not_template"]
+        + monthly["new_unknown"]
+    )
+    return monthly.sort_values("month")
+
+
 def compute_maintenance_metrics(
     df: pd.DataFrame, trailing_months: int = 6
 ) -> pd.DataFrame:
@@ -117,6 +172,26 @@ def main() -> int:
             f"{new_monthly.loc[new_monthly['new_plugins'].idxmax(), 'month'].date()}",
             file=sys.stderr,
         )
+
+    # 1b. New plugins per month split by napari-plugin-template usage
+    print("\nComputing new plugins per month by template usage ...", file=sys.stderr)
+    tpl_monthly = compute_new_plugins_template_monthly(df)
+    if not tpl_monthly.empty:
+        tpl_monthly.to_csv(
+            OUTPUT_DIR / "new_plugins_template_monthly.csv", index=False
+        )
+        print(
+            f"  {len(tpl_monthly)} months -> "
+            f"{OUTPUT_DIR / 'new_plugins_template_monthly.csv'}"
+        )
+        recent = tpl_monthly[tpl_monthly["month"] >= "2025-09-01"]
+        if not recent.empty:
+            print(
+                f"  Since 2025-09: {int(recent['new_template'].sum())} of "
+                f"{int(recent['new_plugins'].sum())} new plugins use the template "
+                f"({recent['new_template'].sum() / recent['new_plugins'].sum():.0%})",
+                file=sys.stderr,
+            )
 
     # 2. Maintenance metrics
     print("\nComputing maintenance metrics ...", file=sys.stderr)

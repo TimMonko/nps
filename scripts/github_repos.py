@@ -26,7 +26,12 @@ def get_github_url(row):
             match = re.search(gh_pattern, entry)
             if match:
                 owner, repo = match.groups()
-                clean_repo = repo.rstrip('.git').rstrip('/')
+                # NOTE: do NOT use rstrip('.git') here — it strips any trailing
+                # characters in the set {., g, i, t}, corrupting repo names that
+                # end in those letters (e.g. 'napari-chat-assistant' -> 'assistan').
+                if repo.endswith('.git'):
+                    repo = repo[:-4]
+                clean_repo = repo.rstrip('/')
                 return f'https://github.com/{owner}/{clean_repo}'
     return None
 

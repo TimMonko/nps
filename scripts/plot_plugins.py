@@ -230,6 +230,83 @@ def plot_new_plugin_devs() -> None:
     _save(fig, "new_plugin_devs_over_time.svg")
 
 
+# ── Plot 4: New plugins using the napari-plugin-template ───────────────────
+
+def plot_new_plugins_template_usage() -> None:
+    """Stacked bars: new plugins per month split by napari-plugin-template usage.
+
+    Reads data/metrics/new_plugins_template_monthly.csv.  Categories:
+      - Used napari-plugin-template (copier + cookiecutter + ambiguous eras)
+      - No evidence of template usage
+      - Unknown (repo not inspectable — no GitHub URL or repo unavailable)
+    Overlays a 3-month rolling share of new plugins that used the template.
+    """
+    path = METRICS_DIR / "new_plugins_template_monthly.csv"
+    if not path.exists():
+        print(
+            "  Skipping: new_plugins_template_monthly.csv not found",
+            file=sys.stderr,
+        )
+        return
+
+    df = pd.read_csv(path, parse_dates=["month"]).sort_values("month")
+
+    fig, ax = plt.subplots(figsize=(7, 5))
+    ax.set_xlim(pd.Timestamp("2019-01-01"), TODAY)
+
+    # Rolling share of new plugins that used the template (secondary axis)
+    df["tpl_share"] = df["new_template"] / df["new_plugins"].replace(0, pd.NA)
+    rolling_share = (
+        df.set_index("month")["tpl_share"].rolling(3, center=True).mean()
+    )
+
+    bottom = pd.Series(0.0, index=df.index)
+    ax.bar(
+        df["month"], df["new_template"],
+        color=CB_PALETTE[CB_MAIN], label="Used napari-plugin-template", width=25,
+    )
+    bottom = df["new_template"]
+    ax.bar(
+        df["month"], df["new_not_template"], bottom=bottom,
+        color="0.72", label="No template evidence", width=25,
+    )
+    ax.bar(
+        df["month"], df["new_unknown"], bottom=bottom + df["new_not_template"],
+        color="0.9", edgecolor="0.5", linewidth=0.4,
+        label="Unknown (no repo)", width=25,
+    )
+
+    ax_share = ax.twinx()
+    ax_share.plot(
+        rolling_share.index, rolling_share.values,
+        color=CB_PALETTE[CB_ROLLING], linewidth=2.5,
+        label="3-mo rolling % using template",
+    )
+    ax_share.set_ylim(0, 1)
+    ax_share.yaxis.set_major_formatter(mticker.PercentFormatter(1.0))
+    ax_share.set_ylabel("")
+    ax_share.set_yticklabels([])
+
+    _add_2026_shading(ax, TODAY)
+
+    ax.set_title(
+        "New Plugins Using the napari-plugin-template",
+        weight="bold",
+    )
+    ax.set_ylabel("New Plugins")
+    ax.set_xlabel("")
+    ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
+
+    handles, labels = ax.get_legend_handles_labels()
+    h2, l2 = ax_share.get_legend_handles_labels()
+    ax.legend(
+        handles + h2, labels + l2,
+        frameon=True, loc="upper left", fontsize=10,
+    )
+
+    _save(fig, "new_plugins_template_usage.svg")
+
+
 # ── Main ────────────────────────────────────────────────────────────────────
 
 def main() -> int:
@@ -243,6 +320,7 @@ def main() -> int:
     plot_plugin_maintenance()
     plot_plugin_dev_overlap()
     plot_new_plugin_devs()
+    plot_new_plugins_template_usage()
 
     print("\nDone!", file=sys.stderr)
     return 0
