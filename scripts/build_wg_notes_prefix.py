@@ -1,7 +1,7 @@
 """Regenerate progressive "as-of" states of the compiled WG meeting notes.
 
 The plugin sustainability WG notes are kept as a single growing file
-(``Community Meeting Notes/2026-08-25_WG_Notes.md``). The rebuilt git history
+(``community/working-group-meeting-notes.md``). The rebuilt git history
 records one commit per meeting, and each such commit must contain the notes
 from the first meeting through that date. This script rewrites the notes file
 to that exact "as-of" state.
@@ -27,7 +27,7 @@ from datetime import date
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-NOTES = REPO_ROOT / "Community Meeting Notes" / "2026-08-25_WG_Notes.md"
+NOTES = REPO_ROOT / "community" / "working-group-meeting-notes.md"
 
 _DATE_RE = re.compile(r"(\d{4})[/-](\d{1,2})[/-](\d{1,2})")
 

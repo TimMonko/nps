@@ -9,10 +9,11 @@ maintenance through community working groups.
 ## Structure
 
 ```
-fellowship/                 # URSSI proposal + blog posts (published + drafts) + planning
-final-report/               # URSSI final report, CV, per-release contributor table
-conferences/                # Conference talk materials (SciPy 2026, EuroSciPy 2026)
-community/                  # Working-group meeting notes + community one-pager
+fellowship/                 # Fellowship narrative: proposal, blogs, conferences, final report
+    blog/                   #   Blog posts (published + drafts) + planning
+    conferences/            #   Conference talk materials (SciPy 2026, EuroSciPy 2026)
+    final-report/           #   URSSI final report, CV, per-release contributor table
+community/                  # Working-group announcement, meeting notes, one-pager
 scripts/                    # Active metrics pipeline (fetch_*, compute_*, plot_*, run_all.py)
 notebooks/                  # marimo notebooks for exploring metrics
 data/                       # Cached input data + data/metrics/ (computed CSVs)
@@ -37,7 +38,7 @@ uv run python scripts/run_all.py --skip-fetch
 
 ### Release-contributors analysis
 
-- `uv run python scripts/build_release_contributors.py` → `final-report/new-contributors-by-release.{md,csv}`
+- `uv run python scripts/build_release_contributors.py` → `fellowship/final-report/new-contributors-by-release.{md,csv}`
   (needs sibling `../napari` with tags + `../napari-docs` + `gh` CLI; `--as-of` freezes the date).
 - `uv run python scripts/plot_release_contributors.py` → `plots/release_new_contributors.{png,svg}`;
   `uv run --extra plot python scripts/plot_release_contributors.py --interactive` →
@@ -64,9 +65,9 @@ pipeline output.
   visualize trends, and end every analysis with actionable recommendations.
   Validate assumptions against the actual plugin data (field names come from
   the npe2api JSON files).
-- **Working-group notes**: append to `community/meeting-notes/` (single
-  growing `YYYY-MM-DD_WG_Notes.md` compiled file; `scripts/build_wg_notes_prefix.py`
-  regenerates historical prefixes).
-- **Blog posts**: drafts and planning docs live in `fellowship/`; the published
-  posts live on [The Island Dispatch](https://napari.org/island-dispatch/).
+- **Working-group notes**: append to the single growing
+  `community/working-group-meeting-notes.md`; `scripts/build_wg_notes_prefix.py`
+  regenerates historical prefixes.
+- **Blog posts**: drafts and planning docs live in `fellowship/blog/`; the
+  published posts live on [The Island Dispatch](https://napari.org/island-dispatch/).
   The canonical fellowship proposal is `fellowship/proposal.md`.
