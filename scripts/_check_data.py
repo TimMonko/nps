@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 
 # extended_summary count
-summary_path = Path("public/extended_summary.json")
+summary_path = Path("data/extended_summary.json")
 with open(summary_path, encoding="utf-8") as f:
     summary = json.load(f)
 print(f"extended_summary.json: {len(summary)} plugins")

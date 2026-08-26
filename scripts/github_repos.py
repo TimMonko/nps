@@ -3,7 +3,7 @@ import pandas as pd
 import re
 import pathlib
 
-data_dir = pathlib.Path(__file__).parent.parent / "public"
+data_dir = pathlib.Path(__file__).parent.parent / "data"
 data_path = data_dir / "extended_summary.json"
 
 output_dir = pathlib.Path(__file__).parent.parent / "data"
