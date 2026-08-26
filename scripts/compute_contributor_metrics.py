@@ -258,6 +258,61 @@ def compute_annual_contributors(commits: pd.DataFrame) -> pd.DataFrame:
     return yearly
 
 
+def _ytd_end_for_year(as_of: pd.Timestamp, year: int) -> pd.Timestamp:
+    """Return the end-of-window timestamp for YTD counts.
+
+    Same month/day as ``as_of`` but in the given year, clamped to
+    Dec 31 (and to end-of-month for invalid dates like Feb 29 in a
+    non-leap year).
+    """
+    try:
+        end = pd.Timestamp(
+            year=year, month=as_of.month, day=as_of.day, tz="UTC"
+        )
+    except ValueError:
+        # e.g. Feb 29 in a non-leap year → clamp to end of Feb.
+        end = (
+            pd.Timestamp(year=year, month=as_of.month, day=1, tz="UTC")
+            + pd.offsets.MonthEnd(0)
+        )
+    return min(end, pd.Timestamp(year=year, month=12, day=31, tz="UTC"))
+
+
+def compute_annual_contributors_ytd(
+    commits: pd.DataFrame, as_of: pd.Timestamp | None = None
+) -> pd.DataFrame:
+    """Count unique contributors active per year as of a given date.
+
+    For each year Y, counts unique contributors with ≥1 commit between
+    Jan 1 of Y and the same month/day as ``as_of`` within Y. This makes
+    the current (partial) year directly comparable to the same point in
+    prior years — the count is apples-to-apples across years.
+
+    Returns a DataFrame with columns ``year`` and
+    ``ytd_active_contributors``.
+    """
+    if as_of is None:
+        as_of = pd.Timestamp.now(tz="UTC")
+    as_of = pd.Timestamp(as_of)
+    if as_of.tzinfo is None:
+        as_of = as_of.tz_localize("UTC")
+
+    commits = commits.copy()
+    commits["year"] = commits["date"].dt.year
+
+    rows: list[dict] = []
+    for year, grp in commits.groupby("year"):
+        end = _ytd_end_for_year(as_of, int(year))
+        in_window = grp[grp["date"] <= end]
+        rows.append(
+            {
+                "year": year,
+                "ytd_active_contributors": in_window["login"].nunique(),
+            }
+        )
+    return pd.DataFrame(rows).sort_values("year")
+
+
 def compute_new_vs_returning(commits: pd.DataFrame) -> pd.DataFrame:
     """For each year, split active contributors into new vs returning.
 
@@ -283,6 +338,66 @@ def compute_new_vs_returning(commits: pd.DataFrame) -> pd.DataFrame:
     yearly["new"] = yearly["new"].astype(int)
     yearly["returning"] = yearly["total"] - yearly["new"]
     return yearly[["year", "total", "new", "returning"]]
+
+
+def compute_new_vs_returning_ytd(
+    commits: pd.DataFrame, as_of: pd.Timestamp | None = None
+) -> pd.DataFrame:
+    """Split active contributors into new vs returning as of a date.
+
+    Same definitions as ``compute_new_vs_returning``, but only counts
+    commits up to the same month/day as ``as_of`` in each year, so the
+    current (partial) year is comparable to the same point in prior years.
+    ``new`` is based on the contributor's first-ever commit (full history),
+    matching ``compute_new_vs_returning``.
+
+    Returns a DataFrame with columns ``year``, ``total_ytd``, ``new_ytd``,
+    and ``returning_ytd``.
+    """
+    if as_of is None:
+        as_of = pd.Timestamp.now(tz="UTC")
+    as_of = pd.Timestamp(as_of)
+    if as_of.tzinfo is None:
+        as_of = as_of.tz_localize("UTC")
+
+    # First-ever commit is computed from the full history (unchanged), so a
+    # contributor can only ever be "new" in one year.
+    first_year = (
+        commits.groupby("login")["date"]
+        .min()
+        .dt.year.rename("first_year")
+        .reset_index()
+    )
+
+    # Restrict activity to each year's YTD window.
+    commits = commits.copy()
+    commits["year"] = commits["date"].dt.year
+    commits["ytd_end"] = commits["year"].map(
+        lambda y: _ytd_end_for_year(as_of, int(y))
+    )
+    commits = commits[commits["date"] <= commits["ytd_end"]].drop(
+        columns=["ytd_end"]
+    )
+    commits = commits.merge(first_year, on="login", how="left")
+
+    yearly = (
+        commits.groupby("year")["login"]
+        .nunique()
+        .reset_index(name="total_ytd")
+        .sort_values("year")
+    )
+    # Only contributors whose first-ever commit is in the same year count as
+    # "new" — the rest are returning.
+    new_ytd = (
+        commits[commits["year"] == commits["first_year"]]
+        .groupby("year")["login"]
+        .nunique()
+        .reset_index(name="new_ytd")
+    )
+    yearly = yearly.merge(new_ytd, on="year", how="left").fillna(0)
+    yearly["new_ytd"] = yearly["new_ytd"].astype(int)
+    yearly["returning_ytd"] = yearly["total_ytd"] - yearly["new_ytd"]
+    return yearly[["year", "total_ytd", "new_ytd", "returning_ytd"]]
 
 
 def main() -> int:
@@ -329,15 +444,28 @@ def main() -> int:
     if not active.empty:
         print(f"  Latest: {active['active_contributors'].iloc[-1]} active contributors", file=sys.stderr)
 
-    # 6. Annual active contributors
+    # 6. Annual active contributors (+ year-to-date for fair comparison)
     print("\nComputing annual contributor counts ...", file=sys.stderr)
     annual = compute_annual_contributors(commits)
+    ytd = compute_annual_contributors_ytd(commits)
+    annual = annual.merge(ytd, on="year", how="left")
+    annual["ytd_active_contributors"] = (
+        annual["ytd_active_contributors"]
+        .fillna(annual["active_contributors"])
+        .astype(int)
+    )
     annual.to_csv(OUTPUT_DIR / "annual_contributors.csv", index=False)
     print(f"  {len(annual)} years -> {OUTPUT_DIR / 'annual_contributors.csv'}")
 
-    # 7. New vs returning contributors
+    # 7. New vs returning contributors (+ year-to-date for fair comparison)
     print("\nComputing new vs returning contributors ...", file=sys.stderr)
     breakdown = compute_new_vs_returning(commits)
+    breakdown_ytd = compute_new_vs_returning_ytd(commits)
+    breakdown = breakdown.merge(breakdown_ytd, on="year", how="left")
+    for col in ("total_ytd", "new_ytd", "returning_ytd"):
+        breakdown[col] = (
+            breakdown[col].fillna(breakdown[col.replace("_ytd", "")]).astype(int)
+        )
     breakdown.to_csv(OUTPUT_DIR / "new_vs_returning.csv", index=False)
     print(f"  {len(breakdown)} years -> {OUTPUT_DIR / 'new_vs_returning.csv'}")
 
