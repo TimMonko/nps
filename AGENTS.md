@@ -23,23 +23,25 @@ legacy-analysis/            # Archived, superseded exploratory analysis (do not 
 
 ## Metrics pipeline
 
+Everything runs through `uv run python` — uv manages the environment from
+`pyproject.toml` / `uv.lock`, so there's no manual venv activation. Script
+output is plain ASCII (no non-ASCII printed to stdout/stderr), so the
+pipeline works on any platform/console without `PYTHONUTF8` or similar.
+
 ```sh
 # Full run: fetch → compute → plot
-$env:PYTHONUTF8="1"; .venv\Scripts\python.exe scripts\run_all.py
+uv run python scripts/run_all.py
 # Recompute + replot from cached data (no network)
-$env:PYTHONUTF8="1"; .venv\Scripts\python.exe scripts\run_all.py --skip-fetch
+uv run python scripts/run_all.py --skip-fetch
 ```
-
-> **Windows gotcha**: run with `PYTHONUTF8=1` — the compute scripts print the
-> `→` arrow and crash under the default cp1252 codepage.
 
 ### Release-contributors analysis
 
-- `scripts/build_release_contributors.py` → `final-report/new-contributors-by-release.{md,csv}`
+- `uv run python scripts/build_release_contributors.py` → `final-report/new-contributors-by-release.{md,csv}`
   (needs sibling `../napari` with tags + `../napari-docs` + `gh` CLI; `--as-of` freezes the date).
-- `scripts/plot_release_contributors.py` → `plots/release_new_contributors.{png,svg}`;
-  `--interactive` → `plots/release_new_contributors_interactive.html` (needs the
-  `plot` extra: `uv add --optional plot plotly`).
+- `uv run python scripts/plot_release_contributors.py` → `plots/release_new_contributors.{png,svg}`;
+  `uv run --extra plot python scripts/plot_release_contributors.py --interactive` →
+  `plots/release_new_contributors_interactive.html` (needs the `plot` extra: `uv add --optional plot plotly`).
 
 ## Data sources
 

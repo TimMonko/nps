@@ -38,7 +38,7 @@ def _is_bot(login: str) -> bool:
 
 
 def parse_github_url(url: str) -> tuple[str, str] | None:
-    """Parse github.com URL → (owner, repo)."""
+    """Parse github.com URL -> (owner, repo)."""
     if not isinstance(url, str) or "github.com" not in url:
         return None
     # Handle various URL formats
@@ -112,7 +112,7 @@ def main() -> int:
         flush=True,
     )
 
-    # Load plugin → github_url mapping
+    # Load plugin -> github_url mapping
     csv_path = DATA_DIR / "github_repos.csv"
     if not csv_path.exists():
         print(

@@ -32,26 +32,29 @@ legacy-analysis/         # Archived, superseded exploratory analysis (kept for r
 
 ## Metrics pipeline
 
+Everything runs through `uv run python` — uv manages the environment from
+`pyproject.toml` / `uv.lock`, so there's no manual venv activation. Script
+output is plain ASCII, so the pipeline works on any platform/console without
+special env vars.
+
 ```sh
 # Full run: fetch → compute → plot
-$env:PYTHONUTF8="1"; .venv\Scripts\python.exe scripts\run_all.py
+uv run python scripts/run_all.py
 
 # Skip network fetch, just recompute + replot from cached data
-$env:PYTHONUTF8="1"; .venv\Scripts\python.exe scripts\run_all.py --skip-fetch
+uv run python scripts/run_all.py --skip-fetch
 ```
-
-> **Windows note**: run with `PYTHONUTF8=1` — the compute scripts print the
-> `→` arrow and crash under the cp1252 codepage otherwise.
 
 ### Release-contributors analysis
 
 ```sh
-python scripts/build_release_contributors.py        # → final-report/new-contributors-by-release.{md,csv}
-python scripts/plot_release_contributors.py         # → plots/release_new_contributors.{png,svg}
-python scripts/plot_release_contributors.py --interactive   # → plots/release_new_contributors_interactive.html
+uv run python scripts/build_release_contributors.py      # → final-report/new-contributors-by-release.{md,csv}
+uv run python scripts/plot_release_contributors.py       # → plots/release_new_contributors.{png,svg}
+uv run --extra plot python scripts/plot_release_contributors.py --interactive  # → plots/release_new_contributors_interactive.html
 ```
 
-Requires the `plot` extra for Plotly: `uv add --optional plot plotly`.
+The interactive plot needs Plotly (optional `plot` extra):
+`uv add --optional plot plotly`, then `uv run --extra plot python ...`.
 
 ## Links
 

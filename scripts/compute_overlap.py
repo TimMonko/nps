@@ -199,7 +199,7 @@ def main() -> int:
     overlap = compute_overlap(plugin_devs)
     overlap.to_csv(METRICS_DIR / "overlap.csv", index=False)
     print(
-        f"\n  {len(overlap)} months → {METRICS_DIR / 'overlap.csv'}"
+        f"\n  {len(overlap)} months -> {METRICS_DIR / 'overlap.csv'}"
     )
     if not overlap.empty:
         recent = overlap[overlap["month"] >= "2026-01-01"]
@@ -229,7 +229,7 @@ def main() -> int:
     active = compute_active_plugin_devs(plugin_devs)
     if not active.empty:
         active.to_csv(METRICS_DIR / "active_plugin_devs.csv", index=False)
-        print(f"  {len(active)} months → {METRICS_DIR / 'active_plugin_devs.csv'}")
+        print(f"  {len(active)} months -> {METRICS_DIR / 'active_plugin_devs.csv'}")
         print(f"  Latest: {active['active_plugin_devs'].iloc[-1]} active plugin devs", file=sys.stderr)
 
     # 4. New plugin developers (first-time org contributors who are plugin devs)

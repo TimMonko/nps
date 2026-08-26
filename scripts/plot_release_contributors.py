@@ -3,7 +3,7 @@
 Reads ``new-contributors-by-release.csv`` (produced by
 ``build_release_contributors.py``) and draws the *area* timeline bar chart:
 
-- **X axis** — timeline; each bar spans its development window (first → last
+- **X axis** — timeline; each bar spans its development window (first -> last
   commit)
 - **Y axis** — new contributors per month
 - **Bar area = width × height = dev window × (contributors/month) ∝ total new
@@ -22,7 +22,7 @@ Usage::
 
     python scripts/plot_release_contributors.py                       # area PNG+SVG
     python scripts/plot_release_contributors.py --interactive         # + zoomable HTML
-    python scripts/plot_release_contributors.py --min-release 0.2.5   # v0.2.5 → present
+    python scripts/plot_release_contributors.py --min-release 0.2.5   # v0.2.5 -> present
     python scripts/plot_release_contributors.py --min-dev-days 0      # include short windows
 
 ``--interactive`` requires Plotly (declared as the optional ``plot`` extra in
@@ -175,7 +175,7 @@ def view_interactive(df: pd.DataFrame, out_dir: Path, label_min: int = 1,
             "<b>%{customdata[0]}</b><br>"
             "new contributors: %{customdata[1]}<br>"
             "rate: %{y:.1f} / month<br>"
-            "dev window: %{customdata[2]} → %{customdata[3]}<extra></extra>"
+            "dev window: %{customdata[2]} -> %{customdata[3]}<extra></extra>"
         ),
     ))
     # labels as annotations so they render at a uniform size:

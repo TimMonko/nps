@@ -179,7 +179,7 @@ def main() -> int:
 
     velocity.to_csv(METRICS_DIR / "velocity.csv", index=False)
     print(
-        f"  {len(velocity)} months → {METRICS_DIR / 'velocity.csv'}"
+        f"  {len(velocity)} months -> {METRICS_DIR / 'velocity.csv'}"
     )
 
     # Summary

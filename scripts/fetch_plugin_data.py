@@ -95,7 +95,7 @@ def fetch_pypi_release_dates(pypi_name: str) -> tuple[str | None, str | None, in
 
 
 def load_github_repos_csv() -> dict[str, str]:
-    """Load github_repos.csv → {plugin_name: github_url}."""
+    """Load github_repos.csv -> {plugin_name: github_url}."""
     csv_path = DATA_DIR / "github_repos.csv"
     if not csv_path.exists():
         print(
