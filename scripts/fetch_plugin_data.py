@@ -19,7 +19,6 @@ import requests
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-PUBLIC_DIR = REPO_ROOT / "public"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 NPE2API_EXTENDED_SUMMARY = (
@@ -33,7 +32,7 @@ def download_extended_summary() -> list[dict]:
 
     Falls back to local cached copy if download fails.
     """
-    local_path = PUBLIC_DIR / "extended_summary.json"
+    local_path = DATA_DIR / "extended_summary.json"
     print("Downloading extended_summary.json ...", file=sys.stderr, flush=True)
     try:
         resp = requests.get(NPE2API_EXTENDED_SUMMARY, timeout=30)

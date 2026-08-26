@@ -8,7 +8,7 @@ import pathlib
 URL = "https://raw.githubusercontent.com/napari/npe2api/main/public/"
 FILES = ["extended_summary.json"]
 
-output_dir = pathlib.Path(__file__).parent.parent / "public"
+output_dir = pathlib.Path(__file__).parent.parent / "data"
 output_dir.mkdir(parents=True, exist_ok=True)
 
 for file in FILES:
