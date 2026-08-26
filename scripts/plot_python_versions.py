@@ -46,7 +46,7 @@ def _save(fig: plt.Figure, name: str) -> None:
 
 
 def _ver_tuple(v: str) -> tuple[int, ...]:
-    """Convert '3.10' or '3.11.0' → (3, 10) for proper sorting. Ignores patch."""
+    """Convert '3.10' or '3.11.0' -> (3, 10) for proper sorting. Ignores patch."""
     parts = v.split(".")
     return (int(parts[0]), int(parts[1]))
 
@@ -61,7 +61,7 @@ def load_data() -> pd.DataFrame:
     df = df[df["min_python"].notna()].copy()
     df["first_release"] = pd.to_datetime(df["first_release"], utc=True)
     df = df[df["first_release"].notna()]
-    # Strip "v" prefix used to avoid float serialization issues (v3.10 → 3.10)
+    # Strip "v" prefix used to avoid float serialization issues (v3.10 -> 3.10)
     df["min_python"] = df["min_python"].astype(str).str.replace("v", "", regex=False).str.strip()
     # Filter out Python 3.6 and earlier
     df = df[df["min_python"].apply(lambda v: _ver_tuple(v) >= (3, 7) if v and v != "nan" else False)]

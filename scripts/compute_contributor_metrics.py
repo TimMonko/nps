@@ -298,14 +298,14 @@ def main() -> int:
     print("\nComputing monthly new contributors ...", file=sys.stderr)
     monthly = compute_monthly_new_contributors(commits)
     monthly.to_csv(OUTPUT_DIR / "new_contributors_monthly.csv", index=False)
-    print(f"  {len(monthly)} months → {OUTPUT_DIR / 'new_contributors_monthly.csv'}")
+    print(f"  {len(monthly)} months -> {OUTPUT_DIR / 'new_contributors_monthly.csv'}")
 
     # 2. Per-repo breakdown
     print("\nComputing per-repo new contributors ...", file=sys.stderr)
     per_repo = compute_monthly_new_per_repo(commits)
     if not per_repo.empty:
         per_repo.to_csv(OUTPUT_DIR / "new_contributors_per_repo.csv", index=False)
-        print(f"  {len(per_repo)} months → {OUTPUT_DIR / 'new_contributors_per_repo.csv'}")
+        print(f"  {len(per_repo)} months -> {OUTPUT_DIR / 'new_contributors_per_repo.csv'}")
     else:
         print("  No per-repo data computed.", file=sys.stderr)
 
@@ -313,19 +313,19 @@ def main() -> int:
     print("\nComputing retention rates ...", file=sys.stderr)
     retention = compute_retention(commits)
     retention.to_csv(OUTPUT_DIR / "retention.csv", index=False)
-    print(f"  {len(retention)} cohorts → {OUTPUT_DIR / 'retention.csv'}")
+    print(f"  {len(retention)} cohorts -> {OUTPUT_DIR / 'retention.csv'}")
 
     # 4. Cumulative counts
     print("\nComputing cumulative contributor counts ...", file=sys.stderr)
     cumulative = compute_all_contributor_counts(commits)
     cumulative.to_csv(OUTPUT_DIR / "cumulative_contributors.csv", index=False)
-    print(f"  {len(cumulative)} contributors → {OUTPUT_DIR / 'cumulative_contributors.csv'}")
+    print(f"  {len(cumulative)} contributors -> {OUTPUT_DIR / 'cumulative_contributors.csv'}")
 
     # 5. Active contributors (trailing 6-month window)
     print("\nComputing active contributors ...", file=sys.stderr)
     active = compute_active_contributors(commits)
     active.to_csv(OUTPUT_DIR / "active_contributors.csv", index=False)
-    print(f"  {len(active)} months → {OUTPUT_DIR / 'active_contributors.csv'}")
+    print(f"  {len(active)} months -> {OUTPUT_DIR / 'active_contributors.csv'}")
     if not active.empty:
         print(f"  Latest: {active['active_contributors'].iloc[-1]} active contributors", file=sys.stderr)
 
@@ -333,13 +333,13 @@ def main() -> int:
     print("\nComputing annual contributor counts ...", file=sys.stderr)
     annual = compute_annual_contributors(commits)
     annual.to_csv(OUTPUT_DIR / "annual_contributors.csv", index=False)
-    print(f"  {len(annual)} years → {OUTPUT_DIR / 'annual_contributors.csv'}")
+    print(f"  {len(annual)} years -> {OUTPUT_DIR / 'annual_contributors.csv'}")
 
     # 7. New vs returning contributors
     print("\nComputing new vs returning contributors ...", file=sys.stderr)
     breakdown = compute_new_vs_returning(commits)
     breakdown.to_csv(OUTPUT_DIR / "new_vs_returning.csv", index=False)
-    print(f"  {len(breakdown)} years → {OUTPUT_DIR / 'new_vs_returning.csv'}")
+    print(f"  {len(breakdown)} years -> {OUTPUT_DIR / 'new_vs_returning.csv'}")
 
     print("\nDone!", file=sys.stderr)
     return 0

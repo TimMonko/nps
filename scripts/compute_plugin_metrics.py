@@ -109,7 +109,7 @@ def main() -> int:
     new_monthly = compute_new_plugins_per_month(df)
     new_monthly.to_csv(OUTPUT_DIR / "new_plugins_monthly.csv", index=False)
     print(
-        f"  {len(new_monthly)} months → {OUTPUT_DIR / 'new_plugins_monthly.csv'}"
+        f"  {len(new_monthly)} months -> {OUTPUT_DIR / 'new_plugins_monthly.csv'}"
     )
     if not new_monthly.empty:
         print(
@@ -123,7 +123,7 @@ def main() -> int:
     maintenance = compute_maintenance_metrics(df)
     maintenance.to_csv(OUTPUT_DIR / "plugin_maintenance.csv", index=False)
     print(
-        f"  {len(maintenance)} months → {OUTPUT_DIR / 'plugin_maintenance.csv'}"
+        f"  {len(maintenance)} months -> {OUTPUT_DIR / 'plugin_maintenance.csv'}"
     )
     if not maintenance.empty:
         last = maintenance.iloc[-1]

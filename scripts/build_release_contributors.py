@@ -7,7 +7,7 @@ repository from three inputs:
    A contributor counts as *new* in release X if their GitHub handle appears in
    X's "N authors added to this release" list but in no earlier release's list.
 2. **napari git history** — a local clone of napari (for tags and commit dates).
-   The development window is the first→last commit *author* date in the range
+   The development window is the first->last commit *author* date in the range
    between the previous stable release tag and the release tag.
 3. **GitHub release publish dates** — via the ``gh`` CLI (optional; falls back
    to tag dates if unavailable).
@@ -35,7 +35,7 @@ Methodology notes / gotchas baked into the logic:
 - **Previous tag is selected by commit date, not version order.** ``v0.1.9`` is
   an out-of-order tag (its commit is dated 2021 after an early history
   rewrite); picking the previous tag by version order would corrupt the window.
-- **Monotonic validation.** If the computed first→last commit range is not
+- **Monotonic validation.** If the computed first->last commit range is not
   monotonic (history-rewrite artifact), the window falls back to the two tag
   dates.
 - **In-development release.** A docs release with no stable tag yet (e.g. 0.9.0)
@@ -249,13 +249,13 @@ def main() -> int:
         "available, otherwise the tag commit date.\n"
     )
     L.append(
-        "| Release | Release date | New contributors | Dev window (first → last commit) | Dev months | Months between releases | New / month |"
+        "| Release | Release date | New contributors | Dev window (first -> last commit) | Dev months | Months between releases | New / month |"
     )
     L.append("|---|---|---|---|---|---|---|")
     for r in rows:
         nc = "—" if r["n_new"] is None else (f"**{r['n_new']}**" if r["n_new"] >= 16 else str(r["n_new"]))
         rel = f"**{r['ver']}**" if (r["n_new"] or 0) >= 16 else f"`{r['ver']}`"
-        dev = f"{r['first']} → {r['last']}" if r["first"] and r["last"] else "—"
+        dev = f"{r['first']} -> {r['last']}" if r["first"] and r["last"] else "—"
         devm = f"~{r['dev_months']} mo" if r["dev_months"] is not None else "—"
         gap = f"~{r['gap']} mo" if r["gap"] is not None else "—"
         rate = "—" if r["rate"] is None else f"~{r['rate']}"

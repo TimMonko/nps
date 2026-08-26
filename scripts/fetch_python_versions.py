@@ -25,13 +25,13 @@ PYTHON_CLASSIFIER_RE = re.compile(r"Programming Language :: Python :: (3\.\d+)")
 
 
 def _normalize_ver(v: str) -> str:
-    """Strip to major.minor: '3.11.0' → '3.11', '3.10.*' → '3.10'."""
+    """Strip to major.minor: '3.11.0' -> '3.11', '3.10.*' -> '3.10'."""
     parts = v.split(".")
     return f"{parts[0]}.{parts[1]}"
 
 
 def _ver_as_tuple(v: str) -> tuple[int, ...]:
-    """Convert '3.10' → (3, 10) for proper comparison. Handles patch versions too."""
+    """Convert '3.10' -> (3, 10) for proper comparison. Handles patch versions too."""
     parts = v.split(".")
     return (int(parts[0]), int(parts[1]))
 
@@ -112,7 +112,7 @@ def fetch_plugin_python_info(pypi_name: str) -> dict:
 
     min_py, max_py = parse_requires_python(req_py)
 
-    # Format with "v" prefix so pandas doesn't interpret as float (3.10 → 3.1)
+    # Format with "v" prefix so pandas doesn't interpret as float (3.10 -> 3.1)
     min_py = f"v{min_py}" if min_py else None
     max_py = f"v{max_py}" if max_py else None
 
@@ -173,7 +173,7 @@ def main() -> int:
         min_counts = df["min_python"].value_counts().sort_index()
         print("\n  Minimum Python version requirements:", file=sys.stderr)
         for ver, count in min_counts.items():
-            print(f"    Python ≥{ver}: {count} plugins", file=sys.stderr)
+            print(f"    Python >= {ver}: {count} plugins", file=sys.stderr)
 
     return 0
 
