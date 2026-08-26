@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import pandas as pd
 import seaborn as sns
+from matplotlib.patches import Patch
 
 # ── Configuration ──────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -78,6 +79,14 @@ def _add_2026_shading(ax: plt.Axes, xmax=None) -> None:
     ax.axvspan(SHADE_START, xmax, alpha=0.08, color="black", zorder=0)
     ax.axvline(SHADE_START, color="gray", linestyle="--", linewidth=0.8, alpha=0.6)
     ax.set_ylim(ylims)
+
+
+def _add_ytd_legend(ax: plt.Axes, label: str, fontsize: int = 12) -> None:
+    """Append a hatched 'year to date' proxy entry to the legend."""
+    handles, labels = ax.get_legend_handles_labels()
+    handles.append(Patch(facecolor="none", edgecolor="0.3", hatch="//", linewidth=0.8))
+    labels.append(label)
+    ax.legend(handles, labels, frameon=True, loc="upper left", fontsize=fontsize)
 
 
 # ── Plot 1: New contributors over time (org-wide) ──────────────────────────
@@ -250,11 +259,21 @@ def plot_cumulative_contributors() -> None:
         return
 
     cum = pd.read_csv(cum_path, parse_dates=["first_commit"]).sort_values("first_commit")
-
-    # Aggregate new contributors by year for the bottom panel
     monthly = pd.read_csv(month_path, parse_dates=["month"])
     monthly["year"] = monthly["month"].dt.year
+
+    # Full-year totals + year-to-date sums for the bottom panel
     annual = monthly.groupby("year")["new_contributors"].sum().reset_index()
+    ym = monthly["month"].dt.year * 100 + monthly["month"].dt.month
+    as_of_ym = TODAY.year * 100 + TODAY.month
+    ytd = (
+        monthly[ym <= as_of_ym]
+        .groupby("year")["new_contributors"]
+        .sum()
+        .reset_index(name="new_ytd")
+    )
+    annual = annual.merge(ytd, on="year", how="left").fillna(0)
+    annual["new_ytd"] = annual["new_ytd"].astype(int)
 
     # Color-code years by phase
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6, 8), sharex=True)
@@ -274,24 +293,38 @@ def plot_cumulative_contributors() -> None:
     ax1.set_ylabel("Total Contributors")
     ax1.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
 
-    # ── Bottom panel: annual new contributors ──
+    # ── Bottom panel: annual new contributors (2026 shown year-to-date) ──
+    completed = annual[annual["year"] < TODAY.year]
+    current = annual[annual["year"] == TODAY.year]
     ax2.set_xlim(pd.Timestamp("2019-01-01"), TODAY)
-    ax2.bar(
-        pd.to_datetime(annual["year"], format="%Y"),
-        annual["new_contributors"],
-        color=CB_PALETTE[CB_MAIN], alpha=0.7, width=250,
-    )
+    if not completed.empty:
+        ax2.bar(
+            pd.to_datetime(completed["year"], format="%Y"),
+            completed["new_contributors"],
+            color=CB_PALETTE[CB_MAIN], alpha=0.7, width=250,
+            label="Full-year total",
+        )
+    if not current.empty:
+        ax2.bar(
+            pd.to_datetime(current["year"], format="%Y"),
+            current["new_ytd"],
+            color=CB_PALETTE[CB_MAIN], alpha=0.7, width=250,
+            hatch="//", edgecolor=CB_PALETTE[CB_MAIN],
+            label=f"{TODAY.year} year-to-date",
+        )
     ax2.set_ylabel("New Contributors per Year")
     ax2.set_xlabel("")
+    ax2.legend(frameon=True, loc="upper left", fontsize=9)
 
-    # Annotate the 2023 dip
-    min_row = annual.loc[annual["new_contributors"].idxmin()]
+    # Annotate the 2023 dip (lowest full-year total among visible years)
+    visible = annual[annual["year"] >= 2019]
+    min_row = visible.loc[visible["new_contributors"].idxmin()]
     ax2.annotate(
         f"Low: {int(min_row['new_contributors'])} new",
         xy=(pd.Timestamp(f"{int(min_row['year'])}-07-01"), min_row["new_contributors"]),
-        xytext=(0, -20), textcoords="offset points",
+        xytext=(0, 8), textcoords="offset points",
         fontsize=9, color=CB_PALETTE[CB_FILL],
-        ha="center", va="top",
+        ha="center", va="bottom",
         arrowprops=dict(arrowstyle="->", color=CB_PALETTE[CB_FILL], lw=1),
     )
 
@@ -376,23 +409,71 @@ def plot_active_napari_only() -> None:
 # ── Plot 6: Annual active contributors ─────────────────────────────────────
 
 def plot_annual_contributors() -> None:
-    """Bar chart: unique contributors active per calendar year."""
+    """Bar chart: full-year totals with a hatched year-to-date overlay.
+
+    Completed years draw a solid bar to the full-year total, with a
+    hatched overlay covering only the year-to-date portion — so the
+    hatched region visibly stops at the as-of date. The current year is
+    not finished, so it shows only a hatched year-to-date bar.
+    """
     path = METRICS_DIR / "annual_contributors.csv"
     if not path.exists():
         print("  Skipping: annual_contributors.csv not found", file=sys.stderr)
         return
 
     df = pd.read_csv(path).sort_values("year")
+    if "ytd_active_contributors" not in df.columns:
+        print(
+            "  Skipping: annual_contributors.csv missing "
+            "'ytd_active_contributors' column — re-run "
+            "compute_contributor_metrics.py first.",
+            file=sys.stderr,
+        )
+        return
+
+    as_of = TODAY
+    completed = df[df["year"] < as_of.year]
+    current = df[df["year"] == as_of.year]
 
     fig, ax = plt.subplots(figsize=(6, 5))
-    ax.bar(
-        df["year"], df["active_contributors"],
-        color=CB_PALETTE[CB_MAIN], alpha=0.7, width=0.6,
-    )
+
+    # Full-year bars (full height) for completed years — bordered so the
+    # hatched YTD overlay doesn't look wider than the bar
+    if not completed.empty:
+        ax.bar(
+            completed["year"], completed["active_contributors"],
+            color=CB_PALETTE[CB_MAIN], alpha=0.7, width=0.6,
+            edgecolor="0.3", linewidth=0.8, label="Full-year total",
+        )
+
+    # Year-to-date: transparent hatched overlay on completed years,
+    # filled hatched bar for the current (incomplete) year
+    if not completed.empty:
+        ax.bar(
+            completed["year"], completed["ytd_active_contributors"],
+            color="none", width=0.6, hatch="//",
+            edgecolor="0.3", linewidth=0.8,
+        )
+    if not current.empty:
+        ax.bar(
+            current["year"], current["ytd_active_contributors"],
+            color=CB_PALETTE[CB_MAIN], alpha=0.7, width=0.6,
+            hatch="//", edgecolor="0.3", linewidth=0.8,
+        )
+
     ax.set_title("Active Contributors per Year", weight="bold")
     ax.set_ylabel("Contributors with ≥1 commit")
     ax.set_xlabel("")
     ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
+    _add_ytd_legend(ax, f"Year to date (as of {as_of:%b %d})")
+
+    # Footnote clarifying the current year is partial
+    if not current.empty:
+        fig.text(
+            0.02, 0.02,
+            f"* {as_of.year} shown year-to-date (as of {as_of:%b %d, %Y})",
+            fontsize=9, color="gray",
+        )
 
     _save(fig, "annual_contributors.svg")
 
@@ -400,29 +481,81 @@ def plot_annual_contributors() -> None:
 # ── Plot 7: New vs returning contributors ──────────────────────────────────
 
 def plot_new_vs_returning() -> None:
-    """Stacked bar: each year split into new vs returning contributors."""
+    """Stacked bar: new vs returning, full-year totals + YTD hatched overlay.
+
+    Completed years draw a solid stack to the full-year total, with a
+    hatched overlay covering only the year-to-date portion. The current
+    year is not finished, so it shows only a hatched year-to-date stack.
+    """
     path = METRICS_DIR / "new_vs_returning.csv"
     if not path.exists():
         print("  Skipping: new_vs_returning.csv not found", file=sys.stderr)
         return
 
     df = pd.read_csv(path).sort_values("year")
+    if "new_ytd" not in df.columns or "returning_ytd" not in df.columns:
+        print(
+            "  Skipping: new_vs_returning.csv missing YTD columns — re-run "
+            "compute_contributor_metrics.py first.",
+            file=sys.stderr,
+        )
+        return
+
+    as_of = TODAY
+    completed = df[df["year"] < as_of.year]
+    current = df[df["year"] == as_of.year]
 
     fig, ax = plt.subplots(figsize=(6, 5))
-    ax.bar(
-        df["year"], df["returning"],
-        color=CB_PALETTE[CB_MAIN], alpha=0.7, width=0.6, label="Returning",
-    )
-    ax.bar(
-        df["year"], df["new"],
-        bottom=df["returning"],
-        color=CB_PALETTE[CB_ACCENT], alpha=0.8, width=0.6, label="New",
-    )
+
+    # Full-year stacked bars (solid) for completed years — bordered so the
+    # hatched YTD overlay doesn't look wider than the stack
+    if not completed.empty:
+        ax.bar(
+            completed["year"], completed["returning"],
+            color=CB_PALETTE[CB_MAIN], alpha=0.7, width=0.6,
+            edgecolor="0.3", linewidth=0.8, label="Returning",
+        )
+        ax.bar(
+            completed["year"], completed["new"],
+            bottom=completed["returning"],
+            color=CB_PALETTE[CB_ACCENT], alpha=0.8, width=0.6,
+            edgecolor="0.3", linewidth=0.8, label="New",
+        )
+
+    # Year-to-date: transparent hatched overlay up to the YTD total;
+    # filled hatched stack for the current (incomplete) year
+    if not completed.empty:
+        ax.bar(
+            completed["year"], completed["total_ytd"],
+            color="none", width=0.6, hatch="//",
+            edgecolor="0.3", linewidth=0.8,
+        )
+    if not current.empty:
+        ax.bar(
+            current["year"], current["returning_ytd"],
+            color=CB_PALETTE[CB_MAIN], alpha=0.7, width=0.6,
+            hatch="//", edgecolor="0.3", linewidth=0.8,
+        )
+        ax.bar(
+            current["year"], current["new_ytd"],
+            bottom=current["returning_ytd"],
+            color=CB_PALETTE[CB_ACCENT], alpha=0.8, width=0.6,
+            hatch="//", edgecolor="0.3", linewidth=0.8,
+        )
+
     ax.set_title("Contributors per Year: New vs Returning", weight="bold")
     ax.set_ylabel("Active Contributors")
     ax.set_xlabel("")
-    ax.legend(frameon=True, loc="upper left")
     ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
+    _add_ytd_legend(ax, f"Year to date (as of {as_of:%b %d})")
+
+    # Footnote clarifying the current year is partial
+    if not current.empty:
+        fig.text(
+            0.02, 0.02,
+            f"* {as_of.year} shown year-to-date (as of {as_of:%b %d, %Y})",
+            fontsize=9, color="gray",
+        )
 
     _save(fig, "new_vs_returning.svg")
 
