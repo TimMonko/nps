@@ -1,0 +1,92 @@
+# The one source for nps colours, fonts and logos.
+# Quarto reads it for the site; nps.theme reads it for the Altair themes.
+# Values match the napari-talks theme (napari-talks/_extensions/napari).
+meta:
+  name: napari plugin sustainability
+  link: https://github.com/TimMonko/nps
+
+logo:
+  images:
+    mark-light:
+      path: assets/logos/gradient-plain-light.svg
+      alt: napari logo
+    mark-dark:
+      path: assets/logos/gradient-plain-dark.svg
+      alt: napari logo
+    wordmark-light:
+      path: assets/logos/gradient-text-side-light.svg
+      alt: napari
+    wordmark-dark:
+      path: assets/logos/gradient-text-side-dark.svg
+      alt: napari
+  small:
+    light: mark-light
+    dark: mark-dark
+  medium:
+    light: wordmark-light
+    dark: wordmark-dark
+
+color:
+  palette:
+    # page tokens
+    ground-light: "#f7f7f7"
+    ground-dark: "#1b1c21"
+    raised-light: "#ebe7e6"
+    raised-dark: "#2e333e"
+    ink-light: "#1e1e21"
+    ink-dark: "#f0f1f2"
+    muted-light: "#5c5c5c"
+    muted-dark: "#9ca4af"
+    rule-light: "#dddad8"
+    rule-dark: "#424a54"
+    link-light: "#0074b8"
+    link-dark: "#80d1ff"
+    accent-light: "#564c69"
+    accent-dark: "#ccb98f"
+    # plot series, in order; contrast checked against the ground of each mode
+    series-1-light: "#0074b8"
+    series-2-light: "#b8860b"
+    series-3-light: "#6a4fb0"
+    series-4-light: "#1f8a70"
+    series-1-dark: "#009bf2"
+    series-2-dark: "#b98a14"
+    series-3-dark: "#8f72d4"
+    series-4-dark: "#1f9e80"
+    # everything in a plot that is not the story
+    context-light: "#b4b2af"
+    context-dark: "#565f6c"
+  background:
+    light: ground-light
+    dark: ground-dark
+  foreground:
+    light: ink-light
+    dark: ink-dark
+  primary:
+    light: link-light
+    dark: link-dark
+  secondary:
+    light: muted-light
+    dark: muted-dark
+  tertiary:
+    light: raised-light
+    dark: raised-dark
+  link:
+    light: link-light
+    dark: link-dark
+
+typography:
+  fonts:
+    - family: IBM Plex Sans
+      source: google
+      weight: [400, 600, 700]
+      style: [normal, italic]
+    - family: IBM Plex Mono
+      source: google
+      weight: [400, 500]
+  base:
+    family: IBM Plex Sans
+    line-height: 1.5
+  headings:
+    family: IBM Plex Sans
+    weight: 600
+  monospace: IBM Plex Mono

@@ -48,7 +48,9 @@ uv run python scripts/run_all.py --skip-fetch
 
 - **classifiers.json** — plugin categorization data (active/withdrawn/deleted) with version histories
 - **extended_summary.json** — detailed plugin metadata (PyPI/conda versions, license, authors, URLs, dependencies)
-- **GitHub API** — per-repo commit dumps (`data/commits_napari_*.json`), contributor lists, release data
+- **GitHub API** — per-repo commit dumps (`data/commits_napari_*.json`, public repos only), contributor lists, release data
+- **PyPI JSON API** — upload time of every plugin release (`data/plugin_versions.csv`)
+- **ClickHouse public PyPI dataset** — napari monthly downloads (`data/pypi_downloads_monthly.csv`), no key
 
 Both JSON files are fetched from `napari/npe2api` into `data/` (there is no
 `public/` dir anymore). `data/` is committed as-is; treat it as regenerable
@@ -56,11 +58,20 @@ pipeline output.
 
 ## Key conventions
 
-- **This is not a distributable Python package** — the `pyproject.toml` is
-  just dependency metadata for the analysis scripts. Keep it that way.
-- **Active analysis lives in `scripts/`** — do not resurrect
-  `legacy-analysis/` code (the old `PluginAnalyzer`, `src/nps/`, or the heavy
-  notebooks); it is archived for historical reference only.
+- **`src/nps/` is the plotting package** (installed editable by `uv sync`):
+  `nps.data` loads the committed data as tidy DataFrames (never fetches),
+  `nps.plots` turns them into Altair charts with no colours or fonts of their
+  own, and `nps.theme` registers `napari-light`/`napari-dark` (plus `-slides`)
+  Altair themes built from `_brand.yml`. Enable a theme before plotting.
+  Other repos (napari-talks) depend on it by path. Tests: `uv run pytest`.
+- **`_brand.yml` is the one source** for colours, fonts and logos (Quarto
+  site and Altair themes). Light/dark colour values need Quarto >= 1.8.
+- **The pipeline lives in `scripts/`** (fetch → compute → CSVs in `data/`).
+  Do not resurrect `legacy-analysis/` code (the old `PluginAnalyzer` or the
+  heavy notebooks); it is archived for historical reference only.
+- **Tools come from the project env**: Quarto is `quarto-cli` in the `site`
+  dependency group (`uv sync --group site`). On Windows it builds from source
+  and needs long paths enabled.
 - **Data analysis approach**: start exploratory, identify outliers/edge cases,
   visualize trends, and end every analysis with actionable recommendations.
   Validate assumptions against the actual plugin data (field names come from
