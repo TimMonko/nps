@@ -167,6 +167,33 @@ def plugin_maintenance(df: pd.DataFrame, trailing_months: int = 6) -> alt.LayerC
     return _layer(lines, labels)
 
 
+def template_usage_by_year(df: pd.DataFrame) -> alt.LayerChart:
+    """New plugins per year, stacked by napari-plugin-template usage.
+
+    ``df`` is ``nps.data.template_usage_by_year()``. Plugins not checked for
+    the template are stacked on top in the theme's muted context colour.
+    """
+    kinds = ["used the template", "no template", "not checked"]
+    bars = (
+        alt.Chart(df)
+        .transform_calculate(stack_order=f"indexof({kinds}, datum.kind)")
+        .mark_bar()
+        .encode(
+            x=alt.X("year:O", axis=_year_axis(df)),
+            y=alt.Y("plugins:Q", title="new plugins per year", stack="zero"),
+            # ordinal: the theme colours the last kind as context
+            color=alt.Color("kind:O", sort=kinds, scale=alt.Scale(domain=kinds)),
+            order=alt.Order("stack_order:Q"),
+            tooltip=[
+                alt.Tooltip("year:O", title="Year"),
+                alt.Tooltip("kind:N", title="Template"),
+                alt.Tooltip("plugins:Q", title="New plugins"),
+            ],
+        )
+    )
+    return _layer(bars, _so_far_note(df, "plugins"))
+
+
 def pypi_downloads(
     df: pd.DataFrame, by: Literal["month", "year"] = "month"
 ) -> alt.Chart | alt.LayerChart:

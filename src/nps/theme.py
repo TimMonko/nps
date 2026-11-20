@@ -141,7 +141,12 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
                 "offset": 12,
             },
             "header": {"labelColor": p.ink, "titleColor": p.muted, "labelFont": font},
-            "range": {"category": list(p.series)},
+            # ordinal colour (``field:O``): two story colours, then the muted
+            # context colour for the remainder (e.g. "not checked")
+            "range": {
+                "category": list(p.series),
+                "ordinal": [*p.series[:2], p.context],
+            },
             "mark": {"color": p.series[0]},
             # a ground-coloured outline leaves a small gap between stacked segments
             "bar": {

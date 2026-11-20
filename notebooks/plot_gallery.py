@@ -46,6 +46,7 @@ def _(data, plots):
         "plugin_maintenance": plots.plugin_maintenance(data.plugin_maintenance()),
         "pypi_downloads (month)": plots.pypi_downloads(data.pypi_downloads()),
         "pypi_downloads (year)": plots.pypi_downloads(data.pypi_downloads(), by="year"),
+        "template_usage_by_year": plots.template_usage_by_year(data.template_usage_by_year()),
     }
     return (charts,)
 

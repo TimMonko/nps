@@ -86,3 +86,29 @@ def pypi_downloads(
     if df.empty:
         raise ValueError(f"no downloads for {project!r}; add it to fetch_pypi_downloads.py")
     return df[["month", "downloads"]].reset_index(drop=True)
+
+
+TEMPLATE_KINDS = {
+    "new_template": "used the template",
+    "new_not_template": "no template",
+    "new_unknown": "not checked",
+}
+
+
+def template_usage_by_year(data_dir: Path | str | None = None) -> pd.DataFrame:
+    """New plugins per year, split by napari-plugin-template usage.
+
+    Columns: ``year`` (int), ``kind`` ("used the template", "no template",
+    "not checked"), ``plugins`` (int), ``ytd`` (bool). "used the template"
+    covers both the cookiecutter and copier eras; "not checked" is plugins
+    without a GitHub repo or released after the last template scan
+    (``scripts/detect_plugin_template_usage.py``).
+    """
+    monthly = pd.read_csv(_path("metrics/new_plugins_template_monthly.csv", data_dir))
+    monthly["year"] = pd.to_datetime(monthly["month"]).dt.year
+    yearly = monthly.groupby("year", as_index=False)[list(TEMPLATE_KINDS)].sum()
+    long = yearly.melt(id_vars="year", var_name="kind", value_name="plugins")
+    long["kind"] = long["kind"].map(TEMPLATE_KINDS)
+    long["plugins"] = long["plugins"].astype(int)
+    long["ytd"] = long["year"] == date.today().year
+    return long.sort_values(["year", "kind"]).reset_index(drop=True)

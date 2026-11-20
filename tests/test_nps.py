@@ -15,6 +15,7 @@ LOADERS_AND_PLOTS = [
     (data.new_plugins_by_year, plots.new_plugins_by_year),
     (data.plugin_maintenance, plots.plugin_maintenance),
     (data.pypi_downloads, plots.pypi_downloads),
+    (data.template_usage_by_year, plots.template_usage_by_year),
 ]
 
 
@@ -87,3 +88,9 @@ def test_save_writes_one_file_per_theme(tmp_path):
     light = (tmp_path / "contributors-light.svg").read_text(encoding="utf-8")
     palette = nps.theme.load_brand()["color"]["palette"]
     assert palette["ground-dark"] in dark and palette["ground-light"] in light
+
+
+def test_template_usage_counts_every_new_plugin():
+    usage = data.template_usage_by_year().groupby("year")["plugins"].sum()
+    new = data.new_plugins_by_year().set_index("year")["new_plugins"]
+    assert (usage.reindex(new.index, fill_value=0) == new).all()
