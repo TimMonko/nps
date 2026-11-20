@@ -23,6 +23,16 @@ import yaml
 Mode = Literal["light", "dark"]
 
 BRAND_FILE = Path(__file__).resolve().parents[2] / "_brand.yml"
+FONTS_DIR = BRAND_FILE.parent / "assets" / "fonts"
+
+
+@cache
+def register_fonts() -> None:
+    """Make the brand fonts (IBM Plex) available to vl-convert for SVG/PNG export."""
+    import vl_convert as vlc
+
+    if FONTS_DIR.is_dir():
+        vlc.register_font_directory(str(FONTS_DIR))
 
 
 @cache
@@ -73,7 +83,8 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
     """The Vega-Lite config for one theme."""
     p = palette(mode, brand)
     font = font_family(brand)
-    label, title = (18, 18) if slides else (13, 13)
+    # Sizes match napari-talks' matplotlib styles: 15 pt ticks, 16 pt text on slides.
+    tick, text = (15, 16) if slides else (12, 13)
     return {
         "config": {
             "background": p.ground,
@@ -82,17 +93,17 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
             "view": {
                 "stroke": None,
                 "continuousWidth": 960 if slides else 640,
-                "continuousHeight": 420 if slides else 320,
+                "continuousHeight": 400 if slides else 320,
                 "discreteWidth": 960 if slides else 640,
-                "discreteHeight": 420 if slides else 320,
+                "discreteHeight": 400 if slides else 320,
             },
             "axis": {
                 "labelColor": p.muted,
                 "titleColor": p.muted,
                 "labelFont": font,
                 "titleFont": font,
-                "labelFontSize": label,
-                "titleFontSize": title,
+                "labelFontSize": tick,
+                "titleFontSize": text,
                 "titleFontWeight": "normal",
                 "titlePadding": 10,
                 "labelPadding": 6,
@@ -108,8 +119,8 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
                 "titleColor": p.muted,
                 "labelFont": font,
                 "titleFont": font,
-                "labelFontSize": label,
-                "titleFontSize": title,
+                "labelFontSize": tick,
+                "titleFontSize": text,
                 "titleFontWeight": "normal",
                 "orient": "top",
                 "direction": "horizontal",
@@ -123,8 +134,8 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
                 "subtitleColor": p.muted,
                 "font": font,
                 "subtitleFont": font,
-                "fontSize": label + 4,
-                "subtitleFontSize": label,
+                "fontSize": text + 4,
+                "subtitleFontSize": text,
                 "fontWeight": 600,
                 "anchor": "start",
                 "offset": 12,
@@ -132,12 +143,22 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
             "header": {"labelColor": p.ink, "titleColor": p.muted, "labelFont": font},
             "range": {"category": list(p.series)},
             "mark": {"color": p.series[0]},
-            "bar": {"color": p.series[0], "cornerRadiusEnd": 1},
+            # a ground-coloured outline leaves a small gap between stacked segments
+            "bar": {
+                "color": p.series[0],
+                "stroke": p.ground,
+                "strokeWidth": 2 if slides else 1.5,
+            },
             "area": {"color": p.series[0]},
             "line": {"color": p.series[0], "strokeWidth": 2.5 if slides else 2},
             "point": {"color": p.series[0], "filled": True, "size": 60 if slides else 40},
             "rule": {"color": p.context},
-            "text": {"color": p.ink, "font": font, "fontSize": label},
+            "text": {"color": p.ink, "font": font, "fontSize": text},
+            # named text styles the plots use: mark_text(style="label" | "note")
+            "style": {
+                "label": {"fill": p.ink, "fontSize": text, "font": font},
+                "note": {"fill": p.muted, "fontSize": tick, "font": font},
+            },
         }
     }
 

@@ -72,3 +72,18 @@ def test_plots_set_no_colours():
 def test_downloads_by_year_marks_ytd():
     chart = plots.pypi_downloads(data.pypi_downloads(), by="year")
     assert "YTD" in chart.to_json()
+
+
+def test_save_writes_one_file_per_theme(tmp_path):
+    chart = plots.contributors_by_year(data.contributors_by_year())
+    paths = plots.save(chart, tmp_path / "contributors", formats=("svg", "png"))
+    assert sorted(p.name for p in paths) == [
+        "contributors-dark.png",
+        "contributors-dark.svg",
+        "contributors-light.png",
+        "contributors-light.svg",
+    ]
+    dark = (tmp_path / "contributors-dark.svg").read_text(encoding="utf-8")
+    light = (tmp_path / "contributors-light.svg").read_text(encoding="utf-8")
+    palette = nps.theme.load_brand()["color"]["palette"]
+    assert palette["ground-dark"] in dark and palette["ground-light"] in light
