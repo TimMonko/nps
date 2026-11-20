@@ -26,7 +26,7 @@ Usage::
     python scripts/plot_release_contributors.py --min-dev-days 0      # include short windows
 
 ``--interactive`` requires Plotly (declared as the optional ``plot`` extra in
-``pyproject.toml``: ``uv add --optional plot plotly``).
+``pyproject.toml``; run it with ``pixi run -e plot``).
 
 Outputs (into ``--out-dir``, default ``plots/``)::
 
@@ -142,7 +142,7 @@ def view_interactive(df: pd.DataFrame, out_dir: Path, label_min: int = 1,
         import plotly.graph_objects as go
     except ImportError as e:
         raise SystemExit(
-            "--interactive requires plotly: `uv add --optional plot plotly`"
+            "--interactive requires plotly: use `pixi run -e plot python ...`"
         ) from e
 
     d = df.copy()

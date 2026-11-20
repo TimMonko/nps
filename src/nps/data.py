@@ -1,7 +1,7 @@
 """Load nps's committed data as tidy DataFrames.
 
 Everything here reads files under ``data/`` that the pipeline in ``scripts/``
-writes (``uv run python scripts/run_all.py``); nothing fetches. Each loader
+writes (``pixi run pipeline``); nothing fetches. Each loader
 takes an optional ``data_dir`` so tests and other repos can point elsewhere.
 """
 
@@ -19,7 +19,7 @@ def _path(name: str, data_dir: Path | str | None) -> Path:
     path = Path(data_dir or DATA_DIR) / name
     if not path.exists():
         raise FileNotFoundError(
-            f"{path} not found; run the pipeline (uv run python scripts/run_all.py)"
+            f"{path} not found; run the pipeline (pixi run pipeline)"
         )
     return path
 

@@ -32,29 +32,27 @@ legacy-analysis/         # Archived, superseded exploratory analysis (kept for r
 
 ## Metrics pipeline
 
-Everything runs through `uv run python` — uv manages the environment from
-`pyproject.toml` / `uv.lock`, so there's no manual venv activation. Script
+Environments are managed by [pixi](https://pixi.sh) from `pyproject.toml`
+(`pixi.lock` is committed); `pixi run <task>` installs what it needs. Script
 output is plain ASCII, so the pipeline works on any platform/console without
 special env vars.
 
 ```sh
-# Full run: fetch → compute → plot
-uv run python scripts/run_all.py
-
-# Skip network fetch, just recompute + replot from cached data
-uv run python scripts/run_all.py --skip-fetch
+pixi run pipeline         # full run: fetch → compute → plot
+pixi run recompute        # skip network fetch, recompute + replot from cached data
+pixi run test             # tests for the nps package (dev environment)
+pixi run preview          # Quarto preview (site environment)
 ```
 
 ### Release-contributors analysis
 
 ```sh
-uv run python scripts/build_release_contributors.py      # → fellowship/final-report/new-contributors-by-release.{md,csv}
-uv run python scripts/plot_release_contributors.py       # → plots/release_new_contributors.{png,svg}
-uv run --extra plot python scripts/plot_release_contributors.py --interactive  # → plots/release_new_contributors_interactive.html
+pixi run python scripts/build_release_contributors.py      # → fellowship/final-report/new-contributors-by-release.{md,csv}
+pixi run python scripts/plot_release_contributors.py       # → plots/release_new_contributors.{png,svg}
+pixi run -e plot python scripts/plot_release_contributors.py --interactive  # → plots/release_new_contributors_interactive.html
 ```
 
-The interactive plot needs Plotly (optional `plot` extra):
-`uv add --optional plot plotly`, then `uv run --extra plot python ...`.
+The interactive plot needs Plotly, which is in the `plot` environment.
 
 ## Links
 

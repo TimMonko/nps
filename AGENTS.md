@@ -24,25 +24,27 @@ legacy-analysis/            # Archived, superseded exploratory analysis (do not 
 
 ## Metrics pipeline
 
-Everything runs through `uv run python` — uv manages the environment from
-`pyproject.toml` / `uv.lock`, so there's no manual venv activation. Script
-output is plain ASCII (no non-ASCII printed to stdout/stderr), so the
-pipeline works on any platform/console without `PYTHONUTF8` or similar.
+Environments are managed by pixi from `pyproject.toml` (`pixi.lock`
+committed; no uv). Dependency groups and extras are pixi features; the
+environments are `default`, `dev` (tests), `site` (Quarto from conda-forge),
+`plot` (Plotly) and `notebook` (marimo). Script output is plain ASCII (no
+non-ASCII printed to stdout/stderr), so the pipeline works on any
+platform/console without `PYTHONUTF8` or similar.
 
 ```sh
-# Full run: fetch → compute → plot
-uv run python scripts/run_all.py
-# Recompute + replot from cached data (no network)
-uv run python scripts/run_all.py --skip-fetch
+pixi run pipeline     # full run: fetch → compute → plot
+pixi run recompute    # recompute + replot from cached data (no network)
+pixi run test         # pytest, dev environment
+pixi run preview      # quarto preview, site environment
 ```
 
 ### Release-contributors analysis
 
-- `uv run python scripts/build_release_contributors.py` → `fellowship/final-report/new-contributors-by-release.{md,csv}`
+- `pixi run python scripts/build_release_contributors.py` → `fellowship/final-report/new-contributors-by-release.{md,csv}`
   (needs sibling `../napari` with tags + `../napari-docs` + `gh` CLI; `--as-of` freezes the date).
-- `uv run python scripts/plot_release_contributors.py` → `plots/release_new_contributors.{png,svg}`;
-  `uv run --extra plot python scripts/plot_release_contributors.py --interactive` →
-  `plots/release_new_contributors_interactive.html` (needs the `plot` extra: `uv add --optional plot plotly`).
+- `pixi run python scripts/plot_release_contributors.py` → `plots/release_new_contributors.{png,svg}`;
+  `pixi run -e plot python scripts/plot_release_contributors.py --interactive` →
+  `plots/release_new_contributors_interactive.html`.
 
 ## Data sources
 
@@ -58,20 +60,20 @@ pipeline output.
 
 ## Key conventions
 
-- **`src/nps/` is the plotting package** (installed editable by `uv sync`):
+- **`src/nps/` is the plotting package** (installed editable in every pixi environment):
   `nps.data` loads the committed data as tidy DataFrames (never fetches),
   `nps.plots` turns them into Altair charts with no colours or fonts of their
   own, and `nps.theme` registers `napari-light`/`napari-dark` (plus `-slides`)
   Altair themes built from `_brand.yml`. Enable a theme before plotting.
-  Other repos (napari-talks) depend on it by path. Tests: `uv run pytest`.
+  Other repos (napari-talks) depend on it by path. Tests: `pixi run test`.
 - **`_brand.yml` is the one source** for colours, fonts and logos (Quarto
   site and Altair themes). Light/dark colour values need Quarto >= 1.8.
 - **The pipeline lives in `scripts/`** (fetch → compute → CSVs in `data/`).
   Do not resurrect `legacy-analysis/` code (the old `PluginAnalyzer` or the
   heavy notebooks); it is archived for historical reference only.
-- **Tools come from the project env**: Quarto is `quarto-cli` in the `site`
-  dependency group (`uv sync --group site`). On Windows it builds from source
-  and needs long paths enabled.
+- **Tools come from the project env**: Quarto is the conda-forge `quarto`
+  package in the `site` pixi feature (`pixi run -e site quarto ...`), never a
+  global install.
 - **Data analysis approach**: start exploratory, identify outliers/edge cases,
   visualize trends, and end every analysis with actionable recommendations.
   Validate assumptions against the actual plugin data (field names come from

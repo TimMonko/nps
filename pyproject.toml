@@ -18,16 +18,6 @@ dependencies = [
     "altair>=5.5",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/nps"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-
 [project.optional-dependencies]
 plot = [
     "plotly>=6.9.0",
@@ -43,5 +33,50 @@ dev = [
 ]
 site = [
     "jupyter>=1.1.1",
-    "quarto-cli>=1.11",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nps"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+# pixi manages every environment: dependency groups and extras map to
+# features of the same name; conda-only tools (Quarto) come from conda-forge.
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-arm64", "osx-64"]
+
+[tool.pixi.dependencies]
+python = "3.13.*"
+
+[tool.pixi.pypi-dependencies]
+nps = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+pipeline = "python scripts/run_all.py"
+recompute = { cmd = "python scripts/run_all.py --skip-fetch", description = "Recompute metrics and plots from cached data (no network)" }
+
+[tool.pixi.feature.dev.tasks]
+test = "pytest"
+
+[tool.pixi.feature.site.dependencies]
+quarto = ">=1.11"
+
+[tool.pixi.feature.site.tasks]
+render = "quarto render"
+preview = "quarto preview"
+
+[tool.pixi.feature.notebook.tasks]
+explore = "marimo edit notebooks"
+
+[tool.pixi.environments]
+default = { solve-group = "default" }
+dev = { features = ["dev"], solve-group = "default" }
+site = { features = ["site"], solve-group = "default" }
+plot = { features = ["plot"], solve-group = "default" }
+notebook = { features = ["notebook"], solve-group = "default" }
