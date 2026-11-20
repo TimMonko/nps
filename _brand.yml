@@ -90,3 +90,10 @@ typography:
     family: IBM Plex Sans
     weight: 600
   monospace: IBM Plex Mono
+
+defaults:
+  bootstrap:
+    defaults:
+      # quiet navbar on the page ground, in both modes
+      navbar-bg: $body-bg
+      navbar-fg: $body-color

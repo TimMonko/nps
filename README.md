@@ -14,9 +14,13 @@ This repo holds three kinds of content:
    the health of the napari plugin ecosystem (`scripts/`, `data/`, `plots/`,
    `reports/`).
 
+Site: <https://timmonko.github.io/nps/> (Quarto, `site/`, rendered by
+`.github/workflows/pages.yml` from the committed data).
+
 ## Repository layout
 
 ```
+site/                    # Website pages (Quarto; config in _quarto.yml, _brand.yml)
 fellowship/              # Fellowship narrative: proposal, blogs, conferences, final report
     blog/                #   Blog posts (published + drafts) + planning
     conferences/         #   SciPy 2026 + EuroSciPy 2026 talk materials
@@ -27,7 +31,6 @@ notebooks/               # marimo notebooks for exploring metrics
 data/                    # Cached input data (npe2api, GitHub commits) + data/metrics/
 plots/                   # Generated plots (png + svg + interactive html)
 reports/                 # Generated ecosystem reports (canonical: latest_ecosystem_report.md)
-legacy-analysis/         # Archived, superseded exploratory analysis (kept for reference)
 ```
 
 ## Metrics pipeline
@@ -41,6 +44,7 @@ special env vars.
 pixi run pipeline         # full run: fetch → compute → plot
 pixi run recompute        # skip network fetch, recompute + replot from cached data
 pixi run test             # tests for the nps package (dev environment)
+pixi run render           # build the site into _site/ (site environment)
 pixi run preview          # Quarto preview (site environment)
 ```
 

@@ -1,0 +1,48 @@
+---
+title: napari plugin sustainability
+subtitle: How healthy is the napari plugin ecosystem, and who keeps it going?
+toc: false
+aliases:
+  - ../index.html
+---
+
+{{< include _setup.qmd >}}
+
+```{python}
+m = data.plugin_maintenance().iloc[-1]
+c = data.contributors_by_year()
+year = int(c["year"].max())
+contributors = int(c.loc[c["year"] == year, "contributors"].sum())
+d = data.pypi_downloads().tail(12)["downloads"].sum()
+recent = data.plugin_maintenance().query("month >= '2022-01-01'")["active_plugins"]
+lo, hi = int(recent.min()), int(recent.max())
+```
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-4}
+### `{python} f"{int(m.total_plugins):,}"` plugins
+released on PyPI, `{python} f"{int(m.active_plugins):,}"` with a release in the last six months
+:::
+::: {.g-col-12 .g-col-md-4}
+### `{python} f"{contributors:,}"` contributors
+to public napari repos in `{python} year`, so far
+:::
+::: {.g-col-12 .g-col-md-4}
+### `{python} f"{d / 1e6:.1f}"` M downloads
+of napari from PyPI in the last twelve months
+:::
+:::
+
+```{python}
+#| renderings: [light, dark]
+show(plots.plugin_maintenance(data.plugin_maintenance()))
+```
+
+The plugin count keeps climbing; the number of plugins that still get releases has
+stayed between `{python} lo` and `{python} hi` since 2022.
+
+- [Contributors](contributors.qmd): who works on napari itself
+- [Ecosystem](ecosystem.qmd): plugins, the plugin template, downloads
+- [Community](community.qmd): the plugin sustainability working group
+- [Fellowship](fellowship.qmd): the URSSI fellowship behind this project
+- [Data](data.qmd): every number here, as CSV

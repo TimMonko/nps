@@ -1,0 +1,49 @@
+# nps website: pages in site/, colours/fonts/logos from _brand.yml.
+# Renders from the committed data in data/; nothing here fetches.
+#   pixi run render    # -> _site/
+#   pixi run preview
+project:
+  type: website
+  output-dir: _site
+  render:
+    - site/*.qmd
+  resources:
+    - data/*.csv
+    - data/metrics/*.csv
+
+website:
+  title: napari plugin sustainability
+  site-url: https://timmonko.github.io/nps
+  repo-url: https://github.com/TimMonko/nps
+  repo-actions: [source, issue]
+  page-navigation: true
+  navbar:
+    left:
+      - href: site/index.qmd
+        text: Home
+      - site/contributors.qmd
+      - site/ecosystem.qmd
+      - site/community.qmd
+      - site/fellowship.qmd
+      - site/data.qmd
+    right:
+      - icon: github
+        href: https://github.com/TimMonko/nps
+        aria-label: GitHub
+  page-footer:
+    left: "napari plugin sustainability, a [URSSI](https://urssi.us/) Early Career Fellowship project"
+    right: "Data refreshed with `pixi run pipeline`"
+
+format:
+  html:
+    theme:
+      light: [cosmo, brand]
+      dark: [cosmo, brand]
+    toc: true
+    code-fold: true
+    echo: false
+    warning: false
+
+execute:
+  # charts are built at render time from data/; CI renders, never fetches
+  freeze: false

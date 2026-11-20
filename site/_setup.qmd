@@ -1,0 +1,17 @@
+```{python}
+#| include: false
+import altair as alt
+from IPython.display import display
+
+import nps.theme  # registers the napari-light/-dark themes from _brand.yml
+from nps import data, plots
+
+alt.renderers.set_embed_options(actions=False)
+
+
+def show(chart):
+    """Show ``chart`` once per theme; use in a cell with ``renderings: [light, dark]``."""
+    for mode in ("light", "dark"):
+        with alt.theme.enable(f"napari-{mode}"):
+            display(chart)
+```

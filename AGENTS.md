@@ -9,6 +9,9 @@ maintenance through community working groups.
 ## Structure
 
 ```
+_quarto.yml, _brand.yml     # Quarto website config; brand = colours/fonts/logos
+site/                       # Website pages (.qmd), rendered to _site/ (Pages)
+.github/workflows/pages.yml # Renders the site from committed data, deploys on main
 fellowship/                 # Fellowship narrative: proposal, blogs, conferences, final report
     blog/                   #   Blog posts (published + drafts) + planning
     conferences/            #   Conference talk materials (SciPy 2026, EuroSciPy 2026)
@@ -19,7 +22,6 @@ notebooks/                  # marimo notebooks for exploring metrics
 data/                       # Cached input data + data/metrics/ (computed CSVs)
 plots/                      # Generated plots (png + svg + interactive html)
 reports/                    # Generated ecosystem reports
-legacy-analysis/            # Archived, superseded exploratory analysis (do not build on)
 ```
 
 ## Metrics pipeline
@@ -35,6 +37,7 @@ platform/console without `PYTHONUTF8` or similar.
 pixi run pipeline     # full run: fetch → compute → plot
 pixi run recompute    # recompute + replot from cached data (no network)
 pixi run test         # pytest, dev environment
+pixi run render       # site -> _site/, site environment
 pixi run preview      # quarto preview, site environment
 ```
 
@@ -69,8 +72,14 @@ pipeline output.
 - **`_brand.yml` is the one source** for colours, fonts and logos (Quarto
   site and Altair themes). Light/dark colour values need Quarto >= 1.8.
 - **The pipeline lives in `scripts/`** (fetch → compute → CSVs in `data/`).
-  Do not resurrect `legacy-analysis/` code (the old `PluginAnalyzer` or the
-  heavy notebooks); it is archived for historical reference only.
+  The old `legacy-analysis/` code was deleted (git history has it); don't
+  bring it back.
+- **The site (`site/*.qmd`) is thin**: each page includes `site/_setup.qmd`
+  and shows charts with `show(plots.x(data.x()))` in a cell with
+  `#| renderings: [light, dark]`, so the chart follows the site's theme
+  toggle. Pages include `fellowship/` and `community/` Markdown rather than
+  copying it; keep page text short. CI renders, never fetches. Pages live in
+  `site/`, so URLs are `/nps/site/<page>.html`; `/nps/` redirects there.
 - **Tools come from the project env**: Quarto is the conda-forge `quarto`
   package in the `site` pixi feature (`pixi run -e site quarto ...`), never a
   global install.

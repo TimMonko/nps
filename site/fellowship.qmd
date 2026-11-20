@@ -1,0 +1,13 @@
+---
+title: Fellowship
+shift-heading-level-by: 1
+---
+
+This project began as a Fall 2025
+[URSSI Early Career Fellowship](https://urssi.us/blog/2025/09/23/urssi-welcomes-second-cohort-of-early-career-fellows/)
+held by Tim Monko, napari's community manager.
+
+- [The plugin sustainability initiative](https://napari.org/island-dispatch/blog/plugin-sustainability-initiative.html) on The Island Dispatch
+- Talks at SciPy 2026 and EuroSciPy 2026: *(Re)-connecting foundational libraries with their communities*
+
+{{< include ../fellowship/proposal.md >}}

@@ -1,0 +1,32 @@
+---
+title: Contributors
+---
+
+{{< include _setup.qmd >}}
+
+People with at least one commit that year to any public repo in the
+[napari GitHub org](https://github.com/napari). *New* means their first
+commit to any of them.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.contributors_by_year(data.contributors_by_year()))
+```
+
+## New contributors by release
+
+From the author lists in each release's notes.
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## Every napari release
+
+```{python}
+import pandas as pd
+from IPython.display import HTML
+
+releases = pd.read_csv("../fellowship/final-report/new-contributors-by-release.csv")
+table = releases[["release", "release_date", "new_contributors"]].iloc[::-1]
+table.columns = ["Release", "Date", "New contributors"]
+HTML(table.to_html(index=False, classes="table table-sm", border=0))
+```
+:::

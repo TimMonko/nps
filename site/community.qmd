@@ -1,0 +1,15 @@
+---
+title: Community
+shift-heading-level-by: 1
+from: markdown+emoji
+---
+
+The plugin sustainability working group meets on the napari community
+calendar, at both *Atlantic* and *Pacific* times. Everyone is welcome:
+plugin authors, users, and core developers.
+
+- [Meeting schedule](https://napari.org/stable/community/meeting_schedule.html)
+- [napari Zulip](https://napari.zulipchat.com/), for anything between meetings
+- [The announcement on The Island Dispatch](https://napari.org/island-dispatch/blog/plugin-sustainability-initiative.html)
+
+{{< include ../community/working-group-meeting-notes.md >}}

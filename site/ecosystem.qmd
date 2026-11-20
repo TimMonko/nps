@@ -1,0 +1,47 @@
+---
+title: Ecosystem
+---
+
+{{< include _setup.qmd >}}
+
+Plugins listed on [npe2api](https://api.napari.org) (the data behind the
+[napari hub](https://napari-hub.org)), with every release from PyPI.
+
+## New plugins
+
+```{python}
+#| renderings: [light, dark]
+show(plots.new_plugins_by_year(data.new_plugins_by_year()))
+```
+
+## Maintenance
+
+A plugin counts as recently released if any version came out in the six months
+up to that month.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.plugin_maintenance(data.plugin_maintenance()))
+```
+
+## The plugin template
+
+New plugins made from the [napari-plugin-template](https://github.com/napari/napari-plugin-template)
+(cookiecutter until mid-2024, copier since), found from each plugin's repo and
+PyPI description.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.template_usage_by_year(data.template_usage_by_year()))
+```
+
+## napari downloads
+
+Monthly downloads of napari from PyPI, from
+[ClickHouse's public PyPI dataset](https://clickpy.clickhouse.com/dashboard/napari).
+It counts every download, CI included.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.pypi_downloads(data.pypi_downloads()))
+```
