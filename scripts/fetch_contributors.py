@@ -132,7 +132,9 @@ def fetch_commits(repo: str) -> list[dict]:
 
 
 def fetch_org_repos(org: str) -> list[str]:
-    """Fetch all non-archived, non-fork repos in a GitHub organization.
+    """Fetch all public, non-archived, non-fork repos in a GitHub organization.
+
+    The token may see private repos; only ``visibility == "public"`` is kept.
 
     Adapted from check_citation_authors.py in napari PR #9155.
     """
@@ -160,6 +162,8 @@ def fetch_org_repos(org: str) -> list[str]:
             if not isinstance(item, dict):
                 continue
             if item.get("archived") or item.get("fork"):
+                continue
+            if item.get("private") or item.get("visibility") != "public":
                 continue
             full_name = item.get("full_name")
             if isinstance(full_name, str):
