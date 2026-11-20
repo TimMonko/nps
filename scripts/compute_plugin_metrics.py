@@ -1,11 +1,12 @@
 """Compute plugin ecosystem metrics.
 
-Reads data/plugin_releases.csv from fetch_plugin_data.py.
-Outputs data/metrics/plugin_metrics.csv.
+Reads data/plugin_releases.csv and data/plugin_versions.csv from
+fetch_plugin_data.py. Writes data/metrics/new_plugins_monthly.csv,
+new_plugins_template_monthly.csv and plugin_maintenance.csv.
 
 Metrics:
 - new_plugins: count of plugins with first release in each month
-- active_plugins: plugins with ≥1 release in trailing 6 months
+- active_plugins: plugins with ≥1 release (any version) in trailing 6 months
 - total_plugins: cumulative total plugins ever released
 - maintenance_ratio: active_plugins / total_plugins
 """
@@ -107,47 +108,57 @@ def compute_new_plugins_template_monthly(df: pd.DataFrame) -> pd.DataFrame:
     return monthly.sort_values("month")
 
 
+def load_plugin_versions() -> pd.DataFrame:
+    """Load one row per plugin release (name, version, upload_time)."""
+    path = DATA_DIR / "plugin_versions.csv"
+    if not path.exists():
+        raise RuntimeError(
+            "plugin_versions.csv not found. Run fetch_plugin_data.py first."
+        )
+    versions = pd.read_csv(path)
+    versions["upload_time"] = pd.to_datetime(versions["upload_time"], utc=True)
+    print(f"  Loaded {len(versions)} plugin releases", file=sys.stderr)
+    return versions
+
+
 def compute_maintenance_metrics(
-    df: pd.DataFrame, trailing_months: int = 6
+    versions: pd.DataFrame, trailing_months: int = 6
 ) -> pd.DataFrame:
-    """Compute plugin maintenance metrics over time.
+    """Compute plugin maintenance over time from every release date.
 
-    For each month, compute:
-    - total_plugins: cumulative plugins with first release ≤ that month
-    - active_plugins: plugins with latest release within trailing window
+    For each calendar month M (labelled by its first day):
+    - total_plugins: plugins whose first release is before the end of M
+    - active_plugins: plugins with at least one release in the
+      ``trailing_months`` months ending at the end of M
     - maintenance_ratio: active / total
-    """
-    with_dates = df[df["first_release"].notna()].copy()
 
-    if with_dates.empty:
+    Earlier versions used only each plugin's *latest* release, so a plugin
+    that was active in 2022 but released again in 2025 counted as inactive in
+    2022 and history was undercounted.
+    """
+    if versions.empty:
         return pd.DataFrame()
 
-    # Build a monthly time series
-    min_date = with_dates["first_release"].min()
-    max_date = max(
-        with_dates["latest_release"].max(),
-        pd.Timestamp.now(tz="UTC"),
-    )
-    months = pd.date_range(min_date, max_date, freq="MS")
+    times = versions[["name", "upload_time"]].dropna()
+    month_of = times["upload_time"].dt.tz_localize(None).dt.to_period("M")
+    released = pd.DataFrame({"name": times["name"], "month": month_of}).drop_duplicates()
+    first_month = released.groupby("name")["month"].min()
 
+    months = pd.period_range(
+        released["month"].min(), pd.Timestamp.now(tz="UTC").tz_localize(None), freq="M"
+    )
     rows: list[dict] = []
     for m in months:
-        total = (with_dates["first_release"] <= m).sum()
-        # Active = latest release within [m - trailing_months, m]
-        window_start = m - pd.DateOffset(months=trailing_months)
-        active = (
-            (with_dates["latest_release"] >= window_start)
-            & (with_dates["latest_release"] <= m + pd.DateOffset(months=1))
-        ).sum()
+        total = int((first_month <= m).sum())
+        in_window = released["month"].between(m - (trailing_months - 1), m)
+        active = int(released.loc[in_window, "name"].nunique())
         rows.append({
-            "month": m,
+            "month": m.to_timestamp(),
             "total_plugins": total,
             "active_plugins": active,
-            "maintenance_ratio": active / total if total > 0 else 0.0,
+            "maintenance_ratio": active / total if total else 0.0,
         })
-
-    result = pd.DataFrame(rows)
-    return result
+    return pd.DataFrame(rows)
 
 
 def main() -> int:
@@ -195,8 +206,10 @@ def main() -> int:
 
     # 2. Maintenance metrics
     print("\nComputing maintenance metrics ...", file=sys.stderr)
-    maintenance = compute_maintenance_metrics(df)
-    maintenance.to_csv(OUTPUT_DIR / "plugin_maintenance.csv", index=False)
+    maintenance = compute_maintenance_metrics(load_plugin_versions())
+    maintenance.to_csv(
+        OUTPUT_DIR / "plugin_maintenance.csv", index=False, date_format="%Y-%m-%d"
+    )
     print(
         f"  {len(maintenance)} months -> {OUTPUT_DIR / 'plugin_maintenance.csv'}"
     )

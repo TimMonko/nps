@@ -1,10 +1,12 @@
 """Fetch plugin release dates from npe2api and PyPI.
 
 Downloads npe2api extended_summary, then queries PyPI JSON API per
-plugin for first-release timestamps.
+plugin for the upload time of every release.
 
-Output: data/plugin_releases.csv
-Columns: name, first_release, latest_release, n_versions, github_url
+Outputs:
+  data/plugin_releases.csv  one row per plugin
+      (name, first_release, latest_release, n_versions, github_url, ...)
+  data/plugin_versions.csv  one row per release (name, version, upload_time)
 """
 
 from __future__ import annotations
@@ -51,26 +53,26 @@ def download_extended_summary() -> list[dict]:
         ) from e
 
 
-def fetch_pypi_release_dates(pypi_name: str) -> tuple[str | None, str | None, int]:
-    """Fetch first and latest release dates from PyPI JSON API.
+def fetch_pypi_versions(pypi_name: str) -> list[tuple[str, str]]:
+    """Fetch (version, upload_time) for every release from the PyPI JSON API.
 
-    Returns (first_release, latest_release, n_versions).
-    Dates are ISO 8601 strings like "2020-03-15T10:30:00".
+    The upload time is that of the release's first file, as an ISO 8601
+    string like "2020-03-15T10:30:00" (UTC). Sorted oldest first.
     """
     url = f"https://pypi.org/pypi/{pypi_name}/json"
     try:
         resp = requests.get(url, timeout=15)
         if resp.status_code == 404:
-            return None, None, 0
+            return []
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
         print(f"    Warning: {pypi_name}: {e}", file=sys.stderr)
-        return None, None, 0
+        return []
 
     releases = data.get("releases", {})
     if not releases:
-        return None, None, 0
+        return []
 
     # Filter out empty releases and get upload times
     dated_versions: list[tuple[str, str]] = []
@@ -83,15 +85,8 @@ def fetch_pypi_release_dates(pypi_name: str) -> tuple[str | None, str | None, in
                 dated_versions.append((version, upload_time))
                 break  # just need first upload for each version
 
-    if not dated_versions:
-        return None, None, 0
-
     dated_versions.sort(key=lambda x: x[1])
-    first_release = dated_versions[0][1]
-    latest_release = dated_versions[-1][1]
-    n_versions = len(dated_versions)
-
-    return first_release, latest_release, n_versions
+    return dated_versions
 
 
 def load_github_repos_csv() -> dict[str, str]:
@@ -122,6 +117,7 @@ def main() -> int:
 
     # 3. Fetch PyPI release dates for each plugin
     rows: list[dict] = []
+    version_rows: list[dict] = []
     total = len(plugins)
     for i, plugin in enumerate(plugins, 1):
         name = plugin.get("name", "")
@@ -135,7 +131,13 @@ def main() -> int:
                 flush=True,
             )
 
-        first, latest, n_vers = fetch_pypi_release_dates(name)
+        versions = fetch_pypi_versions(name)
+        version_rows.extend(
+            {"name": name, "version": v, "upload_time": t} for v, t in versions
+        )
+        first = versions[0][1] if versions else None
+        latest = versions[-1][1] if versions else None
+        n_vers = len(versions)
 
         rows.append({
             "name": name,
@@ -163,6 +165,12 @@ def main() -> int:
     output_path = DATA_DIR / "plugin_releases.csv"
     df.to_csv(output_path, index=False)
     print(f"\nSaved {len(df)} plugins to {output_path}", file=sys.stderr)
+
+    versions_df = pd.DataFrame(version_rows, columns=["name", "version", "upload_time"])
+    versions_df["upload_time"] = pd.to_datetime(versions_df["upload_time"], utc=True)
+    versions_path = DATA_DIR / "plugin_versions.csv"
+    versions_df.sort_values(["name", "upload_time"]).to_csv(versions_path, index=False)
+    print(f"Saved {len(versions_df)} releases to {versions_path}", file=sys.stderr)
 
     # Summary stats
     with_dates = df["first_release"].notna().sum()
