@@ -1,5 +1,345 @@
 [
   {
+    "login": "lundybernard",
+    "date": "2026-11-20T15:45:31Z",
+    "sha": "3febda2a7dfbc5529f33a73577313c1ef27e76e3"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-11-20T10:01:41Z",
+    "sha": "b4f57cf99870fee7c793615ec1f60e2ae2822b79"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-11-19T15:44:56Z",
+    "sha": "913b1250224a408e4ab4f7a051b0171231667815"
+  },
+  {
+    "login": "zelihaguven",
+    "date": "2026-11-19T15:34:59Z",
+    "sha": "c745b83ca570df026f1288dda3f9c479cdb58806"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-11-19T10:26:08Z",
+    "sha": "9f437db46fd146d7e98f43eaf0b8e6affb991d28"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-11-17T20:35:46Z",
+    "sha": "20d0b056e484d7ed9d71721a59b65954fba93ace"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-11-17T12:46:13Z",
+    "sha": "d2083e0987abb1093637c2a2312a0be8c1bd8fc8"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-11-17T08:59:06Z",
+    "sha": "74af6f0553ce268acf0109d79cab15613f324b3c"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-11-16T20:38:49Z",
+    "sha": "d052819aa31d178487bfebaade1bd00e3182320c"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-11-12T23:46:50Z",
+    "sha": "09e0e69ded3b40b2b44dcf7932ab44473a5d01ad"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-11-12T16:36:49Z",
+    "sha": "4fb942eda6a7dfc9fc395ae47e5e4bb4129f1c05"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-11T23:05:51Z",
+    "sha": "9f86af32d322e69d4e6063177a3677d89516a34c"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-11T00:41:23Z",
+    "sha": "4abb8b4c972673758048c1e84c9f71675ceedeb3"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-10T15:19:57Z",
+    "sha": "8799a8fbb86de8f67931bc43299da3546827044c"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-09T15:09:57Z",
+    "sha": "6445a5175caeb79f15969b1429f5ef38acae0647"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-09T15:08:28Z",
+    "sha": "62a357bde7ce39405bdf0e950e2e8a90201dc02f"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-11-09T14:53:12Z",
+    "sha": "187e668fcd22907414cff24558ca654883cd680d"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-06T21:17:46Z",
+    "sha": "44d350651d9764121db06a1b15f368f60425fa6c"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-05T21:11:26Z",
+    "sha": "a5a5310be00089fe61c7eefaed93a9c33429f4dd"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-05T20:40:28Z",
+    "sha": "347372e2a70223a3d1b8cb1a1970cb67793e85b1"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-05T19:39:30Z",
+    "sha": "440efd08f9bd4a9fa6abfb41fc22bb97ad8d145a"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-11-03T17:04:25Z",
+    "sha": "2762f82bdf230fa01e01ff2d9d34154abd5036a3"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-11-01T10:17:07Z",
+    "sha": "1a15f992989e3b2956a826c8f1b8d616b2edc7b9"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-30T22:12:56Z",
+    "sha": "8e779452048a50fec298fbd4e4423225d4eb32f9"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-29T17:45:29Z",
+    "sha": "9fb635345ec9b7023f0bb2b95d9428798f151273"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-29T17:42:28Z",
+    "sha": "d9e1a9d83cb1bc955d48992efc5c278a76e636fb"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-29T14:32:03Z",
+    "sha": "2c90c2098db0a3f377c9c25aaf942e3f56cf6d32"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-26T22:53:06Z",
+    "sha": "7f1b9713b07c861ebd266f070afe6454940857fc"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-26T19:29:38Z",
+    "sha": "70bfe90c138767b266fe059d4d1aa8c8c6a556d8"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-26T16:03:47Z",
+    "sha": "5137130b3af2e7cf9b4b86befde981fc24d00226"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-26T08:30:02Z",
+    "sha": "b6b325d3cae5e26b0eebbd1e527126310161ddcc"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-26T08:29:51Z",
+    "sha": "20e82e1a17c5ff9f81839380f6976607ef9c3278"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-26T08:29:39Z",
+    "sha": "3bb74db080980b0da087439256248e73238ab07c"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-23T15:39:08Z",
+    "sha": "e2aed2a48963f88146f57af6ff9f0d4258527a9c"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-10-22T21:56:55Z",
+    "sha": "a8499dfbc9d33e02b0f6c167a6c484a4fe99d5e9"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-22T11:56:52Z",
+    "sha": "a2d4c97631e4064563bfc539874599a6686549a0"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-21T12:18:21Z",
+    "sha": "42df7fd79ed73c9d2965af52eb68a071149b3ffa"
+  },
+  {
+    "login": "Olusesan",
+    "date": "2026-10-20T09:45:21Z",
+    "sha": "82adfa5340b50780df041332ea973bcf6b230b9e"
+  },
+  {
+    "login": "omkar-334",
+    "date": "2026-10-20T09:34:13Z",
+    "sha": "64b5b2d8a7511a9acc5aea251d2bbf668a4e0ba7"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-19T22:33:07Z",
+    "sha": "fdf2fc37e2e15f35b213975b5c89015af5f15c0f"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-19T14:48:57Z",
+    "sha": "37d91b402bf0b9aa1f06051af083396b92fc9400"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-19T14:21:46Z",
+    "sha": "60e7a8842249bb99b119b48d0b43ba84a4f5aae8"
+  },
+  {
+    "login": "Aniketsy",
+    "date": "2026-10-15T08:55:54Z",
+    "sha": "c893da6eb873e96b5c8541f3cf73d70147054086"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-15T08:36:44Z",
+    "sha": "2b20ae33af252bdb4795c4de6746bbfc198956ac"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-15T08:36:44Z",
+    "sha": "8d081e2cecec72d5557da0d563c641caa0616eff"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-15T08:36:43Z",
+    "sha": "ccf5290359fb371915d880dc0b62c7e58292e9c4"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-15T08:36:43Z",
+    "sha": "37c058bc531d56e60a7b07d0c823d1e1db2def9d"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-15T08:17:10Z",
+    "sha": "94506fa5678ac26a1ccba62d8625c95dc1f12f80"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-14T15:22:16Z",
+    "sha": "6a3b3695ecb2da1336bd673ebf7c73be80ed5014"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-13T13:20:30Z",
+    "sha": "68601be54b0847a198fcba4a81dd4921b1458cb8"
+  },
+  {
+    "login": "jacopoabramo",
+    "date": "2026-10-12T14:39:06Z",
+    "sha": "fe036915882acfea9fb6bde06993ead52a9af675"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-10-12T13:43:31Z",
+    "sha": "d91251e9e711d84de10db0ce3787396cac32cc71"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-12T11:47:32Z",
+    "sha": "265913b77433f6bc4332de09c26c1dd0a8ca15da"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-11T19:31:54Z",
+    "sha": "df7014207e8b23876046e7232fb1c6f2430c8538"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-03T15:59:55Z",
+    "sha": "7f5eaee3ffb8d7b674aed6f4c26a95b90831736d"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-01T13:55:40Z",
+    "sha": "eb9a1496e66107b8a1aa7ad5c96c509075ddc443"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-01T07:54:01Z",
+    "sha": "e97388f187e4f6a3b86f0838f08a2fb362a67b66"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-09-29T21:41:09Z",
+    "sha": "9ebf4dbcf9de4ec1884436642a870ea14a908512"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-09-29T21:40:56Z",
+    "sha": "3db3cde9607224f1587e1d942103ff6920b91235"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-09-28T08:13:13Z",
+    "sha": "74d7fc04efb03ab62a7c548f9eb7475210cac035"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-09-22T20:30:46Z",
+    "sha": "2f98ae6ed4cc7945023bca52aa2e1ba8f39488be"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-09-22T18:16:57Z",
+    "sha": "1d2d72f9b23a41d0cc9dfa992df286973630c4eb"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-09-22T13:15:24Z",
+    "sha": "cec73fe5f5e5f6f9a24ce651f56e9463c66f17f6"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-09-07T11:26:20Z",
+    "sha": "4e03086eb44d90ed53dc487a9d21d977f215be7a"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-09-04T20:24:37Z",
+    "sha": "d10b3c51077826b58ca2adb3825a8cdd73455b6f"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-09-04T17:18:11Z",
+    "sha": "20c1488866991004b61c31b2ab1b50164716d7d1"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-08-28T03:45:26Z",
+    "sha": "278ddfab66c1913caea50109041ca460408be61a"
+  },
+  {
+    "login": "jni",
+    "date": "2026-08-27T22:07:56Z",
+    "sha": "14bd5eb8c565aad6afab72844420db9d83192b1c"
+  },
+  {
     "login": "Czaki",
     "date": "2026-08-25T16:50:05Z",
     "sha": "56e0819213c80582806986764a0c4b790f1c499e"

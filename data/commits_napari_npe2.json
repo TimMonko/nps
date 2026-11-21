@@ -1,5 +1,60 @@
 [
   {
+    "login": "lundybernard",
+    "date": "2026-11-09T16:17:28Z",
+    "sha": "5e7594fa4304ec34bf8166f1252162fb926088e6"
+  },
+  {
+    "login": "lundybernard",
+    "date": "2026-11-05T19:39:44Z",
+    "sha": "f8dfdc81161ee89aee46ae80455864408c3243dc"
+  },
+  {
+    "login": "psobolewskiPhD",
+    "date": "2026-11-04T12:18:31Z",
+    "sha": "97d36cafb4e96efe68331b02a489407c265b9df4"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-11-01T09:31:56Z",
+    "sha": "dc68457467d4f667505de0fd8f21f9e93edae030"
+  },
+  {
+    "login": "TeunHuijben",
+    "date": "2026-11-01T09:05:50Z",
+    "sha": "974dc462595ef9e0fde0c8adebd667a3b34ea703"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-15T12:10:04Z",
+    "sha": "45215167b5c69047a3389b654cd0f8b063932164"
+  },
+  {
+    "login": "TimMonko",
+    "date": "2026-10-15T11:47:19Z",
+    "sha": "0789d92f5b154914e7b7309d02e9feb9c82fe2ff"
+  },
+  {
+    "login": "Czaki",
+    "date": "2026-10-15T11:44:13Z",
+    "sha": "9bbf4d3de0e5387e7b76ed6f909c05ec71f01f63"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-14T16:06:39Z",
+    "sha": "f539ec04dbb5400482131bad6aa1942e846227a6"
+  },
+  {
+    "login": "DragaDoncila",
+    "date": "2026-10-13T15:29:08Z",
+    "sha": "5f79a56ea7f391739d8c88768c48f2e28f02204a"
+  },
+  {
+    "login": "brisvag",
+    "date": "2026-10-06T12:31:16Z",
+    "sha": "6732a4457d526c447f0fd276afd288045f64d9df"
+  },
+  {
     "login": "TimMonko",
     "date": "2026-08-18T00:47:59Z",
     "sha": "8512ae5443d607d87ab198316e12dcf5c8ef0f78"
