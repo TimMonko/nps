@@ -15,6 +15,7 @@ and committed. Contributor counts cover public napari org repos only.
 | [plugin_contributors.csv](../data/plugin_contributors.csv) | plugin contributor | GitHub API |
 | [python_versions.csv](../data/python_versions.csv) | plugin | PyPI classifiers |
 | [pypi_downloads_monthly.csv](../data/pypi_downloads_monthly.csv) | project and month | [ClickHouse PyPI dataset](https://clickpy.clickhouse.com) |
+| [pypi_downloads_by_system_monthly.csv](../data/pypi_downloads_by_system_monthly.csv) | project, month and OS | [ClickHouse PyPI dataset](https://clickpy.clickhouse.com) |
 | [metrics/new_vs_returning.csv](../data/metrics/new_vs_returning.csv) | year | GitHub commits |
 | [metrics/plugin_maintenance.csv](../data/metrics/plugin_maintenance.csv) | month | computed |
 | [metrics/new_plugins_template_monthly.csv](../data/metrics/new_plugins_template_monthly.csv) | month | computed |

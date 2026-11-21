@@ -1,6 +1,7 @@
 ```{python}
 #| include: false
 import altair as alt
+import pandas as pd
 from IPython.display import display
 
 import nps.theme  # registers the napari-light/-dark themes from _brand.yml

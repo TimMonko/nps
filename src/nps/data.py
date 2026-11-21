@@ -189,7 +189,7 @@ def plugin_status(
 TEMPLATE_KINDS = {
     "new_template": "used the template",
     "new_not_template": "no template",
-    "new_unknown": "not checked",
+    "new_unknown": "no public repo",
 }
 
 
@@ -197,10 +197,11 @@ def template_usage_by_year(data_dir: Path | str | None = None) -> pd.DataFrame:
     """New plugins per year, split by napari-plugin-template usage.
 
     Columns: ``year`` (int), ``kind`` ("used the template", "no template",
-    "not checked"), ``plugins`` (int), ``ytd`` (bool). "used the template"
-    covers both the cookiecutter and copier eras; "not checked" is plugins
-    without a GitHub repo or released after the last template scan
-    (``scripts/detect_plugin_template_usage.py``).
+    "no public repo"), ``plugins`` (int), ``ytd`` (bool). "used the template"
+    covers both the cookiecutter and copier eras; "no public repo" is plugins
+    whose metadata links no GitHub repo, or whose repo is gone or private
+    (``scripts/detect_plugin_template_usage.py``; plugins released after the
+    last scan also land here until ``pixi run refresh``).
     """
     monthly = pd.read_csv(_path("metrics/new_plugins_template_monthly.csv", data_dir))
     monthly["year"] = pd.to_datetime(monthly["month"]).dt.year

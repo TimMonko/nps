@@ -9,23 +9,26 @@ aliases:
 {{< include _setup.qmd >}}
 
 ```{python}
-m = data.plugin_maintenance().iloc[-1]
+status = data.plugin_status()
+now = status[status["month"] == status["month"].max()].set_index("state")["plugins"]
+total = int(now.sum())
+recent = int(now[data.PLUGIN_STATES["recent"]])
+living_share = status["recent_share_of_living"].iloc[-1]
 c = data.contributors_by_year()
 year = int(c["year"].max())
 contributors = int(c.loc[c["year"] == year, "contributors"].sum())
+new = int(c.loc[(c["year"] == year) & (c["kind"] == "New"), "contributors"].sum())
 d = data.pypi_downloads().tail(12)["downloads"].sum()
-recent = data.plugin_maintenance().query("month >= '2022-01-01'")["active_plugins"]
-lo, hi = int(recent.min()), int(recent.max())
 ```
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-4}
-### `{python} f"{int(m.total_plugins):,}"` plugins
-released on PyPI, `{python} f"{int(m.active_plugins):,}"` with a release in the last six months
+### `{python} f"{total:,}"` plugins
+released on PyPI, `{python} f"{recent:,}"` with a release in the last six months
 :::
 ::: {.g-col-12 .g-col-md-4}
 ### `{python} f"{contributors:,}"` contributors
-to public napari repos in `{python} year`, so far
+to public napari repos in `{python} year` so far, `{python} new` of them new
 :::
 ::: {.g-col-12 .g-col-md-4}
 ### `{python} f"{d / 1e6:.1f}"` M downloads
@@ -35,11 +38,12 @@ of napari from PyPI in the last twelve months
 
 ```{python}
 #| renderings: [light, dark]
-show(plots.plugin_maintenance(data.plugin_maintenance()))
+show(plots.plugin_status(status))
 ```
 
-The plugin count keeps climbing; the number of plugins that still get releases has
-stayed between `{python} lo` and `{python} hi` since 2022.
+Every plugin ever released, by when it last shipped a release. Of the plugins
+with any release in the past two years, `{python} f"{living_share:.0%}"`
+released in the last six months.
 
 - [Contributors](contributors.qmd): who works on napari itself
 - [Ecosystem](ecosystem.qmd): plugins, the plugin template, downloads

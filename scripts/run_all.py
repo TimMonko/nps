@@ -33,6 +33,32 @@ def _run(script: str, step: str) -> bool:
     return result.returncode == 0
 
 
+def _print_as_of() -> None:
+    """Print the newest data point of each source, so a stale fetch shows."""
+    import pandas as pd
+
+    data = REPO_ROOT / "data"
+    checks = {
+        "plugin releases": (data / "plugin_versions.csv", "upload_time"),
+        "napari commits": (data / "commits_napari_napari.json", "date"),
+        "PyPI downloads (complete months)": (data / "pypi_downloads_monthly.csv", "month"),
+    }
+    print("\nData as of:", file=sys.stderr)
+    for label, (path, col) in checks.items():
+        if not path.exists():
+            print(f"  {label}: missing", file=sys.stderr)
+            continue
+        df = pd.read_json(path) if path.suffix == ".json" else pd.read_csv(path)
+        newest = pd.to_datetime(df[col], utc=True).max()
+        print(f"  {label}: {newest:%Y-%m-%d}", file=sys.stderr)
+    template = data / "plugin_template_usage.csv"
+    versions = data / "plugin_versions.csv"
+    if template.exists() and versions.exists():
+        checked = set(pd.read_csv(template)["name"].str.lower())
+        missing = set(pd.read_csv(versions)["name"].str.lower()) - checked
+        print(f"  plugins not checked for the template: {len(missing)}", file=sys.stderr)
+
+
 def main() -> int:
     skip_fetch = "--skip-fetch" in sys.argv
     plots_only = "--plots-only" in sys.argv
@@ -100,6 +126,7 @@ def main() -> int:
             "Phase 4: Build plugin-template-usage report",
         )
 
+    _print_as_of()
     print("\n✅ Pipeline complete!", file=sys.stderr)
     print(f"   Plots in: {REPO_ROOT / 'plots'}", file=sys.stderr)
     print(f"   Metrics in: {REPO_ROOT / 'data' / 'metrics'}", file=sys.stderr)

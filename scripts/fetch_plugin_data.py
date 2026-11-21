@@ -111,7 +111,11 @@ def main() -> int:
     plugins = download_extended_summary()
     print(f"  {len(plugins)} plugins in extended_summary", file=sys.stderr, flush=True)
 
-    # 2. Load github_repos mapping
+    # 2. Rebuild github_repos.csv from the summary just downloaded (otherwise
+    #    plugins new since the last run have no repo and skip template checks)
+    import runpy
+
+    runpy.run_path(str(Path(__file__).with_name("github_repos.py")))
     github_map = load_github_repos_csv()
     print(f"  {len(github_map)} plugins in github_repos.csv", file=sys.stderr, flush=True)
 

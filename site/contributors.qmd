@@ -13,6 +13,16 @@ commit to any of them.
 show(plots.contributors_by_year(data.contributors_by_year()))
 ```
 
+## Active contributors
+
+People with a commit in the six months up to each month, and those of them who
+have also contributed to a napari plugin's repo.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.active_contributors(data.active_contributors()))
+```
+
 ## New contributors by release
 
 From the author lists in each release's notes.

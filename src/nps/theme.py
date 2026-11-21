@@ -142,7 +142,7 @@ def theme_config(mode: Mode, *, slides: bool = False, brand: dict | None = None)
             },
             "header": {"labelColor": p.ink, "titleColor": p.muted, "labelFont": font},
             # ordinal colour (``field:O``): two story colours, then the muted
-            # context colour for the remainder (e.g. "not checked")
+            # context colour for the remainder (e.g. "no public repo")
             "range": {
                 "category": list(p.series),
                 "ordinal": [*p.series[:2], p.context],

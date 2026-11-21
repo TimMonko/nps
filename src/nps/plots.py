@@ -199,10 +199,10 @@ def plugin_maintenance(df: pd.DataFrame, trailing_months: int = 6) -> alt.LayerC
 def template_usage_by_year(df: pd.DataFrame) -> alt.LayerChart:
     """New plugins per year, stacked by napari-plugin-template usage.
 
-    ``df`` is ``nps.data.template_usage_by_year()``. Plugins not checked for
-    the template are stacked on top in the theme's muted context colour.
+    ``df`` is ``nps.data.template_usage_by_year()``. Plugins with no public
+    repo to check are stacked on top in the theme's muted context colour.
     """
-    kinds = ["used the template", "no template", "not checked"]
+    kinds = ["used the template", "no template", "no public repo"]
     bars = (
         alt.Chart(df)
         .transform_calculate(stack_order=f"indexof({kinds}, datum.kind)")

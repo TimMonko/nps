@@ -16,12 +16,19 @@ show(plots.new_plugins_by_year(data.new_plugins_by_year()))
 
 ## Maintenance
 
-A plugin counts as recently released if any version came out in the six months
-up to that month.
+Every plugin released so far, by when it last shipped any version: in the six
+months up to that month, six months to two years before, or not in two years.
 
 ```{python}
 #| renderings: [light, dark]
-show(plots.plugin_maintenance(data.plugin_maintenance()))
+show(plots.plugin_status(data.plugin_status()))
+```
+
+The same, as a share of all plugins:
+
+```{python}
+#| renderings: [light, dark]
+show(plots.plugin_status(data.plugin_status(), share=True))
 ```
 
 ## The plugin template
@@ -37,11 +44,22 @@ show(plots.template_usage_by_year(data.template_usage_by_year()))
 
 ## napari downloads
 
-Monthly downloads of napari from PyPI, from
+```{python}
+by_system = data.pypi_downloads_by_system()
+last12 = by_system[by_system["month"] > by_system["month"].max() - pd.DateOffset(months=12)]
+all12 = last12["downloads"].sum()
+desktop12 = last12[last12["system"].isin(["Windows", "macOS"])]["downloads"].sum()
+```
+
+napari was downloaded `{python} f"{all12 / 1e6:.1f}"` million times from PyPI in
+the last twelve months, `{python} f"{desktop12 / 1e3:,.0f}"` thousand of them on
+Windows or macOS. Most of the rest is Linux: CI and cloud machines, with
+one-month spikes of a million or more. Windows and macOS follow people
+installing napari themselves, so that is what's plotted. Data:
 [ClickHouse's public PyPI dataset](https://clickpy.clickhouse.com/dashboard/napari).
-It counts every download, CI included.
 
 ```{python}
 #| renderings: [light, dark]
-show(plots.pypi_downloads(data.pypi_downloads()))
+desktop = by_system[by_system["month"] >= "2021-01-01"]
+show(plots.pypi_downloads_desktop(desktop))
 ```

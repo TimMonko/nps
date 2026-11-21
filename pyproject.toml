@@ -63,6 +63,7 @@ nps = { path = ".", editable = true }
 
 [tool.pixi.tasks]
 pipeline = "python scripts/run_all.py"
+refresh = { cmd = "python scripts/run_all.py --template-usage", description = "Bring all data up to date: every fetch incl. the template scan, then recompute (needs gh auth; ~20 min)" }
 recompute = { cmd = "python scripts/run_all.py --skip-fetch", description = "Recompute metrics and plots from cached data (no network)" }
 
 [tool.pixi.feature.dev.tasks]
