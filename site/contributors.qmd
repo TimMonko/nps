@@ -34,7 +34,7 @@ From the author lists in each release's notes.
 import pandas as pd
 from IPython.display import HTML
 
-releases = pd.read_csv("../fellowship/final-report/new-contributors-by-release.csv")
+releases = pd.read_csv(data.DATA_DIR / "release_contributors.csv")
 table = releases[["release", "release_date", "new_contributors"]].iloc[::-1]
 table.columns = ["Release", "Date", "New contributors"]
 HTML(table.to_html(index=False, classes="table table-sm", border=0))

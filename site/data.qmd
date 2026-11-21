@@ -19,7 +19,7 @@ and committed. Contributor counts cover public napari org repos only.
 | [metrics/new_vs_returning.csv](../data/metrics/new_vs_returning.csv) | year | GitHub commits |
 | [metrics/plugin_maintenance.csv](../data/metrics/plugin_maintenance.csv) | month | computed |
 | [metrics/new_plugins_template_monthly.csv](../data/metrics/new_plugins_template_monthly.csv) | month | computed |
-| [new-contributors-by-release.csv](https://github.com/TimMonko/nps/blob/main/fellowship/final-report/new-contributors-by-release.csv) | napari release | napari release notes |
+| [release_contributors.csv](../data/release_contributors.csv) | napari release | napari release notes, git tags |
 
 The other files in [`data/metrics/`](https://github.com/TimMonko/nps/tree/main/data/metrics)
 are on GitHub. In Python, `nps.data` loads them as tidy DataFrames.

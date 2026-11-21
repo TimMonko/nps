@@ -210,3 +210,6 @@ __marimo__/
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+
+# clones used by scripts/build_release_contributors.py
+.cache/

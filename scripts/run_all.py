@@ -92,6 +92,10 @@ def main() -> int:
 
         _run("fetch_python_versions.py", "Phase 1.4: Fetch Python version data")
         _run("fetch_pypi_downloads.py", "Phase 1.5: Fetch PyPI downloads")
+        _run(
+            "build_release_contributors.py",
+            "Phase 1.6: New contributors per napari release (release notes + git tags)",
+        )
 
     # ── Template-usage detection (slow — only if requested) ─────────────
     if include_template and not skip_fetch:

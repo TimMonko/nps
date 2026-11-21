@@ -1,7 +1,8 @@
 """Build the napari per-release new-contributors table.
 
-Generates ``2026-urssi-final-report/new-contributors-by-release.md`` in this
-repository from three inputs:
+Writes ``data/release_contributors.csv`` (used by the site) from three
+inputs; ``--out <file>.md`` also writes the Markdown table and a CSV beside it
+(how the frozen 2026-08-25 copy in ``fellowship/final-report/`` was made):
 
 1. **Release notes author lists** — ``napari-docs/docs/release/release_*.md``.
    A contributor counts as *new* in release X if their GitHub handle appears in
@@ -14,15 +15,16 @@ repository from three inputs:
 
 Usage::
 
-    python scripts/build_release_contributors.py
+    python scripts/build_release_contributors.py   # uses/updates .cache/napari, .cache/docs
     python scripts/build_release_contributors.py --napari ../napari \\
-        --docs ../napari-docs --out 2026-urssi-final-report/new-contributors-by-release.md
+        --docs ../napari-docs --out fellowship/final-report/new-contributors-by-release.md
     python scripts/build_release_contributors.py --as-of 2026-08-24   # freeze dates
 
 Requires:
-- A local clone of ``napari/napari`` (default: sibling ``../napari``) with tags
-  fetched (``git fetch --tags``), with a working ``origin/main``.
-- A local clone of ``napari/napari-docs`` (default: sibling ``../napari-docs``).
+- Clones of ``napari/napari`` (with tags) and ``napari/docs``. By default the
+  script keeps blobless clones in ``.cache/`` (gitignored) and fetches them on
+  every run, so it works on any machine and in CI. ``--napari``/``--docs``
+  use existing clones as they are, without fetching.
 - ``gh`` CLI authenticated (optional; without it, release dates use tag dates).
 
 Methodology notes / gotchas baked into the logic:
@@ -88,14 +90,34 @@ def git_range_author_dates(naperi: Path, prev: str, tag: str) -> list[str]:
     return [ln.strip()[:10] for ln in out.splitlines() if ln.strip()]
 
 
+CACHE = REPO_ROOT / ".cache"
+CLONES = {
+    "napari": "https://github.com/napari/napari.git",
+    "docs": "https://github.com/napari/docs.git",
+}
+
+
+def cached_clone(name: str) -> Path:
+    """A blobless clone of napari/<name> in .cache/, fetched to the latest main and tags."""
+    path = CACHE / name
+    if not (path / ".git").exists():
+        CACHE.mkdir(exist_ok=True)
+        subprocess.run(
+            ["git", "clone", "--filter=blob:none", "--quiet", CLONES[name], str(path)], check=True
+        )
+    subprocess.run(["git", "-C", str(path), "fetch", "--quiet", "--tags", "--force", "origin"], check=True)
+    subprocess.run(["git", "-C", str(path), "checkout", "--quiet", "--detach", "origin/HEAD"], check=True)
+    return path
+
+
 def fetch_gh_release_dates() -> dict[str, str]:
     """tag -> published date (YYYY-MM-DD) for stable napari releases."""
     try:
         out = subprocess.run(
-            ["gh", "api", "repos/napari/napari/releases?per_page=100", "--paginate"],
-            capture_output=True, text=True, timeout=120,
+            ["gh", "api", "repos/napari/napari/releases?per_page=100", "--paginate", "--slurp"],
+            capture_output=True, text=True, encoding="utf-8", timeout=120,
         )
-        data = json.loads(out.stdout)
+        data = [r for page in json.loads(out.stdout) for r in page]
     except Exception:
         print("  Warning: could not fetch GitHub release dates via gh; "
               "using tag dates instead.", flush=True)
@@ -129,15 +151,16 @@ def authors_handles(text: str) -> set[str] | None:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--napari", type=Path, default=REPO_ROOT.parent / "napari")
-    ap.add_argument("--docs", type=Path, default=REPO_ROOT.parent / "napari-docs")
-    ap.add_argument("--out", type=Path, default=REPO_ROOT / "2026-urssi-final-report" / "new-contributors-by-release.md")
+    ap.add_argument("--napari", type=Path, default=None, help="existing napari clone (default: .cache/napari)")
+    ap.add_argument("--docs", type=Path, default=None, help="existing napari/docs clone (default: .cache/docs)")
+    ap.add_argument("--csv", type=Path, default=REPO_ROOT / "data" / "release_contributors.csv")
+    ap.add_argument("--out", type=Path, default=None, help="also write this Markdown table (+ .csv beside it)")
     ap.add_argument("--as-of", type=str, default=date.today().isoformat(),
                     help="Freeze the 'as of' / refresh date (YYYY-MM-DD). Default: today.")
     args = ap.parse_args()
 
-    napari_dir = args.napari.resolve()
-    docs_dir = args.docs.resolve()
+    napari_dir = args.napari.resolve() if args.napari else cached_clone("napari")
+    docs_dir = args.docs.resolve() if args.docs else cached_clone("docs")
     as_of = args.as_of
 
     # 1. stable tags (vX.Y.Z only), sorted by version
@@ -317,12 +340,20 @@ def main() -> int:
         "See the script's module docstring for the full methodology.\n"
     )
 
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text("\n".join(L), encoding="utf-8")
-    print(f"Wrote {args.out} ({len(rows)} releases)")
+    csv_paths = [args.csv]
+    if args.out:
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text("\n".join(L), encoding="utf-8")
+        print(f"Wrote {args.out} ({len(rows)} releases)")
+        csv_paths.append(args.out.with_suffix(".csv"))
+    for csv_path in csv_paths:
+        _write_csv(csv_path, rows)
+    return 0
 
-    # ── also write machine-readable CSV alongside the markdown ────────────
-    csv_path = args.out.with_suffix(".csv")
+
+def _write_csv(csv_path: Path, rows: list[dict]) -> None:
+    """Write the machine-readable table."""
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh)
         writer.writerow([
@@ -338,8 +369,7 @@ def main() -> int:
                 clean(r["first"]), clean(r["last"]), clean(r["dev_months"]),
                 clean(r["gap"]), clean(r["rate"]),
             ])
-    print(f"Wrote {csv_path}")
-    return 0
+    print(f"Wrote {csv_path} ({len(rows)} releases)")
 
 
 if __name__ == "__main__":

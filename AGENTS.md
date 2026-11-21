@@ -43,8 +43,10 @@ pixi run preview      # quarto preview, site environment
 
 ### Release-contributors analysis
 
-- `pixi run python scripts/build_release_contributors.py` → `fellowship/final-report/new-contributors-by-release.{md,csv}`
-  (needs sibling `../napari` with tags + `../napari-docs` + `gh` CLI; `--as-of` freezes the date).
+- `pixi run python scripts/build_release_contributors.py` → `data/release_contributors.csv` (part of
+  `pixi run refresh`; keeps blobless napari + napari/docs clones in `.cache/`; `gh` for release dates;
+  `--out x.md` also writes the Markdown table; `--as-of` freezes the date). The copy in
+  `fellowship/final-report/` is the report's frozen 2026-08-25 version.
 - `pixi run python scripts/plot_release_contributors.py` → `plots/release_new_contributors.{png,svg}`;
   `pixi run -e plot python scripts/plot_release_contributors.py --interactive` →
   `plots/release_new_contributors_interactive.html`.

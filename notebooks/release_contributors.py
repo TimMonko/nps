@@ -53,14 +53,13 @@ def _(mo):
 def _(Path):
     _here = Path(__file__).parent
     _candidates = [
-        _here.parent / "2026-urssi-final-report" / "new-contributors-by-release.csv",
-        _here / "2026-urssi-final-report" / "new-contributors-by-release.csv",
-        Path("2026-urssi-final-report") / "new-contributors-by-release.csv",
+        _here.parent / "data" / "release_contributors.csv",
+        Path("data") / "release_contributors.csv",
     ]
     CSV = next((p for p in _candidates if p.exists()), None)
     if CSV is None:
         raise FileNotFoundError(
-            "new-contributors-by-release.csv not found — run "
+            "data/release_contributors.csv not found — run "
             "`python scripts/build_release_contributors.py` first."
         )
     return (CSV,)

@@ -51,7 +51,7 @@ pixi run preview          # Quarto preview (site environment)
 ### Release-contributors analysis
 
 ```sh
-pixi run python scripts/build_release_contributors.py      # → fellowship/final-report/new-contributors-by-release.{md,csv}
+pixi run python scripts/build_release_contributors.py      # → data/release_contributors.csv (also in `pixi run refresh`)
 pixi run python scripts/plot_release_contributors.py       # → plots/release_new_contributors.{png,svg}
 pixi run -e plot python scripts/plot_release_contributors.py --interactive  # → plots/release_new_contributors_interactive.html
 ```

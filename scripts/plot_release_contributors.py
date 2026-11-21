@@ -46,7 +46,7 @@ import pandas as pd
 import seaborn as sns
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-CSV_DEFAULT = REPO_ROOT / "2026-urssi-final-report" / "new-contributors-by-release.csv"
+CSV_DEFAULT = REPO_ROOT / "data" / "release_contributors.csv"
 OUT_DIR_DEFAULT = REPO_ROOT / "plots"
 
 CB_PALETTE = sns.color_palette("colorblind", 10)
