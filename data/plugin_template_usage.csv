@@ -12,6 +12,7 @@ Large-Image-Viewer,WyssCenter,Large-Image-Viewer,template,pypi description: temp
 Layer-Data-Replace,MBPhys,Layer-Data-Replace,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 MMV-playground,MMV-Lab,MMV-playground,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 MSI-Explorer,MMV-Lab,MSI-Explorer,template,README template badge block,README template badge block,
+NuPatch3D,,,no_github,,no github url,
 Offset-Subtraction,MBPhys,Offset-Subtraction,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 PartSeg,4DNucleome,PartSeg,no,none,,
 PartSeg-smfish,4DNucleome,PartSeg-smfish,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -23,17 +24,19 @@ WellMapper,,,no_github,,no github url,
 World2Data,MBPhys,World2Data,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 acquifer-napari,Luxendo,acquifer-napari,no,none,,
 affinder,jni,affinder,no,none,supporting files present but no definitive marker,
-aiod-napari,FrancisCrickInstitute,aiod_napari,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+aiod-napari,FrancisCrickInstitute,aiod_napari,no,none,supporting files present but no definitive marker,
 allencell-segmenter-ml,AllenCell,allencell-ml-segmenter,no,none,,
 anchor-droplet-chip,BaroudLab,anchor-droplet-chip,no,none,,
 annotrack,abigailmcgovern,annotrack,no,none,,
 arcos-gui,bgraedel,arcos-gui,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 arcosPx-napari,pertzlab,arcosPx-napari,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 avidaq,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
+baclct,bmcv,baclct,no,none,,
 bbii-decon,gdellaire,bbii-decon,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 beetlesafari,haesleinhuepf,beetlesafari,no,none,,
-bio_oct,,,no_github,,no github url,
+bio_oct,UllmannJonas,BioOCT,no,none,,
 biopb-mcp,biopb,biopb,no,none,,
+biopb-napari-widget,biopb,biopb-napari-widget,no,none,,
 blik,brisvag,blik,no,none,,
 brainglobe-napari-io,brainglobe,brainglobe-napari-io,template,README template badge block,README template badge block,
 brainglobe-registration,brainglobe,brainglobe-registration,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -47,6 +50,7 @@ brendan-beads,xfolka,brendan-beads,copier,pypi description: generated with copie
 brillouin-imaging,brillouin-imaging,brillouin-imaging-napari,no,none,,
 btrack,quantumjot,btrack,no,none,supporting files present but no definitive marker,
 careamics-napari,CAREamics,careamics-napari,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
+carltonlab-napari-tools,carltonlab,carltonlab-napari-tools,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 cell-AAP,,,no_github,,no github url,
 cellcanvas,cellcanvas,cellcanvas,no,none,,
 cellfinder,brainglobe,cellfinder,template,README template badge block,README template badge block,
@@ -59,11 +63,13 @@ cryovit-napari,,,copier,pypi description: generated with copier via napari-plugi
 cut-detector,15bonte,cut-detector,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 cylindra,,,template,pypi description: template badge block,no github url,pypi description: template badge block
 darth-d,haesleinhuepf,darth-d,template,README template badge block,README template badge block,
+deepblur-napari,pierre-weiss,deepblur-napari,no,none,,
 deepphenotree,hereariim,deepphenotree,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 devbio-napari,haesleinhuepf,devbio-napari,template,README template badge block,README template badge block,
 disease-classifier,zcqwh,disease-classifier,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 divisualisation,bentaculum,divisualisation,no,none,,
 domb-napari,wisstock,domb-napari,no,none,,
+effusive,,,no_github,,no github url,
 elastix-napari,SuperElastix,elastix-napari,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 ellipse-nuclei-segmentation,rmaguado,ellipse-nuclei-segmentation,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 emcfsys,,,template,pypi description: template README footer,no github url,pypi description: template README footer
@@ -76,9 +82,10 @@ filament-toolbox,MontpellierRessourcesImagerie,filament-toolbox,copier,.copier-a
 fish-scan,ariannaravera,fish-scan,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,tree api failed: gh: Not Found (HTTP 404),pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 fishfeats,gletort,FishFeats,no,none,,
 fitellipsoid,,,template,pypi description: template badge block,no github url,pypi description: template badge block
-focus-3d,,,template,pypi description: template badge block,no github url,pypi description: template badge block
-frontveg,hereariim,frontveg,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
-frontvegV2,djaliloh,FrontVegV2,unavailable,,tree api failed: gh: Not Found (HTTP 404),
+flimkit-napari,FLIMKit,flimkit-napari,no,none,,
+focus-3d,,,no_github,,no github url,
+frontveg,hereariim,frontveg,copier,pypi description: generated with copier via napari-plugin-template,tree api failed: gh: Not Found (HTTP 404),pypi description: generated with copier via napari-plugin-template
+frontvegV2,djaliloh,FrontVegV2,no,none,,
 fspi-analysis,engpol,fspi_analysis,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 generate-dense-patches,volume-em,generate-dense-patches,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,tree api failed: gh: Not Found (HTTP 404),pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 gfap-segmenter,MMV-Lab,gfap-segmenter,template,pypi description: template badge block,tree api failed: gh: Not Found (HTTP 404),pypi description: template badge block
@@ -105,7 +112,7 @@ mmv-h4cells,MMV-Lab,mmv_h4cells,cookiecutter,README: generated with cookiecutter
 mmv-h4tracks,MMV-Lab,mmv_h4tracks,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 mmv-regionseg,MMV-Lab,mmv-regionseg,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 mobiofox,OwlSurojit,mobiofox,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
-morphodeep,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
+morphodeep,,,no_github,,no github url,
 morphometrics,kevinyamauchi,morphometrics,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 morphometrics-engine,morphometrics,morphometrics-engine,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 motile-plugin,funkelab,motile-napari-plugin,template,none; pypi description: template badge block,,pypi description: template badge block
@@ -138,8 +145,10 @@ napari-UniSPAC,ddd9898,UniSPAC,no,none,,
 napari-accelerated-pixel-and-object-classification,haesleinhuepf,napari-accelerated-pixel-and-object-classification,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-affinities,pattonw,napari-affinities,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-afmreader,AFM-SPM,napari-afmreader,no,none,,
+napari-afmslicer,AFM-SPM,napari-afmslicer,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-aicsimageio,AllenCellModeling,napari-aicsimageio,no,none,,
 napari-aideveloper,zcqwh,napari-aideveloper,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-align-annotator,spsalmon,napari-align-annotator,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-allencell-annotator,aics-int,napari-allencell-annotator,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-allencell-segmenter,AllenCell,napari-allencell-segmenter,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-amdtrk,Jeff-Gui,napari-amdtrk-plugin,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -151,6 +160,7 @@ napari-annotator,loicsauteur,napari-annotator,copier,README: generated with copi
 napari-annotatorj,spreka,napari-annotatorj,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-aphid,hereariim,napari-aphid,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-apple,hereariim,napari-apple,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-apply-transforms,ClementCaporal,napari-apply-transforms,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-apr-viewer,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-arboretum,lowe-lab-ucl,arboretum,no,none,supporting files present but no definitive marker,
 napari-argos-archive-reader,dioptic,napari-argos-archive-reader,template,README template badge block,README template badge block,
@@ -194,10 +204,13 @@ napari-buds,SanderSMFISH,napari-buds,cookiecutter,README: generated with cookiec
 napari-calibration,tcotte,napari-calibration,cookiecutter,none; pypi description: generated with cookiecutter via cookiecutter-napari-plugin,,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-camera,MIC-DKFZ,napari-camera,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-caphid,hereariim,napari-caphid,template,README template badge block,README template badge block,
+napari-catppuccin,domjurkschat,napari-catppuccin,no,none,supporting files present but no definitive marker,
 napari-cci-annotator,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 napari-cci-annotator2,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 napari-ccp4map,biberger,napari-ccp4map,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-cell-centroid-annotator,tim-vdl,napari-cell-centroid-annotator,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-cell-gater,CosciaLab,napari-cell-gater,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
+napari-cellposesam,DBI-INFRA,napari-cellposesam,no,none,supporting files present but no definitive marker,
 napari-cellseg3d,AdaptiveMotorControlLab,CellSeg3D,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-chat-assistant,wulinteousa2-hash,napari-chat-assistant,no,none,supporting files present but no definitive marker,
 napari-chatgpt,royerlab,napari-chatgpt,no,none,supporting files present but no definitive marker,
@@ -212,7 +225,7 @@ napari-colocalization,dbi-infra,napari-colocalization,copier,.copier-answers.yml
 napari-compressed-labels-io,DragaDoncila,napari-compressed-labels-io,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-conference,kephale,napari-conference,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-conidie,hereariim,napari-conidie,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-napari-console,napari,napari-console,cookiecutter,none; pypi description: generated with cookiecutter via cookiecutter-napari-plugin,supporting files present but no definitive marker,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
+napari-console,napari,napari-console,no,none,supporting files present but no definitive marker,
 napari-convpaint,guiwitz,napari-convpaint,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 napari-cookiecut,seankmartin,napari-cookiecut,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-copick,kephale,napari-copick,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -225,6 +238,7 @@ napari-cryofibsem-imgproc,EMCRUMC,napari-cryofibsem-imgproc,cookiecutter,README:
 napari-cryofibsem-monitor,jojoelfe,napari-cryofibsem-monitor,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-cta,sivaprak-hub,napari-cta,no,none,,
 napari-ctc-io,bentaculum,napari-ctc-io,template,README template badge block,README template badge block,
+napari-cu-cr-segmentation,,,no_github,,no github url,
 napari-cupy-image-processing,haesleinhuepf,napari-cupy-image-processing,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-cursor-tracker,faymanns,napari-cursor-tracker,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-curtain,haesleinhuepf,napari-curtain,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -254,9 +268,11 @@ napari-ehooke,antmsbrito,napari-ehooke,cookiecutter,README: generated with cooki
 napari-elementary-numpy-operations,MBPhys,napari-elementary-numpy-operations,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 napari-em-assistant,wulinteousa2-hash,napari-em-assistant,no,none,,
 napari-em-reader,brisvag,napari-em-reader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-emaki,hanshs474,napari-emaki,no,none,,
 napari-epyseg,Image-Analysis-Hub,napari-epyseg,no,none,,
 napari-error-reporter,tlambert03,napari-error-reporter,no,none,,
 napari-etminflux-data-viewer,jonatanalvelid,napari-etminflux-data-viewer,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
+napari-etsam,jianlin-cheng,ETSAM,no,none,,
 napari-event-monitor,ian-coccimiglio,napari-event-monitor,no,none,supporting files present but no definitive marker,
 napari-exodeepfinder,deep-finder,napari-exodeepfinder,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-fast4dreg,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
@@ -264,7 +280,7 @@ napari-feature-classifier,fractal-napari-plugins-collection,napari-feature-class
 napari-feature-visualization,fractal-napari-plugins-collection,napari-feature-visualization,template,README template badge block,README template badge block,
 napari-features,0x00b1,napari-features,no,none,supporting files present but no definitive marker,
 napari-features-selector,kumar-sanjeeev,napari-features-selector,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-napari-fenestra,LIVR-VUB,FenestRA,no,none,,
+napari-fenestra,LIVR-VUB,FenestRA,unavailable,,tree api failed: gh: Not Found (HTTP 404),
 napari-figure,BIOP,napari-figure,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-filament-annotator,amedyukhina,napari-filament-annotator,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-filaments,hanjinliu,napari-filaments,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -272,12 +288,15 @@ napari-file-watcher,kasasxav,napari-file-watcher,no,none,,
 napari-file2folder,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-filter-labels-by-prop,loicsauteur,napari-filter-labels-by-prop,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-findaureus,,,no_github,,no github url,
+napari-flicker,amano-takahisa,napari-flicker,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-flim-phasor-plotter,zoccoler,napari-flim-phasor-plotter,template,README template badge block,README template badge block,
 napari-flopa,cockovaz,napari-flopa,copier,.copier-answers.yml,.copier-answers.yml,
 napari-flowreg,FlowRegSuite,napari-flowreg,no,none,,
 napari-flowreg-formats,FlowRegSuite,napari-flowreg-formats,no,none,,
 napari-fluoresfm,qiqi-lu,napari-fluoresfm,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
+napari-foambryo,VirtualEmbryo,napari-foambryo,no,none,,
 napari-folder-browser,haesleinhuepf,napari-folder-browser,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-fractal-tasks,krentzd,napari-fractal-tasks,no,none,supporting files present but no definitive marker,
 napari-ft,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 napari-fungiform,lxfhfut,Fungiform,unavailable,,tree api failed: gh: Not Found (HTTP 404),
 napari-geff,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
@@ -293,7 +312,7 @@ napari-h5,rosalindfranklininstitute,napari-h5,cookiecutter,README: generated wit
 napari-hardware-monitor,wulinteousa2-hash,napari-hardware-monitor,no,none,,
 napari-harpy,vibspatial,napari-harpy,no,none,,
 napari-hdf5-labels-io,yapic,napari-hdf5-labels-io,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-napari-hdf5-reader,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
+napari-he-dapi,urbiologicalpa,he-dapi-translator,no,none,,
 napari-hello,,,no_github,,no github url,
 napari-help,brisvag,napari-help,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-hierarchical,BodenmillerGroup,napari-hierarchical,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -305,6 +324,7 @@ napari-hydra,plaque2,napari-hydra,no,none,,
 napari-image-stacker,RobAnKo,napari-image-stacker,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-imagegrains,guiwitz,napari-imagegrains,template,README template badge block,README template badge block,
 napari-imagej,imagej,napari-imagej,template,none; pypi description: template badge block,,pypi description: template badge block
+napari-imaref,koopa31,napari-imaref,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-imaris-loader,AlanMWatson,napari-imaris-loader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-imc,BodenmillerGroup,napari-imc,no,none,,
 napari-imodmodel,MoritzWM,napari-imodmodel,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -317,9 +337,11 @@ napari-isolate-cell,serg-bg,napari-isolate-cell,template,.napari-hub/ + test_and
 napari-iss-tdflim-reader,DBP008,napari-iss-tdflim-reader,copier,.copier-answers.yml; README template badge block,.copier-answers.yml; README template badge block,
 napari-itk-io,InsightSoftwareConsortium,napari-itk-io,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 napari-k2-WaveBreaker,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
+napari-kavel,hanshs474,napari-kavel,no,none,,
 napari-kics,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-kld,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 napari-kldeconv,qiqi-lu,napari-kldeconv,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
+napari-label-assistant,,,no_github,,no github url,
 napari-label-interpolator,brisvag,napari-label-interpolator,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-label-manager,Wenlab,napari-label-manager,copier,none; pypi description: generated with copier via napari-plugin-template,supporting files present but no definitive marker,pypi description: generated with copier via napari-plugin-template
 napari-labelimg4classification,hiroalchem,napari-labelimg4classification,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -336,11 +358,14 @@ napari-layer-divider,,,copier,pypi description: generated with copier via napari
 napari-layer-statistics,MIC-DKFZ,napari-layer-statistics,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-layer-table,mapmanager,napari-layer-table,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-lazy-openslide,manzt,napari-lazy-openslide,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-lazystack,domjurkschat,napari-lazystack,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-listener,aganders3,napari-listener,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-live-flim,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-live-recording,jacopoabramo,napari-live-recording,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-locan,super-resolution,napari-locan,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-napari-locpix,oubino,napari-locpix,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-locpix,AlistairCurd,napari-locpix,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-locpix2,AlistairCurd,napari-locpix,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-lumic-cci,CCI-GU-Sweden,lumic,no,none,,
 napari-mAIcrobe,HenriquesLab,mAIcrobe,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-macrokit,hanjinliu,napari-macrokit,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-macrophage,,,no_github,,no github url,
@@ -349,6 +374,8 @@ napari-manual-registration,jules-vanaret,napari-manual-registration,cookiecutter
 napari-manual-transforms,tlambert03,napari-manual-transforms,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 napari-mask-curator,,,no_github,,no github url,
 napari-mask-density,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
+napari-maskel,bionetslab,napari-maskel,no,none,,
+napari-maskel-ibex-preprocessing,uderhardtlab,napari-maskel-ibex-preprocessing,no,none,,
 napari-mass,FrancisCrickInstitute,napari-mass,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-mat-file-reader,rjlopez2,napari-mat-file-reader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-mat-images,hectormz,napari-mat-images,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -361,6 +388,7 @@ napari-melt-pool-tracker,EPFL-Center-for-Imaging,napari-melt-pool-tracker,templa
 napari-memmap-tiff,matham,napari-memmap-tiff,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-merge-stardist-masks,gatoniel,napari-merge-stardist-masks,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-meshio,GenevieveBuckley,napari-meshio,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-meta-tiff,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 napari-metadata,napari,napari-metadata,template,README template badge block,README template badge block,
 napari-metroid,zoccoler,napari-metroid,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-micromanager,pymmcore-plus,napari-micromanager,no,none,,
@@ -369,16 +397,17 @@ napari-microplate,TienDoan274,napari-microplate,no,none,,
 napari-microscope,,,no_github,,no github url,
 napari-microscopy-metrics,MontpellierRessourcesImagerie,napari-microscopy-metrics,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-microtubule-analyzer,krentzd,napari-microtubule-analyzer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-napari-mlarray,,,template,pypi description: template badge block,no github url,pypi description: template badge block
+napari-mlarray,,,no_github,,no github url,
 napari-mm3,junlabucsd,napari-mm3,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-molecular-cartography-viewer,,,no_github,,no github url,
 napari-molecule-reader,brisvag,napari-molecule-reader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-molseeq,piedrro,napari-molseeq,template,none; pypi description: template README footer,,pypi description: template README footer
-napari-moltrack,piedrro,napari-moltrack,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-moltrack,piedrro,napari-moltrack,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-morans-i,lukasjarzembowski,napari-morans-i,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-morphodynamics,guiwitz,napari-morphodynamics,template,README template badge block,README template badge block,
 napari-mouse-controls,haesleinhuepf,napari-mouse-control,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,tree api failed: gh: Not Found (HTTP 404),pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-mouse-tumour-annotation,bastienchesaux,napari-mouse-tumour-annotation,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
+napari-movoa,hanshs474,napari-movoa,no,none,,
 napari-mrcfile-handler,Croxa,napari-mrcfile_handler,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-mrcfile-reader,alisterburt,napari-mrcfile-reader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-multi-channel-surface,judithlutton,napari-multi-channel-surface,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
@@ -393,17 +422,19 @@ napari-nanopyx,HenriquesLab,napari-NanoPyx,cookiecutter,README: generated with c
 napari-napari,jookuma,napari-napari,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-nasa-samples,royerloic,napari-nasa-samples,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-nd-cropper,MBPhys,napari-nd-cropper,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
+napari-nd2,georgeoshardo,napari-nd2,no,none,,
 napari-nd2-folder-viewer,gatoniel,napari-nd2-folder-viewer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-nd2-spectral-ome-zarr,wulinteousa2-hash,napari-nd2-spectral-ome-zarr,no,none,,
 napari-ndev,TimMonko,napari-ndev,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-ndtiffs,tlambert03,napari-ndtiffs,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-nibabel,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
-napari-nifti,MIC-DKFZ,napari-nifti,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-nifti,MIC-DKFZ,napari-nifti,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-nifti-viewer,yohanchiu,napari-nifti-viewer,unavailable,,tree api failed: gh: Not Found (HTTP 404),
-napari-nikon-nd2,cwood1967,napari-nikon-nd2,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-nikon-nd2,cwood1967,napari-nikon-nd2,no,none,supporting files present but no definitive marker,
 napari-nlm,maweigert,napari-nlm,template,README template badge block,README template badge block,
 napari-nninteractive,MIC-DKFZ,napari-nninteractive,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-noise2vst,IbrahimaAlain,napari-noise2vst,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
+napari-nord,domjurkschat,napari-nord,no,none,supporting files present but no definitive marker,
 napari-npifile,,,no_github,,no github url,
 napari-nucleaizer,etasnadi,napari_nucleaizer,no,none,supporting files present but no definitive marker,
 napari-nucleation-analyzer,,,no_github,,no github url,
@@ -418,6 +449,7 @@ napari-omero,tlambert03,napari-omero,no,none,,
 napari-omero-downloader-cci,CCI-GU-Sweden,napari-omero-downloader-cci,copier,.copier-answers.yml,.copier-answers.yml,
 napari-open-ctc,bentaculum,napari-open-ctc,template,README template badge block,README template badge block,
 napari-openfibsem,DeMarcoLab,napari-openfibsem,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-openreadout,openreadout,openreadout,no,none,,
 napari-opt-handler,QBioImaging,napari-opt-handler,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-organoid-counter,HelmholtzAI-Consultants-Munich,napari-organoid-counter,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-orientation,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
@@ -439,6 +471,7 @@ napari-plot,lukasz-migas,napari-plot,cookiecutter,README: generated with cookiec
 napari-plot-profile,haesleinhuepf,napari-plot-profile,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-plugin-search,haesleinhuepf,napari-plugin-search,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-plugin-test-ferrinm,ferrinm,napari-plugin-test-ferrinm,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
+napari-point-proofread,LaboratoryOpticsBiosciences,napari-point-proofread,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-points2regions,wahlby-lab,napari-points2regions,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-pointslayer-projection,gatoniel,napari-pointslayer-projection,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-potential-field-navigation,rcremese,napari-potential-field-navigation,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -447,7 +480,8 @@ napari-power-widgets,hanjinliu,napari-power-widgets,cookiecutter,README: generat
 napari-pram,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-prism,clinicalomx,napari-prism,template,README template badge block,README template badge block,
 napari-process-points-and-surfaces,haesleinhuepf,napari-process-points-and-surfaces,template,README template badge block,README template badge block,
-napari-proofread-brainbow,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
+napari-profilometry,paolomaran,napari-profilometry,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
+napari-proofread-brainbow,LaboratoryOpticsBiosciences,napari-point-proofread,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-properties-plotter,brisvag,napari-properties-plotter,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-properties-viewer,kevinyamauchi,napari-properties-viewer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-psf-analysis,fmi-faim,napari-psf-analysis,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -464,6 +498,7 @@ napari-quantem,ArrojoDrigoLab,QuantEM,no,none,,
 napari-quoll,rosalindfranklininstitute,napari-quoll,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-racc,rensutheart,napari-racc,no,none,,
 napari-reco-plugin,Clementcmoi,Reconstruction-napari-plugin,no,none,,
+napari-relax,guignardlab,napari-relax,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 napari-rembg,EPFL-Center-for-Imaging,napari-rembg,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-result-stack,hanjinliu,napari-result-stack,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-resview,XYangXRay,napari-resview,copier,.copier-answers.yml; README template badge block,.copier-answers.yml; README template badge block,
@@ -499,6 +534,7 @@ napari-serverkit,EPFL-Center-for-Imaging,napari-serverkit,unavailable,,tree api 
 napari-shape-odyssey,jo-mueller,napari-shape-odyssey,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-sif-reader,rjlopez2,napari-sif-reader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-sift-registration,jfozard,napari-sift-registration,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-sigma,fenghuibao,napari-sigma,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-signal-classifier,zoccoler,napari-signal-classifier,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-signal-selector,zoccoler,napari-signal-selector,template,README template badge block,README template badge block,
 napari-sim-processor,andreabassi78,napari-sim-processor,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -509,6 +545,7 @@ napari-simpleitk-image-processing,haesleinhuepf,napari-simpleitk-image-processin
 napari-sketchpose,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 napari-skimage,guiwitz,napari-skimage,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-skimage-regionprops,haesleinhuepf,napari-skimage-regionprops,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-skopkit,apposed,napari-skopkit,no,none,,
 napari-solarized,aganders3,napari-solarized,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-spacetx-explorer,sebgoti,napari-spacetx-explorer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-spam,,,template,pypi description: template README footer,no github url,pypi description: template README footer
@@ -521,11 +558,12 @@ napari-splineit,uhlmanngroup,napari-splineit,cookiecutter,README: generated with
 napari-spofi,drchrisch,napari-spofi,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-spotiflow,weigertlab,napari-spotiflow,no,none,supporting files present but no definitive marker,
 napari-spreadsheet,hanjinliu,napari-spreadsheet,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-sprout,EchanHe,SPROUT,no,none,,
 napari-stable-diffusion,kephale,napari-stable-diffusion,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-steinpose,guiwitz,napari-steinpose,template,README template badge block,README template badge block,
 napari-stitcher,multiview-stitcher,napari-stitcher,template,README template badge block,README template badge block,
 napari-stl-exporter,jo-mueller,napari-stl-exporter,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-napari-storm,napari-storm,napari-storm,template,none; pypi description: template README footer,,pypi description: template README footer
+napari-storm,napari-storm,napari-storm,no,none,,
 napari-stracking,sylvainprigent,napari-stracking,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-stream,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 napari-stress,campaslab,napari-stress,template,README template badge block,README template badge block,
@@ -547,18 +585,21 @@ napari-time-series-plotter,ch-n,napari-time_series_plotter,cookiecutter,README: 
 napari-time-slicer,haesleinhuepf,napari-time-slicer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-timelapse-processor,jo-mueller,napari-timelapse-processor,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-timeseries-opener-plugin,gatoniel,napari-timeseries-opener-plugin,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-timestamper,bgraedel,napari-timestamper,template,README template badge block,README template badge block,
 napari-tissuumaps,,,template,pypi description: template badge block,no github url,pypi description: template badge block
 napari-tmidas,macromeer,napari-tmidas,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-tomocube-data-viewer,ehgus,napari-tomocube-data-viewer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-tomotwin,MPI-Dortmund,napari-tomotwin,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-toska,allysonryan,napari-toska,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-tracing,mapmanager,napari-tracing,template,README template badge block,README template badge block,
+napari-track-edit,live-image-tracking-tools,napari-track-edit,no,none,,
 napari-trackastra,weigertlab,napari-trackastra,template,README template badge block,README template badge block,
 napari-trackpy,rhoitink,napari-trackpy,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 napari-tracks-reader,sylvainprigent,napari-tracks-reader,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-training-assistant,,,no_github,,no github url,
 napari-trait2d,jacopoabramo,napari-trait2d,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-tree-rings,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
+napari-turbobox,N-Friederich,napari-turbobox,template,none; pypi description: template badge block,,pypi description: template badge block
 napari-turing,leoguignard,napari-turing,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-tyssue,kephale,napari-tyssue,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-ufish,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
@@ -578,6 +619,8 @@ napari-vemseg,,,template,pypi description: template badge block,no github url,py
 napari-vesicles-segmentation,alexisjapas,napari-vesicles-segmentation,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-video-cvdask,nickdelgrosso,napari-video-cvdask,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-vipp,rensutheart,napari-vipp,no,none,,
+napari-virtual-reader,sebi06,napari-virtual-reader,no,none,,
+napari-vizsla,,,template,pypi description: template badge block,no github url,pypi description: template badge block
 napari-vodex,LemonJust,napari-vodex,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-volume-spin,Macl-I,napari-volume-spin,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 napari-voxtell,MIC-DKFZ,napari-voxtell,no,none,supporting files present but no definitive marker,
@@ -595,6 +638,7 @@ napari-yolopt,jules-vanaret,napari-yolopt,copier,pypi description: generated wit
 napari-yolov5,rdemets,napari-yolov5,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-zarrnii,,,no_github,,no github url,
 napari-zelda,RoccoDAnt,napari-zelda,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+napari-zenapi-streaming,sebi06,napari-zenapi-streaming,no,none,,
 napari-zplane-depth-colorizer,maihanhoang,napari-zplane-depth-colorizer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 napari-zulip,kephale,napari-zulip,template,README template badge block,README template badge block,
 napari_video,janclemenslab,napari-video,no,none,,
@@ -613,6 +657,7 @@ neurogenesis-napari,tum-ai,neurogenesis_napari,no,none,supporting files present 
 nfinder,santi-rodriguez,nfinder,no,none,,
 okapi-em,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 ome-zarrpari,ome-zarr-models,ome-zarrpari,template,README template badge block,README template badge block,
+omero-annotate-ai,Leiden-Cell-Observatory,omero_annotate_ai,no,none,,
 openuc2-processor,openUC2,napari-openuc2-processor,no,none,,
 orchardseg,hereariim,segtree,template,README template badge block,README template badge block,
 organelle-segmenter-plugin,SCohenLab,organelle-segmenter-plugin,template,README template badge block,README template badge block,
@@ -621,20 +666,23 @@ ortho-view-napari,JoOkuma,ortho-view-napari,cookiecutter,README: generated with 
 palmari,hippover,palmari,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 patchlabel,hereariim,patchlabel,copier,pypi description: generated with copier via napari-plugin-template,tree api failed: gh: Not Found (HTTP 404),pypi description: generated with copier via napari-plugin-template
 pentachrome-plugin,dtsilis7,Pentrachrome-Pipeline,unavailable,,tree api failed: gh: Not Found (HTTP 404),
+phenolapseuav,Rocsg,phenolapseUAV,no,none,,
+phenome-gui,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 platelet-unet-watershed,jni,platelet-unet-watershed,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 platetrack,abigailmcgovern,platelet-tracking,no,none,,
 psf-analysis-CFIM,MaxusTheOne,napari-psf-analysis-CFIM-edition,no,none,,
 psfmodels,tlambert03,psfmodels,no,none,,
 pssr,ucsdmanorlab,PSSR2,no,none,supporting files present but no definitive marker,
 pycudadecon,tlambert03,pycudadecon,no,none,supporting files present but no definitive marker,
+pydoug-napari,LarsN-hub,PyDoug2,no,none,,
 pyphenix,ferrinm,pyphenix,copier,.copier-answers.yml; README: generated with copier via napari-plugin-template,.copier-answers.yml; README: generated with copier via napari-plugin-template,
 qhyccd-capture,,,no_github,,no github url,
+quai-workbench-napari,,,no_github,,no github url,
 quanti-fret,,,no_github,,no github url,
 quantpunc,tehahn,quantpunc,template,.napari-hub/ + test_and_deploy.yml,.napari-hub/ + test_and_deploy.yml,
 recOrder-napari,mehta-lab,recOrder,no,none,supporting files present but no definitive marker,
 samcell-napari,saahilsanganeriya,samcell-napari,no,none,,
 secondharmonic,Dimikava,secondharmonic,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
-segment-any-confocal-images,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
 segment-embryo,MontpellierRessourcesImagerie,segment-embryo,copier,README: generated with copier via napari-plugin-template,README: generated with copier via napari-plugin-template,
 senoquant,HaamsRee,senoquant,no,none,,
 set-calibration,MontpellierRessourcesImagerie,set-calibration,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
@@ -643,12 +691,14 @@ simple-napari-cci-annotator,,,no_github,,no github url,
 skan,jni,skan,no,none,,
 smo,maurosilber,smo,no,none,,
 snouty-viewer,aelefebv,snouty-viewer,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
+spatiato,vibspatial,spatiato,no,none,,
 spots-in-yeasts,MontpellierRessourcesImagerie,spots-in-yeasts,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 stardist-napari,stardist,stardist-napari,no,none,,
 test-detect-spots,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 the-segmentation-game,haesleinhuepf,the-segmentation-game,template,README template badge block,README template badge block,
 tomopari,,,cookiecutter,pypi description: generated with cookiecutter via cookiecutter-napari-plugin,no github url,pypi description: generated with cookiecutter via cookiecutter-napari-plugin
 tootapari,kephale,tootapari,template,README template badge block,README template badge block,
+trackin,mihaela-mihaylova,trackin,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 ultrack,,,no_github,,no github url,
 unet-lungs-segmentation,qchapp,lungs-segmentation,no,none,,
 vessel-express-napari,MMV-Lab,vessel-express-napari,template,README template badge block,README template badge block,
@@ -656,7 +706,7 @@ vessqc,MMV-Lab,VessQC,template,README template badge block,README template badge
 vollseg-napari,kapoorlab,vollseg-napari,template,README template badge block,README template badge block,
 vollseg-napari-mtrack,Kapoorlabs-CAPED,vollseg-napari-mtrack,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 vollseg-napari-trackmate,Kapoorlabs-CAPED,vollseg-napari-trackmate,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
-w-seg-napari,,,copier,pypi description: generated with copier via napari-plugin-template,no github url,pypi description: generated with copier via napari-plugin-template
+w-seg-napari,,,no_github,,no github url,
 waver,sofroniewn,waver,template,none; pypi description: template README footer,supporting files present but no definitive marker,pypi description: template README footer
 workshop-demo,DragaDoncila,workshop-demo,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
 yt-napari,data-exp-lab,yt-napari,cookiecutter,README: generated with cookiecutter via cookiecutter-napari-plugin,README: generated with cookiecutter via cookiecutter-napari-plugin,
