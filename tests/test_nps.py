@@ -16,7 +16,28 @@ LOADERS_AND_PLOTS = [
     (data.plugin_maintenance, plots.plugin_maintenance),
     (data.pypi_downloads, plots.pypi_downloads),
     (data.template_usage_by_year, plots.template_usage_by_year),
+    (data.active_contributors, plots.active_contributors),
+    (data.plugin_status, plots.plugin_status),
+    (data.plugin_status, lambda df: plots.plugin_status(df, share=True)),
+    (data.pypi_downloads_by_system, plots.pypi_downloads_desktop),
+    (data.pypi_downloads_by_system, lambda df: plots.pypi_downloads_desktop(df, by="month")),
 ]
+
+
+def test_plugin_status_states_add_up_to_all_plugins():
+    df = data.plugin_status()
+    per_month = df.groupby("month")["plugins"].sum()
+    versions = pd.read_csv(data.DATA_DIR / "plugin_versions.csv")
+    assert per_month.iloc[-1] == versions["name"].nunique()
+    assert per_month.is_monotonic_increasing
+    assert df.groupby("month")["share"].sum().round(9).isin([0, 1]).all()
+
+
+def test_downloads_by_system_matches_total():
+    """Splitting by OS loses no downloads (the two ClickHouse tables differ by a handful)."""
+    total = data.pypi_downloads().set_index("month")["downloads"]
+    split = data.pypi_downloads_by_system().groupby("month")["downloads"].sum()
+    assert ((split.reindex(total.index) - total).abs() <= total * 0.001 + 20).all()
 
 
 def test_contributors_by_year_shape():

@@ -5,8 +5,13 @@ Source: the `pypi.pypi_downloads_per_day` table on sql-clickhouse.clickhouse.com
 than BigQuery-based numbers such as napari/weather-report's. Only complete
 months are kept.
 
-Output: data/pypi_downloads_monthly.csv
-Columns: project, month, downloads
+Outputs:
+- data/pypi_downloads_monthly.csv (project, month, downloads)
+- data/pypi_downloads_by_system_monthly.csv (project, month, system,
+  downloads), from `pypi.pypi_downloads_per_day_by_version_by_system`.
+  `system` is the OS the installer reports ("Linux", "Windows", "Darwin",
+  or "" when unknown). CI and cloud installs are nearly all Linux, so the
+  Windows + macOS share tracks people installing on their own machines.
 """
 
 from __future__ import annotations
@@ -33,17 +38,34 @@ ORDER BY project, month
 FORMAT CSVWithNames
 """
 
+QUERY_BY_SYSTEM = """
+SELECT project, toStartOfMonth(date) AS month, system, sum(count) AS downloads
+FROM pypi.pypi_downloads_per_day_by_version_by_system
+WHERE project IN ({projects}) AND date < toStartOfMonth(today())
+GROUP BY project, month, system
+ORDER BY project, month, system
+FORMAT CSVWithNames
+"""
 
-def fetch_monthly_downloads(projects: tuple[str, ...] = PROJECTS) -> pd.DataFrame:
+
+def _query(sql: str, projects: tuple[str, ...]) -> pd.DataFrame:
     quoted = ", ".join(f"'{p}'" for p in projects)
     resp = requests.post(
         CLICKHOUSE_URL,
         params={"user": "demo"},
-        data=QUERY.format(projects=quoted).encode(),
-        timeout=60,
+        data=sql.format(projects=quoted).encode(),
+        timeout=120,
     )
     resp.raise_for_status()
-    return pd.read_csv(io.StringIO(resp.text), parse_dates=["month"])
+    return pd.read_csv(io.StringIO(resp.text), parse_dates=["month"], keep_default_na=False)
+
+
+def fetch_monthly_downloads(projects: tuple[str, ...] = PROJECTS) -> pd.DataFrame:
+    return _query(QUERY, projects)
+
+
+def fetch_monthly_downloads_by_system(projects: tuple[str, ...] = PROJECTS) -> pd.DataFrame:
+    return _query(QUERY_BY_SYSTEM, projects)
 
 
 def main() -> int:
@@ -57,6 +79,11 @@ def main() -> int:
             f"{g['month'].max():%Y-%m}, {g['downloads'].sum():,} downloads",
             file=sys.stderr,
         )
+    print(f"  Saved to {path}", file=sys.stderr)
+
+    by_system = fetch_monthly_downloads_by_system()
+    path = DATA_DIR / "pypi_downloads_by_system_monthly.csv"
+    by_system.to_csv(path, index=False, date_format="%Y-%m-%d")
     print(f"  Saved to {path}", file=sys.stderr)
     return 0
 

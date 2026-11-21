@@ -43,6 +43,29 @@ def contributors_by_year(data_dir: Path | str | None = None) -> pd.DataFrame:
     return long.sort_values(["year", "kind"]).reset_index(drop=True)
 
 
+def active_contributors(data_dir: Path | str | None = None) -> pd.DataFrame:
+    """Contributors with a commit in the trailing six months, per month.
+
+    Columns: ``month`` (Timestamp), ``group`` ("all contributors" or "also
+    plugin developers": those who have also contributed to a napari plugin's
+    repo), ``contributors`` (int). Commits to public napari org repos.
+    """
+    everyone = pd.read_csv(_path("metrics/active_contributors.csv", data_dir))
+    plugin_devs = pd.read_csv(_path("metrics/active_plugin_devs.csv", data_dir))
+    wide = everyone.merge(plugin_devs, on="month", how="left").fillna(0)
+    wide["month"] = pd.to_datetime(wide["month"].str[:10])
+    long = wide.melt(
+        id_vars="month",
+        value_vars=["active_contributors", "active_plugin_devs"],
+        var_name="group",
+        value_name="contributors",
+    )
+    long["group"] = long["group"].map(
+        {"active_contributors": "all contributors", "active_plugin_devs": "also plugin developers"}
+    )
+    return long.astype({"contributors": int})
+
+
 def new_plugins_by_year(data_dir: Path | str | None = None) -> pd.DataFrame:
     """Plugins by the year of their first PyPI release.
 
@@ -86,6 +109,81 @@ def pypi_downloads(
     if df.empty:
         raise ValueError(f"no downloads for {project!r}; add it to fetch_pypi_downloads.py")
     return df[["month", "downloads"]].reset_index(drop=True)
+
+
+SYSTEMS = {"Windows": "Windows", "Darwin": "macOS", "Linux": "Linux", "": "unknown"}
+
+
+def pypi_downloads_by_system(
+    project: str = "napari", data_dir: Path | str | None = None
+) -> pd.DataFrame:
+    """Monthly PyPI downloads of ``project`` by the installer's operating system.
+
+    Columns: ``month`` (Timestamp), ``system`` ("Windows", "macOS", "Linux",
+    "unknown"), ``downloads`` (int). CI and cloud machines are nearly all
+    Linux (napari's 2022 and late-2024 spikes are Linux only), so Windows +
+    macOS is the cleaner signal of people installing napari themselves.
+    """
+    df = pd.read_csv(
+        _path("pypi_downloads_by_system_monthly.csv", data_dir),
+        parse_dates=["month"],
+        keep_default_na=False,
+    )
+    df = df[df["project"] == project]
+    if df.empty:
+        raise ValueError(f"no downloads for {project!r}; add it to fetch_pypi_downloads.py")
+    df = df.assign(system=df["system"].map(SYSTEMS).fillna("unknown"))
+    out = df.groupby(["month", "system"], as_index=False)["downloads"].sum()
+    return out.astype({"downloads": int})
+
+
+PLUGIN_STATES = {
+    "recent": "released in the last 6 months",
+    "quiet": "last release 6 to 24 months ago",
+    "dormant": "no release in 2 years",
+}
+
+
+def plugin_status(
+    data_dir: Path | str | None = None, *, start: str = "2020-01-01"
+) -> pd.DataFrame:
+    """Every plugin released so far, by how recently it last released, per month.
+
+    Built from every version's upload time (``plugin_versions.csv``). At the
+    end of each month each plugin released so far counts once: "recent" (a
+    release in the last 6 months), "quiet" (last release 6 to 24 months ago)
+    or "dormant" (nothing in 2 years), so the three add up to all plugins.
+
+    Columns: ``month`` (Timestamp), ``state`` (a ``PLUGIN_STATES`` value),
+    ``plugins`` (int), ``share`` (of all plugins that month), and
+    ``recent_share_of_living`` (recent / (recent + quiet), the same on every
+    row of a month).
+    """
+    versions = pd.read_csv(_path("plugin_versions.csv", data_dir))
+    uploads = pd.DataFrame(
+        {
+            "name": versions["name"],
+            "t": pd.to_datetime(versions["upload_time"], utc=True).dt.tz_localize(None),
+        }
+    ).dropna()
+    rows = []
+    for month in pd.date_range(start, pd.Timestamp.today(), freq="MS"):
+        end = month + pd.offsets.MonthBegin(1)
+        last = uploads[uploads["t"] < end].groupby("name")["t"].max()
+        recent = int((last >= end - pd.DateOffset(months=6)).sum())
+        living = int((last >= end - pd.DateOffset(months=24)).sum())
+        counts = {"recent": recent, "quiet": living - recent, "dormant": len(last) - living}
+        for key, n in counts.items():
+            rows.append(
+                {
+                    "month": month,
+                    "state": PLUGIN_STATES[key],
+                    "plugins": n,
+                    "share": n / len(last) if len(last) else 0.0,
+                    "recent_share_of_living": recent / living if living else 0.0,
+                }
+            )
+    return pd.DataFrame(rows)
 
 
 TEMPLATE_KINDS = {

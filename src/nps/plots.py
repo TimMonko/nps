@@ -103,6 +103,35 @@ def contributors_by_year(df: pd.DataFrame) -> alt.LayerChart:
     return _layer(bars, label_marks, _so_far_note(df, "contributors"))
 
 
+def active_contributors(df: pd.DataFrame) -> alt.LayerChart:
+    """Contributors active in the trailing six months: everyone, and plugin developers.
+
+    ``df`` is ``nps.data.active_contributors()``. Each line is labelled at its end.
+    """
+    groups = ["all contributors", "also plugin developers"]
+    lines = (
+        alt.Chart(df)
+        .mark_line()
+        .encode(
+            x=alt.X("month:T", axis=YEAR_TICKS),
+            y=alt.Y("contributors:Q", title="active in the last 6 months"),
+            color=alt.Color("group:N", sort=groups, scale=alt.Scale(domain=groups), legend=None),
+            tooltip=[
+                alt.Tooltip("yearmonth(month):T", title="Month"),
+                alt.Tooltip("group:N", title="Group"),
+                alt.Tooltip("contributors:Q", title="Contributors"),
+            ],
+        )
+    )
+    ends = df[df["month"] == df["month"].max()].assign(label=lambda d: d["group"])
+    labels = (
+        alt.Chart(ends)
+        .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
+        .encode(x="month:T", y="contributors:Q", text="label:N")
+    )
+    return _layer(lines, labels)
+
+
 def new_plugins_by_year(df: pd.DataFrame) -> alt.LayerChart:
     """New plugins per year (bars, left axis) and the running total (line, right axis).
 
@@ -234,6 +263,119 @@ def pypi_downloads(
             ],
         )
     )
+
+
+DESKTOP = ["Windows", "macOS"]
+
+
+def pypi_downloads_desktop(
+    df: pd.DataFrame, by: Literal["month", "year"] = "year"
+) -> alt.LayerChart:
+    """Windows and macOS downloads, stacked, per year or month; Linux left out.
+
+    ``df`` is ``nps.data.pypi_downloads_by_system()``. CI runs almost entirely
+    on Linux, so leaving Linux out removes the CI spikes and keeps the people.
+    """
+    desktop = df[df["system"].isin(DESKTOP)]
+    if by == "year":
+        desktop = (
+            desktop.assign(year=desktop["month"].dt.year)
+            .groupby(["year", "system"], as_index=False)["downloads"]
+            .sum()
+        )
+        desktop["ytd"] = desktop["year"] == pd.Timestamp.today().year
+        x = alt.X("year:O", axis=_year_axis(desktop))
+        x_tip = alt.Tooltip("year:O", title="Year")
+        unit = "year"
+    else:
+        x = alt.X("yearmonth(month):T", axis=YEAR_TICKS)
+        x_tip = alt.Tooltip("yearmonth(month):T", title="Month")
+        unit = "month"
+    bars = (
+        alt.Chart(desktop)
+        .transform_calculate(stack_order=f"indexof({DESKTOP}, datum.system)")
+        .mark_bar()
+        .encode(
+            x=x,
+            y=alt.Y(
+                "downloads:Q",
+                title=f"Windows + macOS downloads per {unit}",
+                stack="zero",
+                axis=alt.Axis(format="~s"),
+            ),
+            color=alt.Color("system:N", sort=DESKTOP, scale=alt.Scale(domain=DESKTOP), legend=None),
+            order=alt.Order("stack_order:Q"),
+            tooltip=[
+                x_tip,
+                alt.Tooltip("system:N", title="System"),
+                alt.Tooltip("downloads:Q", title="Downloads", format=","),
+            ],
+        )
+    )
+    if by != "year":
+        return _layer(bars)
+    # direct labels beside the middle of each segment of the last bar
+    last_year = desktop["year"].max()
+    last = desktop[desktop["year"] == last_year].set_index("system")["downloads"]
+    win, mac = int(last.get("Windows", 0)), int(last.get("macOS", 0))
+    labels = pd.DataFrame(
+        {"year": [last_year] * 2, "y": [win / 2, win + mac / 2], "label": DESKTOP}
+    )
+    label_marks = (
+        alt.Chart(labels)
+        .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
+        .encode(x=alt.X("year:O", bandPosition=1), y="y:Q", text="label:N")
+    )
+    return _layer(bars, label_marks, _so_far_note(desktop, "downloads"))
+
+
+def plugin_status(df: pd.DataFrame, *, share: bool = False) -> alt.LayerChart:
+    """All plugins released so far, stacked by how recently each last released.
+
+    ``df`` is ``nps.data.plugin_status()``. The stack's top is the total, so
+    growth and upkeep read off one chart; ``share=True`` draws each state as a
+    share of all plugins instead. Bands are labelled at their right end.
+    """
+    from nps.data import PLUGIN_STATES
+
+    states = list(PLUGIN_STATES.values())
+    y_field, y_title, fmt = (
+        ("share", "share of all plugins", "%") if share else ("plugins", "plugins", "~s")
+    )
+    areas = (
+        alt.Chart(df)
+        .transform_calculate(stack_order=f"indexof({states}, datum.state)")
+        .mark_area()
+        .encode(
+            x=alt.X("month:T", axis=YEAR_TICKS),
+            y=alt.Y(f"{y_field}:Q", title=y_title, stack="zero", axis=alt.Axis(format=fmt)),
+            # ordinal: the theme colours the last state (dormant) as context
+            color=alt.Color("state:O", sort=states, scale=alt.Scale(domain=states), legend=None),
+            order=alt.Order("stack_order:Q"),
+            tooltip=[
+                alt.Tooltip("yearmonth(month):T", title="Month"),
+                alt.Tooltip("state:N", title="State"),
+                alt.Tooltip("plugins:Q", title="Plugins"),
+                alt.Tooltip("share:Q", title="Share of all", format=".0%"),
+                alt.Tooltip("recent_share_of_living:Q", title="Recent / (recent + quiet)", format=".0%"),
+            ],
+        )
+    )
+    last = df[df["month"] == df["month"].max()].set_index("state").reindex(states)
+    tops = last[y_field].cumsum()
+    labels = pd.DataFrame(
+        {
+            "month": last.index.map(lambda _: df["month"].max()),
+            "y": (tops - last[y_field] / 2).to_numpy(),
+            "label": [f"{s} ({int(n)})" for s, n in zip(states, last["plugins"])],
+        }
+    )
+    label_marks = (
+        alt.Chart(labels)
+        .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
+        .encode(x="month:T", y="y:Q", text="label:N")
+    )
+    return _layer(areas, label_marks)
 
 
 def render(
