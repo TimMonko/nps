@@ -39,24 +39,3 @@ dashed line is napari's
 #| renderings: [light, dark]
 show(plots.release_contributors(data.release_contributors(), cadence_since=data.MONTHLY_CADENCE))
 ```
-
-## Where newcomers start
-
-The repo of each newcomer's first commit.
-
-```{python}
-#| renderings: [light, dark]
-show(plots.newcomer_first_repo(data.newcomer_first_repo()))
-```
-
-## Do newcomers come back?
-
-Of each year's newcomers, the share who committed again at least two weeks
-after their first commit (so one pull request's commits don't count), within
-three months and within a year. "So far" years count only the newcomers whose
-whole window has passed.
-
-```{python}
-#| renderings: [light, dark]
-show(plots.newcomer_retention(data.newcomer_retention()))
-```
