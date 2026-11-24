@@ -18,6 +18,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from nps.data import drop_copied_history
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 OUTPUT_DIR = DATA_DIR / "metrics"
@@ -69,7 +71,7 @@ def load_all_commits() -> pd.DataFrame:
     if n_excluded:
         print(f"  Excluded {n_excluded} commits from {EXCLUDED_REPOS}", file=sys.stderr)
 
-    commits = commits.drop_duplicates(subset=["sha"])
+    commits = drop_copied_history(commits.drop_duplicates(subset=["sha"]))
     commits = commits.sort_values("date")
 
     print(

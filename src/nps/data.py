@@ -98,6 +98,21 @@ def release_contributors(data_dir: Path | str | None = None) -> pd.DataFrame:
     return out.reset_index(drop=True)
 
 
+# Repos whose git history starts with another project's: commits before the
+# date are that project's (napari-sphinx-theme began as a copy of
+# pydata-sphinx-theme on 2022-01-20), so they are not napari contributions.
+COPIED_HISTORY = {"napari/napari-sphinx-theme": "2022-01-20"}
+
+
+def drop_copied_history(commits: pd.DataFrame) -> pd.DataFrame:
+    """Drop commits a repo inherited from the project it was copied from."""
+    dates = pd.to_datetime(commits["date"], utc=True)
+    keep = pd.Series(True, index=commits.index)
+    for repo, since in COPIED_HISTORY.items():
+        keep &= ~((commits["repo"] == repo) & (dates < pd.Timestamp(since, tz="UTC")))
+    return commits[keep]
+
+
 def new_plugins_by_year(data_dir: Path | str | None = None) -> pd.DataFrame:
     """Plugins by the year of their first PyPI release.
 
