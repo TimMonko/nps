@@ -202,8 +202,9 @@ def main() -> int:
 
         handles = authors_handles(text)
         if handles is None:
-            n_new = None
+            n_new = n_all = None
         else:
+            n_all = len(handles)
             n_new = len(handles - seen)
             seen |= handles
 
@@ -244,7 +245,7 @@ def main() -> int:
                 gap = months_between(prev_pub, release_date)
 
         rows.append({
-            "ver": ver, "release_date": release_date, "n_new": n_new,
+            "ver": ver, "release_date": release_date, "n_new": n_new, "n_all": n_all,
             "first": first, "last": last, "dev_months": dev_months,
             "gap": gap, "rate": rate,
         })
@@ -357,7 +358,7 @@ def _write_csv(csv_path: Path, rows: list[dict]) -> None:
     with csv_path.open("w", newline="", encoding="utf-8") as fh:
         writer = csv.writer(fh)
         writer.writerow([
-            "release", "release_date", "new_contributors",
+            "release", "release_date", "new_contributors", "contributors",
             "dev_window_first", "dev_window_last", "dev_months",
             "months_between_releases", "new_per_month",
         ])
@@ -365,7 +366,7 @@ def _write_csv(csv_path: Path, rows: list[dict]) -> None:
             def clean(v):
                 return "" if v is None else v
             writer.writerow([
-                r["ver"], clean(r["release_date"]), clean(r["n_new"]),
+                r["ver"], clean(r["release_date"]), clean(r["n_new"]), clean(r["n_all"]),
                 clean(r["first"]), clean(r["last"]), clean(r["dev_months"]),
                 clean(r["gap"]), clean(r["rate"]),
             ])
