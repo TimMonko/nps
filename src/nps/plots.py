@@ -132,6 +132,65 @@ def active_contributors(df: pd.DataFrame) -> alt.LayerChart:
     return _layer(lines, labels)
 
 
+def release_contributors(df: pd.DataFrame, *, label_min_new: int = 13) -> alt.LayerChart:
+    """Contributors to each napari release: one bar per release cycle.
+
+    ``df`` is ``nps.data.release_contributors()``. A bar spans the time from
+    the previous release to this one, so its width is the release cycle and
+    its height the people in the release notes' author list: returning
+    (bottom) and new (top). Releases with at least ``label_min_new`` new
+    contributors are named above their bar.
+    """
+    segments = pd.concat(
+        [
+            df.assign(kind="Returning", y=0, y2=df["returning"]),
+            df.assign(kind="New", y=df["returning"], y2=df["contributors"]),
+        ]
+    )
+    bars = (
+        alt.Chart(segments)
+        .mark_bar()
+        .encode(
+            x=alt.X("start:T", axis=YEAR_TICKS),
+            x2="end:T",
+            y=alt.Y("y:Q", title="contributors to the release"),
+            y2="y2:Q",
+            color=alt.Color("kind:N", sort=["New", "Returning"], legend=None),
+            tooltip=[
+                alt.Tooltip("release:N", title="Release"),
+                alt.Tooltip("end:T", title="Released", format="%Y-%m-%d"),
+                alt.Tooltip("months:Q", title="Months since previous release"),
+                alt.Tooltip("contributors:Q", title="Contributors"),
+                alt.Tooltip("new:Q", title="New"),
+            ],
+        )
+    )
+
+    named = df[df["new"] >= label_min_new].assign(
+        mid=lambda d: d["start"] + (d["end"] - d["start"]) / 2
+    )
+    names = (
+        alt.Chart(named)
+        .mark_text(style="note", baseline="bottom", dy=-LABEL_GAP / 2)
+        .encode(x="mid:T", y="contributors:Q", text="release:N")
+    )
+
+    last = df.iloc[-1]
+    ends = pd.DataFrame(
+        {
+            "end": [last["end"], last["end"]],
+            "y": [last["returning"] / 2, last["returning"] + last["new"] / 2],
+            "label": ["returning", "new"],
+        }
+    )
+    kind_labels = (
+        alt.Chart(ends)
+        .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
+        .encode(x="end:T", y="y:Q", text="label:N")
+    )
+    return _layer(bars, names, kind_labels)
+
+
 def new_plugins_by_year(df: pd.DataFrame) -> alt.LayerChart:
     """New plugins per year (bars, left axis) and the running total (line, right axis).
 

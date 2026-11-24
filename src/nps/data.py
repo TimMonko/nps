@@ -66,6 +66,38 @@ def active_contributors(data_dir: Path | str | None = None) -> pd.DataFrame:
     return long.astype({"contributors": int})
 
 
+def release_contributors(data_dir: Path | str | None = None) -> pd.DataFrame:
+    """Contributors to each napari release, from the release notes' author lists.
+
+    One row per release, oldest first. Columns: ``release`` (str), ``start``
+    and ``end`` (Timestamp: the previous release's date and this release's;
+    for the release in development, ``end`` is the "as of" date), ``months``
+    (float, ``end - start``), ``contributors`` (int, everyone in the author
+    list), ``new`` (int, in no earlier release's list), ``returning`` (int),
+    ``in_development`` (bool). Releases with no author list are dropped.
+    """
+    df = pd.read_csv(_path("release_contributors.csv", data_dir), dtype={"release": str})
+    as_of = df["release_date"].str.extract(r"as of (\d{4}-\d{2}-\d{2})")[0]
+    df["in_development"] = as_of.notna()
+    df["end"] = pd.to_datetime(as_of.fillna(df["release_date"]))
+    df = df.sort_values("end").reset_index(drop=True)
+    df["start"] = df["end"].shift().fillna(pd.to_datetime(df["dev_window_first"]))
+    df = df.dropna(subset=["contributors", "new_contributors"])
+    out = pd.DataFrame(
+        {
+            "release": df["release"],
+            "start": df["start"],
+            "end": df["end"],
+            "months": ((df["end"] - df["start"]).dt.days / 30.44).round(1),
+            "contributors": df["contributors"].astype(int),
+            "new": df["new_contributors"].astype(int),
+            "in_development": df["in_development"],
+        }
+    )
+    out["returning"] = out["contributors"] - out["new"]
+    return out.reset_index(drop=True)
+
+
 def new_plugins_by_year(data_dir: Path | str | None = None) -> pd.DataFrame:
     """Plugins by the year of their first PyPI release.
 
