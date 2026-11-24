@@ -132,8 +132,32 @@ def active_contributors(df: pd.DataFrame) -> alt.LayerChart:
     return _layer(lines, labels)
 
 
+def _clear_labels(
+    bars: pd.DataFrame, named: pd.DataFrame, half_width_days: int = 45, line: float = 1.2
+) -> pd.DataFrame:
+    """Place each label above every bar it spans, and above a close label to its left.
+
+    Labels sit at the middle of their bar (``mid``) at ``label_y``: the
+    tallest ``per_month`` of the bars within ``half_width_days`` (about half
+    a label's width), lifted by ``line`` (a text line, in y units) when the
+    previous label is near and at about the same height.
+    """
+    named = named.assign(mid=named["start"] + (named["end"] - named["start"]) / 2)
+    reach = pd.Timedelta(days=half_width_days)
+    ys, placed = [], []
+    for mid in named["mid"]:
+        near = bars[(bars["end"] >= mid - reach) & (bars["start"] <= mid + reach)]
+        y = near["per_month"].max()
+        for prev_mid, prev_y in placed:
+            if abs(mid - prev_mid) < 2 * reach and abs(y - prev_y) < line:
+                y = prev_y + line
+        placed.append((mid, y))
+        ys.append(y)
+    return named.assign(label_y=ys)
+
+
 def release_contributors(
-    df: pd.DataFrame, *, label_top: int = 3, cadence_since: str | None = None
+    df: pd.DataFrame, *, also_label: Iterable[str] = ("0.4.18",)
 ) -> alt.LayerChart:
     """Contributors per month of each napari release cycle.
 
@@ -143,8 +167,7 @@ def release_contributors(
     release notes' author list: returning (bottom) and new (top). Many
     people in a short cycle make a tall bar. Quick patches (``quick_patch``)
     are left out: a few people over a few days spike the rate. The
-    ``label_top`` tallest released bars are named. ``cadence_since`` (a
-    date) draws a dashed rule where napari moved to a monthly release cadence.
+    Each 0.X.0 release is named above its bar, plus those in ``also_label``.
     """
     df = df[~df["quick_patch"]]
     scale = df["per_month"] / df["contributors"]
@@ -174,19 +197,18 @@ def release_contributors(
         )
     )
 
-    named = df[~df["in_development"]].nlargest(label_top, "per_month").assign(
-        mid=lambda d: d["start"] + (d["end"] - d["start"]) / 2
-    )
-    names = (
-        alt.Chart(named)
-        .mark_text(style="note", baseline="bottom", dy=-LABEL_GAP / 2)
-        .encode(x="mid:T", y="per_month:Q", text="release:N")
-    )
+    to_name = df["release"].str.fullmatch(r"0\.\d+\.0") | df["release"].isin(list(also_label))
+    named = _clear_labels(df, df[to_name])
+    first = named["start"] == df["start"].min()  # left-aligned so it stays clear of the y axis
 
-    cadence = None
-    if cadence_since:
-        mark = pd.DataFrame({"date": [pd.Timestamp(cadence_since)]})
-        cadence = alt.Chart(mark).mark_rule(strokeDash=[4, 4]).encode(x="date:T")
+    def name_marks(rows: pd.DataFrame, x: str, align: str) -> alt.Chart:
+        return (
+            alt.Chart(rows)
+            .mark_text(style="note", align=align, baseline="bottom", dy=-LABEL_GAP / 2)
+            .encode(x=f"{x}:T", y="label_y:Q", text="release:N")
+        )
+
+    names = name_marks(named[~first], "mid", "center") + name_marks(named[first], "start", "left")
 
     last = df.iloc[-1]
     per_person = last["per_month"] / last["contributors"]
@@ -205,7 +227,7 @@ def release_contributors(
         .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
         .encode(x="end:T", y="y:Q", text="label:N")
     )
-    return _layer(bars, cadence, names, kind_labels)
+    return _layer(bars, names, kind_labels)
 
 
 def newcomer_first_repo(df: pd.DataFrame) -> alt.LayerChart:

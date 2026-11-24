@@ -18,7 +18,6 @@ LOADERS_AND_PLOTS = [
     (data.template_usage_by_year, plots.template_usage_by_year),
     (data.active_contributors, plots.active_contributors),
     (data.release_contributors, plots.release_contributors),
-    (data.release_contributors, lambda df: plots.release_contributors(df, cadence_since="2026-09-22")),
     (data.newcomer_first_repo, plots.newcomer_first_repo),
     (data.newcomer_retention, plots.newcomer_retention),
     (data.python_support, plots.python_support),

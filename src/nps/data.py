@@ -66,8 +66,6 @@ def active_contributors(data_dir: Path | str | None = None) -> pd.DataFrame:
     return long.astype({"contributors": int})
 
 
-# napari's release policy with a monthly cadence (napari/docs#1126) merged on this date
-MONTHLY_CADENCE = "2026-09-22"
 QUICK_PATCH_DAYS = 14  # releases this soon after the previous one are quick patches
 
 
