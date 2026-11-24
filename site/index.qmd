@@ -49,4 +49,3 @@ released in the last six months.
 - [Ecosystem](ecosystem.qmd): plugins, the plugin template, downloads
 - [Community](community.qmd): the plugin sustainability working group
 - [Fellowship](fellowship.qmd): the URSSI fellowship behind this project
-- [Data](data.qmd): every number here, as CSV

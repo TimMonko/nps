@@ -7,6 +7,7 @@ project:
   output-dir: _site
   render:
     - site/*.qmd
+    - "!site/data.qmd"  # left out for now (2026-11-24)
   resources:
     - data/*.csv
     - data/metrics/*.csv
@@ -25,7 +26,6 @@ website:
       - site/ecosystem.qmd
       - site/community.qmd
       - site/fellowship.qmd
-      - site/data.qmd
     right:
       - icon: github
         href: https://github.com/TimMonko/nps
