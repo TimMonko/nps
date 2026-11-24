@@ -17,6 +17,7 @@ LOADERS_AND_PLOTS = [
     (data.pypi_downloads, plots.pypi_downloads),
     (data.template_usage_by_year, plots.template_usage_by_year),
     (data.active_contributors, plots.active_contributors),
+    (data.release_contributors, plots.release_contributors),
     (data.plugin_status, plots.plugin_status),
     (data.plugin_status, lambda df: plots.plugin_status(df, share=True)),
     (data.pypi_downloads_by_system, plots.pypi_downloads_desktop),
@@ -45,6 +46,14 @@ def test_contributors_by_year_shape():
     assert list(df.columns) == ["year", "kind", "contributors", "ytd"]
     assert set(df["kind"]) == {"New", "Returning"}
     assert df["ytd"].sum() <= 2  # at most one year, two kinds
+
+
+def test_release_cycles_tile_without_overlap():
+    df = data.release_contributors()
+    assert (df["end"] > df["start"]).all()
+    assert (df["start"].iloc[1:].values >= df["end"].iloc[:-1].values).all()
+    assert (df["returning"] >= 0).all()
+    assert df["in_development"].sum() <= 1
 
 
 def test_new_plugins_total_is_cumulative():
