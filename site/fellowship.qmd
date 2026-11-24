@@ -10,4 +10,7 @@ held by Tim Monko, napari's community manager.
 - [The plugin sustainability initiative](https://napari.org/island-dispatch/blog/plugin-sustainability-initiative.html) on The Island Dispatch
 - Talks at SciPy 2026 and EuroSciPy 2026: *(Re)-connecting foundational libraries with their communities*
 
+The rest of this page is the project proposal written for the fellowship
+application in 2025, unchanged.
+
 {{< include ../fellowship/proposal.md >}}
