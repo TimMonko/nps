@@ -42,24 +42,13 @@ PyPI description.
 show(plots.template_usage_by_year(data.template_usage_by_year()))
 ```
 
-## napari downloads
+## Python versions
 
-```{python}
-by_system = data.pypi_downloads_by_system()
-last12 = by_system[by_system["month"] > by_system["month"].max() - pd.DateOffset(months=12)]
-all12 = last12["downloads"].sum()
-desktop12 = last12[last12["system"].isin(["Windows", "macOS"])]["downloads"].sum()
-```
-
-napari was downloaded `{python} f"{all12 / 1e6:.1f}"` million times from PyPI in
-the last twelve months, `{python} f"{desktop12 / 1e3:,.0f}"` thousand of them on
-Windows or macOS. Most of the rest is Linux: CI and cloud machines, with
-one-month spikes of a million or more. Windows and macOS follow people
-installing napari themselves, so that is what's plotted. Data:
-[ClickHouse's public PyPI dataset](https://clickpy.clickhouse.com/dashboard/napari).
+The Python versions each plugin lists in its package classifiers, from its
+latest release on PyPI. Plugins released in the last two years next to older
+ones; plugins without classifiers are left out.
 
 ```{python}
 #| renderings: [light, dark]
-desktop = by_system[by_system["month"] >= "2021-01-01"]
-show(plots.pypi_downloads_desktop(desktop))
+show(plots.python_support(data.python_support()))
 ```

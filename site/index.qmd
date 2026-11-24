@@ -46,6 +46,6 @@ with any release in the past two years, `{python} f"{living_share:.0%}"`
 released in the last six months.
 
 - [Contributors](contributors.qmd): who works on napari itself
-- [Ecosystem](ecosystem.qmd): plugins, the plugin template, downloads
+- [Ecosystem](ecosystem.qmd): plugins, the plugin template, Python versions
 - [Community](community.qmd): the plugin sustainability working group
 - [Fellowship](fellowship.qmd): the URSSI fellowship behind this project

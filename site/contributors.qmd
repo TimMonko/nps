@@ -25,12 +25,38 @@ show(plots.active_contributors(data.active_contributors()))
 
 ## Contributors by release
 
-Each bar is one napari release: its width runs from the previous release to
-this one, its height is everyone in the release notes' author list. *New*
-means not in any earlier release's list. The last bar is the release in
-development. Hover a bar for its numbers.
+Each bar is one napari release. Its width runs from the previous release to
+this one, and its height is the release's contributors (everyone in the
+release notes' author list) per month of that time, so the bar's area is the
+people. Many people in a short cycle make a tall bar. *New* means not in any
+earlier release's list. Patch releases out less than two weeks after the one
+before are left out: a handful of people over a few days spikes the rate. The
+dashed line is napari's
+[monthly release cadence](https://napari.org/dev/developers/core_team/release_policy.html)
+(adopted 2026-09-22); the last bar is the release in development.
 
 ```{python}
 #| renderings: [light, dark]
-show(plots.release_contributors(data.release_contributors()))
+show(plots.release_contributors(data.release_contributors(), cadence_since=data.MONTHLY_CADENCE))
+```
+
+## Where newcomers start
+
+The repo of each newcomer's first commit.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.newcomer_first_repo(data.newcomer_first_repo()))
+```
+
+## Do newcomers come back?
+
+Of each year's newcomers, the share who committed again at least two weeks
+after their first commit (so one pull request's commits don't count), within
+three months and within a year. "So far" years count only the newcomers whose
+whole window has passed.
+
+```{python}
+#| renderings: [light, dark]
+show(plots.newcomer_retention(data.newcomer_retention()))
 ```
