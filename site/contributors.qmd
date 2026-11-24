@@ -23,20 +23,14 @@ have also contributed to a napari plugin's repo.
 show(plots.active_contributors(data.active_contributors()))
 ```
 
-## New contributors by release
+## Contributors by release
 
-From the author lists in each release's notes.
-
-::: {.callout-note collapse="true" appearance="minimal"}
-## Every napari release
+Each bar is one napari release: its width runs from the previous release to
+this one, its height is everyone in the release notes' author list. *New*
+means not in any earlier release's list. The last bar is the release in
+development. Hover a bar for its numbers.
 
 ```{python}
-import pandas as pd
-from IPython.display import HTML
-
-releases = pd.read_csv(data.DATA_DIR / "release_contributors.csv")
-table = releases[["release", "release_date", "new_contributors"]].iloc[::-1]
-table.columns = ["Release", "Date", "New contributors"]
-HTML(table.to_html(index=False, classes="table table-sm", border=0))
+#| renderings: [light, dark]
+show(plots.release_contributors(data.release_contributors()))
 ```
-:::
