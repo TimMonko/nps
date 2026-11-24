@@ -132,19 +132,26 @@ def active_contributors(df: pd.DataFrame) -> alt.LayerChart:
     return _layer(lines, labels)
 
 
-def release_contributors(df: pd.DataFrame, *, label_min_new: int = 13) -> alt.LayerChart:
-    """Contributors to each napari release: one bar per release cycle.
+def release_contributors(
+    df: pd.DataFrame, *, label_top: int = 3, cadence_since: str | None = None
+) -> alt.LayerChart:
+    """Contributors per month of each napari release cycle.
 
     ``df`` is ``nps.data.release_contributors()``. A bar spans the time from
-    the previous release to this one, so its width is the release cycle and
-    its height the people in the release notes' author list: returning
-    (bottom) and new (top). Releases with at least ``label_min_new`` new
-    contributors are named above their bar.
+    the previous release to this one; its height is the release's
+    contributors divided by that time, so its area is the people in the
+    release notes' author list: returning (bottom) and new (top). Many
+    people in a short cycle make a tall bar. Quick patches (``quick_patch``)
+    are left out: a few people over a few days spike the rate. The
+    ``label_top`` tallest released bars are named. ``cadence_since`` (a
+    date) draws a dashed rule where napari moved to a monthly release cadence.
     """
+    df = df[~df["quick_patch"]]
+    scale = df["per_month"] / df["contributors"]
     segments = pd.concat(
         [
-            df.assign(kind="Returning", y=0, y2=df["returning"]),
-            df.assign(kind="New", y=df["returning"], y2=df["contributors"]),
+            df.assign(kind="Returning", y=0, y2=df["returning"] * scale),
+            df.assign(kind="New", y=df["returning"] * scale, y2=df["per_month"]),
         ]
     )
     bars = (
@@ -153,7 +160,7 @@ def release_contributors(df: pd.DataFrame, *, label_min_new: int = 13) -> alt.La
         .encode(
             x=alt.X("start:T", axis=YEAR_TICKS),
             x2="end:T",
-            y=alt.Y("y:Q", title="contributors to the release"),
+            y=alt.Y("y:Q", title="contributors per month of the cycle"),
             y2="y2:Q",
             color=alt.Color("kind:N", sort=["New", "Returning"], legend=None),
             tooltip=[
@@ -162,24 +169,34 @@ def release_contributors(df: pd.DataFrame, *, label_min_new: int = 13) -> alt.La
                 alt.Tooltip("months:Q", title="Months since previous release"),
                 alt.Tooltip("contributors:Q", title="Contributors"),
                 alt.Tooltip("new:Q", title="New"),
+                alt.Tooltip("per_month:Q", title="Per month"),
             ],
         )
     )
 
-    named = df[df["new"] >= label_min_new].assign(
+    named = df[~df["in_development"]].nlargest(label_top, "per_month").assign(
         mid=lambda d: d["start"] + (d["end"] - d["start"]) / 2
     )
     names = (
         alt.Chart(named)
         .mark_text(style="note", baseline="bottom", dy=-LABEL_GAP / 2)
-        .encode(x="mid:T", y="contributors:Q", text="release:N")
+        .encode(x="mid:T", y="per_month:Q", text="release:N")
     )
 
+    cadence = None
+    if cadence_since:
+        mark = pd.DataFrame({"date": [pd.Timestamp(cadence_since)]})
+        cadence = alt.Chart(mark).mark_rule(strokeDash=[4, 4]).encode(x="date:T")
+
     last = df.iloc[-1]
+    per_person = last["per_month"] / last["contributors"]
     ends = pd.DataFrame(
         {
             "end": [last["end"], last["end"]],
-            "y": [last["returning"] / 2, last["returning"] + last["new"] / 2],
+            "y": [
+                last["returning"] / 2 * per_person,
+                (last["returning"] + last["new"] / 2) * per_person,
+            ],
             "label": ["returning", "new"],
         }
     )
@@ -188,7 +205,107 @@ def release_contributors(df: pd.DataFrame, *, label_min_new: int = 13) -> alt.La
         .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
         .encode(x="end:T", y="y:Q", text="label:N")
     )
-    return _layer(bars, names, kind_labels)
+    return _layer(bars, cadence, names, kind_labels)
+
+
+def newcomer_first_repo(df: pd.DataFrame) -> alt.LayerChart:
+    """Newcomers per year by the repo of their first commit, stacked.
+
+    ``df`` is ``nps.data.newcomer_first_repo()``.
+    """
+    order = ["napari", "docs", "other repos"]
+    rank = {repo: i for i, repo in enumerate(order)}
+    df = df.assign(stack_order=df["repo"].map(rank))
+    bars = (
+        alt.Chart(df)
+        .mark_bar()
+        .encode(
+            x=alt.X("year:O", axis=_year_axis(df)),
+            y=alt.Y("contributors:Q", title="newcomers", stack="zero"),
+            color=alt.Color("repo:O", sort=order, scale=alt.Scale(domain=order), legend=None),
+            order=alt.Order("stack_order:Q"),
+            tooltip=[
+                alt.Tooltip("year:O", title="Year"),
+                alt.Tooltip("repo:N", title="First commit in"),
+                alt.Tooltip("contributors:Q", title="Newcomers"),
+            ],
+        )
+    )
+    last_year = df["year"].max()
+    last = df[df["year"] == last_year].set_index("repo")["contributors"].reindex(order, fill_value=0)
+    labels = pd.DataFrame(
+        {"year": last_year, "y": (last.cumsum() - last / 2).values, "label": order}
+    )[last.values > 0]
+    label_marks = (
+        alt.Chart(labels)
+        .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
+        .encode(x=alt.X("year:O", bandPosition=1), y="y:Q", text="label:N")
+    )
+    return _layer(bars, label_marks, _so_far_note(df, "contributors"))
+
+
+def newcomer_retention(df: pd.DataFrame, *, since: int = 2019) -> alt.LayerChart:
+    """Share of each year's newcomers who came back, one line per window.
+
+    ``df`` is ``nps.data.newcomer_retention()``. Years before ``since`` have
+    too few newcomers to read. A year whose later newcomers are still inside
+    the window is marked "so far".
+    """
+    df = df[df["year"] >= since]
+    windows = list(dict.fromkeys(df["window"]))
+    base = alt.Chart(df).encode(
+        x=alt.X("year:O", axis=alt.Axis(title=None, labelAngle=0)),
+        y=alt.Y("share:Q", title="newcomers who came back", axis=alt.Axis(format="%")),
+        color=alt.Color("window:N", sort=windows, scale=alt.Scale(domain=windows), legend=None),
+    )
+    lines = base.mark_line()
+    points = base.mark_point().encode(
+        tooltip=[
+            alt.Tooltip("year:O", title="First commit in"),
+            alt.Tooltip("window:N", title="Came back"),
+            alt.Tooltip("share:Q", title="Share", format=".0%"),
+            alt.Tooltip("returned:Q", title="Came back"),
+            alt.Tooltip("newcomers:Q", title="Newcomers counted"),
+        ]
+    )
+    ends = df.loc[df.groupby("window")["year"].idxmax()]
+    labels = (
+        alt.Chart(ends)
+        .mark_text(style="label", align="left", baseline="middle", dx=LABEL_GAP)
+        .encode(x="year:O", y="share:Q", text="window:N")
+    )
+    partial = df[df["partial"]].assign(note="so far")
+    notes = (
+        alt.Chart(partial)
+        .mark_text(style="note", baseline="bottom", dy=-LABEL_GAP)
+        .encode(x="year:O", y="share:Q", text="note:N")
+    )
+    return _layer(lines, points, labels, notes)
+
+
+def python_support(df: pd.DataFrame) -> alt.Chart:
+    """Share of plugins listing each Python version, recent plugins beside older ones.
+
+    ``df`` is ``nps.data.python_support()``.
+    """
+    pythons = list(dict.fromkeys(df["python"]))
+    groups = list(dict.fromkeys(df["group"]))
+    return (
+        alt.Chart(df)
+        .mark_bar()
+        .encode(
+            x=alt.X("python:N", sort=pythons, axis=alt.Axis(title="Python", labelAngle=0)),
+            xOffset=alt.XOffset("group:N", sort=groups),
+            y=alt.Y("share:Q", title="plugins that list it", axis=alt.Axis(format="%")),
+            color=alt.Color("group:N", sort=groups, scale=alt.Scale(domain=groups)),
+            tooltip=[
+                alt.Tooltip("python:N", title="Python"),
+                alt.Tooltip("group:N", title="Plugins"),
+                alt.Tooltip("plugins:Q", title="Listing it"),
+                alt.Tooltip("share:Q", title="Share", format=".0%"),
+            ],
+        )
+    )
 
 
 def new_plugins_by_year(df: pd.DataFrame) -> alt.LayerChart:
