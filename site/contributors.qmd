@@ -31,11 +31,21 @@ release notes' author list) per month of that time, so the bar's area is the
 people. Many people in a short cycle make a tall bar. *New* means not in any
 earlier release's list. Patch releases out less than two weeks after the one
 before are left out: a handful of people over a few days spikes the rate. The
-dashed line is napari's
-[monthly release cadence](https://napari.org/dev/developers/core_team/release_policy.html)
-(adopted 2026-09-22); the last bar is the release in development.
+last bar is the release in development.
+
+How napari releases changed:
+
+- 2025-09-05: napari adopts [EffVer](https://effver.org) (Intended Effort
+  Versioning, [napari#8243](https://github.com/napari/napari/pull/8243)): the
+  version bump says how much effort upgrading takes, not whether the release
+  is "big".
+- mid-2026: releases come about monthly, from 0.8.0 on.
+- 2026-09-22: the
+  [monthly release cadence](https://napari.org/dev/developers/core_team/release_policy.html)
+  is official ([docs#1126](https://github.com/napari/docs/pull/1126)). These
+  monthly cycles are the tallest bars, on the right.
 
 ```{python}
 #| renderings: [light, dark]
-show(plots.release_contributors(data.release_contributors(), cadence_since=data.MONTHLY_CADENCE))
+show(plots.release_contributors(data.release_contributors()))
 ```
