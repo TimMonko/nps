@@ -18,6 +18,10 @@ LOADERS_AND_PLOTS = [
     (data.template_usage_by_year, plots.template_usage_by_year),
     (data.active_contributors, plots.active_contributors),
     (data.release_contributors, plots.release_contributors),
+    (data.release_contributors, lambda df: plots.release_contributors(df, cadence_since="2026-09-22")),
+    (data.newcomer_first_repo, plots.newcomer_first_repo),
+    (data.newcomer_retention, plots.newcomer_retention),
+    (data.python_support, plots.python_support),
     (data.plugin_status, plots.plugin_status),
     (data.plugin_status, lambda df: plots.plugin_status(df, share=True)),
     (data.pypi_downloads_by_system, plots.pypi_downloads_desktop),
@@ -54,6 +58,27 @@ def test_release_cycles_tile_without_overlap():
     assert (df["start"].iloc[1:].values >= df["end"].iloc[:-1].values).all()
     assert (df["returning"] >= 0).all()
     assert df["in_development"].sum() <= 1
+
+
+def test_copied_history_dropped():
+    commits = pd.DataFrame(
+        {
+            "repo": ["napari/napari-sphinx-theme", "napari/napari-sphinx-theme", "napari/napari"],
+            "date": ["2020-01-01T00:00:00Z", "2023-01-01T00:00:00Z", "2020-01-01T00:00:00Z"],
+        }
+    )
+    assert data.drop_copied_history(commits).index.tolist() == [1, 2]
+
+
+def test_newcomers_counted_once():
+    first = data.newcomer_first_repo()
+    assert first["contributors"].sum() == data._commits()["login"].nunique()
+
+
+def test_retention_shares_are_fractions():
+    df = data.newcomer_retention()
+    assert df["share"].between(0, 1).all()
+    assert (df["returned"] <= df["newcomers"]).all()
 
 
 def test_new_plugins_total_is_cumulative():
