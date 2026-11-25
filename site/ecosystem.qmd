@@ -9,6 +9,17 @@ Plugins listed on [npe2api](https://api.napari.org) (the data behind the
 
 ## New plugins
 
+Moments that brought new plugins:
+
+- 2021-06-17 to 2021-07-29: CZI's first call for
+  [napari Plugin Accelerator grants](https://chanzuckerberg.com/wp-content/uploads/sites/8/2022/04/napari-1-RFA-packet-CLOSED.pdf).
+- 2022-04-19 to 2022-06-02: the second call,
+  [napari Plugin Foundations grants](https://chanzuckerberg.com/rfa/napari-plugin-grants/)
+  (decisions from mid-September 2022, awards from 2022-11-01).
+- 2026-02-22: the
+  [plugin sustainability initiative](https://napari.org/island-dispatch/blog/plugin-sustainability-initiative.html)
+  is announced.
+
 ```{python}
 #| renderings: [light, dark]
 show(plots.new_plugins_by_year(data.new_plugins_by_year()))
