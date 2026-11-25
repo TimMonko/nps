@@ -123,8 +123,11 @@ napari-accelerated-pixel-and-object-classification,https://github.com/haesleinhu
 napari-affinities,https://github.com/pattonw/napari-affinities
 napari-afmreader,https://github.com/AFM-SPM/napari-afmreader
 napari-afmslicer,https://github.com/AFM-SPM/napari-afmslicer
+napari-ai-lab,https://github.com/True-North-Intelligent-Algorithms/napari-ai-lab
+napari-aibirthday,https://github.com/hanshs474/napari-aibirthday
 napari-aicsimageio,https://github.com/AllenCellModeling/napari-aicsimageio
 napari-aideveloper,https://github.com/zcqwh/napari-aideveloper
+napari-aigifmaker,https://github.com/hanshs474/napari-aigifmaker
 napari-align-annotator,https://github.com/spsalmon/napari-align-annotator
 napari-allencell-annotator,https://github.com/aics-int/napari-allencell-annotator
 napari-allencell-segmenter,https://github.com/AllenCell/napari-allencell-segmenter
@@ -276,6 +279,7 @@ napari-fluoresfm,https://github.com/qiqi-lu/napari-fluoresfm
 napari-foambryo,https://github.com/VirtualEmbryo/napari-foambryo
 napari-folder-browser,https://github.com/haesleinhuepf/napari-folder-browser
 napari-fractal-tasks,https://github.com/krentzd/napari-fractal-tasks
+napari-freeimagetovideo,https://github.com/hanshs474/napari-freeimagetovideo
 napari-ft,
 napari-fungiform,https://github.com/lxfhfut/Fungiform
 napari-geff,
@@ -481,6 +485,7 @@ napari-pymeshlab,https://github.com/zacsimile/napari-pymeshlab
 napari-pystackreg,https://github.com/glichtner/napari-pystackreg
 napari-pyvertexmodel,https://github.com/pablo1990/napari-pyvertexmodel
 napari-qrcode,https://github.com/kephale/napari-qrcode
+napari-qrcode-barcode-scanner,https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust
 napari-quantem,https://github.com/ArrojoDrigoLab/QuantEM
 napari-quoll,https://github.com/rosalindfranklininstitute/napari-quoll
 napari-racc,https://github.com/rensutheart/napari-racc
@@ -605,6 +610,7 @@ napari-vascilia,https://github.com/ucsdmanorlab/Napari-VASCilia
 napari-vector-graphics,https://github.com/JoOkuma/napari-vector-graphics
 napari-vectorizer,https://github.com/tha-santacruz/napari-vectorizer
 napari-vedo-bridge,https://github.com/jo-mueller/napari-vedo-bridge
+napari-veida,https://github.com/hanshs474/napari-veida
 napari-vemseg,
 napari-vesicles-segmentation,https://github.com/alexisjapas/napari-vesicles-segmentation
 napari_video,https://github.com/janclemenslab/napari-video

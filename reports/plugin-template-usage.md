@@ -1,21 +1,21 @@
 # napari-plugin-template usage
 
-Generated 2026-08-26 from npe2api `extended_summary.json` (662 plugins), GitHub repo inspection, and PyPI descriptions. The napari-plugin-template used **cookiecutter** until 2024-06-13, then switched to **copier**.
+Generated 2026-11-25 from npe2api `extended_summary.json` (718 plugins), GitHub repo inspection, and PyPI descriptions. The napari-plugin-template used **cookiecutter** until 2024-06-13, then switched to **copier**.
 
 ## Summary
 
-**503 of 662 plugins (76%)** show evidence of having used the napari-plugin-template.
+**513 of 718 plugins (71%)** show evidence of having used the napari-plugin-template.
 
 | era | count |
 |---|---|
-| cookiecutter | 291 |
-| copier | 92 |
-| template | 120 |
-| no | 115 |
-| no_github | 36 |
-| unavailable | 8 |
+| cookiecutter | 288 |
+| copier | 98 |
+| template | 127 |
+| no | 146 |
+| no_github | 44 |
+| unavailable | 15 |
 
-New plugins since 2025-09-01: **128**, of which **69 (54%)** use the template.
+New plugins since 2025-09-01: **182**, of which **79 (43%)** use the template.
 
 ## Methodology
 
@@ -31,7 +31,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 
 ## New plugins since 2025-09-01 using the template
 
-**69** of 128 new plugins.
+**79** of 182 new plugins.
 
 | name | first_release | template_era | evidence |
 |---|---|---|---|
@@ -44,7 +44,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | patchlabel | 2025-10-13 | copier | pypi description: generated with copier via napari-plugin-template |
 | ndevio | 2025-10-14 | template | README template badge block |
 | napari-orthogonal-views | 2025-10-15 | copier | README: generated with copier via napari-plugin-template |
-| segment-any-confocal-images | 2025-10-31 | copier | pypi description: generated with copier via napari-plugin-template |
 | secondharmonic | 2025-11-01 | copier | README: generated with copier via napari-plugin-template |
 | napari-synaptogram | 2025-11-06 | copier | .copier-answers.yml; README template badge block |
 | napari-musa | 2025-11-10 | copier | pypi description: generated with copier via napari-plugin-template |
@@ -53,7 +52,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-signal-classifier | 2025-11-26 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-piscis | 2025-11-28 | template | pypi description: template badge block |
 | napari-stream | 2025-12-02 | copier | pypi description: generated with copier via napari-plugin-template |
-| morphodeep | 2025-12-08 | copier | pypi description: generated with copier via napari-plugin-template |
 | nagini3d-napari | 2025-12-08 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-3d-label-eraser | 2025-12-09 | template | pypi description: template badge block |
 | napari-segmentation-toolbox | 2025-12-12 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -63,7 +61,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | gfap-segmenter | 2026-01-08 | template | pypi description: template badge block |
 | napari-ft | 2026-01-19 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-metadata | 2026-01-20 | template | README template badge block |
-| napari-mlarray | 2026-01-30 | template | pypi description: template badge block |
 | napari-bbox-fix | 2026-02-03 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-myelin-quantifier | 2026-02-06 | copier | .copier-answers.yml |
 | deepphenotree | 2026-02-09 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
@@ -92,33 +89,49 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-cci-annotator2 | 2026-05-27 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-persistent-homology | 2026-06-01 | copier | .copier-answers.yml; README template badge block |
 | napari-isbem | 2026-06-09 | template | README template badge block |
-| napari-hdf5-reader | 2026-06-24 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-n5 | 2026-06-26 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
-| aiod-napari | 2026-06-29 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
-| w-seg-napari | 2026-07-07 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-dm4topng | 2026-07-13 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-gribberish | 2026-07-14 | copier | .copier-answers.yml; README template badge block |
 | napari-microscopy-metrics | 2026-07-15 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-segmencolo | 2026-07-27 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-flopa | 2026-07-28 | copier | .copier-answers.yml |
-| focus-3d | 2026-08-16 | template | pypi description: template badge block |
+| napari-ai-lab | 2026-08-07 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-volume-spin | 2026-08-24 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
-| napari-storm | 2026-08-25 | template | none; pypi description: template README footer |
+| trackin | 2026-08-28 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
+| napari-sigma | 2026-09-01 | template | .napari-hub/ + test_and_deploy.yml |
+| napari-vizsla | 2026-09-05 | template | pypi description: template badge block |
+| napari-align-annotator | 2026-09-24 | copier | README: generated with copier via napari-plugin-template |
+| napari-relax | 2026-09-24 | copier | README: generated with copier via napari-plugin-template |
+| carltonlab-napari-tools | 2026-09-28 | template | .napari-hub/ + test_and_deploy.yml |
+| napari-turbobox | 2026-10-01 | template | none; pypi description: template badge block |
+| napari-profilometry | 2026-10-13 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-meta-tiff | 2026-10-15 | copier | pypi description: generated with copier via napari-plugin-template |
+| napari-lazystack | 2026-10-22 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-imaref | 2026-10-23 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
+| napari-afmslicer | 2026-10-26 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-apply-transforms | 2026-10-27 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| phenome-gui | 2026-10-27 | copier | pypi description: generated with copier via napari-plugin-template |
+| napari-flicker | 2026-10-30 | template | .napari-hub/ + test_and_deploy.yml |
+| napari-point-proofread | 2026-11-04 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-locpix2 | 2026-11-06 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 
 ### New plugins NOT flagged
 
 | name | first_release | template_era |
 |---|---|---|
 | napari-mcp | 2025-09-15 | no |
+| omero-annotate-ai | 2025-09-25 | no |
 | napari-unet | 2025-10-09 | no |
 | quanti-fret | 2025-10-27 | no_github |
 | napari-ome-arrow | 2025-11-15 | no |
+| morphodeep | 2025-12-08 | no_github |
 | napari-voxtell | 2025-12-27 | no |
 | napari-bruce | 2026-01-05 | no_github |
 | napari-easytrack | 2026-01-07 | no_github |
 | napari-rosettasciio | 2026-01-19 | no_github |
 | WellMapper | 2026-01-26 | no_github |
 | napari-hydra | 2026-01-29 | no |
+| napari-mlarray | 2026-01-30 | no_github |
 | senoquant | 2026-01-31 | no |
 | neuro-sam | 2026-02-02 | no |
 | confusius | 2026-02-11 | no_github |
@@ -134,7 +147,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-reco-plugin | 2026-04-03 | no |
 | napari-simple-tracker | 2026-04-08 | no |
 | napari-sam3-assistant | 2026-04-18 | no |
-| napari-fenestra | 2026-04-22 | no |
+| napari-fenestra | 2026-04-22 | unavailable |
 | napari-hardware-monitor | 2026-04-25 | no |
 | napari-atlas-stitch | 2026-04-28 | no |
 | napari-cotrack | 2026-05-01 | no |
@@ -152,9 +165,11 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-vipp | 2026-06-25 | no |
 | pentachrome-plugin | 2026-06-26 | unavailable |
 | napari-pdr | 2026-06-26 | no |
-| bio_oct | 2026-06-30 | no_github |
+| aiod-napari | 2026-06-29 | no |
+| bio_oct | 2026-06-30 | no |
 | napari-chunked-regionprops | 2026-07-02 | no |
 | openuc2-processor | 2026-07-05 | no |
+| w-seg-napari | 2026-07-07 | no_github |
 | napasserelle | 2026-07-15 | no_github |
 | napari-zarrnii | 2026-07-16 | no_github |
 | napari-microplate | 2026-07-17 | no |
@@ -163,11 +178,50 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | myopari | 2026-07-29 | no_github |
 | napari-worm-neuron-annotator | 2026-07-30 | no |
 | napari-flowreg-formats | 2026-08-08 | no |
-| frontvegV2 | 2026-08-09 | unavailable |
+| frontvegV2 | 2026-08-09 | no |
 | napari-quantem | 2026-08-10 | no |
 | HaemoLynx | 2026-08-10 | no |
 | napari-cta | 2026-08-13 | no |
+| napari-maskel | 2026-08-19 | no |
 | napari-nucleation-analyzer | 2026-08-20 | no_github |
+| napari-storm | 2026-08-25 | no |
+| phenolapseuav | 2026-08-28 | no |
+| napari-cu-cr-segmentation | 2026-08-30 | no_github |
+| focus-3d | 2026-09-08 | no_github |
+| baclct | 2026-09-15 | no |
+| biopb-napari-widget | 2026-09-24 | no |
+| napari-track-edit | 2026-09-26 | no |
+| effusive | 2026-09-28 | no_github |
+| spatiato | 2026-10-01 | no |
+| napari-openreadout | 2026-10-03 | no |
+| napari-etsam | 2026-10-11 | no |
+| napari-kavel | 2026-10-15 | unavailable |
+| napari-cellposesam | 2026-10-15 | no |
+| napari-foambryo | 2026-10-17 | no |
+| napari-he-dapi | 2026-10-18 | no |
+| napari-maskel-ibex-preprocessing | 2026-10-19 | no |
+| quai-workbench-napari | 2026-10-20 | no_github |
+| napari-catppuccin | 2026-10-26 | no |
+| napari-nord | 2026-10-26 | no |
+| pydoug-napari | 2026-10-29 | no |
+| flimkit-napari | 2026-11-01 | no |
+| napari-zenapi-streaming | 2026-11-01 | no |
+| napari-virtual-reader | 2026-11-05 | no |
+| napari-fractal-tasks | 2026-11-06 | no |
+| NuPatch3D | 2026-11-09 | no_github |
+| napari-sprout | 2026-11-10 | no |
+| napari-skopkit | 2026-11-10 | no |
+| napari-nd2 | 2026-11-13 | no |
+| deepblur-napari | 2026-11-18 | no |
+| napari-lumic-cci | 2026-11-19 | no |
+| napari-label-assistant | 2026-11-19 | no_github |
+| napari-movoa | 2026-11-20 | unavailable |
+| napari-emaki | 2026-11-20 | unavailable |
+| napari-veida | 2026-11-21 | unavailable |
+| napari-qrcode-barcode-scanner | 2026-11-22 | no |
+| napari-freeimagetovideo | 2026-11-22 | unavailable |
+| napari-aigifmaker | 2026-11-22 | unavailable |
+| napari-aibirthday | 2026-11-23 | unavailable |
 
 ## All plugins
 
@@ -179,7 +233,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | PartSeg-smfish | 2022-10-24 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | PlatyMatch | 2021-05-28 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | PoseR-napari | 2023-02-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
-| aiod-napari | 2026-06-29 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | arcos-gui | 2022-02-24 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | avidaq | 2022-07-21 | cookiecutter | pypi description: generated with cookiecutter via cookiecutter-napari-plugin |
 | bbii-decon | 2021-12-13 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -262,7 +315,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-compressed-labels-io | 2021-02-23 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-conference | 2023-09-28 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-conidie | 2022-12-15 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
-| napari-console | 2021-01-21 | cookiecutter | none; pypi description: generated with cookiecutter via cookiecutter-napari-plug |
 | napari-cookiecut | 2022-10-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-copick | 2025-07-27 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-crop | 2021-10-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -299,6 +351,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-help | 2022-07-28 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-hierarchical | 2022-12-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-image-stacker | 2022-01-11 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
+| napari-imaref | 2026-10-23 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-imaris-loader | 2021-10-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-imodmodel | 2024-04-16 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-imsmicrolink | 2021-12-14 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -321,6 +374,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-live-recording | 2021-10-05 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-locan | 2023-10-29 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-locpix | 2023-01-16 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
+| napari-locpix2 | 2026-11-06 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-macrokit | 2023-01-27 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-manual-registration | 2024-08-13 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-mat-file-reader | 2022-11-01 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -333,7 +387,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-microtubule-analyzer | 2023-10-03 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-mm3 | 2022-06-02 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-molecule-reader | 2021-12-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
-| napari-moltrack | 2024-05-30 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-mouse-controls | 2021-10-30 | cookiecutter | pypi description: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-mrcfile-handler | 2021-08-30 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-mrcfile-reader | 2020-10-17 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -346,8 +399,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-ndev | 2023-01-31 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-ndtiffs | 2020-05-06 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-nibabel | 2023-02-10 | cookiecutter | pypi description: generated with cookiecutter via cookiecutter-napari-plugin |
-| napari-nifti | 2023-04-18 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
-| napari-nikon-nd2 | 2021-02-03 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-obj | 2023-04-05 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-omaas | 2022-08-09 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-ome-zarr | 2021-06-14 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -358,7 +409,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-patchcreator | 2022-08-23 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-pdr-reader | 2022-07-14 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-pixel-correction | 2022-09-19 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
-| napari-plot | 2022-01-09 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-plot-profile | 2021-08-20 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-plugin-search | 2021-08-21 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | napari-points2regions | 2024-01-26 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -459,6 +509,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | spots-in-yeasts | 2023-08-29 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | test-detect-spots | 2023-04-20 | cookiecutter | pypi description: generated with cookiecutter via cookiecutter-napari-plugin |
 | tomopari | 2026-04-03 | cookiecutter | pypi description: generated with cookiecutter via cookiecutter-napari-plugin |
+| trackin | 2026-08-28 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | vollseg-napari-mtrack | 2022-12-20 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | vollseg-napari-trackmate | 2022-12-31 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
 | workshop-demo | 2021-12-15 | cookiecutter | README: generated with cookiecutter via cookiecutter-napari-plugin |
@@ -470,14 +521,17 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | deepphenotree | 2026-02-09 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | ellipse-nuclei-segmentation | 2026-04-13 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | filament-toolbox | 2026-05-17 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
-| frontveg | 2025-04-20 | copier | README: generated with copier via napari-plugin-template |
+| frontveg | 2025-04-20 | copier | pypi description: generated with copier via napari-plugin-template |
 | fspi-analysis | 2025-05-18 | copier | README: generated with copier via napari-plugin-template |
 | mmv-regionseg | 2025-03-21 | copier | README: generated with copier via napari-plugin-template |
 | mobiofox | 2025-07-21 | copier | README: generated with copier via napari-plugin-template |
-| morphodeep | 2025-12-08 | copier | pypi description: generated with copier via napari-plugin-template |
 | nagini3d-napari | 2025-12-08 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-afmslicer | 2026-10-26 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-ai-lab | 2026-08-07 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-align-annotator | 2026-09-24 | copier | README: generated with copier via napari-plugin-template |
 | napari-animation | 2021-04-23 | copier | .copier-answers.yml; README template badge block |
 | napari-annotator | 2022-03-07 | copier | README: generated with copier via napari-plugin-template |
+| napari-apply-transforms | 2026-10-27 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-automatic-range | 2025-07-15 | copier | README: generated with copier via napari-plugin-template |
 | napari-bioio-reader | 2025-07-04 | copier | README: generated with copier via napari-plugin-template |
 | napari-bluesky | 2024-11-29 | copier | README: generated with copier via napari-plugin-template |
@@ -498,7 +552,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-geff | 2025-07-23 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-gribberish | 2026-07-14 | copier | .copier-answers.yml; README template badge block |
 | napari-gruvbox | 2022-12-14 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
-| napari-hdf5-reader | 2026-06-24 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-himena | 2025-04-08 | copier | README: generated with copier via napari-plugin-template |
 | napari-hsi-analysis | 2025-03-12 | copier | README: generated with copier via napari-plugin-template |
 | napari-iss-tdflim-reader | 2026-04-26 | copier | .copier-answers.yml; README template badge block |
@@ -509,9 +562,11 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-laber-manager | 2025-07-07 | copier | none; pypi description: generated with copier via napari-plugin-template |
 | napari-layer-divider | 2025-07-29 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-layer-statistics | 2026-03-26 | copier | README: generated with copier via napari-plugin-template |
+| napari-lazystack | 2026-10-22 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-mask-density | 2025-04-11 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-mass | 2025-06-30 | copier | README: generated with copier via napari-plugin-template |
 | napari-memmap-tiff | 2025-06-10 | copier | README: generated with copier via napari-plugin-template |
+| napari-meta-tiff | 2026-10-15 | copier | pypi description: generated with copier via napari-plugin-template |
 | napari-microscopy-metrics | 2026-07-15 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-morans-i | 2026-05-09 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-mouse-tumour-annotation | 2026-03-17 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
@@ -528,9 +583,12 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-orthogonal-views | 2025-10-15 | copier | README: generated with copier via napari-plugin-template |
 | napari-persistent-homology | 2026-06-01 | copier | .copier-answers.yml; README template badge block |
 | napari-plugin-test-ferrinm | 2025-12-23 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
-| napari-proofread-brainbow | 2022-08-30 | copier | pypi description: generated with copier via napari-plugin-template |
+| napari-point-proofread | 2026-11-04 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-profilometry | 2026-10-13 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-proofread-brainbow | 2022-08-30 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | napari-psfgenerator | 2025-02-05 | copier | README: generated with copier via napari-plugin-template |
 | napari-pyvertexmodel | 2026-04-09 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
+| napari-relax | 2026-09-24 | copier | README: generated with copier via napari-plugin-template |
 | napari-resview | 2026-02-26 | copier | .copier-answers.yml; README template badge block |
 | napari-roxas-ai | 2025-05-17 | copier | README: generated with copier via napari-plugin-template |
 | napari-sam2long | 2025-04-14 | copier | README: generated with copier via napari-plugin-template |
@@ -551,27 +609,31 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | ndev-workflows | 2025-12-22 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | orseg | 2025-09-10 | copier | .copier-answers.yml; README template badge block |
 | patchlabel | 2025-10-13 | copier | pypi description: generated with copier via napari-plugin-template |
+| phenome-gui | 2026-10-27 | copier | pypi description: generated with copier via napari-plugin-template |
 | pyphenix | 2026-01-02 | copier | .copier-answers.yml; README: generated with copier via napari-plugin-template |
 | secondharmonic | 2025-11-01 | copier | README: generated with copier via napari-plugin-template |
-| segment-any-confocal-images | 2025-10-31 | copier | pypi description: generated with copier via napari-plugin-template |
 | segment-embryo | 2024-11-27 | copier | README: generated with copier via napari-plugin-template |
-| w-seg-napari | 2026-07-07 | copier | pypi description: generated with copier via napari-plugin-template |
 | AxonDeepSeg | 2017-12-09 | no | none |
 | HaemoLynx | 2026-08-10 | no | none |
 | PartSeg | 2019-01-14 | no | none |
 | RedLionfish | 2021-11-19 | no | none |
 | acquifer-napari | 2023-07-07 | no | none |
 | affinder | 2021-02-04 | no | none |
+| aiod-napari | 2026-06-29 | no | none |
 | allencell-segmenter-ml | 2024-09-20 | no | none |
 | anchor-droplet-chip | 2023-03-13 | no | none |
 | annotrack | 2023-12-01 | no | none |
+| baclct | 2026-09-15 | no | none |
 | beetlesafari | 2021-06-04 | no | none |
+| bio_oct | 2026-06-30 | no | none |
 | biopb-mcp | 2026-05-29 | no | none |
+| biopb-napari-widget | 2026-09-24 | no | none |
 | blik | 2021-06-15 | no | none |
 | brillouin-imaging | 2025-08-13 | no | none |
 | btrack | 2020-05-27 | no | none |
 | cellcanvas | 2024-03-10 | no | none |
 | cryocanvas | 2024-02-02 | no | none |
+| deepblur-napari | 2026-11-18 | no | none |
 | divisualisation | 2026-07-23 | no | none |
 | domb-napari | 2023-11-22 | no | none |
 | empanada-napari | 2022-03-04 | no | none |
@@ -579,6 +641,8 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | epitools | 2023-05-04 | no | none |
 | faser | 2022-05-23 | no | none |
 | fishfeats | 2025-08-19 | no | none |
+| flimkit-napari | 2026-11-01 | no | none |
+| frontvegV2 | 2026-08-09 | no | none |
 | hipocount-napari | 2024-02-05 | no | none |
 | ilastik-napari | 2023-02-28 | no | none |
 | micro-sam | 2026-06-04 | no | none |
@@ -595,10 +659,13 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-arboretum | 2021-05-11 | no | none |
 | napari-atlas-stitch | 2026-04-28 | no | none |
 | napari-bioformats | 2021-06-25 | no | none |
+| napari-catppuccin | 2026-10-26 | no | none |
+| napari-cellposesam | 2026-10-15 | no | none |
 | napari-chat-assistant | 2026-03-25 | no | none |
 | napari-chatgpt | 2023-05-03 | no | none |
 | napari-chunked-regionprops | 2026-07-02 | no | none |
 | napari-cilia-assistant | 2026-05-08 | no | none |
+| napari-console | 2021-01-21 | no | none |
 | napari-cosmos-ts | 2024-04-11 | no | none |
 | napari-cotrack | 2026-05-01 | no | none |
 | napari-cta | 2026-08-13 | no | none |
@@ -610,30 +677,41 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-em-assistant | 2026-05-05 | no | none |
 | napari-epyseg | 2025-02-12 | no | none |
 | napari-error-reporter | 2022-02-13 | no | none |
+| napari-etsam | 2026-10-11 | no | none |
 | napari-event-monitor | 2025-07-16 | no | none |
 | napari-features | 2021-06-17 | no | none |
-| napari-fenestra | 2026-04-22 | no | none |
 | napari-file-watcher | 2023-01-16 | no | none |
 | napari-flowreg | 2025-08-22 | no | none |
 | napari-flowreg-formats | 2026-08-08 | no | none |
+| napari-foambryo | 2026-10-17 | no | none |
+| napari-fractal-tasks | 2026-11-06 | no | none |
 | napari-gemspa | 2023-05-29 | no | none |
 | napari-hardware-monitor | 2026-04-25 | no | none |
 | napari-harpy | 2026-05-19 | no | none |
+| napari-he-dapi | 2026-10-18 | no | none |
 | napari-hydra | 2026-01-29 | no | none |
 | napari-imc | 2021-01-19 | no | none |
 | napari-lattice | 2022-07-19 | no | none |
+| napari-lumic-cci | 2026-11-19 | no | none |
+| napari-maskel | 2026-08-19 | no | none |
+| napari-maskel-ibex-preprocessing | 2026-10-19 | no | none |
 | napari-mcp | 2025-09-15 | no | none |
 | napari-micromanager | 2021-08-15 | no | none |
 | napari-microplate | 2026-07-17 | no | none |
+| napari-nd2 | 2026-11-13 | no | none |
 | napari-nd2-spectral-ome-zarr | 2026-03-22 | no | none |
+| napari-nikon-nd2 | 2021-02-03 | no | none |
+| napari-nord | 2026-10-26 | no | none |
 | napari-nucleaizer | 2021-09-08 | no | none |
 | napari-nyxus | 2023-05-05 | no | none |
 | napari-ome-arrow | 2025-11-15 | no | none |
 | napari-omero | 2020-06-24 | no | none |
+| napari-openreadout | 2026-10-03 | no | none |
 | napari-padbound | 2026-03-15 | no | none |
 | napari-pdf-reader | 2021-11-05 | no | none |
 | napari-pdr | 2026-06-26 | no | none |
 | napari-pitcount-cfim | 2025-04-24 | no | none |
+| napari-qrcode-barcode-scanner | 2026-11-22 | no | none |
 | napari-quantem | 2026-08-10 | no | none |
 | napari-racc | 2026-05-29 | no | none |
 | napari-reco-plugin | 2026-04-03 | no | none |
@@ -641,15 +719,21 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-sam3-assistant | 2026-04-18 | no | none |
 | napari-save-transformed | 2024-07-02 | no | none |
 | napari-simple-tracker | 2026-04-08 | no | none |
+| napari-skopkit | 2026-11-10 | no | none |
 | napari-spotiflow | 2024-02-02 | no | none |
+| napari-sprout | 2026-11-10 | no | none |
+| napari-storm | 2026-08-25 | no | none |
 | napari-tardis-em | 2024-07-22 | no | none |
+| napari-track-edit | 2026-09-26 | no | none |
 | napari-unet | 2025-10-09 | no | none |
 | napari-unet-assistant | 2026-05-03 | no | none |
 | napari-update-checker | 2024-12-23 | no | none |
 | napari-vipp | 2026-06-25 | no | none |
+| napari-virtual-reader | 2026-11-05 | no | none |
 | napari-voxtell | 2025-12-27 | no | none |
 | napari-worm-neuron-annotator | 2026-07-30 | no | none |
 | napari-wsi | 2023-02-01 | no | none |
+| napari-zenapi-streaming | 2026-11-01 | no | none |
 | napari_video | 2021-02-27 | no | none |
 | napping | 2021-02-02 | no | none |
 | nellie | 2024-03-21 | no | none |
@@ -657,26 +741,33 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | neurofly | 2024-10-30 | no | none |
 | neurogenesis-napari | 2025-07-29 | no | none |
 | nfinder | 2021-12-06 | no | none |
+| omero-annotate-ai | 2025-09-25 | no | none |
 | openuc2-processor | 2026-07-05 | no | none |
+| phenolapseuav | 2026-08-28 | no | none |
 | platetrack | 2023-12-03 | no | none |
 | psf-analysis-CFIM | 2025-02-11 | no | none |
 | psfmodels | 2019-09-15 | no | none |
 | pssr | 2024-04-17 | no | none |
 | pycudadecon | 2022-08-10 | no | none |
+| pydoug-napari | 2026-10-29 | no | none |
 | recOrder-napari | 2022-04-19 | no | none |
 | samcell-napari | 2025-04-02 | no | none |
 | senoquant | 2026-01-31 | no | none |
 | seu-3d | 2025-05-26 | no | none |
 | skan | 2016-11-08 | no | none |
 | smo | 2021-09-21 | no | none |
+| spatiato | 2026-10-01 | no | none |
 | stardist-napari | 2021-06-01 | no | none |
 | unet-lungs-segmentation | 2025-03-12 | no | none |
 | AlveolEye | 2024-05-22 | no_github | nan |
+| NuPatch3D | 2026-11-09 | no_github | nan |
 | WellMapper | 2026-01-26 | no_github | nan |
-| bio_oct | 2026-06-30 | no_github | nan |
 | cell-AAP | 2024-05-28 | no_github | nan |
 | cellpose-counter | 2024-11-21 | no_github | nan |
 | confusius | 2026-02-11 | no_github | nan |
+| effusive | 2026-09-28 | no_github | nan |
+| focus-3d | 2026-09-08 | no_github | nan |
+| morphodeep | 2025-12-08 | no_github | nan |
 | myopari | 2026-07-29 | no_github | nan |
 | napari-3dtimereg | 2024-04-05 | no_github | nan |
 | napari-annotate | 2022-11-03 | no_github | nan |
@@ -684,16 +775,19 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-bioimageio | 2022-07-05 | no_github | nan |
 | napari-bootstrapper | 2025-05-23 | no_github | nan |
 | napari-bruce | 2026-01-05 | no_github | nan |
+| napari-cu-cr-segmentation | 2026-08-30 | no_github | nan |
 | napari-easytrack | 2026-01-07 | no_github | nan |
 | napari-findaureus | 2024-04-20 | no_github | nan |
 | napari-hello | 2023-04-16 | no_github | nan |
 | napari-hippo | 2024-01-31 | no_github | nan |
 | napari-hough-circle-detector | 2023-04-03 | no_github | nan |
+| napari-label-assistant | 2026-11-19 | no_github | nan |
 | napari-macrophage | 2026-06-05 | no_github | nan |
 | napari-manual-labels-editor | 2026-02-22 | no_github | nan |
 | napari-mask-curator | 2026-02-21 | no_github | nan |
 | napari-mclabel | 2023-07-09 | no_github | nan |
 | napari-microscope | 2021-01-22 | no_github | nan |
+| napari-mlarray | 2026-01-30 | no_github | nan |
 | napari-molecular-cartography-viewer | 2026-02-21 | no_github | nan |
 | napari-multitask | 2021-12-06 | no_github | nan |
 | napari-npifile | 2026-03-14 | no_github | nan |
@@ -704,9 +798,11 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-zarrnii | 2026-07-16 | no_github | nan |
 | napasserelle | 2026-07-15 | no_github | nan |
 | qhyccd-capture | 2024-10-23 | no_github | nan |
+| quai-workbench-napari | 2026-10-20 | no_github | nan |
 | quanti-fret | 2025-10-27 | no_github | nan |
 | simple-napari-cci-annotator | 2026-03-20 | no_github | nan |
 | ultrack | 2023-06-07 | no_github | nan |
+| w-seg-napari | 2026-07-07 | no_github | nan |
 | Image-Composer | 2022-01-10 | template | none; pypi description: template README footer |
 | Image-Part-Selecter | 2022-01-12 | template | none; pypi description: template README footer |
 | Label-Creator | 2022-01-12 | template | none; pypi description: template README footer |
@@ -723,6 +819,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | brainreg | 2020-05-26 | template | README template badge block |
 | brainways | 2023-05-26 | template | README template badge block |
 | careamics-napari | 2024-10-20 | template | .napari-hub/ + test_and_deploy.yml |
+| carltonlab-napari-tools | 2026-09-28 | template | .napari-hub/ + test_and_deploy.yml |
 | cellfinder | 2020-01-17 | template | README template badge block |
 | cylindra | 2024-05-01 | template | pypi description: template badge block |
 | darth-d | 2023-10-26 | template | README template badge block |
@@ -731,7 +828,6 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | emcfsys | 2026-03-31 | template | pypi description: template README footer |
 | featureforest | 2024-10-10 | template | README template badge block |
 | fitellipsoid | 2025-04-08 | template | pypi description: template badge block |
-| focus-3d | 2026-08-16 | template | pypi description: template badge block |
 | gfap-segmenter | 2026-01-08 | template | pypi description: template badge block |
 | imaxt-multiscale-plugin | 2022-07-27 | template | pypi description: template README footer |
 | in-silico-fate-mapping | 2023-02-27 | template | README template badge block |
@@ -749,6 +845,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-biopb | 2025-02-02 | template | none; pypi description: template badge block |
 | napari-blender-bridge | 2023-04-07 | template | README template badge block |
 | napari-caphid | 2023-07-30 | template | README template badge block |
+| napari-cell-gater | 2025-07-14 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-clusters-plotter | 2021-11-15 | template | README template badge block |
 | napari-convpaint | 2023-11-01 | template | none; pypi description: template README footer |
 | napari-correct-drift | 2023-04-26 | template | README template badge block |
@@ -757,6 +854,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-elementary-numpy-operations | 2022-01-12 | template | none; pypi description: template README footer |
 | napari-feature-classifier | 2022-02-12 | template | README template badge block |
 | napari-feature-visualization | 2024-07-25 | template | README template badge block |
+| napari-flicker | 2026-10-30 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-flim-phasor-plotter | 2023-08-17 | template | README template badge block |
 | napari-geojson | 2021-12-27 | template | README template badge block |
 | napari-grid-curator | 2026-03-03 | template | none; pypi description: template README footer |
@@ -773,17 +871,19 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-medical-image-formats | 2021-04-24 | template | none; pypi description: template README footer |
 | napari-melt-pool-tracker | 2023-11-02 | template | README template badge block |
 | napari-metadata | 2026-01-20 | template | README template badge block |
-| napari-mlarray | 2026-01-30 | template | pypi description: template badge block |
 | napari-molseeq | 2024-07-25 | template | none; pypi description: template README footer |
+| napari-moltrack | 2024-05-30 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-morphodynamics | 2023-11-08 | template | README template badge block |
 | napari-n2v | 2022-10-24 | template | README template badge block |
 | napari-nd-cropper | 2022-01-12 | template | none; pypi description: template README footer |
+| napari-nifti | 2023-04-18 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-nlm | 2022-07-25 | template | README template badge block |
 | napari-ome-zarr-navigator | 2024-07-19 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-open-ctc | 2024-06-03 | template | README template badge block |
 | napari-owncloud | 2022-11-16 | template | README template badge block |
 | napari-phasors | 2024-11-22 | template | README template badge block |
 | napari-piscis | 2025-11-28 | template | pypi description: template badge block |
+| napari-plot | 2022-01-09 | template | README template badge block |
 | napari-prism | 2024-11-14 | template | README template badge block |
 | napari-process-points-and-surfaces | 2022-02-05 | template | README template badge block |
 | napari-pyclesperanto-assistant | 2020-12-19 | template | README template badge block |
@@ -792,6 +892,7 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-sediment | 2024-09-23 | template | README template badge block |
 | napari-segment | 2022-10-05 | template | README template badge block |
 | napari-serialcellpose | 2022-07-28 | template | README template badge block |
+| napari-sigma | 2026-09-01 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-signal-selector | 2023-10-17 | template | README template badge block |
 | napari-simple-orthoviewer | 2024-10-08 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-simpleitk-image-processing | 2021-11-28 | template | README template badge block |
@@ -799,18 +900,20 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | napari-spatialdata | 2022-07-06 | template | README template badge block |
 | napari-steinpose | 2022-11-17 | template | README template badge block |
 | napari-stitcher | 2024-10-18 | template | README template badge block |
-| napari-storm | 2026-08-25 | template | none; pypi description: template README footer |
 | napari-stress | 2022-06-02 | template | README template badge block |
 | napari-subboxer | 2021-11-22 | template | none; pypi description: template README footer |
 | napari-tiledb-bioimg | 2023-05-12 | template | .napari-hub/ + test_and_deploy.yml |
+| napari-timestamper | 2023-09-01 | template | README template badge block |
 | napari-tissuumaps | 2021-09-02 | template | pypi description: template badge block |
 | napari-tmidas | 2025-03-05 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-tomotwin | 2023-03-24 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-tracing | 2023-04-23 | template | README template badge block |
 | napari-trackastra | 2024-05-30 | template | README template badge block |
 | napari-trackpy | 2023-11-07 | template | .napari-hub/ + test_and_deploy.yml |
+| napari-turbobox | 2026-10-01 | template | none; pypi description: template badge block |
 | napari-vascilia | 2024-06-28 | template | .napari-hub/ + test_and_deploy.yml |
 | napari-vemseg | 2023-03-14 | template | pypi description: template badge block |
+| napari-vizsla | 2026-09-05 | template | pypi description: template badge block |
 | napari-workflow-inspector | 2021-12-04 | template | README template badge block |
 | napari-wsireg | 2022-04-27 | template | none; pypi description: template README footer |
 | napari-xgboost | 2024-07-05 | template | README template badge block |
@@ -827,11 +930,18 @@ Eras: **cookiecutter** (pre-2024-06), **copier** (2024-06+), **template** (evide
 | vessqc | 2025-02-18 | template | README template badge block |
 | vollseg-napari | 2021-12-10 | template | README template badge block |
 | waver | 2021-05-15 | template | none; pypi description: template README footer |
-| frontvegV2 | 2026-08-09 | unavailable | nan |
 | misic-napari | 2021-12-07 | unavailable | nan |
+| napari-aibirthday | 2026-11-23 | unavailable | nan |
+| napari-aigifmaker | 2026-11-22 | unavailable | nan |
 | napari-bacteria-density | 2026-03-04 | unavailable | nan |
 | napari-data-preview | 2023-02-17 | unavailable | nan |
+| napari-emaki | 2026-11-20 | unavailable | nan |
+| napari-fenestra | 2026-04-22 | unavailable | nan |
+| napari-freeimagetovideo | 2026-11-22 | unavailable | nan |
 | napari-fungiform | 2026-05-14 | unavailable | nan |
+| napari-kavel | 2026-10-15 | unavailable | nan |
+| napari-movoa | 2026-11-20 | unavailable | nan |
 | napari-nifti-viewer | 2025-06-28 | unavailable | nan |
 | napari-serverkit | 2025-01-07 | unavailable | nan |
+| napari-veida | 2026-11-21 | unavailable | nan |
 | pentachrome-plugin | 2026-06-26 | unavailable | nan |

@@ -191,7 +191,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
-brainrender-napari,brainrender-napari,2023-10-13 13:31:34+00:00,2026-10-13 13:26:40+00:00,15,15,11,https://github.com/brainglobe/brainrender-napari,A napari plugin to render BrainGlobe atlases and associated data as layers.,,BSD-3-Clause
+brainrender-napari,brainrender-napari,2023-10-13 13:31:34+00:00,2026-10-13 13:26:40+00:00,15,15,12,https://github.com/brainglobe/brainrender-napari,A napari plugin to render BrainGlobe atlases and associated data as layers.,,BSD-3-Clause
 brainways,brainways,2023-05-26 08:27:42+00:00,2025-08-28 11:32:09+00:00,21,6,0,https://github.com/bkntr/brainways,Brainways,Ben Kantor,GPL-3.0
 brendan-beads,brendan-beads,2025-05-20 08:53:57+00:00,2025-06-13 14:42:19+00:00,3,3,0,https://github.com/xfolka/brendan-beads,Calculating and visualizing distances of beads to surface,Anders Folkesson,"The MIT License (MIT)
 
@@ -4542,7 +4542,7 @@ Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
 "
 napam,napam,2024-04-26 03:38:21+00:00,2025-02-10 23:33:19+00:00,7,7,0,https://github.com/JB4Jaison/napam,A plugin that allows you to run macros (i.e. python scripts) on the images for any kind of image processing.,Jaison John,BSD-3-Clause
-napari,napari,2018-07-30 17:41:53+00:00,2026-11-19 10:28:18+00:00,271,59,50,https://github.com/napari/napari,n-dimensional array viewer in Python,,BSD-3-Clause
+napari,napari,2018-07-30 17:41:53+00:00,2026-11-23 22:22:43+00:00,273,61,50,https://github.com/napari/napari,n-dimensional array viewer in Python,,BSD-3-Clause
 napari-3d-counter,napari-3d-counter,2023-10-18 21:54:40+00:00,2026-11-03 19:08:31+00:00,38,30,32,https://github.com/pnewstein/napari-3d-counter,A simple plugin for counting objects in 3D images,Peter Newstein,GPL-3.0-or-later
 napari-3d-label-eraser,napari-3d-label-eraser,2025-12-09 15:29:58+00:00,2025-12-10 14:53:34+00:00,4,2,0,,Simple napari plugin to erase the current label value in 3D for an entire Labels volume.,,MIT
 napari-3d-ortho-viewer,napari-3d-ortho-viewer,2021-12-03 01:07:40+00:00,2023-11-21 15:54:19+00:00,3,3,2,https://github.com/gatoniel/napari-3d-ortho-viewer,Napari 3D Ortho Viewer - an ortho viewer for napari for 3D images,Niklas Netter,MIT
@@ -4550,7 +4550,7 @@ napari-3D-registration,napari-3d-registration,2025-07-08 15:38:04+00:00,2025-07-
 napari-3dtimereg,napari-3dtimereg,2024-04-05 13:22:47+00:00,2026-03-18 10:27:24+00:00,11,11,0,,Registration of 3D movies applied to all channels,,BSD-3-Clause
 napari-accelerated-pixel-and-object-classification,napari-accelerated-pixel-and-object-classification,2021-10-02 19:44:17+00:00,2023-11-04 08:33:15+00:00,35,35,17,https://github.com/haesleinhuepf/napari-accelerated-pixel-and-object-classification,Pixel and label classification using OpenCL-based Random Forest Classifiers,Robert Haase,BSD-3
 napari-affinities,napari-affinities,2022-06-12 17:19:57+00:00,2022-11-27 01:13:39+00:00,7,7,1,https://github.com/pattonw/napari-affinities,"A plugin for creating, visualizing, and processing affinities",William Patton,MIT
-napari-afmreader,napari-afmreader,2025-06-07 19:52:26+00:00,2026-02-25 13:14:22+00:00,2,2,0,https://github.com/AFM-SPM/napari-afmreader,Napari plugin using AFMReader to load various Atomic Force Microscopy Images.,,GNU GPLv3 only
+napari-afmreader,napari-afmreader,2025-06-07 19:52:26+00:00,2026-11-24 13:28:51+00:00,3,3,0,https://github.com/AFM-SPM/napari-afmreader,Napari plugin using AFMReader to load various Atomic Force Microscopy Images.,,GNU GPLv3 only
 napari-afmslicer,napari-afmslicer,2026-10-26 15:59:29+00:00,2026-10-26 15:59:29+00:00,1,1,0,https://github.com/AFM-SPM/napari-afmslicer,A simple plugin to use AFMSlicer with napari,Neil Shephard,"GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -5225,8 +5225,38 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>."
+napari-ai-lab,napari-ai-lab,2026-08-07 15:17:39+00:00,2026-11-24 22:17:44+00:00,14,13,0,https://github.com/True-North-Intelligent-Algorithms/napari-ai-lab,"A collection of plugins and utilities for ND segmentation with Cellpose, StarDist, SAM and more",Brian Northan,"Copyright (c) 2025, Brian Northan
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS""
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+"
+napari-aibirthday,napari-aibirthday,2026-11-23 03:05:10+00:00,2026-11-23 03:05:10+00:00,1,1,0,https://github.com/hanshs474/napari-aibirthday,"AI birthday video generator from a single photo: they pop champagne on a park bench, blow out a Scorpio cake, or light a crown cake at the car window. Official napari plugin.",,MIT
 napari-aicsimageio,napari-aicsimageio,2020-03-26 20:10:54+00:00,2022-08-22 15:31:20+00:00,19,15,4,https://github.com/AllenCellModeling/napari-aicsimageio,AICSImageIO bindings for napari,,GPLv3
 napari-aideveloper,napari-aideveloper,2022-05-20 04:19:53+00:00,2022-06-17 05:41:19+00:00,4,4,1,https://github.com/zcqwh/napari-aideveloper,"napari_aideveloper is a napari-plugin deived from AIDeveloper that allows you to train, evaluate and apply deep neural nets for image classification within a graphical user-interface (GUI).",Chenqi Zhang,BSD-3-Clause
+napari-aigifmaker,napari-aigifmaker,2026-11-22 13:34:49+00:00,2026-11-22 13:34:49+00:00,1,1,0,https://github.com/hanshs474/napari-aigifmaker,Turn text into animated GIFs with AI GIF Maker. Native GIF generation — no video conversion. Load generated GIF frames directly into napari.,,MIT
 napari-align-annotator,napari-align-annotator,2026-09-24 08:56:56+00:00,2026-09-24 08:56:56+00:00,1,1,0,https://github.com/spsalmon/napari-align-annotator,An annotator plugin to use with align_pipeline,,BSD-3-Clause
 napari-allencell-annotator,napari-allencell-annotator,2022-07-27 20:13:22+00:00,2024-08-21 18:07:16+00:00,16,15,4,https://github.com/aics-int/napari-allencell-annotator,A plugin that enables annotations provided by Allen Institute for Cell Science,Allen Institute for Cell Science,
 napari-allencell-segmenter,napari-allencell-segmenter,2021-06-24 22:44:23+00:00,2025-11-18 23:50:21+00:00,28,28,8,https://github.com/AllenCell/napari-allencell-segmenter,A plugin that enables 3D image segmentation provided by Allen Institute for Cell Science,Allen Institute for Cell Science,BSD-3
@@ -6552,7 +6582,7 @@ napari-compressed-labels-io,napari-compressed-labels-io,2021-02-23 01:34:32+00:0
 napari-conference,napari-conference,2023-09-28 15:49:25+00:00,2023-09-28 15:49:25+00:00,1,1,0,https://github.com/kephale/napari-conference,A simple plugin that allows you to use napari + your webcam in video calls,Kyle Harrington,BSD-3-Clause
 napari-conidie,napari-conidie,2022-12-15 13:02:30+00:00,2024-04-29 12:50:22+00:00,4,4,1,https://github.com/hereariim/napari-conidie,A segmentation tool to get conidie and hyphe,Herearii Metuarea,BSD-3-Clause
 napari-console,napari-console,2021-01-21 04:42:40+00:00,2026-10-22 08:01:29+00:00,15,15,13,https://github.com/napari/napari-console,A plugin that adds a console to napari,,BSD-3-Clause
-napari-convpaint,napari-convpaint,2023-11-01 14:24:45+00:00,2026-10-21 07:36:33+00:00,23,23,14,https://github.com/guiwitz/napari-convpaint,A plugin for segmentation by pixel classification using pre-trained neural networks for feature extraction,,BSD-3-Clause
+napari-convpaint,napari-convpaint,2023-11-01 14:24:45+00:00,2026-11-22 00:52:58+00:00,24,24,15,https://github.com/guiwitz/napari-convpaint,A plugin for segmentation by pixel classification using pre-trained neural networks for feature extraction,,BSD-3-Clause
 napari-cookiecut,napari-cookiecut,2022-10-21 11:45:28+00:00,2022-10-24 14:00:12+00:00,2,2,0,https://github.com/seankmartin/napari-cookiecut,Fixed cut,Sean Martin,BSD-3-Clause
 napari-copick,napari-copick,2025-07-27 03:06:25+00:00,2026-10-16 19:06:10+00:00,19,19,0,https://github.com/kephale/napari-copick,A plugin for collaborative annotation in cryoET using copick,,"The MIT License (MIT)
 
@@ -7076,7 +7106,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 "
 napari-dm4topng,napari-dm4topng,2026-07-13 11:17:26+00:00,2026-08-14 09:30:38+00:00,5,5,0,,A,jules-vanaret,GPL-3.0-or-later
-napari-dmc-brainmap,napari-dmc-brainmap,2025-02-18 13:26:08+00:00,2026-11-13 15:13:14+00:00,21,21,0,,DMC-BrainMap is an end-to-end tool for multi-feature brain mapping across species,,BSD-3-Clause
+napari-dmc-brainmap,napari-dmc-brainmap,2025-02-18 13:26:08+00:00,2026-11-23 10:21:58+00:00,22,22,0,,DMC-BrainMap is an end-to-end tool for multi-feature brain mapping across species,,BSD-3-Clause
 napari-dv,napari-dv,2020-02-02 21:12:45+00:00,2022-03-19 15:58:33+00:00,9,3,2,https://github.com/tlambert03/napari-dv,Deltavision/MRC file reader for napari,Talley Lambert,MIT
 napari-dvid,napari-dvid,2021-06-09 21:18:41+00:00,2021-06-09 21:45:26+00:00,2,2,1,https://github.com/emmazhou/napari-dvid,"DVID loader for napari, from a url",Emma Zhou,MIT
 napari-dzi-zarr,napari-dzi-zarr,2020-08-20 17:18:30+00:00,2021-04-06 14:13:16+00:00,4,3,1,https://github.com/manzt/napari-dzi-zarr,An experimental plugin for viewing Deep Zoom Images (DZI) with napari and zarr.,Trevor Manz,BSD-3
@@ -7968,6 +7998,7 @@ THE SOFTWARE.
 napari-foambryo,napari-foambryo,2026-10-17 18:14:03+00:00,2026-10-17 18:14:03+00:00,1,1,0,https://github.com/VirtualEmbryo/napari-foambryo,"Surface tensions and cell pressures of a 3-D segmentation, in napari: delaunay-watershed-3d and foambryo",,GPL-3.0-or-later
 napari-folder-browser,napari-folder-browser,2021-10-03 13:57:14+00:00,2024-03-26 07:14:37+00:00,5,5,1,https://github.com/haesleinhuepf/napari-folder-browser,Browse folders of images and open them using double-click,Robert Haase,BSD-3-Clause
 napari-fractal-tasks,napari-fractal-tasks,2026-11-06 11:35:57+00:00,2026-11-06 16:57:13+00:00,3,3,0,https://github.com/krentzd/napari-fractal-tasks,Install and run Fractal tasks on OME-Zarr images in napari,,MIT
+napari-freeimagetovideo,napari-freeimagetovideo,2026-11-22 13:25:47+00:00,2026-11-22 13:25:47+00:00,1,1,0,https://github.com/hanshs474/napari-freeimagetovideo,"Free image to video AI with no daily cap: start with no sign-up, keep going on a free account. Every video comes with sound and no watermark. napari plugin.",,MIT
 napari-ft,napari-ft,2026-01-19 18:38:21+00:00,2026-07-15 14:27:32+00:00,4,4,0,,A simple plugin to interact with images Fourier transforms,Jules Vanaret,"Copyright (c) 2025, jules-vanaret
 All rights reserved.
 
@@ -8086,7 +8117,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
-napari-grid-curator,napari-grid-curator,2026-03-03 18:03:43+00:00,2026-03-18 11:40:05+00:00,2,2,0,https://github.com/jojofranz/napari-grid-curator,Interactive batch annotation tool for microscopy datasets with tiled grid visualization,Johannes Franz,"The MIT License (MIT)
+napari-grid-curator,napari-grid-curator,2026-03-03 18:03:43+00:00,2026-11-23 14:30:47+00:00,3,3,0,https://github.com/jojofranz/napari-grid-curator,Interactive batch annotation tool for microscopy datasets with tiled grid visualization,,"The MIT License (MIT)
 
 Copyright (c) 2025 Johannes Franz
 
@@ -8550,7 +8581,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 "
-napari-label-assistant,napari-label-assistant,2026-11-19 17:46:04+00:00,2026-11-20 16:09:58+00:00,2,2,0,,"Performance-aware 2D mask annotation, component curation, and grid-addressed quality control",Wulin Teo,"The MIT License (MIT)
+napari-label-assistant,napari-label-assistant,2026-11-19 17:46:04+00:00,2026-11-22 18:15:06+00:00,3,3,0,,"Performance-aware 2D mask annotation, component curation, and grid-addressed quality control",Wulin Teo,"The MIT License (MIT)
 
 Copyright (c) 2026 Wulin Teo
 
@@ -8907,7 +8938,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
 napari-locpix,napari-locpix,2023-01-16 21:22:07+00:00,2026-11-09 09:45:23+00:00,7,7,2,https://github.com/AlistairCurd/napari-locpix,Load in point cloud data (e.g. from single molecule localisation microscopy) and annotate within napari,Oliver Umney,MIT
 napari-locpix2,napari-locpix2,2026-11-06 21:23:33+00:00,2026-11-06 21:23:33+00:00,1,1,0,https://github.com/AlistairCurd/napari-locpix,Load in point cloud data (e.g. from single molecule localisation microscopy) and annotate within napari,Oliver Umney,MIT
-napari-lumic-cci,napari-lumic-cci,2026-11-19 15:50:48+00:00,2026-11-20 14:22:03+00:00,3,3,0,https://github.com/CCI-GU-Sweden/lumic,A napari interface for LUMIC spectral unmixing,Lumic contributors,MIT
+napari-lumic-cci,napari-lumic-cci,2026-11-19 15:50:48+00:00,2026-11-23 14:57:31+00:00,4,4,0,https://github.com/CCI-GU-Sweden/lumic,A napari interface for LUMIC spectral unmixing,Lumic contributors,MIT
 napari-macrokit,napari-macrokit,2023-01-27 12:24:15+00:00,2023-01-27 12:24:15+00:00,1,1,1,https://github.com/hanjinliu/napari-macrokit,Executable script generation for napari plugins,Hanjin Liu,BSD-3-Clause
 napari-macrophage,napari-macrophage,2026-06-05 11:15:24+00:00,2026-09-29 15:59:36+00:00,7,7,0,,"A napari plugin for interactive 3D macrophage image analysis: mask editing, Otsu/Watershed segmentation, YOLO bbox export, and morphology analysis.",,Apache-2.0
 napari-mAIcrobe,napari-maicrobe,2025-08-01 15:24:40+00:00,2026-10-30 09:47:31+00:00,16,16,0,https://github.com/HenriquesLab/mAIcrobe,mAIcrobe,António Brito,BSD-3-Clause
@@ -11661,7 +11692,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
-napari-point-proofread,napari-point-proofread,2026-11-04 10:19:30+00:00,2026-11-04 10:19:30+00:00,1,1,0,https://github.com/LaboratoryOpticsBiosciences/napari-point-proofread,Proofreading point annotations on images with napari,Seongbin Lim,MIT
+napari-point-proofread,napari-point-proofread,2026-11-04 10:19:30+00:00,2026-11-24 14:03:48+00:00,2,2,0,https://github.com/LaboratoryOpticsBiosciences/napari-point-proofread,Proofreading point annotations on images with napari,Seongbin Lim,MIT
 napari-points2regions,napari-points2regions,2024-01-26 12:59:51+00:00,2024-01-26 13:40:32+00:00,2,2,0,https://github.com/wahlby-lab/napari-points2regions,A napari plugin for Points2Regions,Jonas Windhager,MIT
 napari-pointslayer-projection,napari-pointslayer-projection,2023-02-14 10:36:19+00:00,2023-02-14 10:36:19+00:00,1,1,1,https://github.com/gatoniel/napari-pointslayer-projection,This plugin creates a 2d projection of all your points.,Niklas Netter,BSD-3-Clause
 napari-potential-field-navigation,napari-potential-field-navigation,2024-02-02 18:11:09+00:00,2024-02-02 18:11:09+00:00,1,1,0,https://github.com/rcremese/napari-potential-field-navigation,A simple plugin for trajectories visualisations in napari for lung navigation in CTs scans,Robin CREMESE,MPL-2.0
@@ -12400,6 +12431,7 @@ Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
 "
 napari-qrcode,napari-qrcode,2023-02-21 19:56:54+00:00,2023-02-21 19:56:54+00:00,1,1,1,https://github.com/kephale/napari-qrcode,A napari plugin to generate QR-Codes,Kyle Harrington,BSD-3-Clause
+napari-qrcode-barcode-scanner,napari-qrcode-barcode-scanner,2026-11-22 12:14:32+00:00,2026-11-24 12:41:00+00:00,2,2,0,https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust,Read the QR codes and barcodes of a napari image layer with the QR Code & Barcode Scanner engine.,"Thibaut Mélen, Nicolas Cella",MIT
 napari-quantem,napari-quantem,2026-08-10 01:20:36+00:00,2026-08-10 01:20:36+00:00,1,1,0,https://github.com/ArrojoDrigoLab/QuantEM,QuantEM & OmniEM vision-transformer organelle segmentation for electron microscopy,"Arrojo e Drigo Lab, Vanderbilt University",BSD-3-Clause
 napari-quoll,napari-quoll,2022-08-26 15:11:31+00:00,2022-08-26 15:11:31+00:00,1,1,0,https://github.com/rosalindfranklininstitute/napari-quoll,Resolution estimation for electron tomography,Elaine Ho,Apache-2.0
 napari-racc,napari-racc,2026-05-29 13:40:00+00:00,2026-11-04 19:55:25+00:00,7,7,0,https://github.com/rensutheart/napari-racc,Regression adjusted colocalisation colour mapping for napari,Rensu P. Theart,PolyForm-Noncommercial-1.0.0
@@ -14444,12 +14476,13 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
+napari-veida,napari-veida,2026-11-21 06:00:33+00:00,2026-11-21 06:00:33+00:00,1,1,0,https://github.com/hanshs474/napari-veida,Unlimited free AI image generator. Generate an AI image from a prompt with Veida AI and load it into napari as an RGB image layer.,,MIT
 napari-vemseg,napari-vemseg,2023-03-14 19:48:27+00:00,2023-03-15 10:55:08+00:00,11,11,0,,A simple plugin for semi-automated segmentation of volume electron microscopy images.,Matous Elphick,BSD-3-Clause
 napari-vesicles-segmentation,napari-vesicles-segmentation,2022-07-08 15:13:49+00:00,2022-07-08 15:13:49+00:00,1,1,1,https://github.com/alexisjapas/napari-vesicles-segmentation,A simple plugin to detect vesicles in cells images.,Alexis Japas,BSD-3-Clause
 napari_video,napari-video,2021-02-27 15:40:14+00:00,2025-08-20 09:13:28+00:00,16,15,5,https://github.com/janclemenslab/napari-video,napari plugin for reading videos.,Jan Clemens,
 napari-video-cvdask,napari-video-cvdask,2022-02-24 01:38:30+00:00,2022-02-25 19:53:29+00:00,5,5,0,https://github.com/nickdelgrosso/napari-video-cvdask,A Video File Reader that uses OpenCV2 and Dask Arrays,Nicholas A. Del Grosso,MIT
 napari-vipp,napari-vipp,2026-06-25 07:44:25+00:00,2026-11-19 23:39:17+00:00,41,41,0,https://github.com/rensutheart/napari-vipp,Visual image processing made approachable,Rensu P. Theart,BSD-3-Clause
-napari-virtual-reader,napari-virtual-reader,2026-11-05 15:19:32+00:00,2026-11-06 09:29:51+00:00,2,2,0,https://github.com/sebi06/napari-virtual-reader,Experimental napari plugin for lazy virtual OME-Zarr images via refkv,,BSD-3-Clause
+napari-virtual-reader,napari-virtual-reader,2026-11-05 15:19:32+00:00,2026-11-23 16:54:26+00:00,4,4,0,https://github.com/sebi06/napari-virtual-reader,"Experimental napari plugin for reading microscopy image file formats, such as CZI as lazy virtual OME-Zarr images via refkv",,BSD-3-Clause
 napari-vizsla,napari-vizsla,2026-09-05 21:34:16+00:00,2026-10-21 20:02:07+00:00,4,4,0,,Your friendly tracking assistant. Sniff out and fix broken tracks.,Tamas Nagy,MIT
 napari-vodex,napari-vodex,2023-01-04 03:46:46+00:00,2023-04-17 01:30:55+00:00,6,6,2,https://github.com/LemonJust/napari-vodex,A napari plugin for VoDEx : Volumetric Data and Experiment Manager. Allows to load volumetric data based on experimental conditions.,Anna Nadtochiy,BSD-3-Clause
 napari-volume-spin,napari-volume-spin,2026-08-24 13:20:10+00:00,2026-08-24 14:10:33+00:00,2,2,0,https://github.com/Macl-I/napari-volume-spin,"Imaris-style continuous 3D spin animation controls for napari, with looping GIF/MP4 export",Marcel Issler,BSD-3-Clause
@@ -14863,7 +14896,7 @@ nfinder,nfinder,2021-12-06 20:31:59+00:00,2022-02-05 19:14:23+00:00,3,3,3,https:
 NuPatch3D,nupatch3d,2026-11-09 09:16:28+00:00,2026-11-09 09:16:28+00:00,1,1,0,,A napari plugin for 3D cell label correction using GMM and Deep Learning.,,MIT
 Offset-Subtraction,offset-subtraction,2022-01-13 11:52:17+00:00,2022-01-13 11:52:17+00:00,1,1,1,https://github.com/MBPhys/Offset-Subtraction,A napari plugin in oder to subtract an intensity offset such as autofluorescence,"Marc Boucsein, Robin Koch",BSD-3
 okapi-em,okapi-em,2022-10-19 18:19:19+00:00,2023-08-14 12:50:14+00:00,9,9,1,,napari plugin to deal with charging artifacts in tomography electron microscopy data,Luis Perdigao,Apache-2.0
-ome-zarrpari,ome-zarrpari,2026-03-11 16:01:29+00:00,2026-03-20 15:10:14+00:00,8,8,3,https://github.com/ome-zarr-models/ome-zarrpari,A plugin to load and use OME-Zarr data,David Stansby,"Copyright (c) 2026, David Stansby
+ome-zarrpari,ome-zarrpari,2026-03-11 16:01:29+00:00,2026-11-24 17:22:27+00:00,10,10,3,https://github.com/ome-zarr-models/ome-zarrpari,A plugin to load and use OME-Zarr data,David Stansby,"Copyright (c) 2026, David Stansby
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -16519,10 +16552,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 vollseg-napari,vollseg-napari,2021-12-10 16:26:44+00:00,2025-07-16 11:49:13+00:00,37,37,3,https://github.com/kapoorlab/vollseg-napari,Irregular cell shape segmentation using VollSeg,Varun Kapoor,BSD 3-Clause License
 vollseg-napari-mtrack,vollseg-napari-mtrack,2022-12-20 18:07:40+00:00,2023-10-28 16:45:11+00:00,23,23,1,https://github.com/Kapoorlabs-CAPED/vollseg-napari-mtrack,"Segment kymographs of microtubules, actin filaments and perform Ransac based fits to compute dynamic instability parameters for individual kymographs and also in batch",Varun Kapoor,BSD-3-Clause
 vollseg-napari-trackmate,vollseg-napari-trackmate,2022-12-31 13:18:19+00:00,2025-08-13 11:21:14+00:00,80,80,0,https://github.com/Kapoorlabs-CAPED/vollseg-napari-trackmate,Track analysis using TrackMate xml and csv generated tracks using NapaTrackMater as the base library,"Varun Kapoor, Mari Tolonen, Jakub Sedzinski",BSD-3-Clause
-w-seg-napari,w-seg-napari,2026-07-07 18:13:35+00:00,2026-11-05 13:59:29+00:00,28,28,0,,Segmentation tool for 2D tissues,Leo Vainio,MIT
+w-seg-napari,w-seg-napari,2026-07-07 18:13:35+00:00,2026-11-24 14:14:54+00:00,34,34,0,,Segmentation tool for plant tissue plastic sections stained with toluidine blue,Leo Vainio,MIT
 waver,waver,2021-05-15 19:23:11+00:00,2021-08-15 23:04:51+00:00,5,5,1,https://github.com/sofroniewn/waver,Wave simulations,Nicholas Sofroniew,BSD-3
 WellMapper,wellmapper,2026-01-26 11:30:33+00:00,2026-04-13 09:47:49+00:00,7,7,0,,well plate layout designer and exporter for napari,,Apache License 2.0
 workshop-demo,workshop-demo,2021-12-15 04:03:25+00:00,2022-03-10 23:52:12+00:00,2,2,2,https://github.com/DragaDoncila/workshop-demo,"A demo napari plugin incorporating reader, writer and dock widget contributions using the new npe2 plugin architecture.",Draga Doncila Pop,BSD-3-Clause
 World2Data,world2data,2022-01-14 14:59:38+00:00,2022-01-14 14:59:38+00:00,1,1,1,https://github.com/MBPhys/World2Data,A napari plugin in order to convert the world information to the data of a 2D/3D layer,"Marc Boucsein, Robin Koch",BSD-3
 yt-napari,yt-napari,2022-05-02 22:27:00+00:00,2026-10-21 14:29:43+00:00,8,8,5,https://github.com/data-exp-lab/yt-napari,A napari plugin for loading data from yt,,BSD-3-Clause
-zarpaint,zarpaint,2021-06-17 00:46:55+00:00,2026-03-25 13:19:18+00:00,6,6,3,https://github.com/jni/zarpaint,Paint segmentations directly to on-disk/remote zarr arrays,Abigail S McGovern,BSD-3-Clause
+zarpaint,zarpaint,2021-06-17 00:46:55+00:00,2026-11-23 04:22:55+00:00,7,7,4,https://github.com/jni/zarpaint,Paint segmentations directly to on-disk/remote zarr arrays,Abigail S McGovern,BSD-3-Clause

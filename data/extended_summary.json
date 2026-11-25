@@ -862,6 +862,7 @@
       "0.0.1"
     ],
     "conda_versions": [
+      "0.2.1",
       "0.2.0",
       "0.1.4",
       "0.1.3",
@@ -3408,6 +3409,8 @@
       "Source Code, https://github.com/napari/napari"
     ],
     "pypi_versions": [
+      "0.10.1rc2",
+      "0.10.1rc1",
       "0.10.1rc0",
       "0.10.1a0",
       "0.10.0",
@@ -3799,7 +3802,7 @@
   {
     "normalized_name": "napari-afmreader",
     "name": "napari-afmreader",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "display_name": "AFMReader",
     "summary": "Napari plugin using AFMReader to load various Atomic Force Microscopy Images.",
     "author": null,
@@ -3812,6 +3815,7 @@
       "User Support, https://github.com/AFM-SPM/napari-afmreader/issues"
     ],
     "pypi_versions": [
+      "0.0.3",
       "0.0.2",
       "0.0.1"
     ],
@@ -3834,6 +3838,58 @@
     ],
     "pypi_versions": [
       "0.0.1"
+    ],
+    "conda_versions": []
+  },
+  {
+    "normalized_name": "napari-ai-lab",
+    "name": "napari-ai-lab",
+    "version": "0.1.0a15",
+    "display_name": "Napari AI Lab",
+    "summary": "A collection of plugins and utilities for ND segmentation with Cellpose, StarDist, SAM and more",
+    "author": "Brian Northan",
+    "license": "Copyright (c) 2025, Brian Northan\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of copyright holder nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+    "home_page": null,
+    "project_url": [
+      "Homepage, https://github.com/True-North-Intelligent-Algorithms/napari-ai-lab",
+      "Source, https://github.com/True-North-Intelligent-Algorithms/napari-ai-lab",
+      "Bug Tracker, https://github.com/True-North-Intelligent-Algorithms/napari-ai-lab/issues"
+    ],
+    "pypi_versions": [
+      "0.1.0a15",
+      "0.1.0a14",
+      "0.1.0a12",
+      "0.1.0a11",
+      "0.1.0a10",
+      "0.1.0a8",
+      "0.1.0a7",
+      "0.1.0a6",
+      "0.1.0a5",
+      "0.1.0a4",
+      "0.1.0a3",
+      "0.1.0a2",
+      "0.1.0a1"
+    ],
+    "conda_versions": []
+  },
+  {
+    "normalized_name": "napari-aibirthday",
+    "name": "napari-aibirthday",
+    "version": "1.0.0",
+    "display_name": "AI Birthday Video Generator",
+    "summary": "AI birthday video generator from a single photo: they pop champagne on a park bench, blow out a Scorpio cake, or light a crown cake at the car window. Official napari plugin.",
+    "author": null,
+    "license": "MIT",
+    "home_page": null,
+    "project_url": [
+      "Homepage, https://aibirthdayvideogenerator.com/?utm_source=napari&utm_medium=package",
+      "Documentation, https://aibirthdayvideogenerator.readthedocs.io/en/latest/",
+      "Pricing, https://aibirthdayvideogenerator.com/pricing?utm_source=napari&utm_medium=package",
+      "Source, https://github.com/hanshs474/napari-aibirthday",
+      "Bug Tracker, https://github.com/hanshs474/napari-aibirthday/issues"
+    ],
+    "pypi_versions": [
+      "1.0.0"
     ],
     "conda_versions": []
   },
@@ -3900,6 +3956,26 @@
     "conda_versions": [
       "0.0.4"
     ]
+  },
+  {
+    "normalized_name": "napari-aigifmaker",
+    "name": "napari-aigifmaker",
+    "version": "1.0.0",
+    "display_name": "AI GIF Maker",
+    "summary": "Turn text into animated GIFs with AI GIF Maker. Native GIF generation \u2014 no video conversion. Load generated GIF frames directly into napari.",
+    "author": null,
+    "license": "MIT",
+    "home_page": null,
+    "project_url": [
+      "Homepage, https://aigifmaker.ai/?utm_source=napari&utm_medium=package",
+      "Documentation, https://aigifmaker.readthedocs.io/en/latest/",
+      "Source, https://github.com/hanshs474/napari-aigifmaker",
+      "Bug Tracker, https://github.com/hanshs474/napari-aigifmaker/issues"
+    ],
+    "pypi_versions": [
+      "1.0.0"
+    ],
+    "conda_versions": []
   },
   {
     "normalized_name": "napari-align-annotator",
@@ -6154,8 +6230,8 @@
   {
     "normalized_name": "napari-convpaint",
     "name": "napari-convpaint",
-    "version": "1.2.0",
-    "display_name": "napari ConvPaint",
+    "version": "1.3.0",
+    "display_name": "napari Convpaint",
     "summary": "A plugin for segmentation by pixel classification using pre-trained neural networks for feature extraction",
     "author": null,
     "license": "BSD-3-Clause",
@@ -6168,6 +6244,7 @@
       "User Support, https://github.com/guiwitz/napari-convpaint/issues"
     ],
     "pypi_versions": [
+      "1.3.0",
       "1.2.0",
       "1.1.0",
       "1.0.1",
@@ -6193,6 +6270,7 @@
       "0.1.0"
     ],
     "conda_versions": [
+      "1.3.0",
       "1.2.0",
       "1.1.0",
       "1.0.1",
@@ -7068,7 +7146,7 @@
   {
     "normalized_name": "napari-dmc-brainmap",
     "name": "napari-dmc-brainmap",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "display_name": "dmc_brainmap",
     "summary": "DMC-BrainMap is an end-to-end tool for multi-feature brain mapping across species",
     "author": null,
@@ -7076,6 +7154,7 @@
     "home_page": null,
     "project_url": null,
     "pypi_versions": [
+      "0.2.3",
       "0.2.2",
       "0.2.1",
       "0.2.0b2",
@@ -8030,6 +8109,29 @@
     "conda_versions": []
   },
   {
+    "normalized_name": "napari-freeimagetovideo",
+    "name": "napari-freeimagetovideo",
+    "version": "1.0.0",
+    "display_name": "Free Image to Video AI",
+    "summary": "Free image to video AI with no daily cap: start with no sign-up, keep going on a free account. Every video comes with sound and no watermark. napari plugin.",
+    "author": null,
+    "license": "MIT",
+    "home_page": null,
+    "project_url": [
+      "Homepage, https://freeimagetovideo.ai/?utm_source=napari&utm_medium=package",
+      "No Sign-Up Generator, https://freeimagetovideo.ai/video/free-ai-video-generator-no-sign-up?utm_source=napari&utm_medium=package",
+      "Animate Photo AI, https://freeimagetovideo.ai/video/animate-photo-ai?utm_source=napari&utm_medium=package",
+      "Documentation, https://freeimagetovideo.readthedocs.io/en/latest/",
+      "Pricing, https://freeimagetovideo.ai/pricing",
+      "Source, https://github.com/hanshs474/napari-freeimagetovideo",
+      "Bug Tracker, https://github.com/hanshs474/napari-freeimagetovideo/issues"
+    ],
+    "pypi_versions": [
+      "1.0.0"
+    ],
+    "conda_versions": []
+  },
+  {
     "normalized_name": "napari-ft",
     "name": "napari-ft",
     "version": "0.1.2",
@@ -8249,10 +8351,10 @@
   {
     "normalized_name": "napari-grid-curator",
     "name": "napari-grid-curator",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "display_name": "Grid Curator",
     "summary": "Interactive batch annotation tool for microscopy datasets with tiled grid visualization",
-    "author": "Johannes Franz",
+    "author": null,
     "license": "The MIT License (MIT)\n\nCopyright (c) 2025 Johannes Franz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n",
     "home_page": null,
     "project_url": [
@@ -8262,6 +8364,7 @@
       "Source Code, https://github.com/jojofranz/napari-grid-curator"
     ],
     "pypi_versions": [
+      "0.1.2",
       "0.1.1",
       "0.1.0"
     ],
@@ -9225,7 +9328,7 @@
   {
     "normalized_name": "napari-label-assistant",
     "name": "napari-label-assistant",
-    "version": "7.0.3",
+    "version": "7.0.5",
     "display_name": "napari-label-assistant",
     "summary": "Performance-aware 2D mask annotation, component curation, and grid-addressed quality control",
     "author": "Wulin Teo",
@@ -9233,6 +9336,7 @@
     "home_page": null,
     "project_url": null,
     "pypi_versions": [
+      "7.0.5",
       "7.0.3",
       "7.0.0"
     ],
@@ -9846,7 +9950,7 @@
   {
     "normalized_name": "napari-lumic-cci",
     "name": "napari-lumic-cci",
-    "version": "0.1.0rc4",
+    "version": "0.1.0",
     "display_name": "LUMIC CCI-GU",
     "summary": "A napari interface for LUMIC spectral unmixing",
     "author": "Lumic contributors",
@@ -9856,6 +9960,7 @@
       "Repository, https://github.com/CCI-GU-Sweden/lumic"
     ],
     "pypi_versions": [
+      "0.1.0",
       "0.1.0rc4",
       "0.1.0rc3",
       "0.1.0rc2"
@@ -12710,7 +12815,7 @@
   {
     "normalized_name": "napari-point-proofread",
     "name": "napari-point-proofread",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "display_name": "Point Proofread",
     "summary": "Proofreading point annotations on images with napari",
     "author": "Seongbin Lim",
@@ -12723,6 +12828,7 @@
       "User Support, https://github.com/LaboratoryOpticsBiosciences/napari-point-proofread/issues"
     ],
     "pypi_versions": [
+      "0.4.1",
       "0.4.0"
     ],
     "conda_versions": []
@@ -13368,6 +13474,27 @@
     "conda_versions": [
       "0.0.1"
     ]
+  },
+  {
+    "normalized_name": "napari-qrcode-barcode-scanner",
+    "name": "napari-qrcode-barcode-scanner",
+    "version": "0.1.1",
+    "display_name": "QR Code & Barcode Scanner",
+    "summary": "Read the QR codes and barcodes of a napari image layer with the QR Code & Barcode Scanner engine.",
+    "author": "Thibaut M\u00e9len, Nicolas Cella",
+    "license": "MIT",
+    "home_page": null,
+    "project_url": [
+      "Homepage, https://qrcode-ai.com/en-US/qr-code-scanner/integrations/napari",
+      "Documentation, https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust/tree/main/integrations/napari",
+      "Source Code, https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust",
+      "Bug Tracker, https://github.com/qrcode-ai-com/qrcode-barcode-scanner-rust/issues"
+    ],
+    "pypi_versions": [
+      "0.1.1",
+      "0.1.0"
+    ],
+    "conda_versions": []
   },
   {
     "normalized_name": "napari-quantem",
@@ -16937,6 +17064,26 @@
     ]
   },
   {
+    "normalized_name": "napari-veida",
+    "name": "napari-veida",
+    "version": "1.0.0",
+    "display_name": "Veida AI Image",
+    "summary": "Unlimited free AI image generator. Generate an AI image from a prompt with Veida AI and load it into napari as an RGB image layer.",
+    "author": null,
+    "license": "MIT",
+    "home_page": null,
+    "project_url": [
+      "Homepage, https://veida.ai/?utm_source=napari&utm_medium=package",
+      "Documentation, https://veida.readthedocs.io/en/latest/",
+      "Source, https://github.com/hanshs474/napari-veida",
+      "Bug Tracker, https://github.com/hanshs474/napari-veida/issues"
+    ],
+    "pypi_versions": [
+      "1.0.0"
+    ],
+    "conda_versions": []
+  },
+  {
     "normalized_name": "napari-vemseg",
     "name": "napari-vemseg",
     "version": "0.0.9",
@@ -17111,9 +17258,9 @@
   {
     "normalized_name": "napari-virtual-reader",
     "name": "napari-virtual-reader",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "display_name": "napari-virtual-reader",
-    "summary": "Experimental napari plugin for lazy virtual OME-Zarr images via refkv",
+    "summary": "Experimental napari plugin for reading microscopy image file formats, such as CZI as lazy virtual OME-Zarr images via refkv",
     "author": null,
     "license": "BSD-3-Clause",
     "home_page": null,
@@ -17124,6 +17271,8 @@
       "Source Code, https://github.com/sebi06/napari-virtual-reader"
     ],
     "pypi_versions": [
+      "0.0.4",
+      "0.0.3",
       "0.0.2",
       "0.0.1"
     ],
@@ -18045,7 +18194,7 @@
   {
     "normalized_name": "ome-zarrpari",
     "name": "ome-zarrpari",
-    "version": "1.0.2",
+    "version": "1.1.1",
     "display_name": "OME-Zarrpari",
     "summary": "A plugin to load and use OME-Zarr data",
     "author": "David Stansby",
@@ -18058,6 +18207,8 @@
       "User Support, https://github.com/ome-zarr-models/ome-zarrpari/issues"
     ],
     "pypi_versions": [
+      "1.1.1",
+      "1.1.0",
       "1.0.2",
       "1.0.1",
       "1.0.0",
@@ -19760,19 +19911,25 @@
   {
     "normalized_name": "w-seg-napari",
     "name": "w-seg-napari",
-    "version": "0.3.75",
+    "version": "0.3.80",
     "display_name": "Plant segmentation",
-    "summary": "Segmentation tool for 2D tissues",
+    "summary": "Segmentation tool for plant tissue plastic sections stained with toluidine blue",
     "author": "Leo Vainio",
     "license": "MIT",
     "home_page": null,
     "project_url": null,
     "pypi_versions": [
+      "0.3.80",
+      "0.3.78",
+      "0.3.77",
+      "0.3.76",
       "0.3.75",
       "0.3.74",
       "0.3.73",
       "0.3.72",
       "0.3.70",
+      "0.3.57",
+      "0.3.56",
       "0.3.55",
       "0.3.53",
       "0.3.52",
@@ -19919,7 +20076,7 @@
   {
     "normalized_name": "zarpaint",
     "name": "zarpaint",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "display_name": "zarpaint",
     "summary": "Paint segmentations directly to on-disk/remote zarr arrays",
     "author": "Abigail S McGovern",
@@ -19930,6 +20087,7 @@
       "Bug_Tracker, https://github.com/jni/zarpaint/issues"
     ],
     "pypi_versions": [
+      "0.4.2",
       "0.4.1",
       "0.4.0",
       "0.3.1",
@@ -19938,6 +20096,7 @@
       "0.1.0"
     ],
     "conda_versions": [
+      "0.4.2",
       "0.4.1",
       "0.4.0",
       "0.3.1"
